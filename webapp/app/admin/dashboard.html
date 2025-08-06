@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>adminLogin</title>
+  <link rel="stylesheet" href="/assets/css/admin/dashboard.css">
 </head>
 <body>
-  <div id="inner">
-    <aside>
-      <img src="" alt="">
+  <!-- 회색영역 -->
+  <div class="admin-innerwrapper">
+    <!-- 좌측 사이드바 -->
+    <aside class="sidebar">
+      <!-- 관리자페이지 로고 -->
+      <a href=""><img src="/assets/img/admin_logo.png" alt="admin_logo"></a>
       <ul>
         <a href=""><li>대쉬보드</li></a>
         <a href=""><li>회원관리</li></a>
@@ -16,6 +20,35 @@
         <a href=""><li>신고관리</li></a>
       </ul>
     </aside>
+    <div class="admin-inner">
+      <h1>Dashboard</h1>
+      <div class="dashboard-topWrapper">
+        <div class="dashboard-topbox">
+          <p class="dashboard-topbox-key">오늘 가입</p>
+          <p class="dashboard-topbox-value">5</p>
+        </div>
+        <div class="dashboard-topbox">
+          <p class="dashboard-topbox-key">총 회원 수</p>
+          <p class="dashboard-topbox-value">1,250</p>
+        </div>
+        <div class="dashboard-topbox">
+          <p class="dashboard-topbox-key">미확인 신고</p>
+          <p class="dashboard-topbox-value">3</p>
+        </div>
+      </div>
+      <div class="dashboard-graph">
+        <p class="dashboard-graph-title">구매량 지표</p>
+        <img class="dashboard-graph-img" src="/assets/img/admin_graph.png" alt="">
+      </div>
+      <div class="dashboard-bottomWrapper">
+        <div class="dashboard-bottombox">
+          <p class="dashboard-bottombox-title">찜 순위</p>
+        </div>
+        <div class="dashboard-bottombox">
+          <p class="dashboard-bottombox-title">구매 이용 순위</p>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

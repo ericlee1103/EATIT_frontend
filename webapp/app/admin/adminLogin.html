@@ -4,14 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>adminLogin</title>
+  <link rel="stylesheet" href="/assets/css/admin/adminLogin.css">
 </head>
 <body>
+  <!-- 회색영역 -->
   <div class="admin-inner">
+    <!-- 좌측 사이드바 -->
     <aside class="sidebar">
-      <img src="" alt="">
+      <!-- 관리자페이지 로고 -->
+      <a href=""><img src="/assets/img/admin_logo.png" alt="admin_logo"></a>
     </aside>
     <div class="bigbox">
-      <div class="smallbox">Admin Login</div>
+      <div class="smallbox"><p class="AdminLogin">Admin Login</p></div>
+      <div class="bottomWrapper">
+        <div class="idPwBoxWrapper">
+          <!-- 아이디 패스워드 입력 영역 -->
+          <div class="idBox">
+            <label for="adminId">ID</label>
+          </div>
+          <div>
+            <input type="text" id="adminId" name="adminId"/>
+          </div>
+          <div class="pwBox">
+            <label for="adminPw">Password</label>
+          </div>
+          <div>
+            <input type="text" id="adminPw" name="adminPw"/>
+          </div>  
+        </div>
+        <!-- 로그인 버튼 -->
+        <button type="submit" class="loginButton">Log in</button>
+      </div>
     </div>
   </div>
 </body>

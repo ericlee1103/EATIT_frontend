@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.admin-inner{
+  width: 1500px;
+  min-height: 1440px;
+  background-color: #d9d9d9;
+  margin: auto;
+  display: flex;
+}
+.sidebar{
+  display: flex;
+  width: 300px;
+  min-height: 1440px;
+  background-color: #505FA9;
+  justify-content: center;
+}
+img{
+  /* border: 1px solid black; */
+  margin-right: 10px;
+}
+.bigbox{
+  margin: auto;
+  width: 750px;
+  height: 650px;
+  background-color: #1e223f;
+  border-radius: 10px;
+}
+.smallbox{
+  display: flex;
+  margin: 70px auto 30px;
+  width: 600px;
+  height: 250px;
+  background-color: #505FA9;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.bottomWrapper{
+  width: 600px;
+  height: 250px;
+  display: flex;
+}
+.idPwBoxWrapper{
+  color: white;
+  font-size: 24px;
+}
+.idBox, .pwBox{
+  margin: auto;
+  display: flex;
+}
+input{
+  width: 250px;
+  height: 30px;
+  border-radius: 10px;
+}
+.idPwBoxWrapper div{
+  margin: 10px 100px 10px 120px;
+}
+.loginButton{
+  width: 127px;
+  height: 127px;
+  border-radius: 10px;
+  margin: auto;
+  font-size: 24px;
+}
+.loginButton:hover{
+  cursor: pointer;
+}
