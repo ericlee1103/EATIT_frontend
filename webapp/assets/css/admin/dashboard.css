@@ -5,24 +5,25 @@
 }
 
 .admin-innerwrapper{
-  width: 1500px;
-  min-height: 1440px;
+  width: 1100px;
+  min-height: 950px;
   background-color: #d9d9d9;
   margin: auto;
   display: flex;
   position: relative;
 }
 .sidebar{
-  width: 300px;
-  min-height: 1440px;
+  min-width: 220px;
+  min-height: 950px;
   background-color: #505FA9;
   justify-content: center;
   align-items: center;
 }
 img{
   /* border: 1px solid black; */
-  margin-left: 10px;
+  margin-left: 57px;
   margin-bottom: 10px;
+  width: 100px;
 }
 ul{
   list-style: none;
@@ -32,10 +33,10 @@ a{
 }
 li{
   /* border: 1px solid black; */
-  padding: 18px 0 20px;
+  padding: 12px 0 14px;
   color: white;
   text-align: center;
-  font-size: 40px;
+  font-size: 24px;
   /* margin: 20px auto 20px; */
   /* background-color: #1e223f;*/
 }
@@ -43,72 +44,74 @@ li:hover{
   background-color: #1e223f;
 }
 .admin-inner{
-  width: 1100px;
-  margin: 50px auto;
+  width: 880px;
+  margin: 20px auto;
 }
 h1{
   /* border: 1px solid black; */
   font-weight:1000;
+  margin-left: 50px;
 }
 .dashboard-topWrapper{
   /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
-  margin: 50px 0 ;
+  margin: 30px 50px ;
 }
 .dashboard-topbox{
   /* border: 1px solid black; */
-  width: 300px;
-  height: 180px;
+  width: 200px;
+  height: 120px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 10px 10px 10px 5px gray;
 }
 .dashboard-topbox-key{
   /* border: 1px solid black; */
-  font-size: 40px;
+  font-size: 24px;
   margin-top: 10px;
   padding-left: 30px;
 }
 .dashboard-topbox-value{
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 1000;
   padding-left: 30px;
 }
 .dashboard-graph{
-  width: 1100px;
-  height: 500px;
+  width: 780px;
+  height: 400px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 10px 10px 10px 5px gray;
   justify-content: center;
+  margin: auto;
 }
 .dashboard-graph-title{
   /* border: 1px solid black; */
-  font-size: 40px;
+  font-size: 24px;
   padding-top: 40px;
   padding-left: 30px;
 }
 .dashboard-graph-img{
-  width: 1000px;
-  height: 400px;
-  margin-left: 50px;
+  width: 700px;
+  height: 300px;
+  margin-left: 30px;
 }
 .dashboard-bottomWrapper{
   display: flex;
   justify-content: space-between;
 }
 .dashboard-bottombox{
-  height: 480px;
-  width: 500px;
-  margin-top: 30px;
+  height: 300px;
+  width: 350px;
+  margin: 30px 50px 0;
   background-color: white;
   border-radius: 20px;
   box-shadow: 10px 10px 10px 5px gray;
 }
 .dashboard-bottombox-title{
   /* border: 1px solid black; */
-  font-size: 40px;
+  font-size: 24px;
   padding-top: 30px;
   padding-left: 30px;
 }
