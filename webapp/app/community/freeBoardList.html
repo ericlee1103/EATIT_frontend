@@ -1,0 +1,127 @@
+<!-- 자유게시판(회원) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>커뮤 자유게시판 페이지(회원)</title>
+  <link rel="stylesheet" href="./../../assets/css/community/freeBoardList.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="./../../assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="login-container">
+      <a href="#">
+        로그아웃
+      </a>
+      <a href="#">
+        마이페이지
+      </a>
+    </div>
+    <div class="header-title">
+      <div class="header-category">
+        <div class="header-logo">
+          <a href="#"><img src="./../../assets/img/header_logo.png" alt="로고"></a>
+          <!-- </div> -->
+          <div class="header-menu">
+            <a href="#">
+              <ul>
+                <li>구매</li>
+                <li>커뮤니티</li>
+                <li>고객센터</li>
+              </ul>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+  <main>
+    <aside class="side-bar"></aside>
+    <div class="main-container">
+      <div class="community-category">
+        <ul>
+          <li id="category-event">공지사항/이벤트</li>
+          <li id="category-free">자유게시판</li>
+          <li id="category-advertise">홍보게시판</li>
+          <li id="category-recipe">레시피</li>
+        </ul>
+      </div>
+      <article class="community-list">
+        <div class="list-container">
+          <p id="list-tag">태그</p>
+          <p id="list-title">제목</p>
+          <p id="list-author">글쓴이</p>
+          <p id="list-date">등록일</p>
+          <p id="list-viewCount">조회</p>
+          <p id="list-recommend">추천</p>
+        </div>
+        <div class="list-container">
+          <p id="list-tag">공지</p>
+          <p id="list-title">밥세권 자유 게시판 이용안내</p>
+          <p id="list-author">관리자</p>
+          <p id="list-date">25-08-03</p>
+          <p id="list-viewCount">0</p>
+          <p id="list-recommend">0</p>
+        </div>
+        <div class="list-container">
+          <p id="list-tag">잡담</p>
+          <p id="list-title">피그마 재밌다 ㅋㅋ</p>
+          <p id="list-author">yeongsun</p>
+          <p id="list-date">25-08-03</p>
+          <p id="list-viewCount">16</p>
+          <p id="list-recommend">1</p>
+        </div>
+      </article>
+      <div class="function-container">
+        <div class="search-box">
+          <form action="." method="post">
+            <input class="search-text" type="text" placeholder="검색어를 입력해 주세요">
+            <button class="search-btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="write-form">
+          <a href="#">글쓰기</a>
+        </div>
+      </div>
+
+      <div class="pagenation-container">
+
+        <div>
+          <a id="page_1" href="#">
+            1
+          </a>
+          <a id="page_2" href="#">
+            2
+          </a>
+          <a id="page_3" href="#">
+            3
+          </a>
+          <a id="page_4" href="#">
+            4
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="write-container">
+
+    </div>
+    <aside class="side-bar"></aside>
+  </main>
+  <footer>
+  </footer>
+</body>
+
+</html>
