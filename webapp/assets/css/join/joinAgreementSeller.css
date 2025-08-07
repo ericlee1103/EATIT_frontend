@@ -50,28 +50,63 @@ main {
   text-align: center;
   line-height: 112px;
 }
-/* ******************************************************************* */
 
-.seller_join_agree_container{
-  background-color: #fff5e4;
-  width: 450px;
-  height: 500px;
-  align-items: center;
+/* 약관동의 단계 끝******************************************************************* */
+
+.seller_join_agree_container {
+  border: 1px solid black;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 650px;
+  height: 700px;
 }
-.seller_join_agree_title{
-  font-size: 24px;
-  height: 53px;
-  ;
+
+.join_agree_title {
+  width: 450px;
+  border: 1px solid black;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 10px;
+  margin: 30px;
 }
-.join_agree_all , .join_next{
-  height: 30px;
-  width: 230px;
-  padding: 15px 10px;
-  margin-left : 10px;
-  font-size: 20px;
+
+.join_agree_all {
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
   background-color: #ff924e;
-  border-radius: 10px;
-  border: 1px solid #000;
+  margin: 20px;
+  text-align: left;
+  font-size: 30px;
+}
+
+.join_agree_all_chkbox {
+  border: 1px solid black;
+}
+
+.join_agree_service {
+  border: 1px solid black;
+  width: 550px;
+
+}
+
+.join_gree_service input {
+  border: 1px solid black;
+
+}
+
+.join_agree_personal {
+  border: 1px solid black;
+
+}
+
+.join_agree_personal input {
+  border: 1px solid black;
+
+}
+
+.join_agree_next_btn {
+  border: 1px solid bla;
 }
