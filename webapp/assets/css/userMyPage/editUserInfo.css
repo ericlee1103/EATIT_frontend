@@ -1,4 +1,11 @@
-.myPageList{
+*{
+  background-color: #FFF5E4;
+}
+.edit_user_info{
+  background-color: #FBE3B9;
+}
+
+.my_page_list{
   padding: 0;
   margin: 0;
   width: 190px;
@@ -9,7 +16,7 @@
   justify-items: center;
   border-radius: 10px;
 }
-.myPage{
+.my_page{
   border-radius: 10px;
   background-color: #FF873C;
   width: 190px;
@@ -18,7 +25,7 @@
   align-items: center;
   justify-content: center;
 }
-.myPageList > li{
+.my_page_list > li{
   list-style: none;
   padding: 15px 0;
 }
