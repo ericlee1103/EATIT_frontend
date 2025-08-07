@@ -5,7 +5,7 @@
 }
 
 header {
-  height: 150px;
+  height: 100px;
   width: 100%;
   /* background-color: #a69980; */
 }
@@ -24,6 +24,7 @@ main {
   width: 1100px;
   height: 100%;
   background-color: #fbe3b9;
+  border: 1px solid #000;
 }
 
 .join_step {
@@ -49,7 +50,7 @@ main {
 }
 
 .select_user_type {
-  border: 1px solid #000;
+  /*border: 1px solid #000;*/
   display: flex;
   align-items: center;
   justify-content: center;

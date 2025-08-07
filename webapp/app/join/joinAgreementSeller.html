@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./../../assets/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./../../assets/css/join/joinAgreementSeller.css">
-  <title>Document</title>
+  <title>밥세권</title>
 </head>
+
 <body>
   <header>header</header>
   <main>
     <div class="container">
+      <!-- 회원가입 단계 동그라미 4개 -->
       <ul class="join_step">
         <li>
           <div>회원선택</div>
         </li>
         <li>
-          약관동의
+          <div>약관동의</div>
         </li>
         <li>
           <div>정보입력</div>
@@ -24,25 +28,34 @@
           <div>가입완료</div>
         </li>
       </ul>
-      <div class="join_agree_all"><input type="checkbox" name="join_agree_all" id="">전체동의</div>
-      <div class="join_agree_seller">
-        <div>
-          <div class="join_agree_serveice">서비스 이용 약관</div>
-          <input type="checkbox" name="" class="join_agree_service_1" id=""> 이용 약관 동의
-          <input type="checkbox" name="" class="join_agree_service_2" id=""> 전자금융거래 이용약관 동의
-        <div>
-          <div><input type="checkbox" name="" id="" class="join_agree_payment_1">[선택] 서비스/이벤트 제공을 위한 개인정보 수집 이용동의</div>
-          <div><input type="checkbox" name="" id="" class="join_agree_payment_2">[선택] 광고성 정보 수신 동의</div>
-          <span><input type="checkbox" name="" id="" class="join_agree_payment_3">SMS</span>
-          <span><input type="checkbox" name="" id="" class="join_agree_payment_4">전화</span>
-          <div>밥세권에서 제공하는 서비스의 광고성 정보를 수신합니다.</div>
-          <div><input type="checkbox" name="" id="" class="join_agree_payment_5">[선택] 밥세권 회원 연동을 위한 개인정보 수집 이용 동의</div>
-        </div> 
-      </div>
-      <div class="join_next">다음</div>
+      <!--//.join_step-->
+      <div class="seller_join_agree_container">
+      <div class="seller_join_agree_title">밥세권 사업자 회원 동의</div>
+      <form action="" method="post" class="join_agreement">
+        <div class="join_agree_all"><input type="checkbox" name="join_agree_all" id="">전체동의</div>
+        <div class="join_agree_seller">
+          <div>
+            <div class="join_agree_serveice">서비스 이용 약관</div>
+            <input type="checkbox" name="" class="join_agree_service_1" id=""> 이용 약관 동의
+            <input type="checkbox" name="" class="join_agree_service_2" id=""> 전자금융거래 이용약관 동의
+            <div>
+              <div><input type="checkbox" name="" id="" class="join_agree_payment_1">[선택] 서비스/이벤트 제공을 위한 개인정보 수집 이용동의</div>
+              <div><input type="checkbox" name="" id="" class="join_agree_payment_2">[선택] 광고성 정보 수신 동의</div>
+              <span><input type="checkbox" name="" id="" class="join_agree_payment_3">SMS</span>
+              <span><input type="checkbox" name="" id="" class="join_agree_payment_4">전화</span>
+              <div>밥세권에서 제공하는 서비스의 광고성 정보를 수신합니다.</div>
+              <div><input type="checkbox" name="" id="" class="join_agree_payment_5">[선택] 밥세권 회원 연동을 위한 개인정보 수집 이용 동의
+              </div>
+            </div>
+          </div>
+      </form>
+      <!-- //.약관동의 끝 -->
+      <button type="button" class="join_next">다음</button>
+    </div> <!-- //.seller_join_agree_container -->
 
-    </div>
+    </div> <!--//.container-->
   </main>
   <footer></footer>
 </body>
+
 </html>
