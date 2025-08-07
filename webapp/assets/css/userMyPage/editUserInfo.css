@@ -1,13 +1,22 @@
-*{
+header{
+  width : 1920px;
+  height : 150px;
+}
+main{
   background-color: #FFF5E4;
+  width: 1920px;
+  display: flex;
+  flex-direction: row;
 }
 .edit_user_info{
   background-color: #FBE3B9;
+  width: 1100px;
+ 
 }
 
 .my_page_list{
   padding: 0;
-  margin: 0;
+  margin: 100px 20px 0 200px;
   width: 190px;
   height: 450px;
   font-size: 20px;
@@ -28,4 +37,7 @@
 .my_page_list > li{
   list-style: none;
   padding: 15px 0;
+}
+.my_info{
+  margin: 20px 0 45px 0;
 }
