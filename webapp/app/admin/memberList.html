@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>adminLogin</title>
+  <link rel="stylesheet" href="./../../assets/css/admin/memberList.css">
+</head>
+<body>
+  <!-- 회색영역 -->
+  <div class="admin_innerwrapper">
+    <!-- 좌측 사이드바 -->
+    <aside class="sidebar">
+      <!-- 관리자페이지 로고 -->
+      <a href=""><img src="./../../assets/img/admin_logo.png" alt="admin_logo"></a>
+      <ul class="sidebar_ul">
+        <a href=""><li class="sidebar_list">대쉬보드</li></a>
+        <a href=""><li class="sidebar_list">회원관리</li></a>
+        <a href=""><li class="sidebar_list">게시글 관리</li></a>
+        <a href=""><li class="sidebar_list">신고관리</li></a>
+      </ul>
+    </aside>
+    <div class="admin_inner">
+      <h1 class="admin_pagetitle">회원관리</h1>
+      <div class="admin_listwrapper">
+        <div class="admin_list_title">
+          <ul class="admin_list">
+            <a href="">
+              <li class="admin_list_menu">회원목록</li>
+            </a>
+          </ul>
+        </div>
+        <div class="admin_list_name">
+          <ul class="admin_list_namebox">
+            <li id="admin_list_num" class="admin_list_row">번호</li>
+            <li id="admin_list_userid" class="admin_list_row">아이디</li>
+            <li id="admin_list_username" class="admin_list_row">이름</li>
+            <li id="admin_list_usercase" class="admin_list_row">유형</li>
+            <li id="admin_list_warning" class="admin_list_row">누적 경고 수</li>
+            <li id="admin_list_grade" class="admin_list_row">등급(포인트)</li>
+          </ul>
+        </div>
+      </div>  
+    </div>
+  </div>

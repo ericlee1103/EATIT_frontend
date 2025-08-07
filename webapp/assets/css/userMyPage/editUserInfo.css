@@ -11,9 +11,7 @@ main{
 .edit_user_info{
   background-color: #FBE3B9;
   width: 1100px;
- 
 }
-
 .my_page_list{
   padding: 0;
   margin: 100px 20px 0 200px;
@@ -21,7 +19,7 @@ main{
   height: 450px;
   font-size: 20px;
   color: white;
-  background-color: #a6998080; 
+  background-color: #a6998080;
   justify-items: center;
   border-radius: 10px;
 }
@@ -39,5 +37,54 @@ main{
   padding: 15px 0;
 }
 .my_info{
-  margin: 20px 0 45px 0;
+  margin: 25px 0 45px 30px;
+}
+.info_modify_area{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 990px;
+  height: 83px;
+  margin-left: 20px;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.info_menu{
+  border-radius: 10px;
+  width: 207px;
+  height: 83px;
+  background-color: #FF873C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+}
+.info_save_buzz{
+  width: 138px;
+  height: 50px;
+  background-color: #FF873C;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  display: flex;
+  justify-self: left;
+}
+.agreement_buzz{
+  background-color: #FF873C;
+  width: 178px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: right;
+  margin: 20px 60px 0 0;
+}
+
+.agreement_buzz > a{
+  color: white;
+  font-size: 14px;
+  
 }
