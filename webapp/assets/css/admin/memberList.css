@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.admin_innerwrapper{
+  width: 1100px;
+  min-height: 950px;
+  background-color: #d9d9d9;
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+.sidebar{
+  min-width: 220px;
+  min-height: 950px;
+  background-color: #505FA9;
+  justify-content: center;
+  align-items: center;
+}
+img{
+  /* border: 1px solid black; */
+  margin-left: 57px;
+  margin-bottom: 10px;
+  width: 100px;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.sidebar_list{
+  /* border: 1px solid black; */
+  padding: 12px 0 14px;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  /* margin: 20px auto 20px; */
+  /* background-color: #1e223f;*/
+}
+.sidebar_list:hover{
+  background-color: #1e223f;
+  scale: 110%;
+}
+.admin_inner{
+  width: 880px;
+  margin: 20px auto;
+}
+.admin_pagetitle{
+  /* border: 1px solid black; */
+  font-weight:1000;
+  margin-left: 50px;
+}
+.admin_listwrapper{
+  /* border: 1px solid black; */
+  margin: auto;
+  width: 800px;
+  min-height: 700px;
+}
+.admin_list_title{
+  display: flex;
+  /* border: 1px solid black; */
+  width: 700px;
+  height: 40px;
+  margin: auto;
+  
+}
+.admin_list{
+  /* border: 1px solid black; */
+  width: 700px;
+  height: 40px;
+  text-align: center;
+  background-color: #505FA9;
+}
+.admin_list_menu{
+  border: 1px solid black;
+  padding-top: 4px;
+  width: 140px;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  background-color: #1e223f;
+}
+.admin_list_name{
+  border: 1px solid black;
+  width: 800px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #99A6E8;
+}
+.admin_list_namebox{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+}
+.admin_list_row{
+  padding-top: 4.5px;
+}
+#admin_list_num{
+  border: 1px solid black;
+  width: 60px;
+  height: 40px;
+}
+#admin_list_userid{
+  border: 1px solid black;
+  width: 220px;
+}
+#admin_list_username{
+  border: 1px solid black;
+  width: 130px;
+}
+#admin_list_usercase{
+  border: 1px solid black;
+  width: 130px;  
+}
+#admin_list_warning{
+  border: 1px solid black;
+  width: 130px;  
+}
+#admin_list_grade{
+  border: 1px solid black;
+  width: 130px;  
+}
