@@ -16,32 +16,49 @@ main{
   padding: 0;
   margin: 100px 20px 0 200px;
   width: 190px;
-  height: 450px;
+  height: 550px;
   font-size: 20px;
-  color: white;
   background-color: #a6998080;
-  justify-items: center;
   border-radius: 10px;
 }
 .my_page{
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   background-color: #FF873C;
   width: 190px;
   height: 110px;
+  color: white;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .my_page_list > li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   padding: 15px 0;
+  width: 190px;
 }
+
+.my_page_list > li > a{
+  text-decoration: none;
+  color: white;
+}
+.my_page_list > li:hover{
+  width: 190px;
+  background-color: #ff873c8c;
+  border-radius: 10px;
+}
+
 .my_info{
-  margin: 25px 0 45px 30px;
+  margin: 25px 0 45px 50px;
+  font-size: 30px;
 }
 .info_modify_area{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-color: white;
   width: 990px;
   height: 83px;
@@ -49,6 +66,15 @@ main{
   border-radius: 10px;
   align-items: center;
   margin-bottom: 7px;
+}
+.insert_profile{
+  border-radius: 100px;
+  background-color: gray;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .info_menu{
   border-radius: 10px;
@@ -68,8 +94,7 @@ main{
   border-radius: 10px;
   border: none;
   color: white;
-  display: flex;
-  justify-self: left;
+  margin-right: 10px;
 }
 .agreement_buzz{
   background-color: #FF873C;
@@ -86,5 +111,5 @@ main{
 .agreement_buzz > a{
   color: white;
   font-size: 14px;
-  
+  text-decoration: none;
 }
