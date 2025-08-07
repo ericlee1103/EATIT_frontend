@@ -1,11 +1,11 @@
-* {
+joi* {
   margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
 }
 
 header {
-  height: 150px;
+  height: 100px;
   width: 100%;
   /* background-color: #a69980; */
 }
@@ -24,6 +24,9 @@ main {
   width: 1100px;
   height: 100%;
   background-color: #fbe3b9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .join_step {
@@ -48,6 +51,20 @@ main {
   line-height: 112px;
 }
 /* ******************************************************************* */
+
+.seller_join_agree_container{
+  background-color: #fff5e4;
+  width: 450px;
+  height: 500px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.seller_join_agree_title{
+  font-size: 24px;
+  height: 53px;
+  ;
+}
 .join_agree_all , .join_next{
   height: 30px;
   width: 230px;
