@@ -4,11 +4,16 @@
   /* box-sizing: border-box; */
 }
 
-header {
+#header {
   height: 100px;
   width: 100%;
-  /* background-color: #a69980; */
+  background-color: #ffffff;
 }
+#footer {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+} 
 
 main {
   height: 100vh;
@@ -24,7 +29,7 @@ main {
   width: 1100px;
   height: 100%;
   background-color: #fbe3b9;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 .join_step {
@@ -42,13 +47,18 @@ main {
   display: inline-block;
   margin: 20px;
   background-color: #d9d9d9;
-  width: 112px;
-  height: 112px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   text-align: center;
-  line-height: 112px;
+  line-height: 140px;
 }
 
+.join_step_user_type{
+  background-color: #ff924e;
+  border-radius: 50%;
+}
+/* ***************************************** */
 .select_user_type {
   /*border: 1px solid #000;*/
   display: flex;
