@@ -12,7 +12,7 @@
     <!-- 좌측 사이드바 -->
     <aside class="sidebar">
       <!-- 관리자페이지 로고 -->
-      <a href=""><img src="/assets/img/admin_logo.png" alt="admin_logo"></a>
+      <a href=""><img src="./../../assets/img/admin_logo.png" alt="admin_logo"></a>
     </aside>
     <div class="bigbox">
       <div class="smallbox"><p class="AdminLogin">Admin Login</p></div>
@@ -22,18 +22,20 @@
           <div class="idBox">
             <label for="adminId">ID</label>
           </div>
-          <div>
-            <input type="text" id="adminId" name="adminId"/>
+          <form action="" method="post">
+            <div>
+              <input type="text" id="adminId" name="adminId"/>
+            </div>
+            <div class="pwBox">
+              <label for="adminPw">Password</label>
+            </div>
+            <div>
+              <input type="text" id="adminPw" name="adminPw"/>
+            </div>  
           </div>
-          <div class="pwBox">
-            <label for="adminPw">Password</label>
-          </div>
-          <div>
-            <input type="text" id="adminPw" name="adminPw"/>
-          </div>  
-        </div>
-        <!-- 로그인 버튼 -->
-        <button type="submit" class="loginButton">Log in</button>
+          <!-- 로그인 버튼 -->
+          <button type="submit" class="loginButton">Log in</button>
+        </form>
       </div>
     </div>
   </div>
