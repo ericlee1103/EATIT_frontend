@@ -45,7 +45,7 @@
   width: 70px;
   align-items: center;
 }
-/* 헤더> 네비게이션 */
+/* 헤더 네비게이션 */
 #header_nav ul{
   width: 1100px;
   height: 70px;
@@ -69,14 +69,33 @@
 #header_nav ul li a:hover{
   color:#F6D962;
 }
-/*  */
-#header_nav_dropdown{
-  /* margin-top: 200px; */
+/* 헤더 네비게이션 드롭다운 메뉴 */
+#header_nav_display{
+  display: none;
+}
+.header_nav_dropdown{
+  display: flex;
   width: 1920px;
   height: 40px;
   background-color: #202020;
-  border: 1px solid red;
 }
 .header_nav_buy{
-
+  margin-left: 500px;
+  display: flex;
+}
+.header_nav_buy li{
+  /* border: 1px solid blue; */
+  width: 150px;
+  height: 40px;
+  list-style: none;
+  text-align: center;
+  line-height: 40px;
+}
+.header_nav_buy li a{
+  /* border: 1px solid red; */
+  width: 150px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
 }

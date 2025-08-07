@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#footer{
+  width: 1920px;
+  height: 100px;
+  background-color: grey;
+}
+/* 푸터 중앙정렬 1100px */
+#footer_wrapper{
+  border: 1px solid red;
+  width: 1100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+}
+/* 푸터 고객센터 영역 */
+.footerbox_left{
+  width: 50%;
+  height: 100px;
+  /* margin-top: 5px; */
+  /* border: 1px solid blue; */
+}
+.footer_customer_center{
+  font-size: 16px;
+}
+.footerbox_left span{
+  font-size: 20px;
+  font-weight: bold;
+}
+.footerbox_left span p{
+  font-size: 14px;
+  font-weight: normal;
+}
+.footer_email{
+  font-size: 12px;
+}
+/* 푸터 사업자정보 영역 */
+.footerbox_right{
+  border: 1px solid green;
+}
+.footerbox_right ul{
+  border: 1px solid red;
+}
