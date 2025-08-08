@@ -16,4 +16,33 @@
   margin: 0 auto;
   display: flex;
 }
-
+/* 결제완료 > 박스 */
+.box{
+  width: 450px;
+  height: 200px;
+  /* 중앙정렬 100%화면 기준 */
+  margin: auto;
+  background-color: white;
+  border-radius: 8px;
+}
+.check{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 40px;
+  background-color:  #FF924E;
+  display: block;
+  border: 1px solid blue;
+}
+.check img{
+  width: 30px;
+  position: absolute;
+  /* align-items: center;
+  justify-content: center; */
+  border: 1px solid red;
+}
+.box h3{
+  text-align: center;
+  margin-top: 40px;
+}
