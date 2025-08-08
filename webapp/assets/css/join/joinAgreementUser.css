@@ -1,19 +1,8 @@
-joi* {
+* {
   margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
 }
-
-#header {
-  height: 100px;
-  width: 100%;
-  background-color: #ffffff;
-}
-#footer {
-  height: 100px;
-  width: 100%;
-  background-color: white;
-} 
 
 main {
   /* height: 100vh; */
@@ -56,14 +45,14 @@ main {
   line-height: 140px;
 }
 
-.join_step_agreement{
+.join_step_agreement {
   background-color: #ff924e;
   border-radius: 50%;
 }
 
 /* 약관동의 단계 끝******************************************************************* */
 
-.seller_join_agree_container {
+.user_join_agree_container {
   /* border: 1px solid black; */
   font-size: 14px;
   display: flex;
@@ -84,6 +73,10 @@ main {
 
 form>div>div {
   margin: 5px;
+}
+
+.join_agree_all:hover {
+  background-color: #FF7722;
 }
 
 .join_agree_all {
@@ -113,6 +106,10 @@ form>div>div {
 
 .join_agree_personal_2_txt {
   text-align: right;
+}
+
+.join_agree_next_btn:hover {
+  background-color: #FF7722;
 }
 
 .join_agree_next_btn {

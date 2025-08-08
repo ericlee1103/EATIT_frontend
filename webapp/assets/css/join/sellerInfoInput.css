@@ -4,17 +4,6 @@
   /* box-sizing: border-box; */
 }
 
-#header {
-  height: 100px;
-  width: 100%;
-  background-color: #ffffff;
-}
-
-#footer {
-  height: 100px;
-  width: 100%;
-  background-color: white;
-}
 
 main {
   height: 830px;
@@ -35,14 +24,21 @@ main {
   flex-direction: column;
   align-items: center;
 }
+
 .content_container {
   width: 465px;
-  height: 540px;
+  height: 610px;
   background-color: #fff5e4;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
 }
+
+button:hover{
+  background-color: #FF7722;
+}
+/* ******************** */
 
 .join_step {
   width: 100%;
@@ -66,14 +62,72 @@ main {
   line-height: 140px;
 }
 
-.join_step_final {
+.join_step_input_info {
   background-color: #ff924e;
   border-radius: 50%;
 }
+
 /* 약관동의 단계 끝******************************************************************* */
 
 /* 정보입력 제목 */
+.seller_input_title{
+      font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
 
+}
 /* 정보입력 */
 
+.info_type { /* 정보 입력 종류 텍스트 */
+  display: inline-block;
+  width: 90px;
+  height: 20px;
+  font-size: 14px;
+  color: #000000;
+  text-align: left
+}
+
+.seller_input_container>input {
+width: 220px;
+height: 20px;
+    margin: 5px 4px;
+    padding: 0px 3px; 
+}
+
+
+.seller_input_container>button{ /* 입력칸들의 오른쪽 버튼 */
+width: 60px;
+    height: 22px;
+    background-color: #ff924e;
+    border-radius: 5px;
+    border: 0.3px solid #000000;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}
+.seller_input_container>button:hover{ /* 입력칸들의 오른쪽 버튼 */
+  background-color: #FF7722;
+}
+/* 경고메시지 */
+.warning_space{
+  display: flex;
+  font-size: 12px;
+}
+.empty{
+  width: 100px;
+}
+.warning_message{
+  color: red;
+}
+
 /* 가입하기 버튼 */
+.join_next{
+    width: 140px;
+    height: 36px;
+    background-color: #ff924e;
+    margin: 17px 0px;
+    border-radius: 6px;
+    color: white;
+    border: 0.3px solid black;
+}
