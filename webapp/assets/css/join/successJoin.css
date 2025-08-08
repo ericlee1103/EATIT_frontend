@@ -1,4 +1,4 @@
-joi* {
+* {
   margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
@@ -9,14 +9,16 @@ joi* {
   width: 100%;
   background-color: #ffffff;
 }
+
 #footer {
   height: 100px;
   width: 100%;
   background-color: white;
-} 
+}
 
 main {
-  /* height: 100vh; */
+  height: 830px;
+  width: 1920px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -56,9 +58,39 @@ main {
   line-height: 140px;
 }
 
-.join_step_final{
+.join_step_final {
   background-color: #ff924e;
   border-radius: 50%;
 }
-
 /* 약관동의 단계 끝******************************************************************* */
+
+.join_inner_container {
+  width: 450px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff5e4;
+  margin-top: 60px;
+
+}
+
+.join_final_title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.join_final_btns>button {
+  width: 115px;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #ff924e;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+  border: 0.3px solid black;
+  margin: 10px;
+}
