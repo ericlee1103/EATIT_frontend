@@ -14,10 +14,10 @@
       <!-- 관리자페이지 로고 -->
       <a href=""><img src="./../../assets/img/admin_logo.png" alt="admin_logo"></a>
       <ul class="sidebar_ul">
-        <a href=""><li class="sidebar_list">대쉬보드</li></a>
-        <a href=""><li class="sidebar_list">회원관리</li></a>
-        <a href=""><li class="sidebar_list">게시글 관리</li></a>
-        <a href=""><li class="sidebar_list">신고관리</li></a>
+        <a href=""><li id="sidebar_list_dashboard" class="sidebar_list">대쉬보드</li></a>
+        <a href=""><li id="sidebar_list_member" class="sidebar_list">회원관리</li></a>
+        <a href=""><li id="sidebar_list_community" class="sidebar_list">게시글 관리</li></a>
+        <a href=""><li id="sidebar_list_warning"class="sidebar_list">신고관리</li></a>
       </ul>
     </aside>
     <div class="admin_inner">
@@ -30,16 +30,38 @@
             </a>
           </ul>
         </div>
-        <div class="admin_list_name">
-          <ul class="admin_list_namebox">
-            <li id="admin_list_num" class="admin_list_row">번호</li>
-            <li id="admin_list_userid" class="admin_list_row">아이디</li>
-            <li id="admin_list_username" class="admin_list_row">이름</li>
-            <li id="admin_list_usercase" class="admin_list_row">유형</li>
-            <li id="admin_list_warning" class="admin_list_row">누적 경고 수</li>
-            <li id="admin_list_grade" class="admin_list_row">등급(포인트)</li>
-          </ul>
-        </div>
+        <div class="admin_list_whitebox">
+          <div class="admin_list_namebox">
+            <ul class="admin_list_name">
+              <li id="admin_list_num" class="admin_list_row">번호</li>
+              <li id="admin_list_userid" class="admin_list_row"><a href="" class="admin_list_userid_link">아이디</a></li>
+              <li id="admin_list_username" class="admin_list_row">이름</li>
+              <li id="admin_list_usercase" class="admin_list_row">유형</li>
+              <li id="admin_list_warning" class="admin_list_row">누적 경고 수</li>
+              <li id="admin_list_grade" class="admin_list_row">등급(포인트)</li>
+            </ul>
+          </div>
+          <div class="admin_list_valuebox">
+            <ul class="admin_list_value">
+              <li id="admin_list_num_value" class="admin_list_row">1</li>
+              <li id="admin_list_userid_value" class="admin_list_row"><a href="" class="admin_list_userid_link">jjanggu</a></li>
+              <li id="admin_list_username_value" class="admin_list_row">짱구</li>
+              <li id="admin_list_usercase_value" class="admin_list_row">개인</li>
+              <li id="admin_list_warning_value" class="admin_list_row">0</li>
+              <li id="admin_list_grade_value" class="admin_list_row"><img class="grade_icon" src="./../../assets/img/씨앗.png" alt=""><p class="grade_points">(2000)</p></li>            
+            </ul>
+          </div>
+        </div> 
+        <div class="admin_pagenation_search">
+          <div class="admin_pagenation"></div>
+          <div class="admin_search">
+            <div class="admin_search_category"><p>아이디</p></div>
+            <form action="" method="get">
+              <input type="text" id="search_word" name="search_word">
+             
+            </form>
+          </div>
+        </div> 
       </div>  
     </div>
   </div>
