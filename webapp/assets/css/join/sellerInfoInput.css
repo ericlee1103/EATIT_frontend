@@ -35,6 +35,14 @@ main {
   flex-direction: column;
   align-items: center;
 }
+.content_container {
+  width: 465px;
+  height: 540px;
+  background-color: #fff5e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .join_step {
   width: 100%;
