@@ -4,18 +4,6 @@
   /* box-sizing: border-box; */
 }
 
-#header {
-  height: 100px;
-  width: 100%;
-  background-color: #ffffff;
-}
-
-#footer {
-  height: 100px;
-  width: 100%;
-  background-color: white;
-}
-
 main {
   height: 830px;
   width: 1920px;
