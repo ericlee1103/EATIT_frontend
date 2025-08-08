@@ -139,7 +139,8 @@ footer {
   height: 500px;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #FBE3B9;
+  padding-top:30px;
 }
 
 .community_category {
