@@ -5,14 +5,18 @@ header{
 main{
   background-color: #FFF5E4;
   width: 1920px;
+  height: 1500px;
   display: flex;
   flex-direction: row;
+  
 }
 .edit_user_info{
   background-color: #FBE3B9;
   width: 1100px;
+  margin-left: 410px;
 }
 .my_page_list{
+  position: fixed;
   padding: 0;
   margin: 100px 20px 0 200px;
   width: 190px;
@@ -51,8 +55,11 @@ main{
   border-radius: 10px;
 }
 
+.info_area{
+  justify-items: center;
+}
 .my_info{
-  margin: 25px 0 45px 50px;
+  margin: 25px 0 45px 70px;
   font-size: 30px;
 }
 .info_modify_area{
@@ -62,14 +69,43 @@ main{
   background-color: white;
   width: 990px;
   height: 83px;
-  margin-left: 20px;
   border-radius: 10px;
   align-items: center;
   margin-bottom: 7px;
 }
+.info_unable_modify_area{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 990px;
+  height: 83px;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.info_able_modify_area{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 990px;
+  height: 83px;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 7px;
+  }
+  .input_info{
+    background-color: rgba(128, 128, 128, 0); 
+    width: 615px;
+    height: 50px;
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    color: black;
+}
 .insert_profile{
   border-radius: 100px;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.575);  
   width: 65px;
   height: 65px;
   display: flex;
@@ -87,6 +123,15 @@ main{
   font-size: 14px;
   color: white;
 }
+.gray_box{
+  width: 615px;
+  height: 50px;
+  background-color: rgba(128, 128, 128, 0.575);
+  border-radius: 10px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-around;
+}
 .info_save_buzz{
   width: 138px;
   height: 50px;
@@ -94,7 +139,19 @@ main{
   border-radius: 10px;
   border: none;
   color: white;
-  margin-right: 10px;
+  margin: 0 10px;
+  align-self: center;
+}
+.notice_input_wrong_info{
+  font-size: 10px;
+  margin: 0 0 0 10px;
+  position: absolute;
+}
+.info_save_buzz:hover{
+  background-color: #FF7722;
+}
+.agreement_buzz:hover{
+  background-color: #FF7722;
 }
 .agreement_buzz{
   background-color: #FF873C;
@@ -107,9 +164,21 @@ main{
   justify-self: right;
   margin: 20px 60px 0 0;
 }
-
 .agreement_buzz > a{
   color: white;
   font-size: 14px;
   text-decoration: none;
+}
+.advertisement_agreement{
+  display: flex;
+  align-items: center;
+  margin: 0 80px;
+}
+.gray_box_adverisement{
+  width: 615px;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 10px;
+  display: flex;
 }
