@@ -4,22 +4,9 @@
   /* box-sizing: border-box; */
 }
 
-#header {
-  height: 100px;
-  width: 100%;
-  background-color: #ffffff;
-}
-
-#footer {
-  height: 100px;
-  width: 100%;
-  background-color: white;
-}
-
 main {
   height: 830px;
   width: 1920px;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,6 +67,10 @@ main {
 }
 
 /* 아이디 찾기 버튼 및 경고메시지 */
+.findId_btn:hover {
+  background-color: #FF7722;
+}
+
 .findId_btn {
   width: 115px;
   height: 35px;
@@ -90,6 +81,11 @@ main {
   font-size: 16px;
 }
 
+.warning_message{
+  color: red;
+  font-size: 14px;
+}
+
 /* 아이디 찾기 다른 곳으로 이동 */
 .findId_to_container {
   /* height: 50px; */
@@ -98,7 +94,9 @@ main {
   /* text-decoration: none; */
   gap: 15px;
 }
+
 .findId_to_container>div>a {
   font-size: 14px;
   text-decoration: none;
+  color: black;
 }
