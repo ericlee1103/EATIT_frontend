@@ -131,6 +131,7 @@ main{
   margin-left: 10px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .info_save_buzz{
   width: 138px;
