@@ -1,4 +1,4 @@
-/* 레시피게시판 목록(회원) */
+/* 자유게시판 목록(회원) */
 
 @font-face {
   font-family: 'TTTtangsbudaejjigaeB';
@@ -139,7 +139,8 @@ footer {
   height: 500px;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #FBE3B9;
+  padding-top:30px;
 }
 
 .community_category {

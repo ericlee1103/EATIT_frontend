@@ -3,23 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../../assets/css/header.css">
+  <link rel="stylesheet" href="./../../assets/css/footer.css">
   <link rel="stylesheet" href="./../../assets/css/cartList/paymentSuccess.css">
   <title>밥세권</title>
 </head>
 <body>
-  <!-- 결제완료 페이지 -->
+  <header id="header"></header>
+
+  <!-- 결제완료 실패 페이지 -->
   <div id="payment_success">
     <!-- 결제완료 > 중앙정렬 1100px 영역-->
     <div class="wrap">
       <!-- 주문완료 안내박스 -->
       <div class="box">
         <div class="check">
-          <img src="./../../assets/img/check.png" alt="">
+          <!-- x표 임시이미지 -->
+          <img src="./../../assets/img/fail.png" alt="">
         </div>
-        <h3>주문이 완료되지 못했습니다</h3>
-        <div class="buylist"></div>
+        <!-- 주문완료 메시지 -->
+        <h3>주문을 완료하지 못했습니다</h3>
+        <!-- 주문목록이동 버튼 -->
+        <div class="buylist_btn">장바구니로 이동</div>
       </div>
     </div>
   </div>
+
+  <footer id="footer"></footer>
 </body>
 </html>

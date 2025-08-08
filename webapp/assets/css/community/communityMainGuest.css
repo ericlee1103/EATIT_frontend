@@ -1,3 +1,5 @@
+/* 자유게시판 목록(회원) */
+
 @font-face {
   font-family: 'TTTtangsbudaejjigaeB';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
@@ -16,68 +18,64 @@ header {
   height: 150px;
 }
 
-.login-container {
+.login_container {
   background-color: #A69980;
   text-align: right;
   color: white;
   height: 40px;
-  /* padding-top:10px;  */
 }
 
-.login-container>a {
+.login_container > a {
   font-size: 16px;
   margin: 15px;
   text-decoration: none;
   color: aliceblue;
 }
 
-.header-logo>a>img {
+.header_logo > a > img {
   width: 106px;
   height: 120px;
   display: inline;
 }
 
-.header-category {
+.header_category {
   background-color: #A69980;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-.header-menu {
+.header_menu {
   flex: 1;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
 }
 
-.header-title {
+.header_title {
   display: flex;
   flex-direction: column;
 }
 
-.header-category>a>ul {
+.header_category > a > ul {
   list-style: none;
-
 }
 
-.header-menu>a>ul>li {
+.header_menu > a > ul > li {
   list-style: none;
   text-decoration: none;
   color: white;
   display: inline;
   margin: 30px;
   font-size: 30px;
-  color: black;
 }
 
-.header-category>a>ul>li {
+.header_category > a > ul > li {
   display: inline;
 }
 
-.header-logo {
+.header_logo {
   display: flex;
   justify-content: space-between;
 }
@@ -96,70 +94,67 @@ footer {
   width: 1920px;
 }
 
-.side-bar {
+.side_bar {
   width: 410px;
   height: 100%;
   background-color: #FFF5E4;
 }
 
-.main-container {
+.main_container {
   background-color: #FBE3B9;
-  /* background-color: white; */
   width: 1100px;
   height: 100%;
+  align-items: center;
 }
 
-.main-container>div>ul {
+.main_container > div > ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   width: 700px;
-  /* border : 1px solid black; */
   border-radius: 30px;
   padding-left: 200px;
   padding-bottom: 20px;
   padding-top: 50px;
 }
 
-.main-container>div>ul>li {
+.main_container > div > ul > li {
   width: 275px;
   height: 25px;
   text-align: center;
   font-weight: bold;
   display: inline;
-  /* margin-top:30px; */
   align-items: center;
-  background-color: #FF873C;
-  /* border-radius: 10px; */
+  background-color: white;
   color: white;
   font-weight: bold;
   padding-top: 10px;
-  /* margin-top: 50px; */
   border: 2px solid black;
 }
 
-.community-list {
-  width: 950px;
+.community_list {
+  width: 1100px;
+  height: 500px;
   justify-content: center;
   align-items: center;
+  background-color: #FBE3B9;
+  padding-top:30px;
 }
 
-
-.community-category {
+.community_category {
   justify-content: space-around;
   width: 700px;
 }
 
-.list-container {
+.list_container {
   width: 950px;
   display: flex;
-  /* justify-content: space-around; */
   margin-left: 70px;
 }
 
-.list-container>p {
+.list_container > p {
   display: inline-block;
   width: 150px;
   height: 40px;
@@ -169,87 +164,81 @@ footer {
   border-bottom: 1px solid black;
   background-color: white;
   text-align: center;
-  /* align-items: center; */
   padding-top: 20px;
 }
 
-#list-tag {
+#list_tag {
   width: 100px;
   border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
-#list-title {
+#list_title {
   width: 600px;
+  border-bottom: 2px solid black;
 }
 
-#list-author {
-  width: 100px
-}
-
-#list-date {
-  width: 150px;
-}
-
-#list-viewCount {
+#list_author {
   width: 100px;
+  border-bottom: 2px solid black;
 }
 
-#list-recommend {
+#list_date {
+  width: 150px;
+  border-bottom: 2px solid black;
+}
+
+#list_viewCount {
+  width: 100px;
+  border-bottom: 2px solid black;
+}
+
+#list_recommend {
   width: 150px;
   background-color: white;
   border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
-#category-event {
+#category_event {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  color: black;
   background-color: #FF873C;
-  color: black;
 }
 
-#category-free {
+#category_free {
+  color: black;
+  background-color: white;
+}
+
+#category_advertise {
   background-color: white;
   color: black;
 }
 
-#category-advertise {
-  background-color: white;
-  color: black;
-}
-
-#category-recipe {
+#category_recipe {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: white;
   color: black;
 }
 
-
-#category-event:hover {
+#category_event:hover,
+#category_free:hover,
+#category_advertise:hover,
+#category_recipe:hover {
   background-color: #FF873C;
 }
 
-#category-free:hover {
-  background-color: #FF873C;
-}
-
-#category-advertise:hover {
-  background-color: #FF873C;
-}
-
-#category-recipe:hover {
-  background-color: #FF873C;
-}
-
-.pagenation-container {
+.pagenation_container {
   padding-top: 60px;
   top: 80%;
   display: flex;
   justify-content: center;
 }
 
-.pagenation-container>div>a {
-  /* border: 2px solid black; */
+.pagenation_container > div > a {
   text-decoration: none;
   color: black;
   display: inline-block;
@@ -257,53 +246,61 @@ footer {
   background-color: white;
 }
 
-.pagenation-container>div>a:hover {
+.pagenation_container > div > a:hover {
   border: 2px solid #4200FF;
-  background-color:#FF873C;
-  
+  background-color: #FF873C;
 }
 
-
-.search-box {
-  position: absolute;
-  top: 80%;
-  left: 45%;
+.search_box {
   height: 40px;
-  padding: 20px;
   border-radius: 40px;
+  justify-content: right;
+  padding-right: 35px;
 }
 
-.search-btn {
+.search_btn {
   color: #EDEDED;
-  float: right;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background:#FF873C;
+  background: #FF873C;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.search-text {
+.search_text {
   float: left;
   padding: 0;
   background: none;
   border: 2px solid black;
-  border-radius:15px;
+  border-radius: 15px;
   outline: none;
   color: black;
   font-size: 15px;
   line-height: 40px;
 }
 
-
-.search-btn:hover{
-  width:40px;
-  height:40px;
+.search_btn:hover {
+  width: 40px;
+  height: 40px;
   transition: 0.5s ease;
 }
 
-.write-container{
+
+.page_1 {
+  border: 2px solid #4200FF;
   background-color: #FF873C;
+}
+
+.function_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-left: 50px;
+}
+
+.write_form > a:hover {
+  background-color: #FBE3B9;
+  transition: 0.5s ease;
 }

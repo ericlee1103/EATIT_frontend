@@ -37,12 +37,29 @@
 }
 .check img{
   width: 30px;
-  position: absolute;
-  /* align-items: center;
-  justify-content: center; */
   border: 1px solid red;
 }
+/* 주문완료 메시지 */
 .box h3{
   text-align: center;
-  margin-top: 40px;
+  margin-top: 10px;
+  /* border: 1px solid green; */
+}
+/* 주문목록이동 버튼 */
+.buylist_btn{
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: #FF924E ;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+}
+/* 주문목록이동 버튼 마우스 호버시 색상변경 */
+.buylist_btn:hover{
+  background-color: #ff7722;
 }
