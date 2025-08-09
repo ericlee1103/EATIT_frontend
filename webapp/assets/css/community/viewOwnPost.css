@@ -1,6 +1,3 @@
-/* ===== 기존 이미지 크기 및 댓글 관련 스타일 유지 ===== */
-
-/* ===== 레이아웃 ===== */
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   background-color: #FFF5E4;
@@ -58,7 +55,7 @@ li {
 .category_item:hover,
 .category_item.active {
   background-color: #FF873C;
-  color:white;
+  color: white;
   font-weight: bold;
 }
 
@@ -93,7 +90,7 @@ li {
   justify-content: space-between;
   gap: 20px;
   margin-bottom: 15px;
-  border-bottom : 1px solid #eea12d;
+  border-bottom: 1px solid #eea12d;
 }
 
 .comment_recommend_container {
@@ -183,7 +180,7 @@ li {
   display: flex;
   justify-content: right;
   gap: 15px;
-  padding-left: 800px;
+  padding-left: 900px;
 }
 
 .post_buttons button {
@@ -479,21 +476,24 @@ input[type="radio"] {
 /* 다크모드 */
 
 /* 다크 모드 적용 시 */
-body.dark-mode{
+body.dark-mode {
   background-color: #121212;
   color: #e1e1e1;
 }
 
 /* 필요한 다른 요소 색상 조절 */
-.post, .comment_section, header, footer {
+.post,
+.comment_section,
+header,
+footer {
   transition: background-color 0.3s, color 0.3s;
 }
 
-body.dark-mode .post, 
-body.dark-mode .comment_section, 
-body.dark-mode header, 
+body.dark-mode .post,
+body.dark-mode .comment_section,
+body.dark-mode header,
 body.dark-mode footer,
-body.dark-mode .container{
+body.dark-mode .container {
   background-color: #222;
   color: #000000;
 }
@@ -501,8 +501,10 @@ body.dark-mode .container{
 /* 모달 배경 */
 .tree_modal_bg {
   position: fixed;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   display: none;
   justify-content: center;
@@ -541,6 +543,7 @@ body.dark-mode .container{
     opacity: 0;
     transform: translateY(40px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
