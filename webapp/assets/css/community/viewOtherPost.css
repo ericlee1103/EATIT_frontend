@@ -3,11 +3,11 @@
 /* ===== 레이아웃 ===== */
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
-  background-color: #fafafa;
+  background-color: #FFF5E4;
   margin: 0;
 }
 
-li{
+li {
   list-style-type: none;
 }
 
@@ -41,9 +41,9 @@ li{
   border-bottom: 2px solid #ddd;
 }
 
-.category_list{
+.category_list {
   list-style-type: none;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -67,7 +67,7 @@ li{
   margin-bottom: 20px;
   background-color: #FFF5E4;
   padding: 10px;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 .tag {
@@ -82,14 +82,14 @@ li{
   margin: 10px 0;
 }
 
-.comment_info{
-  gap:10px;
+.comment_info {
+  gap: 10px;
 }
 
-.comment_item{
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
+.comment_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .comment_recommend_container {
@@ -111,9 +111,9 @@ li{
 }
 
 
-.comment_profile_container{
-  display:flex;
-  gap:10px;
+.comment_profile_container {
+  display: flex;
+  gap: 10px;
 }
 
 .comment_profile {
@@ -122,11 +122,11 @@ li{
   border-radius: 50%;
 }
 
-.post{
+.post {
   background-color: #fff5d1;
-  padding:20px;
-  margin-bottom:20px;
-  border-radius:10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 .post_title {
@@ -206,7 +206,7 @@ li{
 .recommend:hover img {
   transform: scale(1.1);
   box-shadow: 0 0 8px #ffb84d;
-} 
+}
 
 /* 추천 수 표시 */
 .recommend_count {
@@ -236,8 +236,8 @@ li{
   filter: brightness(0.95);
 }
 
-.content_section{
-  padding-bottom:20px;
+.content_section {
+  padding-bottom: 20px;
 }
 
 
@@ -389,11 +389,11 @@ li{
   font-size: 1.5rem;
 }
 
-.report{
-  background-color:#FF873C;
-  color:white;
+.report {
+  background-color: #FF873C;
+  color: white;
   font-weight: bold;
-  font-size:14px;
+  font-size: 14px;
 }
 
 .report_modal.show {
@@ -447,3 +447,16 @@ input[type="radio"] {
 
 #submitReport {
   background-color: #4caf50;
+}
+
+.comment_recommend>img {
+  width: 40px;
+  /* 원하는 가로 크기 */
+  height: 40px;
+  /* 원하는 세로 크기 */
+  border-radius: 50%;
+  border: 2px solid #cccccc;
+  object-fit: cover;
+  /* 비율 유지하면서 채우기 */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
