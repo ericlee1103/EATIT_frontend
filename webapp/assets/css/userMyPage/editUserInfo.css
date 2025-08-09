@@ -26,6 +26,7 @@ main{
   border-radius: 10px;
 }
 .my_page{
+  padding: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #FF873C;
@@ -131,6 +132,7 @@ main{
   margin-left: 10px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .info_save_buzz{
   width: 138px;

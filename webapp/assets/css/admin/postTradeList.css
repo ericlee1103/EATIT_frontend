@@ -124,14 +124,15 @@ a{
   display: flex;
   justify-content: space-between;
   text-align: center;
-  
 }
 .admin_list_userid_link{
   color: black;
 }
 .admin_list_row{
-  padding-top: 4.5px;
-  border: 1px solid black;
+  padding-top: 6px;
+  /* border: 1px solid black; */
+  text-align: center;
+  align-items: center;
 }
 #admin_list_num{
   /* border: 1px solid black; */
@@ -158,7 +159,6 @@ a{
 #admin_list_date{
   /* border: 1px solid black; */
   width: 130px;  
-  display: flex;
   text-align: center;
   justify-content: center;
 }
@@ -178,7 +178,8 @@ a{
 .grade_icon{
   /* border: 1px solid black; */
   width: 20px;
-  height: 25px;
+  height: 20px;
+  overflow: auto;
 }
 #admin_list_num_value{
   /* border: 1px solid black; */
@@ -205,12 +206,9 @@ a{
 #admin_list_date_value{
   /* border: 1px solid black; */
   width: 130px;  
-  display: flex;
   justify-content: center;
 }
-.grade_points{
-  /* border: 1px solid black; */
-}
+/* 페이지네이션, 검색창 */
 .admin_pagenation_search{
   display: flex;
   /* border: 1px solid black; */

@@ -1,0 +1,52 @@
+header{
+  width : 1920px;
+  height : 150px;
+}
+main{
+  background-color: #FFF5E4;
+  width: 1920px;
+  height: 1500px;
+  display: flex;
+  flex-direction: row;
+  
+}
+.ingredientpurchaseList_page{
+  background-color: #FBE3B9;
+  width: 1100px;
+  margin-left: 410px;
+}
+.ingredientpurchaseList_my_page_list{
+  position: fixed;
+  padding: 0;
+  margin: 100px 20px 0 200px;
+  width: 190px;
+  height: 550px;
+  font-size: 20px;
+  background-color: #a6998080;
+  border-radius: 10px;
+}
+.ingredientpurchaseList_my_page{
+  padding: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #FF873C;
+  width: 190px;
+  height: 110px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ingredientpurchaseList_my_page_list > li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 15px 0;
+  width: 190px;
+}
+
+.ingredientpurchaseList_my_page_list > li > a{
+  text-decoration: none;
+  color: white;
+}
