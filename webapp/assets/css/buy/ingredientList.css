@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#buy{
+  width: 1920px;
+  height: 1080px;
+  background-color: #FFF5E4;
+}
+.buy_store_list{
+  width: 100%;
+  height: 1080px;
+  border: 1px solid green;
+}
+.buy_store_list h2{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  margin-top: 80px;
+  border: 1px solid red;
+}
+.buy_store_list form{
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  border:1px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#buy_search{
+  width: 800px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+/* 음식점구매 전체영역 */
+.buy_area{
+  width: 100%;
+  height: 700px;
+  border: 1px solid orange;
+  margin-top: 30px;
+  text-align: center;
+}
+.buy_food_article{
+  width: 245px;
+  height: 340px;
+  /* border: 1px solid blue; */
+  margin: 0 3px 10px 0;
+  background-color: white;
+  border-radius: 8px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+/* 구매 음식판매 이미지 */
+.buy_food_article img{
+  width: 245px;
+  height: 274px;
+  border-top-left-radius:8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+}
+/* 구매 음식판매 가게정보 */
+.buy_store_info{
+  width: 245px;
+  height: 66px;
+  text-align: left;
+  /* border: 1px solid red; */
+}
+.buy_store_info p{
+  /* border: 1px solid blue; */
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.buy_store_name {
+  font-size: 10px;
+  font-weight: bold;
+}
+.buy_menu_name{
+  font-size: 14px;
+}
+.buy_open_time{
+  font-size: 12px;
+  display: inline-block;
+}
+.buy_price{
+  font-size: 16px;
+  font-weight: bold;
+  float: right;
+  color: #FF924E;
+}
+/* buy 페이지네이션 */
+.buy_pagenation{
+  width: 290px;
+  height: 32px;
+  margin: 20px auto;
+}
+.buy_pagenation ul{
+  width: 290px;
+  height: 32px;
+  display: flex;
+}
+.buy_pagenation_box{
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 4px;
+  /* border: 1px solid blue; */
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+  display: inline-block;
+  margin: auto;
+}

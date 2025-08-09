@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#buy_store_detail{
+  width: 1920px;
+  height: 1200px;
+  background-color: #FFF5E4;
+}
+.buy_left_area{
+  width: 550px;
+  height: 1200px;
+  border: 1px solid red;
+}
+.buy_map{
+  width: 550px;
+  height: 1200px;
+  border: 1px solid blue;
+}
