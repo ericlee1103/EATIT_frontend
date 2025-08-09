@@ -191,6 +191,7 @@ a{
   /* border: 1px solid black; */
   text-align: left;
   width: 350px;
+  max-width: 350px;
   height: 40px;
   overflow: hidden;
   text-align: left;
