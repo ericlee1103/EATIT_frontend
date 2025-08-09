@@ -9,12 +9,12 @@ main{
   display: flex;
   flex-direction: row;
 }
-.managemycomments_page{
+.managemyreviews_page{
   background-color: #FBE3B9;
   width: 1100px;
   margin-left: 410px;
 }
-.managemycomments_my_page_list{
+.managemyreviews_my_page_list{
   position: fixed;
   padding: 0;
   margin: 100px 20px 0 200px;
@@ -24,7 +24,7 @@ main{
   background-color: #a6998080;
   border-radius: 10px;
 }
-.managemycomments_my_page{
+.managemyreviews_my_page{
   padding: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -36,14 +36,14 @@ main{
   justify-content: center;
   align-items: center;
 }
-.managemycomments_my_page_list > li{
+.managemyreviews_my_page_list > li{
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   width: 190px;
 }
-.managemycomments_my_page_list > li > a{
+.managemyreviews_my_page_list > li > a{
   width: 190px;
   text-decoration: none;
   color: white;
@@ -51,20 +51,20 @@ main{
   justify-content: center;
   padding: 15px 0;
 }
-.managementmycomments_main{
+.managemyreviews_main{
   background-color: #ff873c8c;
   border-radius: 10px;
 }
-.managemycomments_my_page_list > li:hover{
+.managemyreviews_my_page_list > li:hover{
   width: 190px;
   background-color: #ff873c8c;
   border-radius: 10px;
 }
-.managemycomments_list{
+.managemyreviews_list{
   margin: 100px 0 45px 70px;
   font-size: 30px;
 }
-.managemycomments_top{
+.managemyreviews_top{
   margin-left: 50px;
   background-color: #a69980;
   width: 1000px;
@@ -74,7 +74,7 @@ main{
   display: flex;
   border: 1px solid black;
 }
-.managemycomments_comments_list{
+.managemyreviews_comments_list{
   margin-left: 50px;
   background-color: white;
   width: 1000px;
@@ -84,56 +84,56 @@ main{
   display: flex;
   border: 1px solid black;  
 }
-.managemycomments_sort{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 150px;
-}
-.managemycomments_tag{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 150px;
-}
-.managemycomments_title{
+.managemyreviews_restaurant_name{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   width: 225px;
 }
-.managemycomments_comments_info{
+.managemyreviews_meal_name{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   width: 225px;
 }
-.managemycomments_date{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 150px;
-}
-.managemycomments_like_count{
+.managemyreviews_quantity{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   width: 100px;
 }
+.managemyreviews_price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+}
+.managemyreviews_date{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+}
+.managemyreviews_grade{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+}
 
-.managemycomments_pagination{
+.managemyreviews_pagination{
   display: flex;
   justify-self: center;
   position: relative;
   top: 1000px;
 }
-.managemycomments_pagination > a{
+.managemyreviews_pagination > a{
   width: 32px;
   height: 32px;
   background-color: white;
@@ -146,6 +146,6 @@ main{
   border-radius: 6px;
   color: black;
 }
-.managemycomments_pagination > a:hover{
+.managemyreviews_pagination > a:hover{
   background-color: #FF873C;
 }
