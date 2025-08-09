@@ -66,7 +66,6 @@ h3{
 .main_store_info{
   width: 245px;
   height: 66px;
-  margin-top: 3px;
   /* border: 1px solid red; */
 }
 .main_store_info p{
@@ -135,31 +134,34 @@ h3{
 }
 /* 재료사진 및 정보 들어가는 영역 */
 .main_ingredient_store{
-  width: 450px;
+  width: 500px;
   height: 300px;
   /* border: 1px solid red; */
-  margin: 0 auto;
+  margin: 0 0 0 50px;
 }
 .main_ingredient_img{
-  width: 210px;
+  width: 230px;
   height: 140px;
-  background-color: white;
-  border-radius: 8px;
   display: inline-block;
   margin: 5px;
-  border: 1px solid blue;
+  overflow: hidden;
+  /* border: 1px solid blue; */
 }
 .main_ingredient_img a{
-  width: 210px;
+  margin: auto;
+  width: 230px;
   height: 140px;
+  display: block;
   border-radius: 8px;
-  border: 1px solid red;
+  object-fit: cover;
+  /* border: 1px solid red; */
 }
 /* 재료판매 이미지 영역 */
 .main_ingredient_img a img{
-  width: 210px;
+  width: 230px;
   height: 140px;
   border-radius: 8px;
+  display: block;
   /* border: 1px solid green; */
 }
 /* 레시피공유 게시판 전체 영역 */
