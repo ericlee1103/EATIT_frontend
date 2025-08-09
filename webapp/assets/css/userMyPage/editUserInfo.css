@@ -180,7 +180,6 @@ main{
   height: 50px;
 }
 .advertisement_agreement{
-  align-items: center;
   margin: 0 80px;
 }
 .gray_box_adverisement{
@@ -190,6 +189,7 @@ main{
   border-radius: 10px;
   margin-left: 10px;
   display: flex;
+  align-items: center;
 }
 
 
