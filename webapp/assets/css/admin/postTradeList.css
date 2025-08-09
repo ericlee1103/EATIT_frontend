@@ -219,6 +219,7 @@ a{
   border: 1px solid red;
   width: 200px;
   height: 30px;
+  text-align: center;
 }
 .admin_search{
   /* border: 1px solid green; */
