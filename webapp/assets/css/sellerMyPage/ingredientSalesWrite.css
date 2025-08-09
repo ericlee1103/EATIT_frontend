@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+main {
+  height: 830px;
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff5e4;
+
+}
+
+/* 1100px 영역 */
+.food_edit_container {  
+  width: 1100px;
+  height: 100%;
+  background-color: #fbe3b9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 컨텐츠 영역 */
+.food_edit_content_container {
+  width: 485px;
+  height: 500px;
+  background-color: #abf589;
+  margin: 115px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* 전체 영역 끝 */
+/* 왼쪽 사이드 바 */
+.my_page_list{
+  position: fixed;
+  padding: 0;
+  margin: 100px 20px 0 200px;
+  width: 190px;
+  height: 550px;
+  font-size: 20px;
+  background-color: #a6998080;
+  border-radius: 10px;
+}
+.my_page{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #FF873C;
+  width: 190px;
+  height: 110px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my_page_list > li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 15px 0;
+  width: 190px;
+}
+
+.my_page_list > li > a{
+  text-decoration: none;
+  color: white;
+}
+.my_page_list > li:hover{
+  width: 190px;
+  background-color: #ff873c8c;
+  border-radius: 10px;
+}
+/* 내부 컨텐츠 영역 */
