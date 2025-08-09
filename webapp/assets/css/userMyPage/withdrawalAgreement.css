@@ -39,10 +39,10 @@ main{
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 15px 0;
   width: 190px;
 }
 .withdrawalagreement_my_page_list > li > a{
+  padding: 15px 0;
   text-decoration: none;
   color: white;
 }
