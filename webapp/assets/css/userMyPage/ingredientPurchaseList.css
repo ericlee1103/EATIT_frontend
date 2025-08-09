@@ -8,9 +8,8 @@ main{
   height: 1500px;
   display: flex;
   flex-direction: row;
-  
 }
-.ingredientpurchaselist_page{
+.ingredientpurchase_page{
   background-color: #FBE3B9;
   width: 1100px;
   margin-left: 410px;
@@ -42,7 +41,6 @@ main{
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 15px 0;
   width: 190px;
 }
 .ingredientpurchaselist_my_page_list > li > a{
@@ -51,9 +49,205 @@ main{
   color: white;
   display: flex;
   justify-content: center;
+  padding: 15px 0;
+}
+.ingredientpurchaselist_main{
+  background-color: #ff873c8c;
+  border-radius: 10px;
 }
 .ingredientpurchaselist_my_page_list > li:hover{
   width: 190px;
   background-color: #ff873c8c;
   border-radius: 10px;
+}
+.ingredientpurchase_list{
+  margin: 100px 0 45px 70px;
+  font-size: 30px;
+}
+.ingredientpurchaselist_top{
+  display: flex; 
+  margin-left: 40px;
+}
+.ingredientpurchaselist_date{
+  width: 155px;
+  height: 50px;
+  background-color: #A69980;
+  font-size: 20px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ingredientpurchaselist_img{
+  width: 110px;
+  height: 50px;
+  background-color: #A69980;
+  font-size: 20px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ingredientpurchaselist_restaurant_name{
+  width: 225px;
+  height: 50px;
+  background-color: #A69980;
+  font-size: 20px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ingredientpurchaselist_menu_info{
+  width: 225px;
+  height: 50px;
+  background-color: #A69980;
+  font-size: 20px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ingredientpurchaselist_how_many{
+  width: 55px;
+  height: 50px;
+  background-color: #A69980;
+  font-size: 20px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ingredientpurchaselist_price{
+  width: 155px;
+  height: 50px;
+  background-color: #A69980;
+  font-size: 20px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ingredientpurchaselist_review{
+  width: 80px;
+  height: 50px;
+  background-color: #A69980;
+  font-size: 20px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ingredientpurchase_page_list{
+  display: flex;
+  margin-left: 40px;
+}
+.ingredientpurchase_date_list{
+  width: 155px;
+  height: 85px;
+  font-size: 14px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.ingredientpurchase_img_list{
+  width: 110px;
+  height: 85px;
+  font-size: 14px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.ingredientpurchase_img{
+  width: 70px;
+  height: 70px;
+}
+.ingredientpurchase_restaurant_name_list{
+  width: 225px;
+  height: 85px;
+  font-size: 14px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.ingredientpurchase_menu_info_list{
+  width: 225px;
+  height: 85px;
+  font-size: 14px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.ingredientpurchase_how_many_list{
+  width: 55px;
+  height: 85px;
+  font-size: 14px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.ingredientpurchase_price_list{
+  width: 155px;
+  height: 85px;
+  font-size: 14px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.ingredientpurchase_review_list{
+  width: 80px;
+  height: 85px;
+  font-size: 14px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.ingredientpurchase_review_meal{
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 60px;
+  height: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+.ingredientpurchase_pagination{
+  display: flex;
+  justify-self: center;
+  position: relative;
+  top: 1000px;
+}
+.ingredientpurchase_pagination > a{
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  display: flex;
+  margin: 0 8px 0 0;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #A69980;
+  border-radius: 6px;
+  color: black;
+}
+.ingredientpurchase_pagination > a:hover{
+  background-color: #FF873C;
 }
