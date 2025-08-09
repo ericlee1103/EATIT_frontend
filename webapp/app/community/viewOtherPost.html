@@ -6,87 +6,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>타인 게시글 보기</title>
   <link rel="stylesheet" href="./../../assets/css/community/viewOtherPost.css" />
-  <link rel="stylesheet" href="./../../assets/css/header.css">
-  <link rel="stylesheet" href="./../../assets/css/footer.css">
+  <link rel="stylesheet" href="./../../assets/css/header.css" />
+  <link rel="stylesheet" href="./../../assets/css/footer.css" />
 </head>
-<!-- 2025 08 08 20:39 수정 -->
+
 <body>
+  <!-- 헤더 -->
   <header id="header"></header>
 
   <main class="main">
-    <div class="side"></div>
-
     <div class="container">
-      <div class="category_container">
-        <div class="category_section">
-          <div class="category_event">공지사항/이벤트</div>
-          <div class="category_freeboard">자유게시판</div>
-          <div class=" category_advertise">홍보게시판</div>
-          <div class="category_recipe">레시피</div>
-        </div>
-      </div>
-      <div class="title_section">
-        <div class="tag">
-          [잡담]
-        </div>
-        <div class="profile-box">
-          <img class="comment_profile" src="./../../assets/img/가지.png" alt="나무등급" />
-          <div class="profile_name">gisu</div>
+      <!-- 카테고리 메뉴 -->
+      <nav class="category_container">
+        <ul class="category_list">
+          <li class="category_item">공지사항/이벤트</li>
+          <li class="category_item active">자유게시판</li>
+          <li class="category_item">홍보게시판</li>
+          <li class="category_item">레시피</li>
+        </ul>
+      </nav>
+
+      <!-- 게시글 헤더 -->
+      <article class="post">
+        <div class="post_header">
+          <span class="tag">[잡담]</span>
+          <div class="author_box">
+            <img class="author_profile" src="./../../assets/img/가지.png" alt="작성자 프로필" />
+            <span class="author_name">gisu</span>
+          </div>
+          <h1 class="post_title">1빠요 ㅋㅋㅋ</h1>
+          <div class="post_meta">
+            <time datetime="2025-08-03T14:13:02">2025-08-03 14:13:02</time>
+            <span class="views">조회 12</span>
+            <span class="likes">추천 0</span>
+          </div>
         </div>
 
-
-        <div class="post_title">
-          1빠요 ㅋㅋㅋ
-        </div>
-        <div class="dates">
-          2025-08-03 14:13:02
-        </div>
-        <div class="views">
-          조회 12
-        </div>
-        <div class="likes">
-          추천 0
-        </div>
-
-      </div>
-      <div class="content_section">
+        <!-- 게시글 본문 -->
         <div class="post_content">
           ㅋㅋㅋ 내가 1빠임ㅋ
         </div>
-        <div class="post_buttons">
-          <button class="recommend">
-            <img src="./../../assets/img/comment_like.png">
-          </button>
-          <button class="report">
-            신고
-          </button>
-        </div>
-      </div>
 
-      <div class="comment_section">
-        <div class="comment_count"><img src="./../../assets/img/comment_box.svg">댓글(1)</div>
-        <div class="comment">
-          <img class="comment_profile" src="./../../assets/img/나무.png" alt="나무등급" />
-          <p class="comment_author">seojin</p>
-          <p class="comment_timeline">[2025-08-03 15:22]</p>
-          <div class="comment_text">
-            ㅋㅋㅋ 이 빠요 잘 와준듯
-          </div>
-          <button class="comment_like">
-            <img src="./../../assets/img/comment_like.png">
+        <!-- 게시글 버튼 -->
+        <div class="post_buttons">
+          <button class="recommend" title="추천">
+            <img src="./../../assets/img/comment_like.png" alt="추천 버튼">
           </button>
+          <button class="report" title="신고하기">신고</button>
         </div>
-        <form class="comment_form" action="#" method="get">
-          <img class="comment_profile" src="./../../assets/img/가지.png">
-          <div class="comment_author">namhyuk</div>
-          <input type="text" placeholder="댓글을 입력하세요" required />
+      </article>
+
+      <!-- 댓글 영역 -->
+      <section class="comment_section">
+        <h2 class="comment_count">
+          <img src="./../../assets/img/comment_box.svg" alt="댓글 아이콘">
+          댓글(1)
+        </h2>
+
+        <ul class="comment_list">
+          <li class="comment_item">
+            <img class="comment_profile" src="./../../assets/img/나무.png" alt="나무 등급 프로필" />
+            <div class="comment_info">
+              <span class="comment_author">seojin</span>
+              <time class="comment_timeline" datetime="2025-08-03T15:22">[2025-08-03 15:22]</time>
+              <p class="comment_text">ㅋㅋㅋ 이 빠요 잘 와준듯</p>
+            </div>
+            <button class="comment_like" title="댓글 추천">
+              <img src="./../../assets/img/comment_like.png" alt="댓글 추천 버튼">
+            </button>
+          </li>
+        </ul>
+
+        <!-- 댓글 작성 폼 -->
+        <form class="comment_form" action="#" method="post">
+          <img class="comment_profile" src="./../../assets/img/가지.png" alt="내 프로필">
+          <span class="comment_author">namhyuk</span>
+          <input type="text" name="comment" placeholder="댓글을 입력하세요" required />
           <button type="submit">등록</button>
         </form>
-      </div>
+      </section>
     </div>
-    <div class="side"></div>
+
+
   </main>
 
+  <!-- 푸터 -->
   <footer id="footer"></footer>
 </body>
 
