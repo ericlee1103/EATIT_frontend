@@ -45,10 +45,16 @@ main{
   padding: 15px 0;
   width: 190px;
 }
-
+.my_page_list_main{
+ background-color: #ff873c8c;
+ border-radius: 10px;
+}
 .my_page_list > li > a{
+  width: 190px;
   text-decoration: none;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 .my_page_list > li:hover{
   width: 190px;
@@ -160,19 +166,20 @@ main{
   width: 178px;
   height: 50px;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   justify-self: right;
   margin: 20px 60px 0 0;
 }
 .agreement_buzz > a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  font-size: 14px;
   text-decoration: none;
+  font-size: 14px;
+  width: 178px;
+  height: 50px;
 }
 .advertisement_agreement{
-  display: flex;
   align-items: center;
   margin: 0 80px;
 }
@@ -184,3 +191,5 @@ main{
   margin-left: 10px;
   display: flex;
 }
+
+
