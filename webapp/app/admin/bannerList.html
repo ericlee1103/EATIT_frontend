@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>adminLogin</title>
+  <link rel="stylesheet" href="./../../assets/css/admin/bannerList.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- 회색영역 -->
+  <div class="admin_innerwrapper">
+    <!-- 좌측 사이드바 -->
+    <aside class="sidebar">
+      <!-- 관리자페이지 로고 -->
+      <a href=""><img src="./../../assets/img/admin_logo.png" alt="admin_logo" class="admin_logo"></a>
+      <ul class="sidebar_ul">
+        <a href=""><li id="sidebar_list_dashboard" class="sidebar_list">대쉬보드</li></a>
+        <a href=""><li id="sidebar_list_member" class="sidebar_list">회원관리</li></a>
+        <a href=""><li id="sidebar_list_community" class="sidebar_list">게시글 관리</li></a>
+        <a href=""><li id="sidebar_list_warning"class="sidebar_list">신고관리</li></a>
+        <a href=""><li id="sidebar_list_banner"class="sidebar_list">배너/광고</li></a>
+      </ul>
+    </aside>
+    <!-- 메인컨텐츠 영역 -->
+    <main class="admin_inner">
+      <h1 class="admin_pagetitle">게시글 관리</h1>
+      <div class="admin_listwrapper">
+        <div class="admin_list_title">
+          <ul class="admin_list">
+            <a href="">
+              <li id="admin_list_menu_banner" class="admin_list_menu">배너/광고</li>
+            </a>
+          </ul>
+        </div>
+        <div class="admin_list_whitebox">
+          <div class="admin_list_namebox">
+            <!-- 컬럼 명 -->
+            <ul class="admin_list_name">
+              <li id="admin_list_num" class="admin_list_row">번호</li>
+              <li id="admin_list_title" class="admin_list_row">배너 제목</li>
+              <li id="admin_list_userid" class="admin_list_row">아이디</li>
+              <li id="admin_list_date" class="admin_list_row">게시일</li>
+              <li id="admin_list_views" class="admin_list_row">마감일</li>
+
+            </ul>
+          </div>        
+          <!-- 글 목록 행 -->
+          <ul class="admin_list_valuebox">
+            <li class="admin_list_value">
+              <p id="admin_list_num_value" class="admin_list_row">1</p>
+              <a href="" class="admin_list_userid_link"><p id="admin_list_title_value" class="admin_list_row">브런치 먹어요</p></a>
+              <p id="admin_list_userid_value" class="admin_list_row"><img class="grade_icon" src="./../../assets/img/관리자.png" alt="">관리자</p>
+              <p id="admin_list_date_value" class="admin_list_row">25-08-03</p>
+              <p id="admin_list_views_value" class="admin_list_row">25-08-16</p>
+           
+            </li>
+          </ul>
+        </div> 
+        <!-- 페이지네이션, 검색창 -->
+        <div class="admin_pagenation_search">
+          <button id="prepare_notice_btn" type="button" onclick="">작성하기</button>
+          <div class="admin_pagenation">
+            <a href="#">
+            1
+           </a>
+            <a href="#">
+            2
+            </a>
+            <a href="#">
+            3
+           </a>
+           <a href="#">
+            4
+          </a>
+          </div>
+          <div class="admin_search">
+            <div class=accordion>
+              <div class=accordion_item>
+                <div class=accordion_title>아이디</div>
+                <div class=accordion_content>제목</div>
+              </div>
+            </div>
+            <form action="" method="get">
+              <input type="text" id="search_word" name="search_word">
+              <button class="search_btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div> 
+      </div>  
+    </main>
+  </div>
