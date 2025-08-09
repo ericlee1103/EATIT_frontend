@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./../../assets/css/header.css">
   <link rel="stylesheet" href="./../../assets/css/footer.css">
   <link rel="stylesheet" href="./../../assets/css/sellerMyPage/foodSalesEdit.css">
+  <link rel="stylesheet" href="./../css/sellerfoodinfoedit.css">
   <title>밥세권</title>
 </head>
 
@@ -24,18 +25,41 @@
       <li><a href="">내 댓글 관리</a></li>
       <li><a href="">내 리뷰 관리</a></li>
     </ul>
+    
     <div class="food_edit_container"> <!-- 1100px 영역-->
       <div class="food_edit_content_container"> <!-- 컨텐츠 영역 -->
-        <div class="food_edit_">사진</div>
-        <div class="food_edit_">메뉴명</div>
+        <div class="fodd_edit_title">
+          음식 판매 수정
+        </div>
+        <!-- 음식 정보 수정 -->
+        <div class="food_edit_photo_container">사진
+          <input type="image" src="" alt="">
+          <button type="button">수정</button>
+        </div>
+        <div class="food_edit_food_name_container">메뉴명
+          <input type="text">
+          <button type="button">수정</button>
+        </div>
         <div class="food_edit_menu_container">
-          <div class="food_edit_">메뉴설명</div>
+          <div class="food_edit_explain_container">메뉴설명
+            <input type="text">
+            <button type="button">수정</button>
+          </div>
           <div>
-            <div class="food_edit_">수량</div>
-            <div class="food_edit_">가격</div>
+            <div class="food_edit_quantitiy_container">수량
+              <input type="number">
+              <button type="button">수정</button>
+            </div>
+            <div class="food_edit_price_container">가격
+              <input type="text">
+              <button type="button">수정</button>
+            </div>
           </div>
         </div>
-        <div class="food_edit_">소비기한</div>
+        <div class="food_edit_expir_container">소비기한
+          <input type="text">
+          <button type="button">수정</button>
+        </div>
       </div>
     </div>
   </main>

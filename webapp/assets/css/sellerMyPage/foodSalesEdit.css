@@ -5,12 +5,11 @@
 }
 
 main {
-  height: 830px;
+  background-color: #FFF5E4;
   width: 1920px;
+  height: 1500px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff5e4;
+  flex-direction: row;
 
 }
 
@@ -19,9 +18,53 @@ main {
   width: 1100px;
   height: 100%;
   background-color: #fbe3b9;
+  margin: 0px 410px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+/* 전체 영역 끝 */
+/* 왼쪽 사이드 바 */
+.food_edit_list{
+  position: fixed;
+  padding: 0;
+  margin: 100px 20px 0 200px;
+  width: 190px;
+  height: 550px;
+  font-size: 20px;
+  background-color: #a6998080;
+  border-radius: 10px;
+}
+.food_edit{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #FF873C;
+  width: 190px;
+  height: 110px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.food_edit_list > li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 15px 0;
+  width: 190px;
+}
+
+.food_edit_list > li > a{
+  text-decoration: none;
+  color: white;
+}
+.food_edit_list > li:hover{
+  width: 190px;
+  background-color: #ff873c8c;
+  border-radius: 10px;
 }
 
 /* 컨텐츠 영역 */
@@ -35,45 +78,37 @@ main {
   align-items: center;
   justify-content: center;
 }
-/* 전체 영역 끝 */
-/* 왼쪽 사이드 바 */
-.my_page_list{
-  position: fixed;
-  padding: 0;
-  margin: 100px 20px 0 200px;
-  width: 190px;
-  height: 550px;
-  font-size: 20px;
-  background-color: #a6998080;
-  border-radius: 10px;
-}
-.my_page{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: #FF873C;
-  width: 190px;
-  height: 110px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.my_page_list > li{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 15px 0;
-  width: 190px;
+/* 내부 컨텐츠 영역 */
+.food_edit_content_container > div{
+  background-color: #a69980;
 }
 
-.my_page_list > li > a{
-  text-decoration: none;
-  color: white;
+.food_edit_photo_container{
+  width: 480px;
+  height: 305px;
+  background-color: #f4f4f4;
+
 }
-.my_page_list > li:hover{
-  width: 190px;
-  background-color: #ff873c8c;
-  border-radius: 10px;
+.food_edit_food_name_containter{
+  background-color: #a69980;
 }
-/* 내부 컨텐츠 영역 */
+
+.food_edit_menu_container{
+  background-color: #a69980;
+}
+
+.food_edit_quantitiy{
+  background-color: #a69980;
+}
+
+.food_edit_quantitiy_container{
+  background-color: #a69980;
+}
+
+.food_edit_price_container{
+  background-color: #a69980;
+}
+
+.food_edit_expir_container{
+  background-color: #a69980;
+}
