@@ -11,63 +11,61 @@
 </head>
 
 <body>
+  <!-- 헤더 -->
   <header id="header"></header>
 
   <main class="main">
-    <div class="side"></div>
+    <!-- 좌측 사이드 -->
+    <aside class="side"></aside>
 
+    <!-- 메인 컨텐츠 -->
     <div class="container">
-      <div class="category_container">
+      <!-- 카테고리 메뉴 -->
+      <nav class="category_container">
         <div class="category_section">
-          <div class="category_event">공지사항/이벤트</div>
-          <div class="category_freeboard">자유게시판</div>
-          <div class=" category_advertise">홍보게시판</div>
-          <div class="category_recipe">레시피</div>
+          <div class="category_item">공지사항/이벤트</div>
+          <div class="category_item active">자유게시판</div>
+          <div class="category_item">홍보게시판</div>
+          <div class="category_item">레시피</div>
         </div>
-      </div>
-      <div class="title_section">
-        <div class="tag">
-          [잡담]
-        </div>
-        <div class="profile-box">
-          <img class="comment_profile" src="./../../assets/img/가지.png" alt="나무등급" />
-          <div class="profile_name">gisu</div>
-        </div>
+      </nav>
 
+      <!-- 게시글 헤더 -->
+      <section class="title_section">
+        <div class="tag">[잡담]</div>
+        <div class="profile_box">
+          <img class="comment_profile" src="./../../assets/img/가지.png" alt="프로필" />
+          <span class="profile_name">namhyuk</span>
+        </div>
+        <h1 class="post_title">1빠요 ㅋㅋㅋ</h1>
+        <div class="post_meta">
+          <span class="dates">2025-08-03 14:13:02</span>
+          <span class="views">조회 12</span>
+          <span class="likes">추천 0</span>
+        </div>
+      </section>
 
-        <div class="post_title">
-          1빠요 ㅋㅋㅋ
-        </div>
-        <div class="dates">
-          2025-08-03 14:13:02
-        </div>
-        <div class="views">
-          조회 12
-        </div>
-        <div class="likes">
-          추천 0
-        </div>
-
-      </div>
-      <div class="content_section">
+      <!-- 게시글 내용 -->
+      <section class="content_section">
         <div class="post_content">
           ㅋㅋㅋ 내가 1빠임ㅋ
         </div>
         <div class="post_buttons">
-          <button class="recommend">
-            <img src="./../../assets/img/comment_like.png">
+          <button class="recommend" title="글 추천">
+            <img src="./../../assets/img/comment_like.png" alt="추천 버튼">
           </button>
-          <button class="report">
-            수정
-          </button>
-          <button class="delete">
-            삭제
-          </button>
+          <div class="func_button">
+            <button class="edit">수정</button>
+            <button class="delete">삭제</button>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="comment_section">
-        <div class="comment_count"><img src="./../../assets/img/comment_box.svg">댓글(1)</div>
+      <!-- 댓글 -->
+      <section class="comment_section">
+        <h2 class="comment_count">
+          <img src="./../../assets/img/comment_box.svg" alt="댓글 아이콘"> 댓글(1)
+        </h2>
         <div class="comment">
           <img class="comment_profile" src="./../../assets/img/나무.png" alt="나무등급" />
           <p class="comment_author">seojin</p>
@@ -75,21 +73,26 @@
           <div class="comment_text">
             ㅋㅋㅋ 이 빠요 잘 와준듯
           </div>
-          <button class="comment_like">
-            <img src="./../../assets/img/comment_like.png">
+          <button class="comment_like" title="댓글 추천">
+            <img src="./../../assets/img/comment_like.png" alt="댓글 추천">
           </button>
         </div>
+
+        <!-- 댓글 작성 폼 -->
         <form class="comment_form" action="#" method="get">
-          <img class="comment_profile" src="./../../assets/img/가지.png">
+          <img class="comment_profile" src="./../../assets/img/가지.png" alt="내 프로필">
           <div class="comment_author">namhyuk</div>
           <input type="text" placeholder="댓글을 입력하세요" required />
           <button type="submit">등록</button>
         </form>
-      </div>
+      </section>
     </div>
-    <div class="side"></div>
+
+    <!-- 우측 사이드 -->
+    <aside class="side"></aside>
   </main>
 
+  <!-- 푸터 -->
   <footer id="footer"></footer>
 </body>
 
