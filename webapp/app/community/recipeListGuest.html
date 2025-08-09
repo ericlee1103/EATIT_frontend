@@ -1,41 +1,34 @@
-<!-- 레시피게시판(회원) - 시멘틱 구조 개선 -->
-
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>커뮤 레시피게시판 페이지(비회원)</title>
-  <link rel="stylesheet" href="./../../assets/css/community/recipeListGuest.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>레시피게시판(비회원)</title>
+  <link rel="stylesheet" href="./../../assets/css/community/recipeListGuest.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href="./../../assets/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./../../assets/css/header.css">
-  <link rel="stylesheet" href="./../../assets/css/footer.css">
+  <link rel="stylesheet" href="./../../assets/css/header.css" />
+  <link rel="stylesheet" href="./../../assets/css/footer.css" />
 </head>
 
 <body>
-  <!-- 헤더 -->
   <header id="header"></header>
 
   <main>
+    <aside class="side_bar"></aside>
 
-    <!-- 메인 콘텐츠 -->
     <div class="main_container">
-
-      <!-- 카테고리 메뉴 -->
       <nav class="community_category">
         <ul>
-          <li id="category_event">공지사항/이벤트</li>
-          <li id="category_free">자유게시판</li>
-          <li id="category_advertise">홍보게시판</li>
-          <li id="category_recipe">레시피</li>
+          <li><a href="#" id="category_event">공지사항/이벤트</a></li>
+          <li><a href="#" id="category_free"">자유게시판</a></li>
+          <li><a href=" #" id="category_advertise" class="active">홍보게시판</a></li>
+          <li><a href=" #" id="category_recipe">레시피</a></li>
         </ul>
       </nav>
 
-      <!-- 게시글 목록 -->
       <section class="community_list">
         <table>
           <thead>
@@ -51,49 +44,48 @@
           <tbody>
             <tr>
               <td>공지</td>
-              <td>밥세권 자유 게시판 이용안내</td>
+              <td class="title"><a href="#">최근 이슈들에 대해 안내드립니다.</a></td>
               <td>관리자</td>
               <td>25-08-03</td>
               <td>0</td>
               <td>0</td>
             </tr>
             <tr>
-              <td>잡담</td>
-              <td>피그마 재밌다 ㅋㅋ</td>
-              <td>yeongsun</td>
+              <td>공지</td>
+              <td class="title"><a href="#">밥세권 이용안내</a></td>
+              <td>관리자</td>
               <td>25-08-03</td>
-              <td>16</td>
-              <td>1</td>
+              <td>0</td>
+              <td>0</td>
             </tr>
-            <!-- JS로 동적 게시글 추가 예정 -->
           </tbody>
         </table>
       </section>
 
-      <!-- 검색창 -->
-      <div class="function_container">
-        <div class="search_box">
-          <form action="." method="post">
-            <input class="search_text" type="text" placeholder="검색어를 입력해 주세요">
-            <button class="search_btn" type="submit">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
+      <div class="controls_wrapper">
+        <div class="function_container">
+          <div class="search_box">
+            <form action="." method="post">
+              <input class="search_text" type="text" placeholder="검색어를 입력해 주세요" />
+              <button class="search_btn" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="pagination_container">
+          <a href="#" class="page active">1</a>
+          <a href="#" class="page">2</a>
+          <a href="#" class="page">3</a>
+          <a href="#" class="page">4</a>
         </div>
       </div>
-
-      <!-- 페이지네이션 -->
-      <nav class="pagenation_container" aria-label="페이지 네비게이션">
-        <a class="page_1" href="#">1</a>
-        <a class="page_2" href="#">2</a>
-        <a class="page_3" href="#">3</a>
-        <a class="page_4" href="#">4</a>
-      </nav>
-
     </div>
+
+    <aside class="side_bar"></aside>
   </main>
 
-  <!-- 푸터 -->
   <footer id="footer"></footer>
 </body>
 
