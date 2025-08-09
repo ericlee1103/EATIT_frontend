@@ -15,7 +15,7 @@ main {
 }
 
 /* 1100px 영역 */
-.container {
+.findId_clear_container {
   width: 1100px;
   height: 100%;
   background-color: #fbe3b9;
@@ -25,7 +25,7 @@ main {
 }
 
 /* 컨텐츠 영역  */
-.content_container {
+.findId_clear_content_container {
   width: 600px;
   height: 500px;
   background-color: #fff5e4;
@@ -38,27 +38,27 @@ main {
 
 /* ************************************** */
 /* 아이디 찾기 제목 */
-.findId_title_container {
+.findId_clear_title_container {
   font-size: 24px;
 }
 
-.findId_title {
+.findId_clear_title {
   font-weight: bold;
 }
 
 /* 아이디 찾기 입력 폼 */
-.findId_input_container>div {
+.findId_clear_input_container>div {
   margin: 15px;
   font-size: 14px;
   text-align: right;
 }
 
-.findId_input_container>div>label {
+.findId_clear_input_container>div>label {
   margin-right: 10px;
 }
 
-#findId_input_name,
-#findId_input_phone {
+#findId_clear_input_name,
+#findId_clear_input_phone {
   width: 200px;
   height: 30px;
   border-radius: 5px;
@@ -66,12 +66,23 @@ main {
 
 }
 
+.findId_clear_result {
+  width: 270px;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+}
+
 /* 아이디 찾기 버튼 및 경고메시지 */
-.findId_btn:hover {
+.findId_clear_btns>button:hover {
   background-color: #FF7722;
 }
 
-.findId_btn {
+.findId_clear_btns>button {
   width: 115px;
   height: 35px;
   background-color: #ff924e;
@@ -79,15 +90,11 @@ main {
   border-radius: 5px;
   border: 0.5px solid #000;
   font-size: 16px;
+  margin: 10px;
 }
 
-.warning_message{
-  color: red;
-  font-size: 14px;
-}
-
-/* 아이디 찾기 다른 곳으로 이동 */
-.findId_to_container {
+/*  아이디찾기, 비밀번호찾기, 회원가입 */
+.findId_clear_to_container {
   /* height: 50px; */
   display: flex;
   align-items: center;
@@ -95,7 +102,11 @@ main {
   gap: 15px;
 }
 
-.findId_to_container>div>a {
+.findId_clear_to_container>div>a:hover {
+  color: #FF7722;
+}
+
+.findId_clear_to_container>div>a {
   font-size: 14px;
   text-decoration: none;
   color: black;
