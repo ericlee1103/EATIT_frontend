@@ -1,12 +1,12 @@
-<!-- 레시피게시판(회원) -->
+<!-- recipeList.html - 회원용 레시피 게시판 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>커뮤 레시피게시판 페이지(회원)</title>
+  <title>레시피 게시판 (회원)</title>
   <link rel="stylesheet" href="./../../assets/css/community/recipeList.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -17,46 +17,61 @@
 </head>
 
 <body>
+  <!-- 헤더 -->
   <header id="header"></header>
+
   <main>
-    <aside class="side_bar"></aside>
+
+
+    <!-- 메인 콘텐츠 -->
     <div class="main_container">
-      <div class="community_category">
+
+      <!-- 카테고리 메뉴 -->
+      <nav class="community_category">
         <ul>
           <li id="category_event">공지사항/이벤트</li>
           <li id="category_free">자유게시판</li>
           <li id="category_advertise">홍보게시판</li>
-          <li id="category_recipe">레시피</li>
+          <li id="category_recipe" class="active">레시피</li>
         </ul>
-      </div>
-      <article class="community_list">
-        <div class="list_container">
-          <p id="list_tag">태그</p>
-          <p id="list_title">제목</p>
-          <p id="list_author">글쓴이</p>
-          <p id="list_date">등록일</p>
-          <p id="list_viewCount">조회</p>
-          <p id="list_recommend">추천</p>
-        </div>
-        <div class="list_container">
-          <p id="list_tag">공지</p>
-          <p id="list_title">밥세권 자유 게시판 이용안내</p>
-          <p id="list_author">관리자</p>
-          <p id="list_date">25-08-03</p>
-          <p id="list_viewCount">0</p>
-          <p id="list_recommend">0</p>
-        </div>
-        <div class="list_container">
-          <p id="list_tag">한식</p>
-          <p id="list_title">님들아 진짜 김볶 맛있게 하는법 알려드림</p>
-          <p id="list_author">junghoon</p>
-          <p id="list_date">25-08-03</p>
-          <p id="list_viewCount">16</p>
-          <p id="list_recommend">1</p>
-        </div>
-        <div class="adder_list">
-        </div>
-      </article>
+      </nav>
+
+      <!-- 게시글 목록 -->
+      <section class="community_list">
+        <table>
+          <thead>
+            <tr>
+              <th>태그</th>
+              <th>제목</th>
+              <th>글쓴이</th>
+              <th>등록일</th>
+              <th>조회</th>
+              <th>추천</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>공지</td>
+              <td>레시피 게시판 이용안내</td>
+              <td>관리자</td>
+              <td>25-08-03</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>한식</td>
+              <td>간단한 김치찌개 만드는 법</td>
+              <td>user01</td>
+              <td>25-08-03</td>
+              <td>42</td>
+              <td>5</td>
+            </tr>
+            <!-- JS로 동적 게시글 추가 예정 -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 검색창 + 글쓰기 버튼 -->
       <div class="function_container">
         <div class="search_box">
           <form action="." method="post">
@@ -65,25 +80,25 @@
               <i class="fas fa-search"></i>
             </button>
           </form>
-        </div>
-        <div class="write_form">
-          <a href="#">글쓰기</a>
+          <a href="./recipeWrite.html" class="write_btn">
+            <i class="fas fa-pen"></i> 글쓰기
+          </a>
         </div>
       </div>
 
-      <div class="pagenation_container">
-        <div>
-          <a class="page_1" href="#">1</a>
-          <a class="page_2" href="#">2</a>
-          <a class="page_3" href="#">3</a>
-          <a class="page_4" href="#">4</a>
-        </div>
-      </div>
+      <!-- 페이지네이션 -->
+      <nav class="pagenation_container" aria-label="페이지 네비게이션">
+        <a class="page_1" href="#">1</a>
+        <a class="page_2" href="#">2</a>
+        <a class="page_3" href="#">3</a>
+        <a class="page_4" href="#">4</a>
+      </nav>
+
     </div>
 
-    <div class="write_container"></div>
-    <aside class="side_bar"></aside>
   </main>
+
+  <!-- 푸터 -->
   <footer id="footer"></footer>
 </body>
 
