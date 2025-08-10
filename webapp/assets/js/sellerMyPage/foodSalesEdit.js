@@ -1,3 +1,20 @@
+window.addEventListener('DOMContentLoaded', () => {
+  // 헤더 불러오기
+  fetch('./../../header_login.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+
+  // 푸터 불러오기
+  fetch('./../../footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    });
+});
+
+
 // 이미지 크기 체크 함수
 function checkImageSize(file) {
   return new Promise((resolve) => {
@@ -28,14 +45,14 @@ document.getElementById('food_edit_photo').addEventListener('change', async func
   if (!file) return;
 
   // 이미지 크기 확인
-  const { isValid, width, height } = await checkImageSize(file);
+  // const { isValid, width, height } = await checkImageSize(file);
 
-  if (!isValid) {
-    errorMessage.style.display = 'block';
-    errorMessage.textContent = `* ${width}×${height}px 크기의 이미지는 너무 큽니다.\n700px × 400px 이하의 이미지만 업로드 가능합니다.`;
-    this.value = ''; // 입력값 초기화
-    return;
-  }
+  // if (!isValid) {
+  //   errorMessage.style.display = 'block';
+  //   errorMessage.textContent = `* ${width}×${height}px 크기의 이미지는 너무 큽니다.\n700px × 400px 이하의 이미지만 업로드 가능합니다.`;
+  //   this.value = ''; // 입력값 초기화
+  //   return;
+  // }
 
   // 크기가 적절한 경우 미리보기 업데이트
   const reader = new FileReader();
@@ -54,3 +71,4 @@ const charCount = document.getElementById('food_edit_char_count');
 description.addEventListener('input', function () {
   charCount.textContent = `${description.value.length}/100`;
 });
+
