@@ -10,17 +10,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let filteredRows = [...rows];
 
-  function displayTable(page) {
+  const displayTable = (page) => {
     tableBody.innerHTML = "";
-    let start = (page - 1) * rowsPerPage;
-    let end = start + rowsPerPage;
+    const start = (page - 1) * rowsPerPage;
+    const end = start + rowsPerPage;
     filteredRows.slice(start, end).forEach(row => tableBody.appendChild(row));
     updatePagination();
-  }
+  };
 
-  function updatePagination() {
+  const updatePagination = () => {
     pagination.innerHTML = "";
-    let totalPages = Math.max(1, Math.ceil(filteredRows.length / rowsPerPage));
+    const totalPages = Math.max(1, Math.ceil(filteredRows.length / rowsPerPage));
 
     for (let i = 1; i <= totalPages; i++) {
       const pageLink = document.createElement("a");
@@ -34,16 +34,20 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       pagination.appendChild(pageLink);
     }
-  }
+  };
 
-  function searchTable() {
+  const searchTable = () => {
     const query = searchInput.value.trim().toLowerCase();
     filteredRows = rows.filter(row => row.textContent.toLowerCase().includes(query));
     currentPage = 1;
     displayTable(currentPage);
-  }
+  };
 
-  searchBtn.addEventListener("click", searchTable);
+  searchBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    searchTable();
+  });
+
   searchInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
       e.preventDefault();

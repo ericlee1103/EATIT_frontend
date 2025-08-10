@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./../../assets/css/header.css" />
   <link rel="stylesheet" href="./../../assets/css/footer.css" />
   <script defer src="./../../assets/js/community/customerServiceList.js"></script>
+  <script defer src="./../../assets/js/community/loadHeaderFooter.js"></script>
 </head>
 
 <body>
@@ -28,37 +29,35 @@
         </ul>
       </nav>
 
-      <section class="community_list">
-        <table>
-          <thead>
-            <tr>
-              <th>태그</th>
-              <th>제목</th>
-              <th>글쓴이</th>
-              <th>등록일</th>
-              <th>조회</th>
-              <th>추천</th>
-            </tr>
-          </thead>
-          <tbody id="postTableBody">
-            <tr>
-              <td>공지</td>
-              <td class="title"><a href="#">[자주 묻는 질문] 문의는 어떻게 하나요?</a></td>
-              <td>관리자</td>
-              <td>25-08-03</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>공지</td>
-              <td class="title"><a href="#">[공지] 문의는 이메일로만 가능합니다.</a></td>
-              <td>관리자</td>
-              <td>25-08-03</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-          </tbody>
-        </table>
+      <section class="community_list" aria-label="고객센터 게시판 목록">
+        <div class="list_header flex_row" role="rowgroup">
+          <div class="col tag_col" role="columnheader">태그</div>
+          <div class="col title_col" role="columnheader">제목</div>
+          <div class="col author_col" role="columnheader">글쓴이</div>
+          <div class="col date_col" role="columnheader">등록일</div>
+          <div class="col views_col" role="columnheader">조회</div>
+          <div class="col likes_col" role="columnheader">추천</div>
+        </div>
+
+        <div id="postListBody" class="list_body" role="rowgroup">
+          <div class="list_row flex_row" role="row">
+            <div class="col tag_col" role="cell">공지</div>
+            <div class="col title_col" role="cell"><a href="#">[자주 묻는 질문] 문의는 어떻게 하나요?</a></div>
+            <div class="col author_col" role="cell">관리자</div>
+            <div class="col date_col" role="cell">25-08-03</div>
+            <div class="col views_col" role="cell">0</div>
+            <div class="col likes_col" role="cell">0</div>
+          </div>
+
+          <div class="list_row flex_row" role="row">
+            <div class="col tag_col" role="cell">공지</div>
+            <div class="col title_col" role="cell"><a href="#">[공지] 문의는 이메일로만 가능합니다.</a></div>
+            <div class="col author_col" role="cell">관리자</div>
+            <div class="col date_col" role="cell">25-08-03</div>
+            <div class="col views_col" role="cell">0</div>
+            <div class="col likes_col" role="cell">0</div>
+          </div>
+        </div>
       </section>
 
       <div class="controls_wrapper">
@@ -71,7 +70,9 @@
           </div>
         </div>
 
-        <div class="pagination_container" id="pagination"></div>
+        <div class="pagination_container" id="pagination">
+          <!-- 페이지 번호는 JS에서 동적으로 채워집니다 -->
+        </div>
       </div>
     </div>
 

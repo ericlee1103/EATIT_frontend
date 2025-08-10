@@ -2,19 +2,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const rowsPerPage = 5;
   let currentPage = 1;
 
-  const tableBody = document.getElementById("postTableBody");
-  const rows = Array.from(tableBody.querySelectorAll("tr"));
+  const listBody = document.getElementById("postListBody");
+  const rows = Array.from(listBody.querySelectorAll(".list_row"));
   const pagination = document.getElementById("pagination");
   const searchInput = document.querySelector(".search_text");
   const searchBtn = document.querySelector(".search_btn");
 
   let filteredRows = [...rows];
 
-  function displayTable(page) {
-    tableBody.innerHTML = "";
+  function displayList(page) {
+    listBody.innerHTML = "";
     let start = (page - 1) * rowsPerPage;
     let end = start + rowsPerPage;
-    filteredRows.slice(start, end).forEach(row => tableBody.appendChild(row));
+    filteredRows.slice(start, end).forEach(row => listBody.appendChild(row));
     updatePagination();
   }
 
@@ -30,26 +30,35 @@ document.addEventListener("DOMContentLoaded", () => {
       pageLink.addEventListener("click", (e) => {
         e.preventDefault();
         currentPage = i;
-        displayTable(currentPage);
+        displayList(currentPage);
       });
       pagination.appendChild(pageLink);
     }
   }
 
-  function searchTable() {
+  function searchList() {
     const query = searchInput.value.trim().toLowerCase();
     filteredRows = rows.filter(row => row.textContent.toLowerCase().includes(query));
     currentPage = 1;
-    displayTable(currentPage);
+    displayList(currentPage);
   }
 
-  searchBtn.addEventListener("click", searchTable);
+  searchBtn.addEventListener("click", searchList);
   searchInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
       e.preventDefault();
-      searchTable();
+      searchList();
     }
   });
 
-  displayTable(currentPage);
+  displayList(currentPage);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const writeBtn = document.getElementById("writeBtn");
+  writeBtn.addEventListener("click", function(event) {
+    event.preventDefault(); // 기본 링크 이동 막기
+    alert("관리자만 작성할 수 있습니다.");
+    window.location.href = window.location.pathname;
+  });
 });
