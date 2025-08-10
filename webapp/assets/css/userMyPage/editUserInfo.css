@@ -203,6 +203,28 @@ main{
 .info_check_code_buzz:hover{
   background-color: #FF7722;
 }
+.info_save_pw_buzz{
+  width: 138px;
+  height: 50px;
+  background-color: #FF873C;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  margin: 0 10px;
+  align-self: center;
+}
+.info_save_pw_buzz > a{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.info_save_pw_buzz:hover{
+  background-color: #FF7722;
+}
 .total_info_save_buzz:hover{
   background-color: #FF7722;
 }

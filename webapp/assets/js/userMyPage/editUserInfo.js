@@ -67,6 +67,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const newPasswordInput = document.getElementById("new_password");
+  const confirmPasswordInput = document.getElementById("confirm_password");
+  const errorMessage = document.getElementById("confirm_password_error");
+  const saveBtn = document.getElementById("password_save_btn");
+
+  saveBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const newPassword = newPasswordInput.value.trim();
+    const confirmPassword = confirmPasswordInput.value.trim();
+
+    if (newPassword !== confirmPassword) {
+      errorMessage.textContent = "*입력하신 비밀번호와 일치하지 않습니다.";
+      errorMessage.style.color = "red";
+    } else if (confirmPassword === "") {
+      errorMessage.textContent = "*비밀번호를 다시 확인해주세요."
+      errorMessage.style.color = "red";
+    }else {
+    errorMessage.textContent = "";
+    alert("비밀번호가 변경되었습니다.");
+    }
+  });
+});
 
 const newPasswordInput = document.getElementById("new_password");
 const newPasswordError = document.getElementById("new_password_error");
