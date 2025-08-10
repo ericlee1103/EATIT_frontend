@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="./assets/css/main.css">
   <!-- 파비콘 -->
   <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- js -->
+   <script defer src="./assets/js/header.js"></script>
   <title>밥세권</title>
 </head>
 <body>
@@ -16,22 +19,22 @@
     <nav id="header_login">
       <!-- 로그인 전 네비게이션-로그인/회원가입 -->
       <ul>
-        <li><a href="#">로그인</a></li>
-        <li><a href="#">회원가입</a></li>
+        <li><a href="./app/logIn/login.html">로그인</a></li>
+        <li><a href="./app/join/selectUserType.html">회원가입</a></li>
       </ul>
     </nav>
     <!-- 헤더 중앙정렬 영역 -->
     <div id="header_wrapper">
       <!-- 메인 로고 이미지-->
       <div id="header_logo">
-        <a href="#"><img src="./assets/img/header_logo.png" alt="밥세권 로고"></a>
+        <a href="main.html"><img src="./assets/img/header_logo.png" alt="밥세권 로고"></a>
       </div>
       <!-- 메인 네비게이션 -->
       <nav id="header_nav">
         <ul>
-          <li><a href="">구매</a></li>
-          <li><a href="">커뮤니티</a></li>
-          <li><a href="">고객센터</a></li>
+          <li><a href="#">구매</a></li>
+          <li><a href="#">커뮤니티</a></li>
+          <li><a href="./app/community/customerServiceList.html">고객센터</a></li>
         </ul>
       </nav>
     </div>
@@ -39,13 +42,13 @@
     <div id="header_nav_display">
       <div class="header_nav_dropdown">
         <ul class="header_nav_buy">
-          <li><a href="#">음식점 구매</a></li>
-          <li><a href="#">재료 구매</a></li>
+          <li><a href="./app/buy/storeList.html">음식점 구매</a></li>
+          <li><a href="./app/buy/ingredientList.html">재료 구매</a></li>
         </ul>
         <ul class="header_nav_commu">
-          <li><a href="#">자유게시판</a></li>
-          <li><a href="#">홍보게시판</a></li>
-          <li><a href="#">레시피공유</a></li>
+          <li><a href="./app/community/freeBoardList.html">자유게시판</a></li>
+          <li><a href="./app/community/promoBoardList.html">홍보게시판</a></li>
+          <li><a href="./app/community/recipeList.html">레시피공유</a></li>
         </ul>
       </div>
     </div>
@@ -66,53 +69,61 @@
         <!-- 가게 이미지 및 정보 -->
         <div class="main_food_buy">
           <article class="main_food_buy_article">
-            <!-- 상품이미지(임시) -->
-            <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
-            <!-- 가게정보 -->
-            <div class="main_store_info">
-              <p class="main_store_name">가게명</p>
-              <p class="main_menu_name">메뉴명</p>
-              <p class="main_open_time">영업시간 00:00~00:00</p>
-              <p class="main_price">1,000원</p>
-            </div>
+            <a href="./app/buy/storeDetail.html">
+              <!-- 상품이미지(임시) -->
+              <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
+              <!-- 가게정보 -->
+              <div class="main_store_info">
+                <p class="main_store_name">가게명</p>
+                <p class="main_menu_name">메뉴명</p>
+                <p class="main_open_time">영업시간 00:00~00:00</p>
+                <p class="main_price">1,000원</p>
+              </div>
+            </a>
           </article>
           <article class="main_food_buy_article">
-            <!-- 상품이미지(임시) -->
-            <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
-            <!-- 가게정보 -->
-            <div class="main_store_info">
-              <p class="main_store_name">가게명</p>
-              <p class="main_menu_name">메뉴명</p>
-              <p class="main_open_time">영업시간 00:00~00:00</p>
-              <p class="main_price">1,000원</p>
-            </div>
+            <a href="./app/buy/storeDetail.html">
+              <!-- 상품이미지(임시) -->
+              <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
+              <!-- 가게정보 -->
+              <div class="main_store_info">
+                <p class="main_store_name">가게명</p>
+                <p class="main_menu_name">메뉴명</p>
+                <p class="main_open_time">영업시간 00:00~00:00</p>
+                <p class="main_price">1,000원</p>
+              </div>
+            </a>
           </article>
           <article class="main_food_buy_article">
-            <!-- 상품이미지(임시) -->
-            <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
-            <!-- 가게정보 -->
-            <div class="main_store_info">
-              <p class="main_store_name">가게명</p>
-              <p class="main_menu_name">메뉴명</p>
-              <p class="main_open_time">영업시간 00:00~00:00</p>
-              <p class="main_price">1,000원</p>
-            </div>
+            <a href="./app/buy/storeDetail.html">
+              <!-- 상품이미지(임시) -->
+              <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
+              <!-- 가게정보 -->
+              <div class="main_store_info">
+                <p class="main_store_name">가게명</p>
+                <p class="main_menu_name">메뉴명</p>
+                <p class="main_open_time">영업시간 00:00~00:00</p>
+                <p class="main_price">1,000원</p>
+              </div>
+            </a>
           </article>
           <article class="main_food_buy_article">
-            <!-- 상품이미지(임시) -->
-            <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
-            <!-- 가게정보 -->
-            <div class="main_store_info">
-              <p class="main_store_name">가게명</p>
-              <p class="main_menu_name">메뉴명</p>
-              <p class="main_open_time">영업시간 00:00~00:00</p>
-              <p class="main_price">1,000원</p>
-            </div>
+            <a href="./app/buy/storeDetail.html">
+              <!-- 상품이미지(임시) -->
+              <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
+              <!-- 가게정보 -->
+              <div class="main_store_info">
+                <p class="main_store_name">가게명</p>
+                <p class="main_menu_name">메뉴명</p>
+                <p class="main_open_time">영업시간 00:00~00:00</p>
+                <p class="main_price">1,000원</p>
+              </div>
+            </a>
           </article>
         </div>
         <!-- 더 보러가기 버튼 -->
         <div class="main_food_buy_btn">
-          <a href="#">더 보러가기</a>
+          <a href="./app/buy/storeList.html">더 보러가기</a>
         </div>
       </div>
 
@@ -120,26 +131,26 @@
       <div id="main_content_buy_ingr">
         <div class="main_ingredient_buy">
           <h3>재료 판매🥕</h3>
-          <a href="#">더보기 ></a>
+          <a href="./app/buy/ingredientList.html">더보기 ></a>
           <div class="main_ingredient_store">
             <!-- 재료사진 -->
             <article class="main_ingredient_img">
-              <a href="#">
+              <a href="./app/buy/ingredientDetail.html">
                 <img src="./assets/img/carrot.jpg" alt="상품이미지 가게 정보 추가하기">
               </a>
             </article>
             <article class="main_ingredient_img">
-              <a href="#">
+              <a href="./app/buy/ingredientDetail.html">
                 <img src="./assets/img/carrot.jpg" alt="상품이미지 가게 정보 추가하기">
               </a>
             </article>
             <article class="main_ingredient_img">
-              <a href="#">
+              <a href="./app/buy/ingredientDetail.html">
                 <img src="./assets/img/carrot.jpg" alt="상품이미지 가게 정보 추가하기">
               </a>
             </article>
             <article class="main_ingredient_img">
-              <a href="#">
+              <a href="./app/buy/ingredientDetail.html">
                 <img src="./assets/img/carrot.jpg" alt="상품이미지 가게 정보 추가하기">
               </a>
             </article>
@@ -147,7 +158,7 @@
         </div>
         <div class="main_recipe">
           <h3>레시피 공유📃</h3>
-          <a href="#">더보기 ></a>
+          <a href="./app/community/recipeList.html">더보기 ></a>
           <div class="main_recipe_share">
             <ul>
               <li class="main_recipe_list">태그</li>
@@ -183,11 +194,11 @@
       <!-- 푸터 사업자정보 영역 -->
       <div class="footerbox_right">
         <ul>
-          <li><a href="">회사소개</a></li>
-          <li><a href="">인재채용</a></li>
-          <li><a href="">이용약관</a></li>
-          <li><a href="">개인정보처리방침</a></li>
-          <li><a href="">이용안내</a></li>
+          <li>회사소개</li>
+          <li>인재채용</li>
+          <li>이용약관</li>
+          <li>개인정보처리방침</li>
+          <li>이용안내</li>
         </ul>
         <p>법인명 : 주식회사 밥세권 | 사업자등록번호 : 123-12-123456</p>
         <p>주소 : 서울 강남구 테헤란로 146 | 대표이사 : 이정훈</p>

@@ -8,30 +8,32 @@
   background-color:#FFF5E4;
 }
 #wrap{
-  border: 1ps solid red;
+  /* border: 1px solid red; */
   width: 1100px;
   height: 1080px;
   background-color:#FBE3B9;
   margin: 0 auto;
   display: flex;
+  flex-direction:column;
 }
 /* 장바구니 */
-#wrap>h2{
+.shopping_cart h2{
   width: 1100px;
   height: 30px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   text-align: center;
+  line-height: 30px;
+  padding: 30px 0;
 }
 .shopping_prod_list{
   width: 640px;
   height: 1000px;
-  /* border: 1px solid red; */
 }
 .shopping_select_all{
   width: 630px;
   height: 70px;
   margin: 0 auto;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   border-radius: 8px;
   background-color: white;
 }
@@ -99,9 +101,10 @@
 .shopping_menu_prod_list{
   width: 580px;
   height: 150px;
-  border: 1px solid red;
+  border: 1px solid blue;
   display: flex;
   margin: 0 auto;
+  align-items: center;
 }
 #shopping_prod_checkbox{
   width: 25px;
@@ -116,9 +119,8 @@
 }
 .shopping_info{
   width: 350px;
-  height: 100px;
-  border: 1px solid green;
-  margin: 0 auto;
+  height: 150px;
+  /* border: 1px solid green; */
   align-items: center;
   display: flex;
 }
@@ -130,7 +132,7 @@
 }
 .shopping_btn{
   width: 150px;
-  margin-top: 10px;
+  position: relative;
 }
 /* 장바구니 휴지통 아이콘 */
 .shopping_delete{
@@ -138,47 +140,50 @@
   height: 30px;
   border: 1px solid red;
   display: flex;
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .shopping_delete svg{
   width: 30px;
   height: 30px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .buy_food_stock{
   width: 100px;
   height: 30px;
   background-color: #FF5656;
-  /* border: 1px solid green; */
+  border: 1px solid green;
   color: white;
   text-align: center;
   line-height: 30px;
   border-radius: 6px;
-  margin: 60px 0 0 40px;
+  margin: 40px 0 0 auto;
   font-size: 16px;
   font-weight: bold;
 }
-.shopping_stock_choice{
-  width: 50px;
-  height: 30px;
+/* 수량 버튼 */
+.shopping_prod_cnt{
   display: flex;
-  border: 1px solid blue;
+  width: 50px;
+  height: 30;
+  border: 1px solid green;
 }
-.shopping_stock_choice p{
-  margin: 0 10px 0 10px;
-}
-.shopping_stock_choice_box{
+.buy_food_stock_choice_box{
   width: 30px;
   height: 30px;
-  border-radius: 25px;
-  background-color: rgb(187, 187, 187);
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
+  /* border: 1px solid red; */
 }
-
-
+.buy_food_stock_choice_box>a {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+/* .buy_food_stock_choice>a{
+  width: 110px;
+  height: 30px;
+  margin-left: 70px;
+} */
 
 
 
@@ -193,6 +198,8 @@
   border: 1px solid blue;
   border-radius: 8px;
   margin: 0 auto;
+  /* display: flex; */
+  /* flex-direction:row; */
 }
 .shopping_payment_api>h2, .shopping_payment_total>h2{
   width: 200px;

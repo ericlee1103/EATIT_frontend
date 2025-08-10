@@ -10,20 +10,18 @@
 .buy_store_list{
   width: 100%;
   height: 1080px;
-  border: 1px solid green;
 }
 .buy_store_list h2{
   width: 100%;
   height: 40px;
   text-align: center;
   margin-top: 80px;
-  border: 1px solid red;
 }
 .buy_store_list form{
   width: 100%;
   height: 60px;
   text-align: center;
-  border:1px solid blue;
+  /* border:1px solid blue; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,13 +30,13 @@
   width: 800px;
   height: 30px;
   border-radius: 4px;
-  font-size: 20px;
+  padding-left: 15px;
 }
 /* 음식점구매 전체영역 */
 .buy_area{
   width: 100%;
   height: 700px;
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   margin-top: 30px;
   text-align: center;
 }
@@ -52,6 +50,10 @@
   display: inline-block;
   justify-content: center;
   align-items: center;
+}
+.buy_food_article a{
+  text-decoration: none;
+  color: black;
 }
 /* 구매 음식판매 이미지 */
 .buy_food_article img{
@@ -94,7 +96,7 @@
 .buy_pagenation{
   width: 290px;
   height: 32px;
-  margin: 20px auto;
+  margin: 30px auto;
 }
 .buy_pagenation ul{
   width: 290px;
@@ -112,4 +114,9 @@
   font-size: 16px;
   display: inline-block;
   margin: auto;
+}
+.buy_pagenation_box a{
+  text-decoration: none;
+  color: black;
+  display: block;
 }
