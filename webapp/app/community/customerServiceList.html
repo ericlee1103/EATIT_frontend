@@ -11,6 +11,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./../../assets/css/header.css" />
   <link rel="stylesheet" href="./../../assets/css/footer.css" />
+  <script defer src="./../../assets/js/community/customerServiceList.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
       <nav class="community_category">
         <ul>
           <li><a href="#" id="category_customerService" class="active">고객센터</a></li>
-           <li><a href="./../community/communityMainGuest.html" id="category_customerService">커뮤니티</a></li>
+          <li><a href="./../community/communityMainGuest.html" id="category_community">커뮤니티</a></li>
         </ul>
       </nav>
 
@@ -39,7 +40,7 @@
               <th>추천</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="postTableBody">
             <tr>
               <td>공지</td>
               <td class="title"><a href="#">[자주 묻는 질문] 문의는 어떻게 하나요?</a></td>
@@ -63,21 +64,14 @@
       <div class="controls_wrapper">
         <div class="function_container">
           <div class="search_box">
-            <form action="." method="post">
-              <input class="search_text" type="text" placeholder="검색어를 입력해 주세요" />
-              <button class="search_btn" type="submit">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
+            <input class="search_text" type="text" placeholder="검색어를 입력해 주세요" />
+            <button class="search_btn" type="button">
+              <i class="fas fa-search"></i>
+            </button>
           </div>
         </div>
 
-        <div class="pagination_container">
-          <a href="#" class="page active">1</a>
-          <a href="#" class="page">2</a>
-          <a href="#" class="page">3</a>
-          <a href="#" class="page">4</a>
-        </div>
+        <div class="pagination_container" id="pagination"></div>
       </div>
     </div>
 

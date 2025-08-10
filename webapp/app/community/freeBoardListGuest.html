@@ -11,6 +11,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./../../assets/css/header.css" />
   <link rel="stylesheet" href="./../../assets/css/footer.css" />
+  <script defer src="./../../assets/js/community/freeBoardListGuest.js"></script>
 </head>
 
 <body>
@@ -29,6 +30,8 @@
         </ul>
       </nav>
 
+
+      <!-- 게시판 목록 -->
       <section class="community_list">
         <table>
           <thead>
@@ -41,7 +44,7 @@
               <th>추천</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="postTableBody">
             <tr>
               <td>공지</td>
               <td class="title"><a href="#">최근 이슈들에 대해 안내드립니다.</a></td>
@@ -58,6 +61,22 @@
               <td>0</td>
               <td>0</td>
             </tr>
+            <tr>
+              <td>[잡담]</td>
+              <td class="title"><a href="#">이거 언제 끝나냐 ㅋㅋㅋ</a></td>
+              <td>namhyuk</td>
+              <td>25-08-04</td>
+              <td>10</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>[후기]</td>
+              <td class="title"><a href="#">사실 아직 안가봄 ㅋㅋ</a></td>
+              <td>gisu</td>
+              <td>25-08-05</td>
+              <td>1000</td>
+              <td>100</td>
+            </tr>
           </tbody>
         </table>
       </section>
@@ -65,21 +84,14 @@
       <div class="controls_wrapper">
         <div class="function_container">
           <div class="search_box">
-            <form action="." method="post">
-              <input class="search_text" type="text" placeholder="검색어를 입력해 주세요" />
-              <button class="search_btn" type="submit">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
+            <input class="search_text" type="text" placeholder="검색어를 입력해 주세요" />
+            <button class="search_btn" type="button">
+              <i class="fas fa-search"></i>
+            </button>
           </div>
         </div>
 
-        <div class="pagination_container">
-          <a href="#" class="page active">1</a>
-          <a href="#" class="page">2</a>
-          <a href="#" class="page">3</a>
-          <a href="#" class="page">4</a>
-        </div>
+        <div class="pagination_container" id="pagination"></div>
       </div>
     </div>
 

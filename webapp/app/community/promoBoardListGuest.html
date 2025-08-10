@@ -5,12 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>홍보게시판(비회원)</title>
-  <link rel="stylesheet" href="./../../assets/css/community/promoBoardListGuest.css" />
+  <link rel="stylesheet" href="./../../assets/css/community/communityMainUser.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./../../assets/css/header.css" />
   <link rel="stylesheet" href="./../../assets/css/footer.css" />
+  <script defer src="./../../assets/js/community/promoBoardListGuest.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
       <nav class="community_category">
         <ul>
           <li><a href="./../community/communityMainGuest.html" id="category_event">공지사항/이벤트</a></li>
-          <li><a href="./../community/freeBoardListGuest.html" id="category_free"">자유게시판</a></li>
+          <li><a href="./../community/freeBoardListGuest.html" id="category_free">자유게시판</a></li>
           <li><a href="./../community/promoBoardListGuest.html" id="category_advertise" class="active">홍보게시판</a></li>
           <li><a href="./../community/recipeListGuest.html" id="category_recipe">레시피</a></li>
         </ul>
@@ -41,7 +42,7 @@
               <th>추천</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="postTableBody">
             <tr>
               <td>공지</td>
               <td class="title"><a href="#">최근 이슈들에 대해 안내드립니다.</a></td>
@@ -65,21 +66,14 @@
       <div class="controls_wrapper">
         <div class="function_container">
           <div class="search_box">
-            <form action="." method="post">
-              <input class="search_text" type="text" placeholder="검색어를 입력해 주세요" />
-              <button class="search_btn" type="submit">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
+            <input class="search_text" type="text" placeholder="검색어를 입력해 주세요" />
+            <button class="search_btn" type="button">
+              <i class="fas fa-search"></i>
+            </button>
           </div>
         </div>
 
-        <div class="pagination_container">
-          <a href="#" class="page active">1</a>
-          <a href="#" class="page">2</a>
-          <a href="#" class="page">3</a>
-          <a href="#" class="page">4</a>
-        </div>
+        <div class="pagination_container" id="pagination"></div>
       </div>
     </div>
 
