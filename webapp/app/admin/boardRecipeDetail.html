@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>adminLogin</title>
+  <script defer src="./../../assets/js/admin/boardRecipeDetail.js"></script>
   <link rel="stylesheet" href="./../../assets/css/admin/boardRecipeDetail.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
   integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -22,6 +23,7 @@
         <a href="./../../app/admin/postTradeList.html"><li id="sidebar_list_community" class="sidebar_list">게시글 관리</li></a>
         <a href="./../../app/admin/reportList.html"><li id="sidebar_list_warning"class="sidebar_list">신고관리</li></a>
         <a href="./../../app/admin/bannerList.html"><li id="sidebar_list_banner"class="sidebar_list">배너/광고</li></a>
+        <a href="./../../app/admin/adminLogin.html" id="admin_logout"><li id="sidebar_list_logout"class="sidebar_list">로그아웃</li></a>
       </ul>
     </aside>
     <!-- 메인컨텐츠 영역 -->
@@ -30,15 +32,15 @@
       <div class="admin_listwrapper">
         <div class="admin_whitebox">
           <div class="admin_post_titlebox">
-            <div class="admin_post_tag"><p>[잡담]</p></div>
-            <div class="admin_post_icon"><img src="./../../assets/img/나무.png" alt="나무"></div>
-            <div class="admin_post_userid"><p>gisu</p></div>
-            <div class="admin_post_title"><p>1빠요 ㅋㅋ</p></div>
-            <div class="admin_post_date"><p>(2025-08-09 22:41)</p></div>
-            <div class="admin_post_view"><label for="views">조회 :</label>12</div>
-            <div class="admin_post_like"><label for="likes">추천 : </label>0</div>
+            <div class="admin_post_tag"><p>[한식]</p></div>
+            <div class="admin_post_icon"><img src="./../../assets/img/가지.png" alt="가지"></div>
+            <div class="admin_post_userid"><p>junghoon</p></div>
+            <div class="admin_post_title"><p>님들아 진짜 김볶 맛있게하는법 알려드림</p></div>
+            <div class="admin_post_date"><p>(2025-08-03 22:41)</p></div>
+            <div class="admin_post_view"><label for="views">조회 :</label>16</div>
+            <div class="admin_post_like"><label for="likes">추천 : </label>1</div>
           </div>
-          <div class="admin_post_content"><p>ㅋㅋ 내가 1빠임~</p></div>
+          <div class="admin_post_content"><p>1. 일단 김치와 밥 등 재료룰 준비한다 <br> 2.뭔가 하는소리를 크게 낸다 <br>3. 엄마를 크게 부른다 <br>4.완성 <br>(등짝주의)</p></div>
           <div class="admin_post_comment_box">
             <ul>
               <li class="admin_post_comment">
@@ -49,14 +51,14 @@
                   <div class="admin_post_delete"><img src="./../../assets/img/댓글삭제버튼.png" alt=""></div>
                 </div>
                 <div class="admin_post_comment_content">
-                  <p>ㅋㅋㅋ 아 1빠 할 수 있었는데</p>
+                  <p>ㅋㅋㅋ저도 이 방법으로 맛있게 만들었네요</p>
                 </div>
               </li>
             </ul>
           </div>
         </div>
         <div class="admin_detail_delete">
-          <button type="button">삭 제</button>
+          <button id="admin_deletebtn" type="button">삭 제</button>
         </div>       
       </div>  
     </div>

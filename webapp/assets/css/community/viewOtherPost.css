@@ -53,11 +53,22 @@ li {
   transition: background-color 0.2s ease, font-weight 0.2s ease;
 }
 
+.category_item>a{
+  list-style-type: none;
+  text-decoration: none;
+  color:black;
+}
+
+
 .category_item:hover,
-.category_item.active {
+.category_item:hover {
   background-color: #FF873C;
   color:white;
   font-weight: bold;
+}
+
+.category_item>a:hover{
+  color:white;
 }
 
 /* ===== 게시글 헤더 ===== */
@@ -97,7 +108,7 @@ li {
 .comment_recommend_container {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 10px;
 }
 
 .recommend_count {
@@ -370,6 +381,22 @@ li {
   height: 40px;
   border-radius: 50%;
   border: 2px solid #cccccc;
+}
+
+.comment_delete{
+  /* border-radius:15px; */
+  background-color: transparent;
+  font-size:14px;
+  border:none;
+  cursor:pointer;
+  padding:10px;
+}
+
+.comment_delete:hover{
+  background-color: #eea12d;
+  color:white;
+  border-radius:20px;
+  transition: 0.3s ease;
 }
 
 /* ===== 모달창 스타일 ===== */

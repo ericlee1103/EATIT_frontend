@@ -6,7 +6,7 @@
 /* 회색영역 */
 .admin_innerwrapper{
   width: 1100px;
-  min-height: 1080px;
+  min-height: 950px;
   background-color: #d9d9d9;
   margin: auto;
   display: flex;
@@ -15,7 +15,7 @@
 /* 왼쪽 메뉴바 */
 .sidebar{
   min-width: 220px;
-  min-height: 1080px;
+  min-height: 950px;
   background-color: #505FA9;
   justify-content: center;
   align-items: center;
@@ -26,10 +26,6 @@
   margin-left: 57px;
   margin-bottom: 10px;
   width: 100px;
-}
-/* 사이드바 현재위치강조 */
-#sidebar_list_community{
-  background-color: #1e223f;
 }
 ul{
   list-style: none;
@@ -82,99 +78,52 @@ h1{
   height: 750px;
   padding-top: 10px;
 }
-.admin_post_titlebox{
-  display: flex;
-  /* border: 1px solid black; */
-  background-color: #d9d9d9;
-  margin: auto;
-  width: 650px;
-  height: 40px;
-  font-size: 14px;
-  text-align: center;
-}
-.admin_post_titlebox div{
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-.admin_post_tag{
-  margin: 0 10px 0;
-}
-img[alt="잎새"]{
-  margin-top: 5px;
-  width: 15px;
-  height: 15px;
-}
-.admin_post_userid{
-  margin-right: 30px;
-}
-.admin_post_title{
-  width: 250px;
-  max-width: 270px;
-  font-size: 16px;
-  font-weight: bold;
-  overflow: hidden;
-  text-align: left;
-  text-overflow: ellipsis;
-  white-space: nowrap; 
-  margin-right: 10px;
-}
-.admin_post_date, .admin_post_view, .admin_post_like{
-  margin-right: 10px;
-}
-.admin_post_content{
-  border: 1px solid black;
-  padding: 10px;
-  width: 650px;
-  min-height: 300px;
-  margin: 20px auto;
-}
-.admin_post_content p{
-  word-break: break-all;
-}
-.admin_post_comment_box{
-  width: 650px;
-  min-height: 150px;
-  margin: auto;
-  background-color: #d9d9d9;
-}
-.admin_post_comment_box ul{
-  padding-top: 10px;
-}
-.admin_post_comment{
-  /* border: 1px solid black; */
-  margin: auto;
-  width: 630px;
-  min-height: 80px;
+.admin_notice_category{
   background-color: white;
-  padding: 5px;
+  width: 50px;
+  margin:auto 10px auto 10px;
 }
-.admin_post_comment_info{
+.admin_notice_titlebox{
+  background-color: #d9d9d9;
   display: flex;
-  vertical-align: middle;
+  margin: auto;
+  width: 650px;
+  height: 30px;
+  text-align: center;
   align-items: center;
 }
-.admin_post_delete img{
-  margin: auto;
-  width: 12px;
+#title{
+  height: 25px;
+  width: 400px;
+  margin-left: 10px;
 }
-.admin_post_comment_content p{
-  word-break: break-all; 
+.write_api{
+  margin-left: 25px;
+  width: 600px;
+  height: 30px;
+  background-color: aqua;
 }
-.admin_detail_delete{
+#admin_notice_write{
+  margin-left: 25px;
+  resize: none;
+  width: 650px;
+  min-height: 500px;
+}
+.bottom_btn_area{
   /* border: 1px solid black; */
-  width: 700px;
-  height: 30px;
-  margin: 10px auto;
   display: flex;
-  justify-content: end;
+  margin: auto;
+  width: 650px;
+  justify-content: space-between;
 }
-.admin_detail_delete button{
-  width: 50px;
+#admin_file{
+  /* border: 1px solid black; */
+  width: 70px;
   height: 30px;
-  background-color: #e89999;
-  border-radius: 5px;
-  font-weight: bold;
 }
-
-
+#admin_notice_dowrite{
+  width: 60px;
+  height: 30px;
+  color: white;
+  background-color: #505FA9;
+}

@@ -70,17 +70,230 @@ h1{
   padding: 10px;
   margin: auto;
   width: 800px;
-  min-height: 800px;
+  height: 950px;
   justify-content: center;
   background-color: #929292;
   border-radius: 10px;
 }
 .admin_whitebox{
   background-color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
   margin: auto;
   width: 700px;
-  height: 750px;
+  height: 850px;
   padding-top: 10px;
+  padding: 10px;
+}
+/* 가게상세정보 및 상품 구매 영역 */
+.buy_left_area{
+  width: 300px;
+  height: 1500px;
+}
+.buy_store_info{
+  width: 300px;
+  height: 225px;
+  background-color: white;
+  border: 1px solid green;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+/* 가게 이미지 */
+.buy_store_info img{
+  width: 300px;
+  height: 150px;
+  border: 1px solid blue;
+  border-top-left-radius: 10px;
+  object-fit: cover;
+}
+.buy_store_info_detail{
+  width: 300px;
+  height: 75px;
+  border: 1px solid hotpink;
+  margin-left: 15x;
+}
+.buy_store_address{
+  font-size:14px;
+}
+.buy_store_open_time{
+  font-size: 10px;
+}
+/* 구매 > 메뉴 영역 */
+.buy_food{
+  width: 300px;
+  height: 315px;
+  background-color: white;
+  border-radius: 10px;
+  /* border:1px solid black; */
+  margin: 10px auto;
+}
+.buy_food ul{
+  display: flex;
+  list-style: none;
+}
+.buy_food_menu{
+  width: 300px;
+  height: 225px;
+  margin-top: 10px;
+}
+.buy_food_menu_choice{
+  /* border: 1px solid blue; */
+  margin: 5px 0 0 15px;
+}
+.buy_food_menu_choice:nth-child(2){
+  color: #acacac;
+}
+.buy_food_menu_choice:last-child{
+  margin-left: 150px;
+}
+/* 구매 메뉴 */
+.buy_food_menu_list{
+  width: 280px;
+  height: 125px;
+  border: 1px solid red;
+  display: flex;
+  margin: 10px auto;
+}
+.buy_food_menu_list img{
+  width: 75px;
+  height: 75px;
+  background-color: black;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.buy_food_menu_info_stock{
+  width: 175px;
+  height: 50px;
+  /* border: 1px sold green; */
+}
+.buy_food_stock{
+  width: 50px;
+  height: 15px;
+  background-color: #FF5656;
+  color: white;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 6px;
+  margin-left: 15x;
+  font-size: 10px;
+  font-weight: bold;
+}
+.buy_food_menu_info{
+  width: 125px;
+  height: 40px;
+  margin-left: 15px;
+}
+.buy_food_stock_choice{
+  width: 200px; 
+  margin-left: 15px;
+  display: flex;
+  border: 1px solid blue;
+}
+.buy_food_stock_choice p{
+  margin: 0 5px 0 5px;
+}
+.buy_food_stock_choice_box{
+  width: 15px;
+  height: 15px;
+  border-radius: 25px;
+  background-color: rgb(187, 187, 187);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* 장바구니 담기 버튼 */
+.buy_add_cart_btn{
+  width: 75px;
+  height: 20px;
+  background-color: #202020;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 15px;
+  margin-left: 17px;
+}
+.buy_food_menu hr{
+  width: 240px;
+  margin: 0 auto;
+}
+/* buy 페이지네이션 */
+.buy_pagenation{
+  width: 145px;
+  height: 16px;
+  margin:10px auto;
+}
+.buy_pagenation ul{
+  width: 145px;
+  height: 16px;
+  display: flex;
+}
+.buy_pagenation_box{
+  width: 16px;
+  height: 16px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 4px;
+  /* border: 1px solid blue; */
+  text-align: center;
+  line-height: 16px;
+  font-size: 10px;
+  display: inline-block;
+  margin: auto;
+}
+
+  /* 지도 API 및 원산지 표기 영역 전체 */
+.buy_map_area{
+  width: 350px;
+  height: 800px;
+  border: 1px solid blue;
+}
+.buy_map{
+  width: 350px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid green;
+  margin: 0 auto;
+}
+.buy_origin{
+  width: 350px;
+  height: 130px;
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin: 5px auto;
+}
+.buy_origin_menu{
+  width: 350px;
+  height: 15px;
+  border: 1px solid blue;
+  list-style: none;
+  line-height: 15px;
+  display: flex;
+}
+.buy_origin_info{
+  margin-left: 7px;
+}
+.buy_origin_info:nth-child(2){
+  color:#acacac;
+}
+.buy_origin_content{
+  list-style: none;
+  width: 90px;
+  height: 65px;
+  border: 1px solid red;
+  margin: 5px 0 0 15px;
+}
+.buy_origin_content li{
+  border: 1px solid blue;
+}
+.buy_origin_seller{
+  border: 1px solid purple;
+  width: 90px;
+  list-style: none;
+}
+.buy_origin_seller li{
+  border: 1px solid green;
 }
 .admin_detail_delete{
   /* border: 1px solid black; */

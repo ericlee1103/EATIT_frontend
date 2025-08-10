@@ -50,48 +50,102 @@ main {
   border-color: #ffb84d;
 }
 
-/* 게시판 테이블 */
+/* 게시판 리스트 (flex 구조) */
 .community_list {
   flex-grow: 1;
   overflow-x: auto;
-}
-
-.community_list table {
-  width: 100%;
-  border-collapse: collapse;
   font-size: 1rem;
 }
 
-.community_list th,
-.community_list td {
-  border: 1px solid #eee;
-  padding: 14px 18px;
-  text-align: center;
-  color: #444;
-  white-space: nowrap;
-}
-
-.community_list thead tr {
+/* 리스트 헤더 */
+.list_header {
+  display: flex;
   background-color: #ffefcc;
-}
-
-.community_list th {
   font-weight: 700;
+  color: #444;
+  padding: 14px 20px;
+  border-radius: 6px 6px 0 0;
+  user-select: none;
 }
 
-.community_list .title {
+/* 리스트 바디 */
+.list_body {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+}
+
+/* 한 행 */
+.list_row {
+  display: flex;
+  border-top: 1px solid #eee;
+  padding: 14px 18px;
+  color: #444;
+  align-items: center;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.list_row:first-child {
+  border-top: none;
+}
+
+.list_row:hover {
+  background-color: #fff4d8;
+}
+
+/* 컬럼 공통 */
+.col {
+  padding: 0 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 각 컬럼별 너비 설정 */
+.tag_col {
+  flex: 0 0 80px;
+  text-align: center;
+  font-weight: 600;
+  color: #6a4e00;
+}
+
+.title_col {
+  flex: 1 1 auto;
   text-align: left;
 }
 
-.community_list .title a {
+.title_col a {
   color: #5a5a5a;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.community_list .title a:hover {
+.title_col a:hover {
   color: #ffae42;
   text-decoration: underline;
+}
+
+.author_col {
+  flex: 0 0 100px;
+  text-align: center;
+}
+
+.date_col {
+  flex: 0 0 100px;
+  text-align: center;
+}
+
+.views_col {
+  flex: 0 0 70px;
+  text-align: center;
+}
+
+.likes_col {
+  flex: 0 0 70px;
+  text-align: center;
 }
 
 /* 검색 및 페이지네이션 래퍼 */
@@ -144,22 +198,6 @@ main {
 
 .search_btn:hover {
   background-color: #ffa500;
-}
-
-/* 글쓰기 버튼 */
-.write_form a {
-  display: inline-block;
-  padding: 8px 14px;
-  background-color: #4caf50;
-  color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s;
-}
-
-.write_form a:hover {
-  background-color: #45a049;
 }
 
 /* 페이지네이션 */

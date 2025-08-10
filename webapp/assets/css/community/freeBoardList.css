@@ -1,4 +1,3 @@
-/* 전체 레이아웃 */
 main {
   display: flex;
   background-color: #f9f7f1;
@@ -11,7 +10,6 @@ main {
   background-color: #fff9f0;
 }
 
-/* 메인 컨테이너 */
 .main_container {
   flex: 1;
   padding: 30px 40px;
@@ -23,7 +21,6 @@ main {
   flex-direction: column;
 }
 
-/* 카테고리 */
 .community_category ul {
   list-style: none;
   padding: 0;
@@ -50,51 +47,75 @@ main {
   border-color: #ffb84d;
 }
 
-/* 게시판 테이블 */
 .community_list {
   flex-grow: 1;
   overflow-x: auto;
-}
-
-.community_list table {
-  width: 100%;
-  border-collapse: collapse;
   font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.community_list th,
-.community_list td {
-  border: 1px solid #eee;
+.flex_row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
   padding: 14px 18px;
-  text-align: center;
   color: #444;
   white-space: nowrap;
 }
 
-.community_list thead tr {
+.list_header {
   background-color: #ffefcc;
-}
-
-.community_list th {
   font-weight: 700;
 }
 
-.community_list .title {
+.col {
+  padding: 0 10px;
+  flex-shrink: 0;
+}
+
+.tag_col {
+  flex-basis: 80px;
+}
+
+.title_col {
+  flex-grow: 1;
   text-align: left;
 }
 
-.community_list .title a {
+.title_col a {
   color: #5a5a5a;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.community_list .title a:hover {
+.title_col a:hover {
   color: #ffae42;
   text-decoration: underline;
 }
 
-/* 검색 및 페이지네이션 래퍼 */
+.author_col {
+  flex-basis: 100px;
+}
+
+.date_col {
+  flex-basis: 100px;
+}
+
+.views_col {
+  flex-basis: 60px;
+  text-align: right;
+}
+
+.likes_col {
+  flex-basis: 60px;
+  text-align: right;
+}
+
+.list_row:hover {
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
 .controls_wrapper {
   display: flex;
   justify-content: space-between;
@@ -110,7 +131,6 @@ main {
   align-items: center;
 }
 
-/* 검색 박스 */
 .search_box {
   display: flex;
   align-items: center;
@@ -146,7 +166,6 @@ main {
   background-color: #ffa500;
 }
 
-/* 글쓰기 버튼 */
 .write_form a {
   display: inline-block;
   padding: 8px 14px;
@@ -162,10 +181,10 @@ main {
   background-color: #45a049;
 }
 
-/* 페이지네이션 */
 .pagination_container {
   display: flex;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .page {
@@ -178,6 +197,7 @@ main {
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
 }
 
 .page:hover {
@@ -185,14 +205,13 @@ main {
   color: #4a3000;
 }
 
-.page.active {
+.page_active {
   background-color: #ffb84d;
   color: white;
   cursor: default;
   border-color: #ffae42;
 }
 
-/* 반응형 */
 @media (max-width: 768px) {
   .main_container {
     margin: 20px 10px;

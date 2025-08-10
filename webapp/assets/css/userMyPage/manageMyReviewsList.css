@@ -149,3 +149,7 @@ main{
 .managemyreviews_pagination > a:hover{
   background-color: #FF873C;
 }
+.counting_Star{
+  width: 20px;
+  height: 20px;
+}
