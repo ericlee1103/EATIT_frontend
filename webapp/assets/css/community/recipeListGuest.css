@@ -50,48 +50,77 @@ main {
   border-color: #ffb84d;
 }
 
-/* 게시판 테이블 */
+/* 게시판 리스트 스타일 (flex 기반) */
 .community_list {
   flex-grow: 1;
   overflow-x: auto;
-}
-
-.community_list table {
-  width: 100%;
-  border-collapse: collapse;
   font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.community_list th,
-.community_list td {
-  border: 1px solid #eee;
+/* 리스트 헤더 */
+.flex_row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
   padding: 14px 18px;
-  text-align: center;
   color: #444;
   white-space: nowrap;
-}
-
-.community_list thead tr {
   background-color: #ffefcc;
-}
-
-.community_list th {
   font-weight: 700;
 }
 
-.community_list .title {
+.list_header {
+  /* header 특성 */
+}
+
+.col {
+  padding: 0 10px;
+  flex-shrink: 0;
+}
+
+.tag_col {
+  flex-basis: 80px;
+}
+
+.title_col {
+  flex-grow: 1;
   text-align: left;
 }
 
-.community_list .title a {
+.title_col a {
   color: #5a5a5a;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.community_list .title a:hover {
+.title_col a:hover {
   color: #ffae42;
   text-decoration: underline;
+}
+
+.author_col {
+  flex-basis: 100px;
+}
+
+.date_col {
+  flex-basis: 100px;
+}
+
+.views_col {
+  flex-basis: 60px;
+  text-align: right;
+}
+
+.likes_col {
+  flex-basis: 60px;
+  text-align: right;
+}
+
+/* 리스트 행 */
+.list_row:hover {
+  background-color: #fafafa;
+  cursor: pointer;
 }
 
 /* 검색 및 페이지네이션 래퍼 */
@@ -178,6 +207,7 @@ main {
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
 }
 
 .page:hover {
