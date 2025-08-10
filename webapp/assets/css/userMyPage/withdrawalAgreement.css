@@ -42,14 +42,18 @@ main{
   width: 190px;
 }
 .withdrawalagreement_my_page_list > li > a{
+  width: 190px;
   padding: 15px 0;
   text-decoration: none;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 .withdrawalagreement_my_page_list > li:hover{
-  width: 190px;
+  width: 100%;
   background-color: #ff873c8c;
   border-radius: 10px;
+
 }
 .withdrawalagreement_agreement_page{
   background-color: white;
@@ -120,5 +124,10 @@ h2{
   color: white;
   font-size: 14px;
   text-decoration: none;
+  width: 178px;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
