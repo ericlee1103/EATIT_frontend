@@ -42,14 +42,18 @@ main{
   width: 190px;
 }
 .withdrawalagreement_my_page_list > li > a{
+  width: 190px;
   padding: 15px 0;
   text-decoration: none;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 .withdrawalagreement_my_page_list > li:hover{
-  width: 190px;
+  width: 100%;
   background-color: #ff873c8c;
   border-radius: 10px;
+
 }
 .withdrawalagreement_agreement_page{
   background-color: white;
@@ -63,6 +67,15 @@ h2{
 }
 .withdrawalagreement_two_box{
   margin-top: 80px;
+}
+.withdrawalagreement_input_info{
+  border-radius: 10px;
+  margin-left: 57px;
+  width: 500px;
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  border: none;
 }
 .withdrawalagreement_box_set{
   margin: 0 0 15px 46px;
@@ -115,10 +128,28 @@ h2{
   justify-content: center;
   justify-self: right;
   margin: 20px 60px 0 0;
+  border: none;
+  color: white;
 }
-.withdrawalagreement_agreement_buzz > a{
+.withdrawalagreement_cancle_buzz{
+  background-color: #FF873C;
+  width: 178px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: right;
+  margin: 20px 60px 0 0;
+}
+.withdrawalagreement_cancle_buzz > a{
   color: white;
   font-size: 14px;
   text-decoration: none;
+  width: 178px;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 

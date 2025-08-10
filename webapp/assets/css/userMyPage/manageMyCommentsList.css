@@ -105,6 +105,14 @@ main{
   height: 50px;
   width: 225px;
 }
+.managemycomments_title > a{
+  color: black;
+  text-decoration: none;
+}
+.managemycomments_title > a:hover{
+  color: black;
+  text-decoration: underline;
+}
 .managemycomments_comments_info{
   display: flex;
   justify-content: center;
