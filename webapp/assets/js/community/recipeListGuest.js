@@ -2,19 +2,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const rowsPerPage = 5;
   let currentPage = 1;
 
-  const tableBody = document.getElementById("postTableBody");
-  const rows = Array.from(tableBody.querySelectorAll("tr"));
+  // flex 구조에서는 tbody가 없으니 게시글 목록 컨테이너를 새로 잡습니다.
+  const listContainer = document.querySelector(".community_list");
+  // 게시글 각각은 .list_row 클래스라고 가정
+  const rows = Array.from(listContainer.querySelectorAll(".list_row"));
   const pagination = document.getElementById("pagination");
   const searchInput = document.querySelector(".search_text");
   const searchBtn = document.querySelector(".search_btn");
 
   let filteredRows = [...rows];
 
-  function displayTable(page) {
-    tableBody.innerHTML = "";
+  function displayList(page) {
+    // 전체 게시글 숨기기
+    rows.forEach(row => row.style.display = "none");
+    // 보여줄 게시글만 보이게
     let start = (page - 1) * rowsPerPage;
     let end = start + rowsPerPage;
-    filteredRows.slice(start, end).forEach(row => tableBody.appendChild(row));
+    filteredRows.slice(start, end).forEach(row => row.style.display = "flex");
     updatePagination();
   }
 
@@ -30,26 +34,26 @@ document.addEventListener("DOMContentLoaded", () => {
       pageLink.addEventListener("click", (e) => {
         e.preventDefault();
         currentPage = i;
-        displayTable(currentPage);
+        displayList(currentPage);
       });
       pagination.appendChild(pageLink);
     }
   }
 
-  function searchTable() {
+  function searchList() {
     const query = searchInput.value.trim().toLowerCase();
     filteredRows = rows.filter(row => row.textContent.toLowerCase().includes(query));
     currentPage = 1;
-    displayTable(currentPage);
+    displayList(currentPage);
   }
 
-  searchBtn.addEventListener("click", searchTable);
+  searchBtn.addEventListener("click", searchList);
   searchInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
       e.preventDefault();
-      searchTable();
+      searchList();
     }
   });
 
-  displayTable(currentPage);
+  displayList(currentPage);
 });
