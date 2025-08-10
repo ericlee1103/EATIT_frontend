@@ -68,6 +68,15 @@ h2{
 .withdrawalagreement_two_box{
   margin-top: 80px;
 }
+.withdrawalagreement_input_info{
+  border-radius: 10px;
+  margin-left: 57px;
+  width: 500px;
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+}
 .withdrawalagreement_box_set{
   margin: 0 0 15px 46px;
   display: flex;
@@ -119,8 +128,21 @@ h2{
   justify-content: center;
   justify-self: right;
   margin: 20px 60px 0 0;
+  border: none;
+  color: white;
 }
-.withdrawalagreement_agreement_buzz > a{
+.withdrawalagreement_cancle_buzz{
+  background-color: #FF873C;
+  width: 178px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: right;
+  margin: 20px 60px 0 0;
+}
+.withdrawalagreement_cancle_buzz > a{
   color: white;
   font-size: 14px;
   text-decoration: none;

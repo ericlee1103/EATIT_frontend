@@ -23,6 +23,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const saveButtons = document.querySelectorAll(".total_info_save_buzz");
+
+  saveButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      alert("정보가 정상적으로 수정되었습니다.");
+    });
+  });
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const currentPasswordInput = document.getElementById("current_password");
@@ -89,4 +98,64 @@ confirmPasswordInput.addEventListener("input", () => {
   } else {
     confirmPasswordError.textContent = "";
   }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("profileImage");
+  const preview = document.getElementById("preview");
+
+  input.addEventListener("change", function () {
+    const file = this.files[0];
+
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        preview.src = e.target.result;
+        preview.style.display = "block";
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sendCodeBtn = document.getElementById("send_code_btn");
+  const checkCodeBtn = document.getElementById("check_code_btn");
+
+  const phoneInput = document.getElementById("new_phone");
+  const phoneError = document.getElementById("phone_error");
+
+  const codeInput = document.getElementById("code_input");
+  const codeError = document.getElementById("code_error");
+
+  const generatedCode = "123456";
+
+  function isValidPhone(phone) {
+    const phoneRegex = /^01[0-9]{8,9}$/;
+    return phoneRegex.test(phone);
+  }
+
+  sendCodeBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const phone = phoneInput.value.trim();
+    phoneError.textContent = "";
+
+    if (!isValidPhone(phone)) {
+      phoneError.textContent = "전화번호를 입력해주세요.";
+    } else {
+      alert("인증번호가 전송되었습니다.");
+    }
+  });
+
+  checkCodeBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const inputCode = codeInput.value.trim();
+    codeError.textContent = "";
+
+    if (inputCode !== generatedCode) {
+      codeError.textContent = "인증번호가 일치하지 않습니다.";
+    } else {
+      alert("인증되었습니다.");
+    }
+  });
 });
