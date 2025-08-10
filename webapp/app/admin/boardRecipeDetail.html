@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>adminLogin</title>
-  <link rel="stylesheet" href="./../../assets/css/admin/bannerDetail.css">
+  <link rel="stylesheet" href="./../../assets/css/admin/boardRecipeDetail.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
   integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,21 +26,37 @@
     </aside>
     <!-- 메인컨텐츠 영역 -->
     <div class="admin_inner">
-      <h1>배너/광고</h1>
+      <h1>게시글 관리</h1>
       <div class="admin_listwrapper">
         <div class="admin_whitebox">
           <div class="admin_post_titlebox">
-            <div class="admin_post_icon"><img src="./../../assets/img/관리자.png" alt="나무"></div>
-            <div class="admin_post_userid"><p>관리자</p></div>
-            <div class="admin_post_title"><p>브런치 먹어요</p></div>
-            <div class="admin_post_startdate"><label for="startdate">게시일 :</label>2025-08-05</div>
-            <div class="admin_post_enddate"><label for="enddate">마감일 : </label>2025-09-04</div>
+            <div class="admin_post_tag"><p>[잡담]</p></div>
+            <div class="admin_post_icon"><img src="./../../assets/img/나무.png" alt="나무"></div>
+            <div class="admin_post_userid"><p>gisu</p></div>
+            <div class="admin_post_title"><p>1빠요 ㅋㅋ</p></div>
+            <div class="admin_post_date"><p>(2025-08-09 22:41)</p></div>
+            <div class="admin_post_view"><label for="views">조회 :</label>12</div>
+            <div class="admin_post_like"><label for="likes">추천 : </label>0</div>
           </div>
-          <div class="admin_post_content"></div>
+          <div class="admin_post_content"><p>ㅋㅋ 내가 1빠임~</p></div>
+          <div class="admin_post_comment_box">
+            <ul>
+              <li class="admin_post_comment">
+                <div class="admin_post_comment_info">
+                  <div class="admin_post_icon"><img src="./../../assets/img/나무.png" alt="나무"></div>
+                  <div class="admin_post_userid"><p>seojin</p></div>
+                  <div class="admin_post_date"><p>(2025-08-03 22:44)</p></div>
+                  <div class="admin_post_delete"><img src="./../../assets/img/댓글삭제버튼.png" alt=""></div>
+                </div>
+                <div class="admin_post_comment_content">
+                  <p>ㅋㅋㅋ 아 1빠 할 수 있었는데</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="admin_detail_delete">
-          <button type="button" id="update_btn">수 정</button>
-          <button type="button" od="delete_btn">삭 제</button>
+          <button type="button">삭 제</button>
         </div>       
       </div>  
     </div>

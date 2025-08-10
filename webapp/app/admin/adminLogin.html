@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>adminLogin</title>
   <link rel="stylesheet" href="./../../assets/css/admin/adminLogin.css">
+  <script defer src="./../../assets/js/admin/adminLogin.js"></script>
 </head>
 <body>
   <!-- 회색영역 -->
@@ -16,27 +17,24 @@
     </aside>
     <div class="bigbox">
       <div class="smallbox"><p class="AdminLogin">Admin Login</p></div>
+      <form id="admin_login_form" action="" method="post">
       <div class="bottomWrapper">
-        <div class="idPwBoxWrapper">
-          <!-- 아이디 패스워드 입력 영역 -->
-          <div class="idBox">
-            <label for="adminId">ID</label>
-          </div>
-          <form action="" method="post">
-            <div>
+        <!-- 아이디 패스워드 입력 영역 -->
+          <div class="idPwBoxWrapper">
+            <div class="idBox">
+              <label for="adminId">ID</label>
               <input type="text" id="adminId" name="adminId"/>
             </div>
             <div class="pwBox">
               <label for="adminPw">Password</label>
-            </div>
-            <div>
-              <input type="text" id="adminPw" name="adminPw"/>
+              <input type="password" id="adminPw" name="adminPw"/>
+              <p id="admin_loginfail">입력한 정보가 옳바르지 않습니다</p>
             </div>  
           </div>
           <!-- 로그인 버튼 -->
-          <button type="button" class="loginButton">Log in</button>
-        </form>
-      </div>
+          <button type="submit" class="loginButton">Log in</button>
+        </div>
+      </form>
     </div>
   </div>
 </body>
