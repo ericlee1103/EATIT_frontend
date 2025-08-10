@@ -18,15 +18,15 @@
   <main>
     <!-- 좌측 사이드 메뉴 -->
     <ul class="food_edit_list">
-      <div class="food_edit">마이 페이지</div> <!-- div-> li css 확인 후 협의 필요-->
-      <li class="food_edit_list_myinfo"><a href="./editUserInfo.html">내 정보 수정</a></li>
-      <li class="food_edit_list_store_info"><a href="./storeInfo.html">사업장 관리</a></li>
-      <li class="food_edit_list_sale_history"><a href="./salesHistoryList.html">판매 내역</a></li>
-      <li class="food_edit_list_food_purchase"><a href="./sellerfoodPurchaseList.html">음식 구매 내역</a></li>
-      <li class="food_edit_list_ingredient_purchase"><a href="./selleringredientPurchaseList.html">재료 구매 내역</a></li>
-      <li class="food_edit_list_myposts"><a href="./sellerMyPostsList.html">내 글 관리</a></li>
-      <li class="food_edit_list_mycomments"><a href="./sellerMyCommentsList.html">내 댓글 관리</a></li>
-      <li class="food_edit_list_myreviews"><a href="./sellerMyReviewsList.html">내 리뷰 관리</a></li>
+      <ol class="food_edit">마이 페이지</ol>
+      <li class="food_edit_list_myinfo"><a href="./../sellerMyPage/editSellerInfo.html">내 정보 수정</a></li>
+      <li class="food_edit_list_store_info"><a href="./../sellerMyPage/storeInfo.html">사업장 관리</a></li>
+      <li class="food_edit_list_sale_history"><a href="./../sellerMyPage/salesHistoryList.html">판매 내역</a></li>
+      <li class="food_edit_list_food_purchase"><a href="./../sellerMyPage/sellerfoodPurchaseList.html">음식 구매 내역</a></li>
+      <li class="food_edit_list_ingredient_purchase"><a href="./../sellerMyPage/selleringredientPurchaseList.html">재료 구매 내역</a></li>
+      <li class="food_edit_list_myposts"><a href="./../sellerMyPage/sellerMyPostsList.html">내 글 관리</a></li>
+      <li class="food_edit_list_mycomments"><a href="./../sellerMyPage/sellerMyCommentsList.html">내 댓글 관리</a></li>
+      <li class="food_edit_list_myreviews"><a href="./../sellerMyPage/sellerMyReviewsList.html">내 리뷰 관리</a></li>
     </ul>
 
     <div class="food_edit_container"> <!-- 1100px 영역-->
@@ -74,7 +74,7 @@
         </div>
         <div class="food_edit_expiry_container">
           <label for="food_edit_expiry">소비기한</label>
-          <input type="tel" id="food_edit_expiry" placeholder="YYYY-MM-DD-MI-SS">
+          <input type="text" id="food_edit_expiry" placeholder="YYYY-MM-DD-MIN -SS">
           <button type="button">수정</button>
         </div>
     </div> <!-- 컨텐츠 -->

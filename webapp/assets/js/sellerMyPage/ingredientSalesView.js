@@ -1,19 +1,15 @@
-// 파일 선택 시 미리보기 업데이트
-document.getElementById('ingredient_view_photo').addEventListener('change', function (e) {
-  const file = e.target.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = function (e) {
-      document.getElementById('ingredient_view_image_preview').src = e.target.result;
-    };
-    reader.readAsDataURL(file);
-  }
-});
+window.addEventListener('DOMContentLoaded', () => {
+  // 헤더 불러오기
+  fetch('./../../header_login.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
 
-// 음식 설명 글자 수 표시
-const description = document.getElementById('ingredient_view_explain');
-const charCount = document.getElementById('ingredient_view_char_count');
-
-description.addEventListener('input', function () {
-  charCount.textContent = `${description.value.length}/100`;
+  // 푸터 불러오기
+  fetch('./../../footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    });
 });
