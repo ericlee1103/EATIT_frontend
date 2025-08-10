@@ -32,36 +32,33 @@
       </nav>
 
       <section class="community_list">
-        <table>
-          <thead>
-            <tr>
-              <th>태그</th>
-              <th>제목</th>
-              <th>글쓴이</th>
-              <th>등록일</th>
-              <th>조회</th>
-              <th>추천</th>
-            </tr>
-          </thead>
-          <tbody id="postTableBody">
-            <tr>
-              <td>[한식]</td>
-              <td class="title"><a href="./../community/viewOtherPost.html">레전드 마라탕 만드는법</a></td>
-              <td>seojin</td>
-              <td>25-08-05</td>
-              <td>10</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>[간식/디저트]</td>
-              <td class="title"><a href="./../community/viewOtherPost.html">수제 초콜릿 만드는법</a></td>
-              <td>junghoon</td>
-              <td>25-08-06</td>
-              <td>10</td>
-              <td>7</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="list_header flex_row">
+          <div class="col tag_col">태그</div>
+          <div class="col title_col">제목</div>
+          <div class="col author_col">글쓴이</div>
+          <div class="col date_col">등록일</div>
+          <div class="col views_col">조회</div>
+          <div class="col likes_col">추천</div>
+        </div>
+
+        <div id="postListBody">
+          <div class="list_row flex_row">
+            <div class="col tag_col">[한식]</div>
+            <div class="col title_col"><a href="./../community/viewOtherPost.html">레전드 마라탕 만드는법</a></div>
+            <div class="col author_col">seojin</div>
+            <div class="col date_col">25-08-05</div>
+            <div class="col views_col">10</div>
+            <div class="col likes_col">3</div>
+          </div>
+          <div class="list_row flex_row">
+            <div class="col tag_col">[간식/디저트]</div>
+            <div class="col title_col"><a href="./../community/viewOtherPost.html">수제 초콜릿 만드는법</a></div>
+            <div class="col author_col">junghoon</div>
+            <div class="col date_col">25-08-06</div>
+            <div class="col views_col">10</div>
+            <div class="col likes_col">7</div>
+          </div>
+        </div>
       </section>
 
       <div class="controls_wrapper">
