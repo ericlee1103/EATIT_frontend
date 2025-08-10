@@ -5,20 +5,31 @@
 #buy_review{
   width: 1920px;
   height: 1080px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buy_review_bg{
+  width: 100%;
+  height: 100%;
   background-color: black;
+  opacity: 80%;
+  position: absolute;
+  z-index: -99;
 }
 .buy_reviewlist_bg{
   width: 550px;
-  height: 1000px;
-  margin: auto;
-  /* justify-content: center; */
+  height: 980px;
+  /* position: relative; */
+  position: absolute;
   border-radius: 8px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 .buy_reviewlist_bg>h3{
   display: inline-block;
   /* border: 1px solid red; */
-  margin:5px 0 0 30px;
+  margin:10px 0 0 30px;
 }
 
 /* 구매 메뉴 */
@@ -29,7 +40,7 @@
   display: flex;
   margin: 10px auto;
 }
-.buy_review_area img{
+.buy_review_area>img{
   width: 150px;
   height: 150px;
   background-color: black;
