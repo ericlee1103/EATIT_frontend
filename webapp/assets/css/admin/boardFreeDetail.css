@@ -154,9 +154,9 @@ img[alt="나무"]{
   vertical-align: middle;
   align-items: center;
 }
-.admin_post_delete img{
-  margin: auto;
-  width: 12px;
+#admin_comment_deletebtn{
+  background-color: #ffd3a1;
+  width: 18px;
 }
 .admin_post_comment_content p{
   word-break: break-all; 

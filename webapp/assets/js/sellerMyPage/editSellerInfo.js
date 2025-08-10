@@ -15,8 +15,8 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 // editUserInfo.js 파일 내에 추가
 document.addEventListener("DOMContentLoaded", function () {
-  const saveButtons = document.querySelectorAll(".info_save_buzz");
-
+  const saveButtons = document.querySelectorAll(".seller_info_save_buzz");
+  
   saveButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
       alert("정보가 정상적으로 수정되었습니다.");
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 document.addEventListener("DOMContentLoaded", function () {
-  const saveButtons = document.querySelectorAll(".total_info_save_buzz");
+  const saveButtons = document.querySelectorAll(".seller_total_info_save_buzz");
 
   saveButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
@@ -182,4 +182,64 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("인증되었습니다.");
     }
   });
+<<<<<<< HEAD
+=======
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const storeNameInput = document.getElementById("store_name");
+  const storeNameError = document.getElementById("store_name_error");
+  const storeNameSaveBtn = document.getElementById("store_name_save_btn");
+
+  storeNameSaveBtn.addEventListener("click", function () {
+    const storeName = storeNameInput.value.trim();
+
+    if (storeName === "") {
+      storeNameError.textContent = "업체명을 입력해주세요.";
+      storeNameError.style.color = "red";
+    } else {
+      storeNameError.textContent = ""; // 기존 경고 제거
+      alert("저장되었습니다.");
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const storeAddressInput = document.getElementById("store_address");
+  const storeAddressError = document.getElementById("store_address_error");
+  const storeAddressSaveBtn = document.getElementById("store_address_save_btn");
+
+  storeAddressSaveBtn.addEventListener("click", function () {
+    const address = storeAddressInput.value.trim();
+
+    if (address === "") {
+      storeAddressError.textContent = "업체 주소를 입력해주세요.";
+      storeAddressError.style.color = "red";
+    } else {
+      storeAddressError.textContent = ""; // 기존 경고 제거
+      alert("저장되었습니다.");
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const storePhoneInput = document.getElementById("store_phone");
+  const storePhoneError = document.getElementById("store_phone_error");
+  const storePhoneSaveBtn = document.getElementById("store_phone_save_btn");
+
+  storePhoneSaveBtn.addEventListener("click", function () {
+    const phone = storePhoneInput.value.trim();
+
+    // 숫자만, 길이 10~11자 (보통 휴대폰번호 기준)
+    const phoneRegex = /^[0-9]{10,11}$/;
+
+    if (!phoneRegex.test(phone)) {
+      storePhoneError.textContent = "업체 전화번호를 정확히 입력해주세요.";
+      storePhoneError.style.color = "red";
+    } else {
+      storePhoneError.textContent = "";
+      alert("저장되었습니다.");
+    }
+  });
+>>>>>>> main
 });
