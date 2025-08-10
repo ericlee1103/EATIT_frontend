@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.buy_bg{
+  width: 1920px;
+  height: 1080px;
+  background-color: #000000;
+  opacity: 50%;
+}
+.buy_reviewlist_bg{
+  width: 550px;
+  height: 800px;
+  margin: auto;
+  /* justify-content: center; */
+  border-radius: 8px;
+  background-color: rgb(198, 198, 198);
+}
+.buy_reviewlist_bg>h3{
+  display: inline-block;
+  border: 1px solid red;
+  margin:5px 0 0 30px;
+}
+
+/* 구매 메뉴 */
+.buy_review_area{
+  width: 450px;
+  height: 150px;
+  border: 1px solid red;
+  display: flex;
+  margin: 10px auto;
+}
+.buy_review_area img{
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.buy_review_detail{
+  width: 250px;
+  height: 150px;
+  margin: auto;
+  border: 1px solid blue;
+}
+.buy_review_detail_top{
+  width:250px;
+  height: 30px;
+  border: 1px solid white;
+  display: flex;
+}
+.buy_review_profile{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+}
+.buy_review_detail_top ul{
+  border:1px solid black;
+  width:100px;
+}
+.buy_review_detail_top ul li{
+  font-size: 10px;
+}
