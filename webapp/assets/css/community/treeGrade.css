@@ -1,0 +1,40 @@
+/* 나무 등급 */
+.tree_icon {
+  width: 22px;             /* 아이콘 가로 크기 */
+  height: 22px;            /* 아이콘 세로 크기 */
+  margin-left: 6px;        /* 작성자 이름과 이미지 사이 간격 */
+  vertical-align: middle;  /* 텍스트 중앙 정렬에 맞춤 */
+  cursor: pointer;         /* 마우스 오버 시 포인터 표시 (모달 띄우기 용도) */
+  border-radius: 50%;      /* 원형 모양 (선택사항) */
+  box-shadow: 0 0 3px rgba(0,0,0,0.2); /* 약간 그림자 */
+  transition: transform 0.2s ease;
+}
+
+.tree_icon:hover {
+  transform: scale(1.2);   /* 호버 시 살짝 확대 */
+}
+
+.tree-tooltip {
+  position: absolute;
+  background: #d4f0c0;  /* 연한 연두색 */
+  color: #3a5a00;       /* 진한 초록색 */
+  border-radius: 12px;
+  padding: 8px 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  white-space: normal;
+  z-index: 1000;
+  max-width: 160px;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.tree-tooltip div {
+  margin-bottom: 4px;
+}
+
+.tree-tooltip div:last-child {
+  margin-bottom: 0;
+}

@@ -56,6 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 초기 표시
+  // 초기 페이지 표시(처음엔 첫페이지니까 1로설정)
   displayList(currentPage);
 });
