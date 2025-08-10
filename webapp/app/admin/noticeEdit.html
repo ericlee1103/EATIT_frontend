@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>adminLogin</title>
-  <script defer src="./../../assets/js/admin/noticeDetail.js"></script>
-  <link rel="stylesheet" href="./../../assets/css/admin/noticeDetail.css">
+  <link rel="stylesheet" href="./../../assets/css/admin/noticeWrite.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
   integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,23 +27,25 @@
     </aside>
     <!-- 메인컨텐츠 영역 -->
     <div class="admin_inner">
-      <h1>게시글 관리</h1>
+      <h1>공지수정</h1>
       <div class="admin_listwrapper">
         <div class="admin_whitebox">
-          <div class="admin_post_titlebox">
-            <div class="admin_post_tag"><p>[공지]</p></div>
-            <div class="admin_post_icon"><img src="./../../assets/img/관리자.png" alt="관리자"></div>
-            <div class="admin_post_userid"><p>관리자</p></div>
-            <div class="admin_post_title"><p>밥세권 이용안내</p></div>
-            <div class="admin_post_date"><p>(2025-08-03 22:41)</p></div>
-            <div class="admin_post_view"><label for="views">조회 :</label>0</div>
-            <div class="admin_post_like"><label for="likes">추천 : </label>0</div>
-          </div>
-          <div class="admin_post_content"><p>사기치지말고 잘쓰자</p></div>
-        </div>
-        <div class="admin_detail_delete">
-          <button type="button" id="admin_updatebtn">수 정</button>
-          <button type="button" id="admin_deletebtn" >삭 제</button>
+          <form action="" method="post">
+            <div class="admin_notice_titlebox">
+              <select class="admin_notice_category">
+                <option value="notice">태그</option>
+                <option value="notice">공지 </option>
+              </select>
+              <label for="title">제목 : </label>
+              <input type="text" id="title">
+            </div>
+            <div class="write_api"></div>
+              <textarea name="" id="admin_notice_write"></textarea>
+            <div class="bottom_btn_area">
+              <input type="file" id="admin_file">
+              <button type="button" id="admin_notice_dowrite">작성완료</button>
+            </div>
+          </form>
         </div>       
       </div>  
     </div>
