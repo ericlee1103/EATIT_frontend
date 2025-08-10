@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#shopping_list{
+  width: 1920px;
+  height: 1080px;
+  background-color:#FFF5E4;
+}
+#wrap{
+  border: 1ps solid red;
+  width: 1100px;
+  height: 1080px;
+  background-color:#FBE3B9;
+  margin: 0 auto;
+  display: flex;
+}
+/* 장바구니 */
+#wrap>h2{
+  width: 1100px;
+  height: 30px;
+  border: 1px solid blue;
+  text-align: center;
+}
+.shopping_prod_list{
+  width: 640px;
+  height: 1000px;
+  /* border: 1px solid red; */
+}
+.shopping_select_all{
+  width: 630px;
+  height: 70px;
+  margin: 0 auto;
+  border: 1px solid green;
+  border-radius: 8px;
+  background-color: white;
+}
+.shopping_select_all_box{
+  width: 630px;
+  height: 70px;
+  display: flex;
+}
+/* 전체선택 체크박스  */
+#shopping_checkbox{
+  width: 25px;
+  height: 25px;
+  margin: 20px 0 0 30px;
+}
+.shopping_select_all_box label{
+  width: 100px;
+  height: 70px;
+  font-size: 20px;
+  margin-left:15px;
+  font-weight: bold;
+  line-height: 70px;
+}
+/* 선택삭제 버튼 */
+.shopping_delete_btn{
+  width: 90px;
+  height:35px;
+  background-color: rgb(206, 206, 206);
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 6px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 18px;
+  margin:15px 0 0 340px;
+}
+.shopping_prod{
+  width: 630px;
+  height: 600px;
+  border: 1px solid purple;
+  border-radius: 8px;
+  background-color: white;
+  margin: 5px auto;
+}
+.shopping_prod hr{
+  width: 600px;
+  margin: 0 auto;
+}
+#shopping_choice_checkbox{
+  width: 25px;
+  height: 25px;
+  margin: 20px 0 0 30px;
+}
+#shopping_store_checkbox{
+  width: 25px;
+  height: 25px;
+  margin: 20px 0 0 30px;
+}
+.shopping_prod label{
+  width: 100px;
+  font-size: 20px;
+  line-height: 70px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+/* 구매 상품별 선택 체크박스 */
+.shopping_menu_prod_list{
+  width: 580px;
+  height: 150px;
+  border: 1px solid red;
+  display: flex;
+  margin: 0 auto;
+}
+#shopping_prod_checkbox{
+  width: 25px;
+  height: 25px;
+}
+.shopping_menu_prod_list img{
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-left: 20px;
+}
+.shopping_info{
+  width: 350px;
+  height: 100px;
+  border: 1px solid green;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+}
+.shopping_menu_info{
+  width: 200px;
+  height: 80px;
+  margin: 20px auto;
+  border: 1px solid red;
+}
+.shopping_btn{
+  width: 150px;
+  margin-top: 10px;
+}
+/* 장바구니 휴지통 아이콘 */
+.shopping_delete{
+  width: 30px;
+  height: 30px;
+  border: 1px solid red;
+  display: flex;
+  float: right;
+}
+.shopping_delete svg{
+  width: 30px;
+  height: 30px;
+  border: 1px solid blue;
+}
+.buy_food_stock{
+  width: 100px;
+  height: 30px;
+  background-color: #FF5656;
+  /* border: 1px solid green; */
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 6px;
+  margin: 60px 0 0 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.shopping_stock_choice{
+  width: 50px;
+  height: 30px;
+  display: flex;
+  border: 1px solid blue;
+}
+.shopping_stock_choice p{
+  margin: 0 10px 0 10px;
+}
+.shopping_stock_choice_box{
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: rgb(187, 187, 187);
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+}
+
+
+
+
+
+.shopping_payment{
+  width: 460px;
+  height: 1000px;
+}
+.shopping_payment_api{
+  width: 455px;
+  height: 370px;
+  background-color: white;
+  border: 1px solid blue;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.shopping_payment_api>h2, .shopping_payment_total>h2{
+  width: 200px;
+  border: 1px solid black;
+  margin: 10px 0 0 20px;
+}
+.shopping_payment_total{
+  width: 455px;
+  height: 200px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 5px auto;
+  border: 1px solid red;
+}
+.shopping_payment_total ul{
+  width: 450px;
+  border: 1px solid green;
+  display: flex;
+  list-style: none;
+}
+.shopping_payment_total ul li{
+  width: 225px;
+  border: 1px solid blue;
+}
+.shopping_prod_price{
+  font-size: 12px;
+}

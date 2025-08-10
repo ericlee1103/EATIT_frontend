@@ -50,46 +50,81 @@ main {
   border-color: #ffb84d;
 }
 
-/* 게시판 테이블 */
-.community_list {
-  flex-grow: 1;
-  overflow-x: auto;
+/* 리스트 헤더, 각 행 공통 */
+.flex_row {
+  display: flex;
+  align-items: center;
 }
 
-.community_list table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 1rem;
-}
-
-.community_list th,
-.community_list td {
-  border: 1px solid #eee;
-  padding: 14px 18px;
-  text-align: center;
-  color: #444;
-  white-space: nowrap;
-}
-
-.community_list thead tr {
+/* 리스트 헤더 */
+.list_header {
   background-color: #ffefcc;
-}
-
-.community_list th {
   font-weight: 700;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 14px 18px;
+  color: #444;
 }
 
-.community_list .title {
+/* 리스트 본문 각 행 */
+.list_row {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 14px 18px;
+  color: #444;
+  transition: background-color 0.3s;
+}
+
+.list_row:hover {
+  background-color: #fff4d8;
+}
+
+/* 각 컬럼 너비 및 정렬 */
+.col {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 컬럼별 너비 (비율로 조절 가능) */
+.tag_col {
+  flex: 0 0 80px;
+  text-align: center;
+}
+
+.title_col {
+  flex: 1 1 auto;
   text-align: left;
 }
 
-.community_list .title a {
+.author_col {
+  flex: 0 0 90px;
+  text-align: center;
+}
+
+.date_col {
+  flex: 0 0 90px;
+  text-align: center;
+}
+
+.views_col {
+  flex: 0 0 60px;
+  text-align: center;
+}
+
+.likes_col {
+  flex: 0 0 60px;
+  text-align: center;
+}
+
+/* 제목 링크 스타일 */
+.title_col a {
   color: #5a5a5a;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.community_list .title a:hover {
+.title_col a:hover {
   color: #ffae42;
   text-decoration: underline;
 }
