@@ -1,6 +1,6 @@
 const updateBtn = document.getElementById('admin_updatebtn');
 const deletebtn = document.getElementById('admin_deletebtn');
-
+const logoutbtn = document.getElementById('admin_logoutbtn');
 updateBtn.addEventListener('click', () => {
   window.location.href = './../../app/admin/bannerEdit.html';
 });
@@ -10,3 +10,7 @@ deletebtn.addEventListener('click', () =>{
     return;
     location.replace('./../../app/admin/bannerList.html');
 })
+
+logoutbtn.addEventListener('click', () => {
+  location.replace('./../../app/admin/adminLogin.html');
+});
