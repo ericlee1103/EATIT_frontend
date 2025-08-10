@@ -136,17 +136,23 @@ a{
 }
 #admin_list_num{
   /* border: 1px solid black; */
-  width: 60px;
+  width: 50px;
   height: 40px;
   justify-content: center;
 }
 #admin_list_case{
   /* border: 1px solid black; */
-  width: 140px;
+  width: 120px;
   height: 40px;
 }
 #admin_list_reason{
-  width: 200px;
+  /* border: 1px solid black; */
+  width: 150px;
+  height: 40px;
+}
+#admin_list_postDetail{
+  /* border: 1px solid black; */
+  width: 140px;
   height: 40px;
 }
 #admin_list_reportedId{
@@ -168,12 +174,12 @@ a{
 }
 #admin_list_report{
   /* border: 1px solid black; */
-  width: 80px;
+  width: 50px;
   height: 40px;
 }
 #admin_list_warning{
   /* border: 1px solid black; */
-  width: 80px;
+  width: 50px;
   height: 40px;
 }
 /* 글 목록 행 */
@@ -197,14 +203,14 @@ a{
 }
 #admin_list_num_value{
   /* border: 1px solid black; */
-  width: 60px;
+  width: 50px;
   height: 40px;
   justify-content: center;
 }
 #admin_list_case_value{
   /* border: 1px solid black; */
-  width: 140px;
-  max-width: 140px;
+  width: 120px;
+  max-width: 120px;
   height: 40px;
   overflow: hidden;
   text-align: left;
@@ -213,8 +219,17 @@ a{
 }
 #admin_list_reason_value{
   /* border: 1px solid black; */
-  width: 200px;
-  max-width: 200px;
+  width: 150px;
+  max-width: 150px;
+  height: 40px;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+#admin_list_postDetail_value{
+  width: 140px;
+  max-width: 140px;
   height: 40px;
   overflow: hidden;
   text-align: left;
@@ -246,10 +261,10 @@ a{
   width: 80px;  
 }
 #admin_list_report_value{
-  width: 80px;
+  width: 50px;
 }
 #admin_list_warning_value{
-  width: 80px;
+  width: 50px;
 }
 /* 페이지네이션, 검색창 */
 .admin_pagenation_search{
