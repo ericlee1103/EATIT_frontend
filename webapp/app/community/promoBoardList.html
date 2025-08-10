@@ -7,10 +7,11 @@
   <title>홍보게시판(회원)</title>
   <link rel="stylesheet" href="./../../assets/css/community/promoBoardList.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./../../assets/css/header.css" />
   <link rel="stylesheet" href="./../../assets/css/footer.css" />
+  <script defer src="./../../assets/js/community/promoBoardList.js"></script>
+  <script defer src="./../../assets/js/community/loadHeaderFooter.js"></script>
 </head>
 
 <body>
@@ -22,66 +23,60 @@
     <div class="main_container">
       <nav class="community_category">
         <ul>
-          <li><a href="http://127.0.0.1:5500/app/community/communityMainUser.html#" id="category_event">공지사항/이벤트</a></li>
-          <li><a href="http://127.0.0.1:5500/app/community/freeBoardList.html#" id="category_free"">자유게시판</a></li>
-          <li><a href=" #" id="category_advertise" class="active">홍보게시판</a></li>
-          <li><a href="http://127.0.0.1:5500/app/community/recipeList.html#" id="category_recipe">레시피</a></li>
+          <li><a href="communityMainUser.html" id="category_event">공지사항/이벤트</a></li>
+          <li><a href="freeBoardList.html" id="category_free">자유게시판</a></li>
+          <li><a href="#" id="category_advertise" class="active">홍보게시판</a></li>
+          <li><a href="recipeList.html" id="category_recipe">레시피</a></li>
         </ul>
       </nav>
 
-      <section class="community_list">
-        <table>
-          <thead>
-            <tr>
-              <th>태그</th>
-              <th>제목</th>
-              <th>글쓴이</th>
-              <th>등록일</th>
-              <th>조회</th>
-              <th>추천</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>공지</td>
-              <td class="title"><a href="#">최근 이슈들에 대해 안내드립니다.</a></td>
-              <td>관리자</td>
-              <td>25-08-03</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>[카페]</td>
-              <td class="title"><a href="#">역삼역3번출구에서 3분거리 카페</a></td>
-              <td>namhyuk</td>
-              <td>25-08-03</td>
-              <td>0</td>
-              <td>0</td>
-            </tr>
-          </tbody>
-        </table>
+      <section class="community_list" aria-label="홍보게시판 목록">
+        <div class="list_header flex_row" role="rowgroup">
+          <div class="col tag_col" role="columnheader">태그</div>
+          <div class="col title_col" role="columnheader">제목</div>
+          <div class="col author_col" role="columnheader">글쓴이</div>
+          <div class="col date_col" role="columnheader">등록일</div>
+          <div class="col views_col" role="columnheader">조회</div>
+          <div class="col likes_col" role="columnheader">추천</div>
+        </div>
+
+        <div id="postListBody" class="list_body" role="rowgroup">
+          <div class="list_row flex_row" role="row">
+            <div class="col tag_col" role="cell">공지</div>
+            <div class="col title_col" role="cell"><a href="viewOtherPost.html">최근 이슈들에 대해 안내드립니다.</a></div>
+            <div class="col author_col" role="cell">관리자</div>
+            <div class="col date_col" role="cell">25-08-03</div>
+            <div class="col views_col" role="cell">0</div>
+            <div class="col likes_col" role="cell">0</div>
+          </div>
+
+          <div class="list_row flex_row" role="row">
+            <div class="col tag_col" role="cell">[카페]</div>
+            <div class="col title_col" role="cell"><a href="viewOtherPost.html">역삼역3번출구에서 3분거리 카페</a></div>
+            <div class="col author_col" role="cell">namhyuk</div>
+            <div class="col date_col" role="cell">25-08-03</div>
+            <div class="col views_col" role="cell">0</div>
+            <div class="col likes_col" role="cell">0</div>
+          </div>
+          <!-- 추가 게시글도 JS로 삽입 -->
+        </div>
       </section>
 
       <div class="controls_wrapper">
         <div class="function_container">
           <div class="search_box">
-            <form action="." method="post">
-              <input class="search_text" type="text" placeholder="검색어를 입력해 주세요" />
-              <button class="search_btn" type="submit">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
+            <input class="search_text" type="text" placeholder="검색어를 입력해 주세요" />
+            <button class="search_btn" type="button">
+              <i class="fas fa-search"></i>
+            </button>
           </div>
           <div class="write_form">
-            <a href="http://127.0.0.1:5500/app/community/writePromoBoard.html">글쓰기</a>
+            <a href="writePromoBoard.html">글쓰기</a>
           </div>
         </div>
 
-        <div class="pagination_container">
-          <a href="#" class="page active">1</a>
-          <a href="#" class="page">2</a>
-          <a href="#" class="page">3</a>
-          <a href="#" class="page">4</a>
+        <div class="pagination_container" id="pagination">
+          <!-- JS에서 페이지 번호 동적 생성 -->
         </div>
       </div>
     </div>

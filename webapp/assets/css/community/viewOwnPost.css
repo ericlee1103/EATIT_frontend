@@ -33,6 +33,11 @@ li {
   margin-bottom: 20px;
 }
 
+.category_item>a{
+  list-style-type: none;
+  text-decoration: none;
+}
+
 .category_section {
   display: flex;
   border-bottom: 2px solid #ddd;
@@ -52,11 +57,19 @@ li {
   transition: background-color 0.2s ease, font-weight 0.2s ease;
 }
 
-.category_item:hover,
-.category_item.active {
+
+.category_item:hover{
   background-color: #FF873C;
-  color: white;
+  color:white;
   font-weight: bold;
+}
+
+.category_item>a:hover{
+  color:white;
+}
+
+.category_item>a{
+  color:black;
 }
 
 /* ===== 게시글 헤더 ===== */
@@ -369,6 +382,22 @@ li {
   height: 40px;
   border-radius: 50%;
   border: 2px solid #cccccc;
+}
+
+.comment_delete{
+  /* border-radius:15px; */
+  background-color: transparent;
+  font-size:14px;
+  border:none;
+  cursor:pointer;
+  padding:10px;
+}
+
+.comment_delete:hover{
+  background-color: #eea12d;
+  color:white;
+  border-radius:20px;
+  transition: 0.3s ease;
 }
 
 /* ===== 모달창 스타일 ===== */
