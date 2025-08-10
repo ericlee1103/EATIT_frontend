@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
       <div class="comment_recommend_container">
-        <button class="comment_recommend" title="댓글 추천">
+        <button class="recommend" title="댓글 추천">
           <img src="./../../assets/img/like.jpg" alt="댓글 추천 버튼" />
         </button>
         <span class="recommend_count">0</span>
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     input.value = '';
 
     // 추가된 댓글에도 좋아요 기능 적용
-    attachCommentLikeEvent(newComment.querySelector('.comment_recommend'));
+    attachCommentLikeEvent(newComment.querySelector('.recommend'));
   });
 
   // 댓글 좋아요 기능

@@ -8,7 +8,6 @@ main{
   height: 1500px;
   display: flex;
   flex-direction: row;
-  
 }
 .foodpurchaselist_page{
   background-color: #FBE3B9;
@@ -42,7 +41,6 @@ main{
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 15px 0;
   width: 190px;
 }
 .foodpurchaselist_my_page_list > li > a{
@@ -51,6 +49,11 @@ main{
   color: white;
   display: flex;
   justify-content: center;
+  padding: 15px 0;
+}
+.foodpurchaselist_main{
+  background-color: #ff873c8c;
+  border-radius: 10px;
 }
 .foodpurchaselist_my_page_list > li:hover{
   width: 190px;
@@ -223,6 +226,8 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  color: black;
 }
 .foodpurchaselist_pagination{
   display: flex;

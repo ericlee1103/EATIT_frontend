@@ -13,15 +13,50 @@
 <body>
   <header id="header"></header>
   <main>
-    <div class="managemypostslist_page"></div>
-        <ul class="managemypostslist_my_page_list"><ol class="managemypostslist_my_page">마이 페이지</ol>
+    <ul class="managemyposts_my_page_list"><ol class="managemyposts_my_page">마이 페이지</ol>
       <li><a href="./../userMyPage/editUserInfo.html">내 정보 수정</a></li>
       <li><a href="./../userMyPage/foodPurchaseList.html">음식 구매 내역</a></li>
       <li><a href="./../userMyPage/ingredientPurchaseList.html">재료 구매 내역</a></li>
-      <li><a href="./../userMyPage/manageMyCommentsList.html">내 글 관리</a></li>
-      <li><a href="./../userMyPage/manageMyReviewsList.html">내 댓글 관리</a></li>
-      <li><a href="./../userMyPage/writeReview.html">내 리뷰 관리</a></li>
-      </ul>
+      <li class="managemyposts_main"><a href="./../userMyPage/manageMyPostsList.html">내 글 관리</a></li>
+      <li><a href="./../userMyPage/manageMyCommentsList.html">내 댓글 관리</a></li>
+      <li><a href="./../userMyPage/manageMyReviewsList.html">내 리뷰 관리</a></li>
+    </ul>
+    <div class="managemyposts_page">
+      <h2 class="managemyposts_list">내 글 관리</h2>
+      <div>
+        <div class="managemyposts_top">
+          <div class="managemyposts_sort">게시판 종류</div>
+          <div class="managemyposts_tag">태그</div>
+          <div class="managemyposts_title">글 제목</div>
+          <div class="managemyposts_date">게시일</div>
+          <div class="managemyposts_comments_count">댓글수</div>
+          <div class="managemyposts_like_count">추천수</div>
+        </div>
+        <div class="managemyposts_comments_list">
+          <div class="managemyposts_sort">자유게시판</div>
+          <div class="managemyposts_tag">[잡담]</div>
+          <div class="managemyposts_title">이집 개추요ㅋㅋㅋ</div>
+          <div class="managemyposts_date">2025-07-31</div>
+          <div class="managemyposts_comments_count">5</div>
+          <div class="managemyposts_like_count">10</div>
+        </div>
+        <div class="managemyposts_comments_list">
+          <div class="managemyposts_sort">래시피공유</div>
+          <div class="managemyposts_tag">[베이커리]</div>
+          <div class="managemyposts_title">기수바게트 만들기</div>
+          <div class="managemyposts_date">2025-08-01</div>
+          <div class="managemyposts_comments_count">2</div>
+          <div class="managemyposts_like_count">3</div>
+        </div>
+      </div>
+      <div class="managemyposts_pagination">
+        <a href="#" class="managemyposts_page_active">1</a>
+        <a href="#" class="managemyposts_page">2</a>
+        <a href="#" class="managemyposts_page">3</a>
+        <a href="#" class="managemyposts_page">4</a>
+        <a href="#" class="managemyposts_page">5</a>
+      </div>
+    </div> 
   </main>
   <footer id="footer"></footer>
 </body>

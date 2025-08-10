@@ -42,7 +42,6 @@ main{
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 15px 0;
   width: 190px;
 }
 .my_page_list_main{
@@ -51,13 +50,14 @@ main{
 }
 .my_page_list > li > a{
   width: 190px;
+  padding: 15px 0;
   text-decoration: none;
   color: white;
   display: flex;
   justify-content: center;
 }
 .my_page_list > li:hover{
-  width: 190px;
+  width: 100%;
   background-color: #ff873c8c;
   border-radius: 10px;
 }
@@ -180,7 +180,6 @@ main{
   height: 50px;
 }
 .advertisement_agreement{
-  align-items: center;
   margin: 0 80px;
 }
 .gray_box_adverisement{
@@ -190,6 +189,7 @@ main{
   border-radius: 10px;
   margin-left: 10px;
   display: flex;
+  align-items: center;
 }
 
 
