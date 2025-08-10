@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 /* 회색영역 */
-.admin-innerwrapper{
+.admin_innerwrapper{
   width: 1100px;
   min-height: 950px;
   background-color: #d9d9d9;
@@ -33,7 +33,7 @@ ul{
 a{
   text-decoration: none;
 }
-li{
+.sidebar_list{
   /* border: 1px solid black; */
   padding: 12px 0 14px;
   color: white;
@@ -46,7 +46,7 @@ li{
   background-color: #1e223f;
   scale: 110%;
 }
-.admin-inner{
+.admin_inner{
   width: 880px;
   margin: 20px auto;
 }
@@ -55,13 +55,13 @@ h1{
   font-weight:1000;
   margin-left: 50px;
 }
-.dashboard-topWrapper{
+.dashboard_topWrapper{
   /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   margin: 30px 50px ;
 }
-.dashboard-topbox{
+.dashboard_topbox{
   /* border: 1px solid black; */
   width: 200px;
   height: 120px;
@@ -69,18 +69,18 @@ h1{
   border-radius: 20px;
   box-shadow: 10px 10px 10px 5px gray;
 }
-.dashboard-topbox-key{
+.dashboard_topbox_key{
   /* border: 1px solid black; */
   font-size: 24px;
   margin-top: 10px;
   padding-left: 30px;
 }
-.dashboard-topbox-value{
+.dashboard_topbox_value{
   font-size: 32px;
   font-weight: 1000;
   padding-left: 30px;
 }
-.dashboard-graph{
+.dashboard_graph{
   width: 780px;
   height: 400px;
   background-color: white;
@@ -89,22 +89,22 @@ h1{
   justify-content: center;
   margin: auto;
 }
-.dashboard-graph-title{
+.dashboard_graph_title{
   /* border: 1px solid black; */
   font-size: 24px;
   padding-top: 40px;
   padding-left: 30px;
 }
-.dashboard-graph-img{
+.dashboard_graph_img{
   width: 700px;
   height: 300px;
   margin-left: 30px;
 }
-.dashboard-bottomWrapper{
+.dashboard_bottomWrapper{
   display: flex;
   justify-content: space-between;
 }
-.dashboard-bottombox{
+.dashboard_bottombox{
   height: 300px;
   width: 350px;
   margin: 30px 50px 0;
@@ -112,11 +112,21 @@ h1{
   border-radius: 20px;
   box-shadow: 10px 10px 10px 5px gray;
 }
-.dashboard-bottombox-title{
+.dashboard_bottombox_title{
   /* border: 1px solid black; */
   font-size: 24px;
   padding-top: 30px;
   padding-left: 30px;
 }
-
-
+.dashboard_bottombox ul{
+  padding: 10px;
+  /* border: 1px solid black; */
+}
+.dashboard_bottombox_zimtop3{
+  font-size: 20px;
+  margin: 20px 10px;
+}
+.dashboard_bottombox_usetop3{
+  font-size: 20px;
+  margin: 20px 10px;
+}

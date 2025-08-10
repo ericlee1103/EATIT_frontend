@@ -198,7 +198,8 @@ a{
 #admin_list_title_value{
   /* border: 1px solid black; */
   text-align: left;
-  max-width : 330px;
+  max-width : 350px;
+  width: 350px;
   height: 40px;
   overflow: hidden;
   text-align: left;
@@ -257,4 +258,7 @@ a{
 .search_btn{
   width: 24px;
   height: 24px;
+}
+.admin_list_memaber_link{
+  color: black;
 }
