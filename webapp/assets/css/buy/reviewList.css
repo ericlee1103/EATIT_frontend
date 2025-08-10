@@ -2,23 +2,22 @@
   margin: 0;
   padding: 0;
 }
-.buy_bg{
+#buy_review{
   width: 1920px;
   height: 1080px;
-  background-color: #000000;
-  opacity: 50%;
+  background-color: black;
 }
 .buy_reviewlist_bg{
   width: 550px;
-  height: 800px;
+  height: 1000px;
   margin: auto;
   /* justify-content: center; */
   border-radius: 8px;
-  background-color: rgb(198, 198, 198);
+  background-color: rgb(255, 255, 255);
 }
 .buy_reviewlist_bg>h3{
   display: inline-block;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin:5px 0 0 30px;
 }
 
@@ -26,7 +25,7 @@
 .buy_review_area{
   width: 450px;
   height: 150px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   margin: 10px auto;
 }
@@ -41,12 +40,12 @@
   width: 250px;
   height: 150px;
   margin: auto;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .buy_review_detail_top{
   width:250px;
   height: 30px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   display: flex;
 }
 .buy_review_profile{
@@ -56,9 +55,41 @@
   background-color: rgb(0, 0, 0);
 }
 .buy_review_detail_top ul{
-  border:1px solid black;
-  width:100px;
+  /* border:1px solid black; */
+  width:130px;
+  list-style: none;
 }
 .buy_review_detail_top ul li{
   font-size: 10px;
+}
+.buy_review_detail p{
+  font-size: 14px;
+}
+/* 영역선 */
+.buy_reviewlist_bg hr{
+  width: 500px;
+  margin: auto;
+}
+/* 페이지 네이션 */
+.buy_pagenation{
+  width: 350px;
+  height: 32px;
+  margin: 20px auto;
+}
+.buy_pagenation ul{
+  width: 350px;
+  height: 32px;
+  display: flex;
+}
+.buy_pagenation_box{
+  width: 32px;
+  height: 32px;
+  background-color: rgb(88, 88, 88);
+  border-radius: 4px;
+  /* border: 1px solid blue; */
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+  display: inline-block;
+  margin: auto;
 }
