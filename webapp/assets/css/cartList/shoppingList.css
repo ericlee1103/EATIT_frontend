@@ -125,6 +125,20 @@
   border: 1px solid red;
 }
 
+/* 장바구니 음식(재료) 영역 */
+.shopping_menu{
+  width: 630px;
+  height: 150px;
+  border: 1px solid green;
+}
+.shopping_menu form{
+  width: 25px;
+  height: 25px;
+  border: 1px solid red;
+}
+
+
+
 
 /* 구매 상품별 선택 체크박스 */
 .shopping_menu_prod_list{
