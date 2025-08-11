@@ -1,0 +1,121 @@
+header{
+  width : 1920px;
+  height : 150px;
+}
+main{
+  background-color: #FFF5E4;
+  width: 1920px;
+  height: 1500px;
+  display: flex;
+  flex-direction: row;
+}
+.sale_history_page{
+  background-color: #FBE3B9;
+  width: 1100px;
+  margin-left: 410px;
+}
+/* 왼쪽 메뉴바 */
+.sale_history_list {
+  position: fixed;
+  padding: 0;
+  margin: 100px 20px 0 200px;
+  width: 190px;
+  height: 585px;
+  font-size: 20px;
+  background-color: #a6998080;
+  border-radius: 10px;
+}
+
+.sale_history {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #FF873C;
+  width: 190px;
+  height: 110px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sale_history_list>li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 15px 0;
+  width: 190px;
+}
+
+.sale_history_list>li>a {
+  text-decoration: none;
+  color: white;
+}
+
+.sale_history_list>li:hover {
+  width: 190px;
+  background-color: #ff7722;
+  border-radius: 10px;
+}
+
+.sale_history_list_sale_history {
+  background-color: #FF873C;
+  width: 190px;
+  border-radius: 10px;
+}
+
+/* 표 */
+.sale_history_top{
+  margin-left: 50px;
+  background-color: #a69980;
+  width: 1000px;
+  height: 50px;
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  border: 1px solid black;
+}
+
+.sale_history_sales_list{
+  margin-left: 50px;
+  background-color: white;
+  width: 1000px;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  border: 1px solid black;  
+}
+
+.sale_history_top>div,
+.sale_history_list>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.sale_history_slae_num{
+  width: 50px;
+}
+.sale_history_sale_date{
+  width: 50px;
+}
+.sale_history_buyer_id{
+  width: 50px;
+}
+.sale_history_idx{
+  width: 50px;
+}
+.sale_history_category{
+  width: 50px;
+}
+.sale_history_menu{
+  width: 50px;
+}
+.sale_history_quantity{
+  width: 50px;
+}
+.sale_history_price{
+  width: 50px;
+}

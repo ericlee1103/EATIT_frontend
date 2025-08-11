@@ -7,7 +7,7 @@
 main {
   background-color: #FFF5E4;
   width: 1920px;
-  height: 1500px;
+  height: 500px;
   display: flex;
   flex-direction: row;
 
@@ -32,7 +32,7 @@ main {
   padding: 0;
   margin: 100px 20px 0 200px;
   width: 190px;
-  height: 550px;
+  height: 585px;
   font-size: 20px;
   background-color: #a6998080;
   border-radius: 10px;
