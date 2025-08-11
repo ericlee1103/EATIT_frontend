@@ -171,6 +171,7 @@
   height: 30px;
   /* border: 1px solid red; */
   margin-left: 70px;
+  text-decoration: none;
 }
 /* 장바구니 담기 버튼 */
 .buy_add_cart_btn{
@@ -181,6 +182,7 @@
   border-radius: 6px;
   text-align: center;
   line-height: 30px;
+  text-decoration: none;
 }
 .buy_food_menu hr{
   width: 480px;
