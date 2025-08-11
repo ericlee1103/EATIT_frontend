@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const rowsPerPage = 2;
+  const rowsPerPage = 3;
   let currentPage = 1;
 
   const listBody = document.getElementById("buy_food_section");
