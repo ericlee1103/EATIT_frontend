@@ -24,8 +24,9 @@ main {
 
 
 /* 전체 영역 끝 */
-/* 왼쪽 사이드 바 */
-.store_info_list {
+
+/* 좌측 메뉴 바 */
+.store_info_menu {
   position: fixed;
   padding: 0;
   margin: 100px 20px 0 200px;
@@ -36,7 +37,7 @@ main {
   border-radius: 10px;
 }
 
-.store_info {
+.store_info_menu_title {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #FF873C;
@@ -48,7 +49,7 @@ main {
   align-items: center;
 }
 
-.store_info_list>li {
+.store_info_menu_list>li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,30 +58,36 @@ main {
   width: 190px;
 }
 
-.store_info_list>li>a {
+.store_info_menu_list>li>a {
   text-decoration: none;
   color: white;
 }
 
-.store_info_list>li:hover {
+.store_info_menu_list>li:hover {
   width: 190px;
-  background-color: #ff7722;
+  background-color: #ff873c8c;
   border-radius: 10px;
 }
 
-.store_info_list_store_info {
+.store_info_menu_list_current {
   background-color: #FF873C;
   width: 190px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* 좌측 메뉴바 끝 */
+
 /* 가게상세정보 및 상품 구매 영역 */
-.store_info_left_area{
+.store_info_left_area {
   width: 550px;
   height: 1080px;
   margin-top: 20px;
 }
-.store_info_store_info{
+
+.store_info_store_info {
   width: 530px;
   height: 400px;
   background-color: white;
@@ -88,8 +95,9 @@ main {
   border-radius: 10px;
   margin: 0 auto;
 }
+
 /* 가게 이미지 */
-.store_info_store_info>img{
+.store_info_store_info>img {
   width: 530px;
   height: 300px;
   /* border: 1px solid blue; */
@@ -97,25 +105,29 @@ main {
   border-top-right-radius: 10px;
   object-fit: cover;
 }
+
 /* 가게 찜 하트 */
-.store_info_add_heart{
-  width: 40px;
-  height: 40px;
-  /* border: 1px solid red; */
+.store_info_edit_btns {
+  margin: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  float: right;
+  flex-direction: column;
+  width: 70px;
+  gap: 6px;
 }
-.store_info_add_heart a button{
-  left: 450px;
-  display: flex;
-  width: 40px;
-  height: 40px;
-  /* border: 1px solid blue; */
-  position: absolute;
+
+input[type='file']::file-selector-button,
+#edit_store_info_btn {
+  border-radius: 5px;
+  border: none;
+  background-color: #FF873C;
+  color: white;
+  width: 65px;
+  padding: 3px;
 }
-.store_info_store_info_detail{
+
+/*  */
+.store_info_store_info_detail {
   width: 250px;
   height: 100px;
   /* border: 1px solid hotpink; */
@@ -123,18 +135,22 @@ main {
   position: absolute;
   top: 425px;
 }
-.store_info_store_name{
+
+.store_info_store_name {
   font-size: 22px;
   font-weight: bold;
 }
-.store_info_store_address{
-  font-size:18px;
+
+.store_info_store_address {
+  font-size: 18px;
 }
-.store_info_store_open_time{
+
+.store_info_store_open_time {
   font-size: 16px;
 }
+
 /* 음식 메뉴 목록 영역 *************************/
-.store_info_food{
+.store_info_food {
   width: 530px;
   height: 630px;
   background-color: white;
@@ -142,52 +158,62 @@ main {
   /* border:1px solid black; */
   margin: 10px auto;
 }
-.store_info_food ul{
+
+.store_info_food ul {
   display: flex;
   list-style: none;
 }
-.store_info_food_menu{
+
+.store_info_food_menu {
   width: 530px;
   height: 550px;
   margin-top: 10px;
 }
-.store_info_food_menu_choice{
+
+.store_info_food_menu_choice {
   /* border: 1px solid blue; */
   margin: 5px 0 0 30px;
 }
-.store_info_food_menu_choice a{
+
+.store_info_food_menu_choice a {
   display: block;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
   color: black;
 }
-.store_info_food_menu_choice:nth-child(2) a{
+
+.store_info_food_menu_choice:nth-child(2) a {
   color: #acacac;
 }
-.store_info_food_menu_choice:last-child a{
+
+.store_info_food_menu_choice:last-child a {
   margin-left: 270px;
 }
+
 /* 구매 메뉴 */
-.store_info_food_menu_list{
+.store_info_food_menu_list {
   width: 450px;
   height: 150px;
   /* border: 1px solid red; */
   display: flex;
   margin: 10px auto;
 }
-.store_info_food_menu_list img{
+
+.store_info_food_menu_list img {
   width: 150px;
   height: 150px;
   border-radius: 8px;
   object-fit: cover;
 }
-.store_info_food_menu_info_stock{
+
+.store_info_food_menu_info_stock {
   width: 350px;
   height: 100px;
   /* border: 1px sold green; */
 }
-.store_info_food_stock{
+
+.store_info_food_stock {
   width: 100px;
   height: 30px;
   background-color: #FF5656;
@@ -199,24 +225,27 @@ main {
   font-size: 18px;
   font-weight: bold;
 }
-.store_info_food_menu_info{
+
+.store_info_food_menu_info {
   width: 250px;
   height: 80px;
   margin-left: 30px;
 }
-.store_info_food_stock_choice{
-  width: 260px; 
+
+.store_info_food_stock_choice {
+  width: 260px;
   margin-left: 30px;
   display: flex;
   /* border: 1px solid blue; */
 }
-.store_info_food_stock_choice p{
+
+.store_info_food_stock_choice p {
   margin: 0 10px 0 10px;
   font-size: 16px;
 }
 
 /* 장바구니 담기 버튼 */
-.store_info_edit_btn{
+.store_info_edit_btn {
   width: 85px;
   height: 30px;
   background-color: #202020;
@@ -225,12 +254,14 @@ main {
   text-align: center;
   line-height: 30px;
 }
-.store_info_food_menu hr{
+
+.store_info_food_menu hr {
   width: 480px;
   margin: 0 auto;
 }
+
 /* 재료 메뉴 목록 영역 *************************/
-.store_info_ingredient{
+.store_info_ingredient {
   width: 530px;
   height: 630px;
   background-color: white;
@@ -238,52 +269,62 @@ main {
   /* border:1px solid black; */
   margin: 10px auto;
 }
-.store_info_ingredient ul{
+
+.store_info_ingredient ul {
   display: flex;
   list-style: none;
 }
-.store_info_ingredient_menu{
+
+.store_info_ingredient_menu {
   width: 530px;
   height: 550px;
   margin-top: 10px;
 }
-.store_info_ingredient_menu_choice{
+
+.store_info_ingredient_menu_choice {
   /* border: 1px solid blue; */
   margin: 5px 0 0 30px;
 }
-.store_info_ingredient_menu_choice a{
+
+.store_info_ingredient_menu_choice a {
   display: block;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
   color: black;
 }
-.store_info_ingredient_menu_choice:nth-child(2) a{
+
+.store_info_ingredient_menu_choice:nth-child(2) a {
   color: #acacac;
 }
-.store_info_ingredient_menu_choice:last-child a{
+
+.store_info_ingredient_menu_choice:last-child a {
   margin-left: 270px;
 }
+
 /* 구매 메뉴 */
-.store_info_ingredient_menu_list{
+.store_info_ingredient_menu_list {
   width: 450px;
   height: 150px;
   /* border: 1px solid red; */
   display: flex;
   margin: 10px auto;
 }
-.store_info_ingredient_menu_list img{
+
+.store_info_ingredient_menu_list img {
   width: 150px;
   height: 150px;
   border-radius: 8px;
   object-fit: cover;
 }
-.store_info_ingredient_menu_info_stock{
+
+.store_info_ingredient_menu_info_stock {
   width: 350px;
   height: 100px;
   /* border: 1px sold green; */
 }
-.store_info_ingredient_stock{
+
+.store_info_ingredient_stock {
   width: 100px;
   height: 30px;
   background-color: #FF5656;
@@ -295,18 +336,21 @@ main {
   font-size: 18px;
   font-weight: bold;
 }
-.store_info_ingredient_menu_info{
+
+.store_info_ingredient_menu_info {
   width: 250px;
   height: 80px;
   margin-left: 30px;
 }
-.store_info_ingredient_stock_choice{
-  width: 260px; 
+
+.store_info_ingredient_stock_choice {
+  width: 260px;
   margin-left: 30px;
   display: flex;
   /* border: 1px solid blue; */
 }
-.store_info_ingredient_stock_choice p{
+
+.store_info_ingredient_stock_choice p {
   margin: 0 10px 0 10px;
   font-size: 16px;
 }
@@ -317,7 +361,7 @@ main {
 .store_info_ingredient_edit_btn,
 .store_info_ingredient_view_btn,
 
-.store_info_edit_btn{
+.store_info_edit_btn {
   width: 85px;
   height: 30px;
   background-color: #202020;
@@ -326,27 +370,32 @@ main {
   text-align: center;
   line-height: 30px;
 }
-.store_info_ingredient_menu hr{
+
+.store_info_ingredient_menu hr {
   width: 480px;
   margin: 0 auto;
 }
-.store_info_btns{
+
+.store_info_btns {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
 }
+
 /* buy 페이지네이션 */
-.store_info_pagenation{
+.store_info_pagenation {
   width: 290px;
   height: 32px;
   margin: 30px auto;
 }
-.store_info_pagenation ul{
+
+.store_info_pagenation ul {
   width: 290px;
   height: 32px;
   display: flex;
 }
-.store_info_pagenation_box{
+
+.store_info_pagenation_box {
   width: 32px;
   height: 32px;
   background-color: rgb(226, 226, 226);
@@ -358,68 +407,113 @@ main {
   display: inline-block;
   margin: auto;
 }
-.store_info_pagenation_box a{
+
+.store_info_pagenation_box a {
   text-decoration: none;
   color: black;
   display: block;
 }
-  /* 지도 API 및 원산지 표기 영역 전체 */
-.store_info_right_area{
+
+/* 지도 API 및 원산지 표기 영역 전체 */
+.store_info_right_area {
   width: 550px;
   height: 1200px;
   margin-top: 20px;
 }
-.store_info_map{
-  width: 530px;
-  height: 800px;
-  background-color: white;
-  border-radius: 10px;
-  /* border: 1px solid green; */
-  margin: 0 auto;
-}
-.store_info_origin{
+
+
+/* 원산지, 가게 상세 정보 */
+
+.store_info_detail_container {
+  display: flex;
+  flex-direction: column;
   width: 530px;
   height: 200px;
   background-color: white;
   /* border: 1px solid red; */
   border-radius: 10px;
   margin: 10px auto;
-  margin-top: 0px;
-  /* display: flex; */
 }
-.store_info_origin_menu{
-  height: 30px;
-  /* border: 1px solid blue; */
-  list-style: none;
-  line-height: 30px;
-  display: flex;
-}
-.store_info_origin_info{
-  margin: 15px 0 0 30px;
-}
-.store_info_origin_info a{
+
+.store_info_detail_title {
+  width: 100%;
   font-size: 20px;
+  margin: auto 10px;
   font-weight: bold;
-  text-decoration: none;
-  color: black;
 }
-/* 원산지 비활성화 */
-.store_info_origin_info:nth-child(2) a{
-  color:#acacac;
-}
-.store_info_origin_store_info{
-  height: 150px;
+
+.store_info_detail_list {
   display: flex;
 }
-.store_info_origin_content,
-.store_info_origin_seller,
-.store_info_menu_origin{
+
+.store_info_content {
   list-style: none;
   width: 150px;
   height: 130px;
-  margin: 30px 0 0 30px;
+  margin: 10px 0 10px 30px;
   font-size: 14px;
 }
-.store_info_menu_origin>li:first-child{
+
+.store_info_content>li:first-child {
   font-weight: bold;
+}
+
+/* 모달 스타일 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* input {
+  width: 100%;
+  padding: 6px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+} */
+
+.save-btn {
+  margin-top: 15px;
+  background-color: #ff873c;
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.save-btn:hover {
+  background-color: #e5722f;
 }
