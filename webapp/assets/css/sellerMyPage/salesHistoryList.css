@@ -26,7 +26,7 @@ main{
   border-radius: 10px;
 }
 
-.sale_history {
+.sale_history_my_page {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #FF873C;
@@ -38,7 +38,7 @@ main{
   align-items: center;
 }
 
-.sale_history_list>li {
+.sale_history_side_bar>li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,12 +47,12 @@ main{
   width: 190px;
 }
 
-.sale_history_list>li>a {
+.sale_history_side_bar>li>a {
   text-decoration: none;
   color: white;
 }
 
-.sale_history_list>li:hover {
+.sale_history_side_bar>li:hover {
   width: 190px;
   background-color: #ff7722;
   border-radius: 10px;
@@ -87,7 +87,12 @@ main{
   border: 1px solid black;  
 }
 
-.sale_history_top>div,
+.sale_history_top>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
 .sale_history_list>div{
   display: flex;
   justify-content: center;

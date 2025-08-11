@@ -16,7 +16,7 @@ main{
   margin-left: 410px;
 }
 /*  */
-.seller_my_page_list{
+.selle_my_page_list{
   position: fixed;
   padding: 0;
   margin: 60px 20px 0 200px;
@@ -26,7 +26,7 @@ main{
   background-color: #a6998080;
   border-radius: 10px;
 }
-.seller_my_page{
+.selle_my_page{
   padding: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -38,7 +38,7 @@ main{
   justify-content: center;
   align-items: center;
 }
-.seller_my_page_list > li{
+.selle_side_bar > li{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +49,7 @@ main{
  background-color: #ff873c8c;
  border-radius: 10px;
 }
-.seller_my_page_list > li > a{
+.selle_side_bar > li > a{
   width: 190px;
   padding: 15px 0;
   text-decoration: none;
@@ -57,7 +57,7 @@ main{
   display: flex;
   justify-content: center;
 }
-.seller_my_page_list > li:hover{
+.selle_side_bar > li:hover{
   width: 100%;
   background-color: #ff873c8c;
   border-radius: 10px;

@@ -9,22 +9,22 @@ main{
   display: flex;
   flex-direction: row;
 }
-.sellerfoodpurchaselist_page{
+.sellerfoodPurchase_page{
   background-color: #FBE3B9;
   width: 1100px;
   margin-left: 410px;
 }
-.sellerfoodpurchaselist_my_page_list{
+.sellerfoodPurchase_my_page_list{
   position: fixed;
   padding: 0;
   margin: 100px 20px 0 200px;
   width: 190px;
-  height: 550px;
+  height: 600px;
   font-size: 20px;
   background-color: #a6998080;
   border-radius: 10px;
 }
-.sellerfoodpurchaselist_my_page{
+.sellerfoodPurchase_my_page{
   padding: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -36,14 +36,14 @@ main{
   justify-content: center;
   align-items: center;
 }
-.sellerfoodpurchaselist_my_page_list > li{
+.sellerfoodPurchase_side_bar > li{
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   width: 190px;
 }
-.sellerfoodpurchaselist_my_page_list > li > a{
+.sellerfoodPurchase_side_bar > li > a{
   width: 190px;
   text-decoration: none;
   color: white;
@@ -51,11 +51,11 @@ main{
   justify-content: center;
   padding: 15px 0;
 }
-.sellerfoodpurchaselist_main{
+.sellerfoodPurchase_main{
   background-color: #ff873c8c;
   border-radius: 10px;
 }
-.sellerfoodpurchaselist_my_page_list > li:hover{
+.sellerfoodPurchase_side_bar > li:hover{
   width: 190px;
   background-color: #ff873c8c;
   border-radius: 10px;
