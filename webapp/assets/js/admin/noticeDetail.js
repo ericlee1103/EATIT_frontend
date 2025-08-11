@@ -10,3 +10,9 @@ deletebtn.addEventListener('click', () =>{
 updateBtn.addEventListener('click', () => {
   window.location.href = './../../app/admin/noticeEdit.html';
 });
+
+const logoutbtn = document.getElementById('admin_logoutbtn');
+
+logoutbtn.addEventListener('click', () => {
+  location.replace('./../../app/admin/adminLogin.html');
+});

@@ -259,3 +259,10 @@ a{
 .admin_list_member_link{
   color: black;
 }
+#admin_logoutbtn{
+  background-color: #1e223f;
+  color: white;
+  width: 70px;
+  height: 30px;
+  margin: 70px 77px;
+}

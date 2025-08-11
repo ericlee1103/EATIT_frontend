@@ -180,3 +180,10 @@ img[alt="가지"]{
   border-radius: 5px;
   font-weight: bold;
 }
+#admin_logoutbtn{
+  background-color: #1e223f;
+  color: white;
+  width: 70px;
+  height: 30px;
+  margin: 70px 77px;
+}
