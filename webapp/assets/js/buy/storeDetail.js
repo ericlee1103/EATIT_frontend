@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const rowsPerPage = 3;
+  const rowsPerPage = 2;
   let currentPage = 1;
 
   const listBody = document.getElementById("buy_food_section");
@@ -38,4 +38,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 초기 페이지 표시(처음엔 첫페이지니까 1로설정)
   displayList(currentPage);
+});
+
+
+const heartBtn = document.getElementsByClassName("active_heart");
+
+heartBtn.addEventListener('click', ()=>{
+  heartBtn.style.
 });
