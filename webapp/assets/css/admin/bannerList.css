@@ -191,10 +191,11 @@ a{
 }
 #admin_list_title_value{
   /* border: 1px solid black; */
-  max-width : 330px;
+  width: 350px;
+  max-width : 350px;
   height: 40px;
   overflow: hidden;
-  text-align: left;
+  text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
