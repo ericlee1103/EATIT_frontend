@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const generatedCode = "123456";
 
   function isValidPhone(phone) {
-    const phoneRegex = /^01[0-9]{8,9}$/;
+    const phoneRegex = /^01[0-9]{9,9}$/;
     return phoneRegex.test(phone);
   }
 

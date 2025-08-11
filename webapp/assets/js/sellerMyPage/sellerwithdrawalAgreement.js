@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 유효성 통과 시
     if (isValid) {
       alert("탈퇴되었습니다.");
-      window.location.href = "./../../../main.html";
+      window.location.href = "./../../main.html";
     }
   });
 });
