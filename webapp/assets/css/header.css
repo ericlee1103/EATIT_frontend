@@ -27,6 +27,10 @@
   text-decoration: none;
   font-size: 12px;
 }
+#header_login ul a:hover{
+  color:#F6D962;
+}
+
 /* 헤더 1100px 중앙정렬 영역 */
 #header_wrapper{
   width: 1100px;
@@ -66,7 +70,7 @@
   line-height: 70px;
   color: white;
 }
-#header_nav ul li a:hover{
+#header_nav ul li a:hover {
   color:#F6D962;
 }
 /* 헤더 네비게이션 드롭다운 메뉴 */
@@ -81,7 +85,7 @@
 }
 .header_nav_buy{
   margin-left: 500px;
-  display: flex;
+  display: none;
 }
 .header_nav_buy li{
   /* border: 1px solid blue; */
@@ -93,6 +97,27 @@
 }
 .header_nav_buy li a{
   /* border: 1px solid red; */
+  width: 150px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.header_nav_buy li a:hover,.header_nav_commu li a:hover {
+  color:#F6D962;
+}
+.header_nav_commu{
+  margin-left: 700px;
+  display: none;
+}
+.header_nav_commu li{
+  width: 150px;
+  height: 40px;
+  list-style: none;
+  text-align: center;
+  line-height: 40px;
+}
+.header_nav_commu li a{
   width: 150px;
   height: 40px;
   text-decoration: none;

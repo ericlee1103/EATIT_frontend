@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#buy_review{
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  display: flex;
+  justify-content: center; /* 가로 중앙 */
+  align-items: center;
+}
+.buy_review_bg{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 80%;
+  position: absolute;
+  z-index: -99;
+}
+.buy_reviewlist_bg{
+  width: 550px;
+  height: 980px;
+  position: absolute;
+  border-radius: 8px;
+  background-color: white;
+}
+.buy_reviewlist_bg>h3{
+  display: inline-block;
+  /* border: 1px solid red; */
+  margin:10px 0 0 30px;
+}
+
+/* 구매 메뉴 */
+.buy_review_area{
+  width: 500px;
+  height: 150px;
+  /* border: 1px solid red; */
+  display: flex;
+  margin: 10px auto;
+}
+.buy_review_area>img{
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.buy_review_detail{
+  width: 320px;
+  height: 150px;
+  margin: 0 0  0 auto;
+  /* border: 1px solid blue; */
+}
+.buy_review_detail_top{
+  width:320px;
+  height: 30px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+.buy_review_profile{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.buy_review_profile>img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.buy_review_detail_top ul{
+  /* border:1px solid black; */
+  width:130px;
+  margin-left: 30px;
+  list-style: none;
+}
+.buy_review_detail_top ul li{
+  font-size: 10px;
+}
+.review_star{
+  /* border: 1px solid red; */
+}
+.review_star>img{
+  width: 15px;
+}
+/* 영역선 */
+.buy_reviewlist_bg hr{
+  width: 500px;
+  margin: auto;
+}
+/* buy 페이지네이션 */
+.buy_pagenation{
+  width: 290px;
+  height: 32px;
+  margin: 30px auto;
+}
+.buy_pagenation ul{
+  width: 290px;
+  height: 32px;
+  display: flex;
+}
+.buy_pagenation_box{
+  width: 32px;
+  height: 32px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 4px;
+  /* border: 1px solid blue; */
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+  display: inline-block;
+  margin: auto;
+}
+.buy_pagenation_box a{
+  text-decoration: none;
+  color: black;
+  display: block;
+}

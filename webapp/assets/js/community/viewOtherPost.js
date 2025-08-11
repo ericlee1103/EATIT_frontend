@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const commentForm = document.querySelector('.comment_form');
   const commentList = document.querySelector('.comment_list');
-
+  const commentDelete = document.querySelectorAll('.comment_delete');
   // 댓글 작성 시 실시간 추가
   commentForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="comment_author">namhyuk</span>
           <time class="comment_timeline" datetime="${new Date().toISOString()}">
           [${new Date().toLocaleString()}]</time>
+          <button class="comment_delete" title="댓글 삭제">[댓글 삭제]</button>
           <p class="comment_text">${commentText}</p>
         </div>
       </div>
@@ -71,6 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <span class="recommend_count">0</span>
       </div>
     `;
+
+
 
 
     commentList.appendChild(newComment);
@@ -101,5 +104,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // 기존 댓글 좋아요 버튼에도 적용
   document.querySelectorAll('.comment_recommend').forEach((btn) => {
     attachCommentLikeEvent(btn);
+  });
+});
+
+
+
+// 댓글 삭제기능
+document.addEventListener('DOMContentLoaded', () => {
+  const commentList = document.querySelector('.comment_list');
+
+  commentList.addEventListener('click', (e) => {
+    if (e.target.classList.contains('comment_delete') || e.target.closest('.comment_delete')) {
+      const deleteBtn = e.target.closest('.comment_delete');
+      const commentItem = deleteBtn.closest('li.comment_item');
+      if (commentItem) {
+        commentItem.remove();
+      }
+    }
   });
 });

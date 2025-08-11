@@ -2,54 +2,57 @@ document.addEventListener("DOMContentLoaded", () => {
   const rowsPerPage = 5;
   let currentPage = 1;
 
-  const tableBody = document.getElementById("postTableBody");
-  const rows = Array.from(tableBody.querySelectorAll("tr"));
+  const listBody = document.getElementById("postListBody");
   const pagination = document.getElementById("pagination");
   const searchInput = document.querySelector(".search_text");
   const searchBtn = document.querySelector(".search_btn");
 
-  let filteredRows = [...rows];
+  const allRows = Array.from(listBody.querySelectorAll(".list_row"));
+  let filteredRows = [...allRows];
 
-  function displayTable(page) {
-    tableBody.innerHTML = "";
-    let start = (page - 1) * rowsPerPage;
-    let end = start + rowsPerPage;
-    filteredRows.slice(start, end).forEach(row => tableBody.appendChild(row));
+  function displayList(page) {
+    listBody.innerHTML = "";
+    const start = (page - 1) * rowsPerPage;
+    const end = start + rowsPerPage;
+    filteredRows.slice(start, end).forEach(row => listBody.appendChild(row));
     updatePagination();
   }
 
   function updatePagination() {
     pagination.innerHTML = "";
-    let totalPages = Math.max(1, Math.ceil(filteredRows.length / rowsPerPage));
+    const totalPages = Math.max(1, Math.ceil(filteredRows.length / rowsPerPage));
 
     for (let i = 1; i <= totalPages; i++) {
       const pageLink = document.createElement("a");
       pageLink.href = "#";
       pageLink.textContent = i;
       pageLink.className = "page" + (i === currentPage ? " active" : "");
-      pageLink.addEventListener("click", (e) => {
+      pageLink.addEventListener("click", e => {
         e.preventDefault();
+        if (currentPage === i) return;
         currentPage = i;
-        displayTable(currentPage);
+        displayList(currentPage);
       });
       pagination.appendChild(pageLink);
     }
   }
 
-  function searchTable() {
+  function searchList() {
     const query = searchInput.value.trim().toLowerCase();
-    filteredRows = rows.filter(row => row.textContent.toLowerCase().includes(query));
+    filteredRows = allRows.filter(row =>
+      row.textContent.toLowerCase().includes(query)
+    );
     currentPage = 1;
-    displayTable(currentPage);
+    displayList(currentPage);
   }
 
-  searchBtn.addEventListener("click", searchTable);
-  searchInput.addEventListener("keypress", (e) => {
+  searchBtn.addEventListener("click", searchList);
+  searchInput.addEventListener("keypress", e => {
     if (e.key === "Enter") {
       e.preventDefault();
-      searchTable();
+      searchList();
     }
   });
 
-  displayTable(currentPage);
+  displayList(currentPage);
 });

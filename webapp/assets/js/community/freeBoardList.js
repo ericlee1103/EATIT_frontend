@@ -1,67 +1,61 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const rowsPerPage = 2;
+  const rowsPerPage = 5;
   let currentPage = 1;
 
-  const tableBody = document.getElementById("postTableBody");
-  const allRows = Array.from(tableBody.querySelectorAll("tr"));
+  const listBody = document.getElementById("postListBody");
   const pagination = document.getElementById("pagination");
   const searchInput = document.querySelector(".search_text");
   const searchBtn = document.querySelector(".search_btn");
 
-  // 추천 수 로드
-  function loadRecommendations() {
-    allRows.forEach(row => {
-      const postId = row.dataset.id;
-      const count = localStorage.getItem(`recommend_${postId}`) || 0;
-      row.querySelector(".recommend_count").textContent = count;
-    });
-  }
+  // 모든 게시글 div (list_row) 배열로 저장
+  const allRows = Array.from(listBody.querySelectorAll(".list_row"));
+  let filteredRows = [...allRows]; // 필터링된 게시글 초기값
 
-  // 테이블 표시
-  function displayTable(page, dataRows) {
-    tableBody.innerHTML = "";
+  function displayList(page) {
+    listBody.innerHTML = "";
     const start = (page - 1) * rowsPerPage;
     const end = start + rowsPerPage;
-    const slicedRows = dataRows.slice(start, end);
-    slicedRows.forEach(row => tableBody.appendChild(row));
+    filteredRows.slice(start, end).forEach(row => listBody.appendChild(row));
+    updatePagination();
   }
 
-  // 페이지네이션 생성
-  function setupPagination(dataRows) {
+  function updatePagination() {
     pagination.innerHTML = "";
-    const pageCount = Math.ceil(dataRows.length / rowsPerPage);
-    for (let i = 1; i <= pageCount; i++) {
-      const btn = document.createElement("a");
-      btn.classList.add("page");
-      btn.textContent = i;
-      if (i === currentPage) btn.classList.add("active");
-      btn.addEventListener("click", () => {
+    const totalPages = Math.max(1, Math.ceil(filteredRows.length / rowsPerPage));
+
+    for (let i = 1; i <= totalPages; i++) {
+      const pageLink = document.createElement("a");
+      pageLink.href = "#";
+      pageLink.textContent = i;
+      pageLink.className = "page" + (i === currentPage ? " active" : "");
+      pageLink.addEventListener("click", e => {
+        e.preventDefault();
+        if (currentPage === i) return;
         currentPage = i;
-        displayTable(currentPage, dataRows);
-        setupPagination(dataRows);
+        displayList(currentPage);
       });
-      pagination.appendChild(btn);
+      pagination.appendChild(pageLink);
     }
   }
 
-  // 검색 기능
-  function filterRows() {
-    const keyword = searchInput.value.toLowerCase();
-    return allRows.filter(row => {
-      const title = row.querySelector(".title").textContent.toLowerCase();
-      return title.includes(keyword);
-    });
+  function searchList() {
+    const query = searchInput.value.trim().toLowerCase();
+    filteredRows = allRows.filter(row =>
+      row.textContent.toLowerCase().includes(query)
+    );
+    currentPage = 1;
+    displayList(currentPage);
   }
 
-  searchBtn.addEventListener("click", () => {
-    const filtered = filterRows();
-    currentPage = 1;
-    displayTable(currentPage, filtered);
-    setupPagination(filtered);
+  searchBtn.addEventListener("click", searchList);
+
+  searchInput.addEventListener("keypress", e => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      searchList();
+    }
   });
 
-  // 초기 실행
-  loadRecommendations();
-  displayTable(currentPage, allRows);
-  setupPagination(allRows);
+  // 초기 표시
+  displayList(currentPage);
 });
