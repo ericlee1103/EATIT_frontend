@@ -18,7 +18,7 @@ main {
   background-color: #fff;
   box-shadow: 0 0 12px rgba(168, 6, 6, 0.438);
   border-radius: 10px;
-  margin: 30px 10px; /* 좌우 마진 줄임 */
+  margin: 30px 10px;
   display: flex;
   flex-direction: column;
 }
@@ -55,8 +55,8 @@ main {
   /* flex-grow: 1; */
   overflow-x: auto;
   font-size: 1rem;
-  min-height: 500px; /* 최소 높이 지정해서 공간 확보 */
-  margin-bottom: 20px; /* 리스트와 컨트롤 사이 간격 */
+  min-height: 500px;
+  margin-bottom: 20px;
 }
 
 /* 리스트 헤더 */
@@ -155,7 +155,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* 위쪽 여백 없애서 붙임 */
+  margin-top: 20px;
   flex-wrap: wrap;
   gap: 10px;
 }

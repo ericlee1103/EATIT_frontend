@@ -5,12 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>공지사항/이벤트(회원)</title>
+
+  <!-- css -->
   <link rel="stylesheet" href="./../../assets/css/community/communityMainUser.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./../../assets/css/header.css" />
   <link rel="stylesheet" href="./../../assets/css/footer.css" />
+
+  <!-- 스크립트 -->
   <script defer src="./../../assets/js/community/noticeList.js"></script>
   <script defer src="./../../assets/js/community/loadHeaderFooter.js"></script>
   <script defer src="./../../assets/js/community/communityMainUser.js"></script>
@@ -18,13 +22,17 @@
 </head>
 
 <body>
+  <!-- 헤더 자리 -->
   <header id="header"></header>
 
   <main>
+    <!-- 왼쪽 사이드바 -->
     <aside class="side_bar"></aside>
 
+    <!-- 메인 컨텐츠 감싸는 박스 -->
     <div class="main_container">
-      <!-- 카테고리 -->
+
+      <!-- 카테고리 네비 -->
       <nav class="community_category">
         <ul>
           <li><a href="./../community/communityMainUser.html" id="category_event" class="active">공지사항/이벤트</a></li>
@@ -34,8 +42,9 @@
         </ul>
       </nav>
 
-      <!-- 게시판 목록 -->
+      <!-- 게시판 리스트 영역 -->
       <section class="community_list" aria-label="게시판 목록">
+        <!-- 리스트 제목 부분 -->
         <div class="list_header flex_row" role="rowgroup">
           <div class="col_tag" role="columnheader">태그</div>
           <div class="col_title" role="columnheader">제목</div>
@@ -45,7 +54,9 @@
           <div class="col_likes" role="columnheader">추천</div>
         </div>
 
+        <!-- 게시글 내용 들어가는 곳 -->
         <div id="postListBody" class="list_body" role="rowgroup">
+          <!-- 게시글 한 줄 -->
           <div class="list_row flex_row" role="row">
             <div class="col_tag" role="cell">공지</div>
             <div class="col_title" role="cell"><a href="./../community/viewOtherPost.html">밥세권 앱 신규 기능 업데이트 안내</a></div>
@@ -58,6 +69,7 @@
             <div class="col_likes" role="cell">35</div>
           </div>
 
+          <!-- 계속 복붙된 게시글들 -->
           <div class="list_row flex_row" role="row">
             <div class="col_tag" role="cell">공지</div>
             <div class="col_title" role="cell"><a href="./../../app/community/viewOtherPost.html">신규 입점 업체 ‘맛있는 반찬’ 소개</a></div>
@@ -120,14 +132,14 @@
         </div>
       </section>
 
-      <!-- 페이지네이션 -->
+      <!-- 페이지네이션 들어가는 자리 -->
       <div class="pagination_container" id="pagination">
-        <!-- 페이지 버튼 생성됨 -->
       </div>
 
-      <!-- 검색 & 글쓰기 -->
+      <!-- 검색창과 글쓰기 버튼 영역 -->
       <div class="controls_wrapper">
         <div class="function_container">
+          <!-- 검색 박스 -->
           <div class="search_box">
             <input class="search_text" type="text" placeholder="검색어를 입력해 주세요" />
             <button class="search_btn" type="button">
@@ -135,6 +147,7 @@
             </button>
           </div>
 
+          <!-- 글쓰기 버튼 -->
           <div class="write_form">
             <a href="./../community/writeRecipeBoard.html" id="writeBtn">글쓰기</a>
           </div>
@@ -142,9 +155,11 @@
       </div>
     </div>
 
+    <!-- 오른쪽 사이드바 -->
     <aside class="side_bar"></aside>
   </main>
 
+  <!-- 푸터 자리 -->
   <footer id="footer"></footer>
 </body>
 

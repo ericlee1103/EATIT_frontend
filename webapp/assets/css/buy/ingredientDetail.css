@@ -1,134 +1,168 @@
-*{
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-/* 구매>가게 상세 정보 */
-#buy_store_detail{
+
+/* 구매 > 가게 상세 정보 */
+#buy_store_detail {
   width: 1920px;
   height: 1080px;
   background-color: #FFF5E4;
 }
-.wrap{
+
+.wrap {
   width: 1100px;
   height: 1080px;
-  background-color:#FBE3B9;
+  background-color: #FBE3B9;
   margin: 0 auto;
   display: flex;
 }
+
 /* 가게상세정보 및 상품 구매 영역 */
-.buy_left_area{
+.buy_left_area {
   width: 550px;
   height: 1080px;
   margin-top: 20px;
 }
-.buy_store_info{
+
+.buy_store_info {
   width: 530px;
   height: 400px;
   background-color: white;
-  /* border: 1px solid green; */
   border-radius: 10px;
   margin: 0 auto;
+  position: relative;
 }
+
 /* 가게 이미지 */
-.buy_store_info>img{
+.buy_store_info>img {
   width: 530px;
   height: 300px;
-  /* border: 1px solid blue; */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-fit: cover;
 }
+
 /* 가게 찜 하트 */
-.buy_add_heart{
-  width: 40px;
-  height: 40px;
-  /* border: 1px solid red; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.buy_add_heart a img{
-  left: 450px;
-  display: flex;
-  width: 40px;
-  height: 40px;
-  /* border: 1px solid blue; */
+.buy_add_heart {
   position: absolute;
+  top: 10px;
+  right: 10px;
 }
-.buy_store_info_detail{
-  width: 250px;
-  height: 100px;
-  /* border: 1px solid hotpink; */
+
+.buy_add_heart img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.active_heart {
+  display: none;
+}
+
+/* 가게 정보 텍스트 */
+.buy_store_info_detail {
   margin-left: 30px;
-  position: absolute;
-  top: 425px;
+  margin-top: 10px;
 }
-.buy_store_name{
+
+.buy_store_name {
   font-size: 22px;
   font-weight: bold;
 }
-.buy_store_address{
-  font-size:18px;
+
+.buy_store_address {
+  font-size: 18px;
 }
-.buy_store_open_time{
+
+.buy_store_open_time {
   font-size: 16px;
 }
-/* 구매 > 메뉴 영역 */
-.buy_food{
+
+/* 메뉴 영역 */
+.buy_food {
   width: 530px;
   height: 630px;
   background-color: white;
   border-radius: 10px;
-  /* border:1px solid black; */
   margin: 10px auto;
 }
-.buy_food ul{
+
+.buy_food ul {
   display: flex;
   list-style: none;
+  justify-content: space-around;
 }
-.buy_food_menu{
-  width: 530px;
-  height: 550px;
-  margin-top: 10px;
+
+.link_review {
+  font-size: 1px;
 }
-.buy_food_menu_choice{
-  /* border: 1px solid blue; */
-  margin: 5px 0 0 30px;
+
+.buy_food_menu_choice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #FF5656;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  list-style: none;
 }
-.buy_food_menu_choice a{
+
+.buy_food_menu_choice li {
+  /* display: inline-block; */
+  font-size: 30px;
+}
+
+.link_ingredient {
+  color: #ffb84d;
   display: block;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
-  color: black;
 }
-.buy_food_menu_choice:first-child a{
-  color: #acacac;
+
+.link_menu,
+.link_review {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
-.buy_food_menu_choice:last-child a{
-  margin-left: 270px;
+
+.buy_map img {
+  align-items: center;
+  width: 530px;
+  height: 800px;
 }
-/* 구매 메뉴 */
-.buy_food_menu_list{
+
+/* 메뉴 리스트 */
+.buy_food_menu {
+  width: 530px;
+  height: 550px;
+  margin-top: 10px;
+}
+
+.buy_food_menu_list {
   width: 450px;
   height: 150px;
-  /* border: 1px solid red; */
   display: flex;
   margin: 10px auto;
+  /* border:2px solid black; */
+  border-radius: 10px;
+
 }
-.buy_food_menu_list img{
+
+.buy_food_menu_list img {
   width: 150px;
   height: 150px;
   border-radius: 8px;
   object-fit: cover;
 }
-.buy_food_menu_info_stock{
-  width: 350px;
-  height: 100px;
-  /* border: 1px sold green; */
-}
-.buy_food_stock{
+
+.buy_food_stock {
   width: 100px;
   height: 30px;
   background-color: #FF5656;
@@ -140,40 +174,69 @@
   font-size: 18px;
   font-weight: bold;
 }
-.buy_food_menu_info{
+
+.buy_food_menu_name {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 6px;
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.buy_food_menu_info {
   width: 250px;
-  height: 80px;
   margin-left: 30px;
 }
-.buy_food_stock_choice{
-  width: 260px; 
+
+/* 수량 조절 */
+.buy_food_stock_choice {
+  width: 260px;
   margin-left: 30px;
   display: flex;
-  /* border: 1px solid blue; */
+  align-items: center;
+  /* justify-content: right; */
 }
-.buy_food_stock_choice p{
-  margin: 0 10px 0 10px;
+
+.buy_food_stock_choice p {
+  margin: 0 10px;
   font-size: 16px;
 }
-/* 수량 버튼 */
-.buy_food_stock_choice_box{
+
+.buy_food_stock_choice_box {
   width: 30px;
   height: 30px;
 }
+
 .buy_food_stock_choice_box>a {
   width: 30px;
   height: 30px;
   display: block;
-  /* border: 1px solid red; */
+  text-align: center;
+  line-height: 30px;
+  background: #eee;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
 }
-.buy_food_stock_choice>a{
-  width: 110px;
+
+.minus,
+.plus {
+  background-color: #f37878;
+  width: 30px;
   height: 30px;
-  /* border: 1px solid red; */
-  margin-left: 70px;
+  text-align: center;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding-top: 2px;
 }
-/* 장바구니 담기 버튼 */
-.buy_add_cart_btn{
+
+/* 장바구니 버튼 */
+.buy_add_cart_btn {
   width: 110px;
   height: 30px;
   background-color: #202020;
@@ -181,38 +244,14 @@
   border-radius: 6px;
   text-align: center;
   line-height: 30px;
+  text-decoration: none;
+  margin-left: auto;
 }
-.buy_food_menu hr{
+
+.buy_food_menu hr {
   width: 480px;
   margin: 0 auto;
 }
-/* buy 페이지네이션 */
-/* .buy_pagenation{
-  width: 290px;
-  height: 32px;
-  margin: 30px auto;
-}
-.buy_pagenation ul{
-  width: 290px;
-  height: 32px;
-  display: flex;
-}
-.buy_pagenation_box{
-  width: 32px;
-  height: 32px;
-  background-color: rgb(226, 226, 226);
-  border-radius: 4px;
-  text-align: center;
-  line-height: 32px;
-  font-size: 16px;
-  display: inline-block;
-  margin: auto;
-}
-.buy_pagenation_box a{
-  text-decoration: none;
-  color: black;
-  display: block;
-} */
 
 /* 페이지네이션 */
 .pagination_container {
@@ -231,7 +270,6 @@
   color: #6a4e00;
   text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .page:hover {
@@ -246,60 +284,130 @@
   border-color: #ffae42;
 }
 
-  /* 지도 API 및 원산지 표기 영역 전체 */
-.buy_map_area{
+/* 지도 + 원산지 */
+.buy_map_area {
   width: 550px;
-  height: 1200px;
   margin-top: 20px;
 }
-.buy_map{
+
+.buy_map {
   width: 530px;
   height: 800px;
   background-color: white;
   border-radius: 10px;
-  /* border: 1px solid green; */
   margin: 0 auto;
 }
-.buy_origin{
+
+.buy_origin {
   width: 530px;
   height: 200px;
   background-color: white;
-  /* border: 1px solid red; */
   border-radius: 10px;
   margin: 10px auto;
-  /* display: flex; */
 }
-.buy_origin_menu{
+
+.buy_origin_menu {
   height: 30px;
-  /* border: 1px solid blue; */
   list-style: none;
   line-height: 30px;
   display: flex;
 }
-.buy_origin_info{
+
+.buy_origin_info {
   margin: 15px 0 0 30px;
 }
-.buy_origin_info a{
+
+.buy_origin_info a {
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   color: black;
 }
-/* 원산지 비활성화 */
-.buy_origin_info:nth-child(2) a{
-  color:#acacac;
+
+.buy_origin_info:nth-child(2) a {
+  color: #acacac;
 }
-.buy_origin_store_info{
+
+.buy_origin_store_info {
   height: 150px;
   display: flex;
 }
-.buy_origin_content, .buy_origin_seller{
+
+.buy_origin_content,
+.buy_origin_seller {
   list-style: none;
   width: 150px;
-  height: 130px;
   margin: 30px 0 0 30px;
   font-size: 14px;
 }
-.origin_info_inactive{
+
+.origin_info_inactive {
   display: none;
+}
+
+.price_menu {
+  padding-left: 30px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.buy_each_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.count {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.buy_food_menu_choice>li>a:hover {
+  color: #ffb84d;
+  transition: 0.3s ease;
+}
+
+.buy_map>img:hover {
+  border: 2px solid red;
+}
+
+.buy_add_cart_btn:hover {
+  background-color: #ffb84d;
+}
+
+.minus:hover,
+.plus:hover {
+  background-color: #ffb84d;
+}
+
+/* 찜 메시지 스타일 */
+.heart-message {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FF5656;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.heart-message.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.origin_info_inactive>ul>li {
+  list-style-type: none;
+}
+
+.origin_info_inactive>ul {
+  margin: auto;
+  padding:30px;
+  padding-left:140px;
 }

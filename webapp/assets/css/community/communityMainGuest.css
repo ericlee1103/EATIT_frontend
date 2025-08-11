@@ -18,7 +18,7 @@ main {
   background-color: #fff;
   box-shadow: 0 0 12px rgba(168, 6, 6, 0.438);
   border-radius: 10px;
-  margin: 30px 10px; /* 좌우 마진 줄임 */
+  margin: 30px 10px;
   display: flex;
   flex-direction: column;
 }
@@ -36,7 +36,7 @@ main {
   text-decoration: none;
   font-weight: 600;
   color: #555;
-  font-size: 1.1rem;
+  font-size: 17.6px; /* 1.1rem → 17.6px */
   padding: 8px 18px;
   border-radius: 25px;
   transition: background-color 0.3s, color 0.3s;
@@ -52,11 +52,10 @@ main {
 
 /* 게시판 리스트 */
 .community_list {
-  /* flex-grow: 1; */
   overflow-x: auto;
-  font-size: 1rem;
-  min-height: 500px; /* 최소 높이 지정해서 공간 확보 */
-  margin-bottom: 20px; /* 리스트와 컨트롤 사이 간격 */
+  font-size: 16px; /* 1rem → 16px */
+  min-height: 500px;
+  margin-bottom: 20px;
 }
 
 /* 리스트 헤더 */
@@ -155,7 +154,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* 위쪽 여백 없애서 붙임 */
+  margin-top: 20px;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -178,7 +177,7 @@ main {
   border-right: none;
   border-radius: 6px 0 0 6px;
   width: 220px;
-  font-size: 1rem;
+  font-size: 16px; /* 1rem → 16px */
   transition: border-color 0.3s;
 }
 
@@ -194,7 +193,7 @@ main {
   border-radius: 0 6px 6px 0;
   cursor: pointer;
   color: white;
-  font-size: 1.1rem;
+  font-size: 17.6px; /* 1.1rem → 17.6px */
   transition: background-color 0.3s;
 }
 
@@ -235,24 +234,24 @@ main {
 
 /* 나무 등급 */
 .tree_icon {
-  width: 22px;             /* 아이콘 가로 크기 */
-  height: 22px;            /* 아이콘 세로 크기 */
-  margin-left: 6px;        /* 작성자 이름과 이미지 사이 간격 */
-  vertical-align: middle;  /* 텍스트 중앙 정렬에 맞춤 */
-  cursor: pointer;         /* 마우스 오버 시 포인터 표시 (모달 띄우기 용도) */
-  border-radius: 50%;      /* 원형 모양 (선택사항) */
-  box-shadow: 0 0 3px rgba(0,0,0,0.2); /* 약간 그림자 */
+  width: 22px;
+  height: 22px;
+  margin-left: 6px;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease;
 }
 
 .tree_icon:hover {
-  transform: scale(1.2);   /* 호버 시 살짝 확대 */
+  transform: scale(1.2);
 }
 
 .tree-tooltip {
   position: absolute;
-  background: #d4f0c0;  /* 연한 연두색 */
-  color: #3a5a00;       /* 진한 초록색 */
+  background: #d4f0c0;
+  color: #3a5a00;
   border-radius: 12px;
   padding: 8px 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

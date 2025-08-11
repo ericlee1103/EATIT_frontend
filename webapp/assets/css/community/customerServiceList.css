@@ -1,94 +1,86 @@
-/* 전체 레이아웃 */
 main {
   display: flex;
-  background-color: #f9f7f1;
+  background-color: #f5f3eb;
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .side_bar {
   width: 410px;
-  background-color: #fff9f0;
+  background-color: #fffaf3;
 }
 
-/* 메인 컨테이너 */
 .main_container {
   flex: 1;
   padding: 30px 40px;
-  background-color: #fff;
-  box-shadow: 0 0 12px rgba(168, 6, 6, 0.438);
-  border-radius: 10px;
+  background-color: #fff8e1;
+  box-shadow: 0 0 14px rgba(168, 6, 6, 0.4);
+  border-radius: 12px;
   margin: 30px 20px;
   display: flex;
   flex-direction: column;
 }
 
-/* 카테고리 */
 .community_category ul {
   list-style: none;
   padding: 0;
   margin-bottom: 30px;
   display: flex;
-  gap: 20px;
+  gap: 22px;
 }
 
 .community_category a {
   text-decoration: none;
-  font-weight: 600;
-  color: #555;
-  font-size: 1.1rem;
-  padding: 8px 18px;
-  border-radius: 25px;
-  transition: background-color 0.3s, color 0.3s;
-  border: 1.5px solid transparent;
+  font-weight: 700;
+  color: #494949;
+  font-size: 1.15rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background-color 0.25s, color 0.25s;
+  border: 1.8px solid transparent;
 }
 
 .community_category a:hover,
 .community_category a.active {
-  background-color: #ffd580;
+  background-color: #ffce6d;
   color: #6a4e00;
   border-color: #ffb84d;
 }
 
-/* 리스트 헤더, 각 행 공통 */
 .flex_row {
   display: flex;
   align-items: center;
 }
 
-/* 리스트 헤더 */
 .list_header {
-  background-color: #ffefcc;
-  font-weight: 700;
-  border: 1px solid #eee;
-  border-radius: 6px;
-  padding: 12px 18px;
-  color: #444;
+  background-color: #fff1c0;
+  font-weight: 800;
+  border: 1px solid #eee5d3;
+  border-radius: 8px;
+  padding: 14px 22px;
+  color: #423d1f;
 }
 
-/* 리스트 본문 각 행 */
 .list_row {
-  border: 1px solid #eee;
-  border-radius: 6px;
-  padding: 10px 18px;
-  color: #444;
-  transition: background-color 0.3s;
+  border: 1px solid #eee5d3;
+  border-radius: 8px;
+  padding: 12px 22px;
+  color: #4a452b;
+  transition: background-color 0.25s;
 }
 
 .list_row:hover {
-  background-color: #fff4d8;
+  background-color: #fff7d1;
 }
 
-/* 각 컬럼 너비 및 정렬 */
 .col {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* 컬럼별 너비 (비율로 조절 가능) */
 .tag_col {
-  flex: 0 0 80px;
+  flex: 0 0 90px;
   text-align: center;
 }
 
@@ -98,61 +90,58 @@ main {
 }
 
 .author_col {
-  flex: 0 0 90px;
+  flex: 0 0 95px;
   text-align: center;
 }
 
 .date_col {
-  flex: 0 0 90px;
+  flex: 0 0 95px;
   text-align: center;
 }
 
 .views_col {
-  flex: 0 0 60px;
+  flex: 0 0 70px;
   text-align: center;
 }
 
 .likes_col {
-  flex: 0 0 60px;
+  flex: 0 0 70px;
   text-align: center;
 }
 
-/* 제목 링크 스타일 */
 .title_col a {
-  color: #5a5a5a;
+  color: #585858;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .title_col a:hover {
-  color: #ffae42;
+  color: #ffb347;
   text-decoration: underline;
 }
 
-/* 검색 및 페이지네이션 래퍼 */
 .controls_wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 32px;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
 }
 
-/* 검색 박스 */
 .search_box {
   display: flex;
   align-items: center;
 }
 
 .search_text {
-  padding: 8px 14px;
-  border: 1.5px solid #ddd;
+  padding: 9px 16px;
+  border: 1.8px solid #d9d2b9;
   border-right: none;
-  border-radius: 6px 0 0 6px;
-  width: 220px;
-  font-size: 1rem;
-  transition: border-color 0.3s;
+  border-radius: 8px 0 0 8px;
+  width: 230px;
+  font-size: 1.05rem;
+  transition: border-color 0.25s;
 }
 
 .search_text:focus {
@@ -163,46 +152,45 @@ main {
 .search_btn {
   background-color: #ffb84d;
   border: none;
-  padding: 8px 14px;
-  border-radius: 0 6px 6px 0;
+  padding: 9px 16px;
+  border-radius: 0 8px 8px 0;
   cursor: pointer;
   color: white;
-  font-size: 1.1rem;
-  transition: background-color 0.3s;
+  font-size: 1.15rem;
+  transition: background-color 0.25s;
 }
 
 .search_btn:hover {
-  background-color: #ffa500;
+  background-color: #ff9c00;
 }
 
-/* 페이지네이션 */
 .pagination_container {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-top:20px;
+  gap: 12px;
+  margin-top: 24px;
 }
 
 .page {
   display: inline-block;
-  padding: 8px 14px;
-  background-color: #fff4d8;
-  border-radius: 6px;
-  border: 1px solid #ffdb70;
+  padding: 9px 16px;
+  background-color: #fff7c4;
+  border-radius: 8px;
+  border: 1.5px solid #ffdb70;
   color: #6a4e00;
   text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s, color 0.3s;
+  font-weight: 700;
+  transition: background-color 0.25s, color 0.25s;
 }
 
 .page:hover {
-  background-color: #ffd580;
+  background-color: #ffce6d;
   color: #4a3000;
 }
 
 .page.active {
-  background-color: #ffb84d;
+  background-color: #ffae42;
   color: white;
   cursor: default;
-  border-color: #ffae42;
+  border-color: #ff9c00;
 }
