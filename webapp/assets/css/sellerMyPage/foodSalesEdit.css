@@ -32,7 +32,7 @@ main {
   padding: 0;
   margin: 100px 20px 0 200px;
   width: 190px;
-  height: 550px;
+  height: 585px;
   font-size: 20px;
   background-color: #a6998080;
   border-radius: 10px;
@@ -67,6 +67,12 @@ main {
 .food_edit_list>li:hover {
   width: 190px;
   background-color: #ff7722;
+  border-radius: 10px;
+}
+
+.food_edit_list_store_info {
+  background-color: #FF873C;
+  width: 190px;
   border-radius: 10px;
 }
 
@@ -154,6 +160,7 @@ button {
 button:hover {
   background-color: #ff7722;
 }
+
 /* 공통부분 끝 */
 /* 사진 미리보기 */
 #image-preview {
@@ -177,18 +184,19 @@ button:hover {
   flex-direction: column;
 }
 
-.food_edit_small_label{
+.food_edit_small_label {
   display: inline-block;
   width: 55px;
 }
-.food_edit_photo_container>div>label{
+
+.food_edit_photo_container>div>label {
   display: inline-block;
   width: 115px;
 }
 
 /* 오류 메시지 */
 .error-message {
-    color: red;
-    margin-top: 10px;
-    display: none;
+  color: red;
+  margin-top: 10px;
+  /* display: none; */
 }

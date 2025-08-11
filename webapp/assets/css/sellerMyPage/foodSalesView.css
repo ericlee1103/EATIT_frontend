@@ -175,6 +175,7 @@ button:hover {
   flex-direction: column;
 }
 
+/* 기타 등등 세부 */
 .food_view_small_label{
   display: inline-block;
   width: 55px;
