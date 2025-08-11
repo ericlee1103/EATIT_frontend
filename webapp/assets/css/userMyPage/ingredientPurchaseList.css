@@ -1,7 +1,7 @@
-header{
+/* header{
   width : 1920px;
   height : 150px;
-}
+} */
 main{
   background-color: #FFF5E4;
   width: 1920px;
@@ -9,11 +9,14 @@ main{
   display: flex;
   flex-direction: row;
 }
+/* 1100px 영역 */
 .ingredientpurchase_page{
   background-color: #FBE3B9;
   width: 1100px;
   margin-left: 410px;
 }
+/* 사이드메뉴 시작 */
+/* 사이드메뉴 큰틀 */
 .ingredientpurchase_my_page_list{
   position: fixed;
   padding: 0;
@@ -24,6 +27,7 @@ main{
   background-color: #a6998080;
   border-radius: 10px;
 }
+/* 사이드메뉴 제목 */
 .ingredientpurchase_my_page{
   padding: 0;
   border-top-left-radius: 10px;
@@ -36,6 +40,7 @@ main{
   justify-content: center;
   align-items: center;
 }
+/* 사이드메뉴 상세 메뉴 */
 .ingredientpurchase_side_bar > li{
   display: flex;
   justify-content: center;
@@ -51,6 +56,7 @@ main{
   justify-content: center;
   padding: 15px 0;
 }
+/* 사이드메뉴 현재위치 표시 */
 .ingredientpurchase_main{
   background-color: #ff873c8c;
   border-radius: 10px;
@@ -60,14 +66,18 @@ main{
   background-color: #ff873c8c;
   border-radius: 10px;
 }
+/* 사이드메뉴 끝 */
+/* 페이지 제목 */
 .ingredientpurchase_list{
   margin: 100px 0 45px 70px;
   font-size: 30px;
 }
+/* 목록 제목 */
 .ingredientpurchaselist_top{
   display: flex; 
   margin-left: 40px;
 }
+/* 목록 제목 상세 시작*/
 .ingredientpurchaselist_date{
   width: 155px;
   height: 50px;
@@ -138,10 +148,13 @@ main{
   align-items: center;
   justify-content: center;
 }
+/* 목록 제목 상세 끝 */
+/* 목록 더미글 한줄 */
 .ingredientpurchase_page_list{
   display: flex;
   margin-left: 40px;
 }
+/* 예시글 상세 시작 */
 .ingredientpurchase_date_list{
   width: 155px;
   height: 85px;
@@ -229,6 +242,8 @@ main{
   text-decoration: none;
   color: black;
 }
+/* 목록 예시글 상세 끝 */
+/* 페이지네이션 */
 .ingredientpurchase_pagination{
   display: flex;
   justify-self: center;

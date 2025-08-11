@@ -1,7 +1,7 @@
-header{
+/* header{
   width : 1920px;
   height : 150px;
-}
+} */
 main{
   background-color: #FFF5E4;
   width: 1920px;
@@ -9,11 +9,13 @@ main{
   display: flex;
   flex-direction: row;
 }
+/* 1100px 영역 */
 .managemyreviews_page{
   background-color: #FBE3B9;
   width: 1100px;
   margin-left: 410px;
 }
+/* 사이드메뉴바 전체 */
 .managemyreviews_my_page_list{
   position: fixed;
   padding: 0;
@@ -24,6 +26,7 @@ main{
   background-color: #a6998080;
   border-radius: 10px;
 }
+/* 사이드메뉴바 제목 */
 .managemyreviews_my_page{
   padding: 0;
   border-top-left-radius: 10px;
@@ -36,6 +39,7 @@ main{
   justify-content: center;
   align-items: center;
 }
+/* 사이드메뉴바 상세메뉴 */
 .managemyreviews_side_bar > li{
   display: flex;
   justify-content: center;
@@ -51,6 +55,7 @@ main{
   justify-content: center;
   padding: 15px 0;
 }
+/* 사이드메뉴바 현재위치 표시 */
 .managemyreviews_main{
   background-color: #ff873c8c;
   border-radius: 10px;
@@ -60,10 +65,12 @@ main{
   background-color: #ff873c8c;
   border-radius: 10px;
 }
+/* 페이지 제목 */
 .managemyreviews_list{
   margin: 100px 0 45px 70px;
   font-size: 30px;
 }
+/* 리뷰목록 제목 한줄 전체 */
 .managemyreviews_top{
   margin-left: 50px;
   background-color: #a69980;
@@ -74,6 +81,7 @@ main{
   display: flex;
   border: 1px solid black;
 }
+/* 리뷰 목록 예시 한줄 전체 */
 .managemyreviews_comments_list{
   margin-left: 50px;
   background-color: white;
@@ -84,6 +92,7 @@ main{
   display: flex;
   border: 1px solid black;  
 }
+/* 목록 상세 */
 .managemyreviews_restaurant_name{
   display: flex;
   justify-content: center;
@@ -126,7 +135,7 @@ main{
   height: 50px;
   width: 150px;
 }
-
+/* 페이지네이션 */
 .managemyreviews_pagination{
   display: flex;
   justify-self: center;

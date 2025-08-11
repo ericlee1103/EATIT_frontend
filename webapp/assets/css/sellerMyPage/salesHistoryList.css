@@ -41,6 +41,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+/* 메뉴바 현재 위치 표시 */
 .sale_history_menu_list_current {
   background-color: #FF873C;
   /* width: 190px; */

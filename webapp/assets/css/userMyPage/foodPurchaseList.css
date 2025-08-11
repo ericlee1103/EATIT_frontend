@@ -1,7 +1,7 @@
-header{
+/* header{
   width : 1920px;
   height : 150px;
-}
+} */
 main{
   background-color: #FFF5E4;
   width: 1920px;
@@ -9,11 +9,13 @@ main{
   display: flex;
   flex-direction: row;
 }
+/* 1100px 영역 */
 .foodpurchaselist_page{
   background-color: #FBE3B9;
   width: 1100px;
   margin-left: 410px;
 }
+/* 좌측 사이드메뉴 */
 .foodpurchaselist_my_page_list{
   position: fixed;
   padding: 0;
@@ -24,6 +26,7 @@ main{
   background-color: #a6998080;
   border-radius: 10px;
 }
+/* 사이드메뉴 제목 */
 .foodpurchaselist_my_page{
   padding: 0;
   border-top-left-radius: 10px;
@@ -36,6 +39,7 @@ main{
   justify-content: center;
   align-items: center;
 }
+/* 사이드메뉴 상세메뉴 */
 .foodpurchaselist_side_bar > li{
   display: flex;
   justify-content: center;
@@ -51,6 +55,7 @@ main{
   justify-content: center;
   padding: 15px 0;
 }
+/* 사이드메뉴 현재위치 표시 */
 .foodpurchaselist_main{
   background-color: #ff873c8c;
   border-radius: 10px;
@@ -60,10 +65,14 @@ main{
   background-color: #ff873c8c;
   border-radius: 10px;
 }
+/* 사이드메뉴 끝 */
+/* 페이지 제목 */
 .food_purchase_list{
   margin: 100px 0 45px 70px;
   font-size: 30px;
 }
+/* 목록 시작 */
+/* 목록 제목 */
 .food_purchase_list_top{
   display: flex; 
   margin-left: 40px;
@@ -138,10 +147,13 @@ main{
   align-items: center;
   justify-content: center;
 }
+/* 목록 더미글 */
+/* 목록 한줄 */
 .foodpurchase_page_list{
   display: flex;
   margin-left: 40px;
 }
+/* 목록 한줄의 각 요소들 */
 .food_purchase_date_list{
   width: 155px;
   height: 85px;
@@ -229,6 +241,7 @@ main{
   text-decoration: none;
   color: black;
 }
+/* 페이지네이션 */
 .foodpurchaselist_pagination{
   display: flex;
   justify-self: center;
