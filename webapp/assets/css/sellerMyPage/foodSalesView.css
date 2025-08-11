@@ -89,6 +89,11 @@ main{
   width: 700px;
   display: flex;
   justify-content: space-between;
+  background-color: white ;
+}
+.foodsalesview_table{
+  width: 700px;
+  display: flex;
 }
 
 .foodSalesView_title {
@@ -152,16 +157,6 @@ input[type="text"] {
   width: 500px;
 }
 
-button {
-  background-color: #ff873c;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
-  margin-left: 10px;
-  cursor: pointer;
-  height: 45px;
-}
 
 /* 공통부분 끝 */
 /* 사진 미리보기 */
