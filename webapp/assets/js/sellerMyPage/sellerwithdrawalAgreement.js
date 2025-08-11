@@ -15,10 +15,10 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const withdrawBtn = document.getElementById("withdrawBtn");
-  const passwordInput = document.getElementById("passwordInput");
-  const passwordError = document.getElementById("passwordError");
-  const radioError = document.getElementById("radioError");
+  const withdrawBtn = document.getElementById("seller_withdrawBtn");
+  const passwordInput = document.getElementById("seller_passwordInput");
+  const passwordError = document.getElementById("seller_passwordError");
+  const radioError = document.getElementById("seller_radioError");
 
   withdrawBtn.addEventListener("click", (e) => {
     e.preventDefault();

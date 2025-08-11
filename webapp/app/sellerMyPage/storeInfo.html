@@ -15,22 +15,21 @@
 
 <body>
   <header id="header"></header>
-  <main>
+  <main>x
     <!-- 좌측 사이드 메뉴 -->
-    <ul class="store_info_list">
-      <ol class="store_info">마이 페이지</ol>
-      <li class="store_info_list_myinfo"><a href="./../sellerMyPage/editSellerInfo.html">내 정보 수정</a></li>
-      <li class="store_info_list_store_info"><a href="./../sellerMyPage/storeInfo.html">사업장 관리</a></li>
-      <li class="store_info_list_sale_history"><a href="./../sellerMyPage/salesHistoryList.html">판매 내역</a></li>
-      <li class="store_info_list_ingredient_purchase"><a href="./../sellerMyPage/sellerfoodPurchaseList.html">음식 구매
-          내역</a>
-      </li>
-      <li class="store_info_list_ingredient_purchase"><a href="./../sellerMyPage/selleringredientPurchaseList.html">재료
-          구매 내역</a></li>
-      <li class="store_info_list_myposts"><a href="./../sellerMyPage/sellerMyPostsList.html">내 글 관리</a></li>
-      <li class="store_info_list_mycomments"><a href="./../sellerMyPage/sellerMyCommentsList.html">내 댓글 관리</a></li>
-      <li class="store_info_list_myreviews"><a href="./../sellerMyPage/sellerMyReviewsList.html">내 리뷰 관리</a></li>
-    </ul>
+    <div class="store_info_menu">
+      <div class="store_info_menu_title">마이 페이지</div>
+      <ul class="store_info_menu_list">
+        <li><a href="./../sellerMyPage/editSellerInfo.html">내 정보 수정</a></li>
+        <li><a href="./../sellerMyPage/sellerfoodPurchaseList.html">음식 구매 내역</a></li>
+        <li><a href="./../sellerMyPage/selleringredientPurchaseList.html">재료 구매 내역</a></li>
+        <li><a href="./../sellerMyPage/sellerMyPostsList.html">내 글 관리</a></li>
+        <li><a href="./../sellerMyPage/sellerMyCommentsList.html">내 댓글 관리</a></li>
+        <li><a href="./../sellerMyPage/sellerMyReviewsList.html">내 리뷰 관리</a></li>
+        <li class="store_info_menu_list_current"><a href="./../sellerMyPage/storeInfo.html">사업장 관리</a></li>
+        <li><a href="./../sellerMyPage/salesHistoryList.html">판매 내역</a></li>
+      </ul>
+    </div>
 
     <div class="store_info_container"> <!-- 1100px 영역-->
       <!-- 가게 정보 및 메뉴 영역 -->
@@ -43,10 +42,10 @@
             <p class="store_info_store_address">가게 주소</p>
             <p class="store_info_store_open_time">영업시간 00:00~00:00</p>
           </div>
-          <div class="store_info_add_heart">
-            <a href="#">
-              <button type="button">사진 수정</button>
-            </a>
+          <!-- 가게정보, 이미지 수정 버튼 -->
+          <div class="store_info_edit_btns">
+            <input type="file" id="edit_store_img" accept="image/*">
+            <button type="button" id="edit_store_info_btn"> 수정</button>
           </div>
         </div>
         <!-- 음식 메뉴 영역 -->
@@ -133,26 +132,26 @@
           </div>
         </div>
       </div>
+
       <!-- 오른쪽 부분 -->
       <div class="store_info_right_area">
 
         <!-- 사업자 정보 정보 표기 -->
-        <div class="store_info_origin">
-          <ul class="store_info_origin_menu">
-            <li class="store_info_origin_info"><a href="#">가게정보</a></li>
-            <!-- <li class="store_info_origin_info"><a href="#">원산지</a></li> -->
-          </ul>
-          <div class="store_info_origin_store_info">
-            <ul class="store_info_origin_content">
-              <li>사업자 등록 번호</li>
+        <div class="store_info_detail_container">
+          <div class="store_info_detail_title">가게정보
+            <!-- <button type="button" id="edit_store_info_btn"> 수정</button> -->
+          </div>
+          <div class="store_info_detail_list">
+            <ul class="store_info_content">
               <li>상호명</li>
+              <li>사업자 등록 번호</li>
               <li>주소</li>
               <li>가게 전화전호</li>
               <li>개업일</li>
             </ul>
-            <ul class="store_info_origin_seller">
-              <li>000-00-00000</li>
+            <ul class="store_info_content">
               <li>상호명</li>
+              <li>000-00-00000</li>
               <li>서울시 강남구</li>
               <li>02-000-0000</li>
               <li>2025년 08월 00일</li>
@@ -160,33 +159,51 @@
           </div>
         </div>
         <!-- 원산지 정보 표기 -->
-        <div class="store_info_origin">
-          <ul class="store_info_origin_menu">
-            <!-- <li class="store_info_origin_info"><a href="#">가게정보</a></li> -->
-            <li class="store_info_origin_info"><a href="#">원산지</a></li>
-          </ul>
-          <div class="store_info_origin_store_info">
-            <ul class="store_info_menu_origin">
+        <div class="store_info_detail_container">
+          <div class="store_info_detail_title">원산지
+            <!-- <button type="button" id="edit_store_origin_btn">원산지 수정</button> -->
+          </div>
+          <div class="store_info_detail_list">
+            <ul class="store_info_content">
               <li>음식명</li>
               <li>김치</li>
               <li>스테이크</li>
               <li>불고기</li>
               <li>페퍼로니</li>
             </ul>
-            <ul class="store_info_menu_origin">
+            <ul class="store_info_content">
               <li>원산지 </li>
               <li>국내산 </li>
               <li>국내산</li>
               <li>미국,벨기에,스페인 등</li>
               <li>외국산</li>
             </ul>
-            <ul class="store_info_menu_origin">
+            <ul class="store_info_content">
               <li>표시품목</li>
               <li>배추</li>
               <li>돼지고기</li>
               <li>돼지고기</li>
               <li>국내산</li>
             </ul>
+          </div>
+        </div>
+        <!-- 모달창 -->
+        <div id="editModal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <h2>원산지 수정</h2>
+            <form id="editForm">
+              <label for="foodName">음식명</label>
+              <input type="text" id="foodName" name="foodName" required>
+
+              <label for="origin">원산지</label>
+              <input type="text" id="origin" name="origin" required>
+
+              <label for="product">표시품목</label>
+              <input type="text" id="product" name="product" required>
+
+              <button type="submit" class="save-btn">저장</button>
+            </form>
           </div>
         </div>
         <!-- 재료 메뉴 영역 -->
