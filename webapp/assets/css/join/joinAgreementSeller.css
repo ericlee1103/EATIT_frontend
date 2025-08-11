@@ -1,24 +1,13 @@
-joi* {
+* {
   margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
 }
 
-/* 
-#header {
-  height: 100px;
-  width: 100%;
-  background-color: #ffffff;
-}
-#footer {
-  height: 100px;
-  width: 100%;
-  background-color: white;
-}  */
-
 main {
-  height: 830px;
+  /* height: 100vh; */
   width: 1920px;
+  height: 830px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,6 +24,7 @@ main {
   align-items: center;
 }
 
+/* 회원가입 단계 */
 .join_step {
   width: 100%;
   height: 50px;
@@ -50,11 +40,11 @@ main {
   display: inline-block;
   margin: 20px;
   background-color: #d9d9d9;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   text-align: center;
-  line-height: 140px;
+  line-height: 120px;
 }
 
 .join_step_agreement {
@@ -62,9 +52,9 @@ main {
   border-radius: 50%;
 }
 
-/* 약관동의 단계 끝******************************************************************* */
+/* 약관동의 단계 끝 ****/
 
-.seller_join_agree_container {
+.user_join_agree_container {
   /* border: 1px solid black; */
   font-size: 14px;
   display: flex;
@@ -83,8 +73,14 @@ main {
   margin: 15px;
 }
 
+/* 각 약관 container */
 form>div>div {
   margin: 5px;
+}
+
+/* 전체 동의 버튼 */
+.join_agree_all:hover {
+  background-color: #FF7722;
 }
 
 .join_agree_all {
@@ -100,20 +96,24 @@ form>div>div {
   border: 1px solid black;
 }
 
-.join_agree_personal_title,
-.join_agree_service_title {
+.join_agree_top_title,
+.join_agree_bottom_title {
   font-size: 20px;
   font-weight: bold;
   margin: 10px;
 }
 
-#join_agree_personal_2_sms,
-#join_agree_personal_2_call {
+#join_agree_bottom_adv_sms,
+#join_agree_bottom_adv_call {
   margin-left: 35px;
 }
 
-.join_agree_personal_2_txt {
+.join_agree_bottom_adv_txt {
   text-align: right;
+}
+
+.join_agree_next_btn:hover {
+  background-color: #FF7722;
 }
 
 .join_agree_next_btn {
@@ -126,14 +126,4 @@ form>div>div {
   font-size: 30px;
   color: white;
   border-radius: 10px;
-}
-
-.full-agreement {
-  float: right;
-  font-weight: blod;
-}
-
-.full-agreement:hover {
-  color: #ff924e;
-  cursor: pointer;
 }
