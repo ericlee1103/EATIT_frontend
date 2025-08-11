@@ -60,11 +60,6 @@ h1{
   text-align: center;
   padding-bottom: 20px;
 }
-.admin_pagetitle{
-  /* border: 1px solid black; */
-  font-weight:1000;
-  margin-left: 50px;
-}
 .admin_listwrapper{
   border: 1px solid black;
   padding: 10px;
@@ -169,6 +164,7 @@ img[alt="관리자"]{
   display: flex;
   justify-content: end;
 }
+/* 수정, 삭제 버튼 */
 .admin_detail_delete button{
   width: 50px;
   height: 30px;
@@ -177,6 +173,7 @@ img[alt="관리자"]{
   font-weight: bold;
   margin-left: 10px;  
 }
+/* 로그아웃 버튼 */
 #admin_logoutbtn{
   background-color: #1e223f;
   color: white;

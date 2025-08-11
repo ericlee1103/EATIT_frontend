@@ -56,11 +56,6 @@ h1{
   text-align: center;
   padding-bottom: 20px;
 }
-.admin_pagetitle{
-  /* border: 1px solid black; */
-  font-weight:1000;
-  margin-left: 50px;
-}
 .admin_listwrapper{
   border: 1px solid black;
   padding: 10px;
