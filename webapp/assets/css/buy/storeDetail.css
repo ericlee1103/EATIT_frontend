@@ -1,27 +1,31 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 /* 구매>가게 상세 정보 */
-#buy_store_detail{
+#buy_store_detail {
   width: 1920px;
   height: 1080px;
   background-color: #FFF5E4;
 }
-.wrap{
+
+.wrap {
   width: 1100px;
   height: 1080px;
-  background-color:#FBE3B9;
+  background-color: #FBE3B9;
   margin: 0 auto;
   display: flex;
 }
+
 /* 가게상세정보 및 상품 구매 영역 */
-.buy_left_area{
+.buy_left_area {
   width: 550px;
   height: 1080px;
   margin-top: 20px;
 }
-.buy_store_info{
+
+.buy_store_info {
   width: 530px;
   height: 400px;
   background-color: white;
@@ -29,8 +33,9 @@
   border-radius: 10px;
   margin: 0 auto;
 }
+
 /* 가게 이미지 */
-.buy_store_info>img{
+.buy_store_info>img {
   width: 530px;
   height: 300px;
   /* border: 1px solid blue; */
@@ -38,8 +43,9 @@
   border-top-right-radius: 10px;
   object-fit: cover;
 }
+
 /* 가게 찜 하트 */
-.buy_add_heart{
+.buy_add_heart {
   width: 40px;
   height: 40px;
   /* border: 1px solid red; */
@@ -48,7 +54,8 @@
   align-items: center;
   position: relative;
 }
-.buy_add_heart a img{
+
+.buy_add_heart a img {
   left: 450px;
   display: flex;
   width: 40px;
@@ -56,7 +63,8 @@
   /* border: 1px solid blue; */
   position: absolute;
 }
-.buy_store_info_detail{
+
+.buy_store_info_detail {
   width: 250px;
   height: 100px;
   /* border: 1px solid hotpink; */
@@ -64,18 +72,22 @@
   position: absolute;
   top: 425px;
 }
-.buy_store_name{
+
+.buy_store_name {
   font-size: 22px;
   font-weight: bold;
 }
-.buy_store_address{
-  font-size:18px;
+
+.buy_store_address {
+  font-size: 18px;
 }
-.buy_store_open_time{
+
+.buy_store_open_time {
   font-size: 16px;
 }
+
 /* 구매 > 메뉴 영역 */
-.buy_food{
+.buy_food {
   width: 530px;
   height: 630px;
   background-color: white;
@@ -83,52 +95,62 @@
   /* border:1px solid black; */
   margin: 10px auto;
 }
-.buy_food ul{
+
+.buy_food ul {
   display: flex;
   list-style: none;
 }
-.buy_food_menu{
+
+.buy_food_menu {
   width: 530px;
   height: 550px;
   margin-top: 10px;
 }
-.buy_food_menu_choice{
+
+.buy_food_menu_choice {
   /* border: 1px solid blue; */
   margin: 5px 0 0 30px;
 }
-.buy_food_menu_choice a{
+
+.buy_food_menu_choice a {
   display: block;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
   color: black;
 }
-.buy_food_menu_choice:nth-child(2) a{
+
+.buy_food_menu_choice:nth-child(2) a {
   color: #acacac;
 }
-.buy_food_menu_choice:last-child a{
+
+.buy_food_menu_choice:last-child a {
   margin-left: 270px;
 }
+
 /* 구매 메뉴 */
-.buy_food_menu_list{
+.buy_food_menu_list {
   width: 450px;
   height: 150px;
   /* border: 1px solid red; */
   display: flex;
   margin: 10px auto;
 }
-.buy_food_menu_list img{
+
+.buy_food_menu_list img {
   width: 150px;
   height: 150px;
   border-radius: 8px;
   object-fit: cover;
 }
-.buy_food_menu_info_stock{
+
+.buy_food_menu_info_stock {
   width: 350px;
   height: 100px;
   /* border: 1px sold green; */
 }
-.buy_food_stock{
+
+.buy_food_stock {
   width: 100px;
   height: 30px;
   background-color: #FF5656;
@@ -140,40 +162,48 @@
   font-size: 18px;
   font-weight: bold;
 }
-.buy_food_menu_info{
+
+.buy_food_menu_info {
   width: 250px;
   height: 80px;
   margin-left: 30px;
 }
-.buy_food_stock_choice{
-  width: 260px; 
+
+.buy_food_stock_choice {
+  width: 260px;
   margin-left: 30px;
   display: flex;
   /* border: 1px solid blue; */
 }
-.buy_food_stock_choice p{
+
+.buy_food_stock_choice p {
   margin: 0 10px 0 10px;
   font-size: 16px;
 }
+
 /* 수량 버튼 */
-.buy_food_stock_choice_box{
+.buy_food_stock_choice_box {
   width: 30px;
   height: 30px;
 }
+
 .buy_food_stock_choice_box>a {
   width: 30px;
   height: 30px;
   display: block;
   /* border: 1px solid red; */
 }
-.buy_food_stock_choice>a{
+
+.buy_food_stock_choice>a {
   width: 110px;
   height: 30px;
   /* border: 1px solid red; */
   margin-left: 70px;
+  text-decoration: none;
 }
+
 /* 장바구니 담기 버튼 */
-.buy_add_cart_btn{
+.buy_add_cart_btn {
   width: 110px;
   height: 30px;
   background-color: #202020;
@@ -181,13 +211,16 @@
   border-radius: 6px;
   text-align: center;
   line-height: 30px;
+  text-decoration: none;
 }
-.buy_food_menu hr{
+
+.buy_food_menu hr {
   width: 480px;
   margin: 0 auto;
 }
+
 /* buy 페이지네이션 */
-.buy_pagenation{
+/* .buy_pagenation{
   width: 290px;
   height: 32px;
   margin: 30px auto;
@@ -202,7 +235,6 @@
   height: 32px;
   background-color: rgb(226, 226, 226);
   border-radius: 4px;
-  /* border: 1px solid blue; */
   text-align: center;
   line-height: 32px;
   font-size: 16px;
@@ -213,14 +245,48 @@
   text-decoration: none;
   color: black;
   display: block;
+} */
+
+/* 페이지네이션 */
+.pagination_container {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  justify-content: center;
 }
-  /* 지도 API 및 원산지 표기 영역 전체 */
-.buy_map_area{
+
+.page {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #fff4d8;
+  border-radius: 6px;
+  border: 1px solid #ffdb70;
+  color: #6a4e00;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.page:hover {
+  background-color: #ffd580;
+  color: #4a3000;
+}
+
+.page.active {
+  background-color: #ffb84d;
+  color: white;
+  cursor: default;
+  border-color: #ffae42;
+}
+
+/* 지도 API 및 원산지 표기 영역 전체 */
+.buy_map_area {
   width: 550px;
   height: 1200px;
   margin-top: 20px;
 }
-.buy_map{
+
+.buy_map {
   width: 530px;
   height: 800px;
   background-color: white;
@@ -228,7 +294,8 @@
   /* border: 1px solid green; */
   margin: 0 auto;
 }
-.buy_origin{
+
+.buy_origin {
   width: 530px;
   height: 200px;
   background-color: white;
@@ -237,37 +304,50 @@
   margin: 10px auto;
   /* display: flex; */
 }
-.buy_origin_menu{
+
+.buy_origin_menu {
   height: 30px;
   /* border: 1px solid blue; */
   list-style: none;
   line-height: 30px;
   display: flex;
 }
-.buy_origin_info{
+
+.buy_origin_info {
   margin: 15px 0 0 30px;
 }
-.buy_origin_info a{
+
+.buy_origin_info a {
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   color: black;
 }
+
 /* 원산지 비활성화 */
-.buy_origin_info:nth-child(2) a{
-  color:#acacac;
+.buy_origin_info:nth-child(2) a {
+  color: #acacac;
 }
-.buy_origin_store_info{
+
+.buy_origin_store_info {
   height: 150px;
   display: flex;
 }
-.buy_origin_content, .buy_origin_seller{
+
+.buy_origin_content,
+.buy_origin_seller {
   list-style: none;
   width: 150px;
   height: 130px;
   margin: 30px 0 0 30px;
   font-size: 14px;
 }
-.origin_info_inactive{
+
+.origin_info_inactive {
   display: none;
 }
+
+.active_heart{
+  display:none;
+}
+
