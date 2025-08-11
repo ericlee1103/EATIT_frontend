@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   // 헤더 불러오기 및 경로 보정 후 삽입
-  fetch('/header_login.html')
+  fetch('./../../header_login.html')
     .then(response => response.text())
     .then(data => {
       const fixedData = fixRelativePaths(data);
@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
   // 푸터 불러오기 및 경로 보정 후 삽입
-  fetch('/footer.html')
+  fetch('./../../footer.html')
     .then(response => response.text())
     .then(data => {
       const fixedData = fixRelativePaths(data);
