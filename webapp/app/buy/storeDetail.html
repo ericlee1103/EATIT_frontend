@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,9 @@
   <!-- 파비콘 -->
   <link rel="shortcut icon" href="./../../assets/img/favicon.ico" type="image/x-icon">
   <title>밥세권</title>
+  <script defer src="./../../assets/js/buy/storeDetail.js"></script>
 </head>
+
 <body>
   <header id="header"></header>
 
@@ -31,7 +34,7 @@
             <p class="buy_store_address">가게 주소</p>
             <p class="buy_store_open_time">영업시간 00:00~00:00</p>
           </div>
-          
+
         </div>
         <!-- 구매> 메뉴 영역 -->
         <div class="buy_food">
@@ -40,8 +43,8 @@
             <li class="buy_food_menu_choice"><a href="#">재료</a></li>
             <li class="buy_food_menu_choice"><a href="./../buy/reviewList.html">리뷰(00)</a></li>
           </ul>
-          <div class="buy_food_menu">
-            <div class="buy_food_menu_list">
+          <div class="buy_food_menu" id="buy_food_section">
+            <div class="buy_food_menu_list" role="row">
               <img src="./../../assets/img/store.jpg" alt="">
               <div class="buy_food_menu_info_stock">
                 <div class="buy_food_stock">N개 남음</div>
@@ -55,7 +58,8 @@
                     <a href="#">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                         <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                        <path fill="#202020" d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM232 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296z"/>
+                        <path fill="#202020"
+                          d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM232 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296z" />
                       </svg>
                     </a>
                   </div>
@@ -64,7 +68,8 @@
                     <a href="#">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                         <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                        <path fill="#202020" d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM296 408L296 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296L296 296L296 232C296 218.7 306.7 208 320 208C333.3 208 344 218.7 344 232L344 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L344 344L344 408C344 421.3 333.3 432 320 432C306.7 432 296 421.3 296 408z"/>
+                        <path fill="#202020"
+                          d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM296 408L296 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296L296 296L296 232C296 218.7 306.7 208 320 208C333.3 208 344 218.7 344 232L344 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L344 344L344 408C344 421.3 333.3 432 320 432C306.7 432 296 421.3 296 408z" />
                       </svg>
                     </a>
                   </div>
@@ -75,7 +80,7 @@
               </div>
             </div>
             <hr>
-            <div class="buy_food_menu_list">
+            <div class="buy_food_menu_list" role="row">
               <img src="./../../assets/img/store.jpg" alt="">
               <div class="buy_food_menu_info_stock">
                 <div class="buy_food_stock">N개 남음</div>
@@ -89,7 +94,8 @@
                     <a href="#">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                         <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                        <path fill="#202020" d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM232 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296z"/>
+                        <path fill="#202020"
+                          d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM232 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296z" />
                       </svg>
                     </a>
                   </div>
@@ -98,7 +104,8 @@
                     <a href="#">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                         <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                        <path fill="#202020" d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM296 408L296 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296L296 296L296 232C296 218.7 306.7 208 320 208C333.3 208 344 218.7 344 232L344 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L344 344L344 408C344 421.3 333.3 432 320 432C306.7 432 296 421.3 296 408z"/>
+                        <path fill="#202020"
+                          d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM296 408L296 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296L296 296L296 232C296 218.7 306.7 208 320 208C333.3 208 344 218.7 344 232L344 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L344 344L344 408C344 421.3 333.3 432 320 432C306.7 432 296 421.3 296 408z" />
                       </svg>
                     </a>
                   </div>
@@ -109,7 +116,7 @@
               </div>
             </div>
             <hr>
-            <div class="buy_food_menu_list">
+            <div class="buy_food_menu_list" role="row">
               <img src="./../../assets/img/store.jpg" alt="">
               <div class="buy_food_menu_info_stock">
                 <div class="buy_food_stock">N개 남음</div>
@@ -123,7 +130,8 @@
                     <a href="#">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                         <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                        <path fill="#202020" d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM232 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296z"/>
+                        <path fill="#202020"
+                          d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM232 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296z" />
                       </svg>
                     </a>
                   </div>
@@ -132,7 +140,8 @@
                     <a href="#">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                         <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                        <path fill="#202020" d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM296 408L296 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296L296 296L296 232C296 218.7 306.7 208 320 208C333.3 208 344 218.7 344 232L344 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L344 344L344 408C344 421.3 333.3 432 320 432C306.7 432 296 421.3 296 408z"/>
+                        <path fill="#202020"
+                          d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM296 408L296 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296L296 296L296 232C296 218.7 306.7 208 320 208C333.3 208 344 218.7 344 232L344 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L344 344L344 408C344 421.3 333.3 432 320 432C306.7 432 296 421.3 296 408z" />
                       </svg>
                     </a>
                   </div>
@@ -143,16 +152,8 @@
               </div>
             </div>
             <!-- 페이지네이션 -->
-            <div class="buy_pagenation">
-              <ul>
-                <li class="buy_pagenation_box"><a href="#">&lt;</a></li>
-                <li class="buy_pagenation_box"><a href="#">1</a></li>
-                <li class="buy_pagenation_box"><a href="#">2</a></li>
-                <li class="buy_pagenation_box"><a href="#">3</a></li>
-                <li class="buy_pagenation_box"><a href="#">4</a></li>
-                <li class="buy_pagenation_box"><a href="#">5</a></li>
-                <li class="buy_pagenation_box"><a href="#">&gt;</a></li>
-              </ul>
+            <div class="pagination_container" id="pagination">
+            <!-- 페이지 버튼 생성됨 -->
             </div>
           </div>
         </div>
@@ -175,7 +176,7 @@
               <li>주소</li>
               <li>가게 전화전호</li>
               <li>개업일</li>
-            </ul> 
+            </ul>
             <ul class="buy_origin_seller">
               <li>000-00-00000</li>
               <li>상호명</li>
@@ -196,4 +197,5 @@
 
   <footer id="footer"></footer>
 </body>
+
 </html>
