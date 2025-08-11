@@ -37,7 +37,7 @@ main{
   justify-content: center;
   align-items: center;
 }
-.my_page_list > li{
+.side_bar > li{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +48,7 @@ main{
  background-color: #ff873c8c;
  border-radius: 10px;
 }
-.my_page_list > li > a{
+.side_bar > li > a{
   width: 190px;
   padding: 15px 0;
   text-decoration: none;
@@ -56,7 +56,7 @@ main{
   display: flex;
   justify-content: center;
 }
-.my_page_list > li:hover{
+.side_bar > li:hover{
   width: 100%;
   background-color: #ff873c8c;
   border-radius: 10px;
