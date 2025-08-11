@@ -24,33 +24,40 @@
   margin: auto;
   background-color: white;
   border-radius: 8px;
+  /* border: 1px solid red; */
 }
 .check{
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto;
   margin-top: 40px;
   background-color:  #FF924E;
-  display: block;
-  border: 1px solid blue;
+  display: flex;
 }
-.check img{
-  width: 30px;
-  border: 1px solid red;
+.check svg{
+  width: 40px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
 }
-/* 주문실패 메시지 */
-.box h3{
+/* 주문완료 메시지 */
+.box>h3{
   text-align: center;
   margin-top: 10px;
   /* border: 1px solid green; */
 }
-/* 장바구니이동 버튼 */
+/* 주문목록이동 버튼 */
+.box>a{
+  width: 200px;
+  height: 40px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 4px;
+  text-decoration: none;
+}
 .buylist_btn{
   width: 200px;
   height: 40px;
-  margin: 0 auto;
-  margin-top: 15px;
   background-color: #FF924E ;
   border-radius: 4px;
   color: white;
@@ -59,7 +66,7 @@
   text-align: center;
   line-height: 40px;
 }
-/* 장바구니 이동 버튼 마우스 호버시 색상변경 */
+/* 주문목록이동 버튼 마우스 호버시 색상변경 */
 .buylist_btn:hover{
   background-color: #ff7722;
 }
