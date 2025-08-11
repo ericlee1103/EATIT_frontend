@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="./../../assets/css/footer.css">
   <link rel="stylesheet" href="./../../assets/css/cartList/shoppingList.css">
   
-  <title>Document</title>
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="./../../assets/img/favicon.ico" type="image/x-icon">
+  <title>밥세권</title>
 </head>
 <body>
   <header id="header"></header>
@@ -21,28 +23,48 @@
 
       <div class="shopping_prod_list">
         <div class="shopping_select_all">
-          <form class="shopping_select_all_box">
+          <form action="" method="get" class="shopping_select_all_box">
             <input type="checkbox" name="" id="shopping_checkbox">
             <label for="">전체선택</label>
-            <div class="shopping_delete_btn">선택삭제</div>
+            <a href="#">
+              <div class="shopping_delete_btn">선택삭제</div>
+            </a>
           </form>
         </div>
 
-        <div class="shopping_prod_select">
-          <form action="" method="get" class="shopping_prod_select_box">
-            <input type="checkbox" name="" id="shopping_choice_checkbox">
-            <label for="">선택구매</label>
-            <hr>
-          </form>
+        <div class="shopping_list_all">
+          <div class="shopping_prod_select">
+            <form action="" method="get" class="shopping_prod_select_box">
+              <input type="checkbox" name="" id="shopping_choice_checkbox">
+              <label for="">선택구매</label>
+              <hr>
+            </form>
+          </div>
+          <div class="shopping_store_name">
+            <form action="" method="get">
+              <input type="checkbox" name="" id="shopping_store_checkbox">
+              <label for="">상품판매 가게명</label>
+            </form>
+          </div>
+
+
+          
+          <!-- <div class="shopping_store_name">
+            <form action="" method="get">
+              <input type="checkbox" name="" id="shopping_store_checkbox">
+              <label for="">상품판매 가게명</label>
+            </form>
+          </div> -->
+
+
+
         </div>
+        
 
-        <!-- div추가해야됨 하나씩 감싸기 -->
-          <form action="" method="get">
-            <input type="checkbox" name="" id="shopping_store_checkbox">
-            <label for="">상품판매 가게명</label>
-          </form>
+        
+          
 
-          <div class="shopping_menu_prod_list">
+          <!-- <div class="shopping_menu_prod_list">
             <form action="" method="get">
               <input type="checkbox" name="" id="shopping_prod_checkbox">
             </form>
@@ -52,9 +74,10 @@
                 <h3>[best]메뉴명</h3>
                 <p>소비기한:2025년00월00일</p>
                 <h3>0,000원</h3>
-              </div>
+              </div> -->
+              
               <!-- 장바구니 상품 delete -->
-              <div class="shopping_btn">
+              <!-- <div class="shopping_btn">
                 <a href="#" class="shopping_delete">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
                     <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -63,7 +86,7 @@
                 </a>
                 <div class="buy_food_stock">N개 남음</div>
               </div>
-            </div>
+            </div> -->
 
             <!-- 수량조절 -->
             <div class="shopping_prod_cnt">
