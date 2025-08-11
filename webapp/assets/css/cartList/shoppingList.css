@@ -38,7 +38,7 @@
   width: 630px;
   height: 70px;
   margin: 0 auto;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   border-radius: 8px;
   background-color: white;
 }
@@ -74,7 +74,7 @@
   width: 90px;
   height: 35px;
   background-color: rgb(206, 206, 206);
-  border: 1px solid rgb(77, 77, 77);
+  /* border: 1px solid rgb(77, 77, 77); */
   border-radius: 6px;
   text-align: center;
   line-height: 35px;
@@ -85,9 +85,9 @@
 /* 상품 목록 전체 영역 */
 .shopping_list_all {
   background-color: white;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 630px;
-  height: 600px;
+  height: 800px;
   border-radius: 8px;
   margin: 5px auto;
   display: flex;
@@ -98,7 +98,7 @@
 .shopping_prod_select {
   width: 630px;
   height: 70px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin: 5px auto;
 }
 
@@ -130,7 +130,7 @@
 .shopping_store_name {
   width: 630px;
   height: 60px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   /* margin-left: 30px; */
 }
 
@@ -142,15 +142,15 @@
   /* margin: auto; */
   margin-left: 15px;
   font-weight: bold;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
 }
 
 /* 장바구니 음식(재료) 영역 */
 .shopping_menu {
   width: 630px;
-  height: 150px;
-  border: 1px solid green;
+  height: 400px;
+  border-bottom: 1px solid black;
   /* margin-left: 30px; */
   display: flex;
   flex-direction: row;
@@ -164,12 +164,14 @@
 
 /* 구매 상품별 선택 체크박스 */
 .shopping_menu_prod_list {
-  width: 470px;
-  height: 150px;
+  width: 400px;
+  height: 200px;
   border: 1px solid blue;
   display: flex;
-  margin: 0 auto;
-  align-items: center;
+  flex-direction: row;
+  /* margin: 0 auto; */
+  /* align-items: center; */
+  background-color: #FF5656;
 }
 
 .shopping_menu_prod_list img {
@@ -192,19 +194,19 @@
   width: 200px;
   height: 80px;
   margin-left: 20px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* 장바구니 휴지통 아이콘 */
 .shopping_btn {
   width: 150px;
-  position: relative;
+  /* position: relative; */
 }
 
 .shopping_delete {
   width: 30px;
   height: 30px;
-  position: absolute;
+  /* position: absolute; */
   margin: auto;
 }
 
@@ -218,7 +220,7 @@
   width: 100px;
   height: 30px;
   background-color: #FF5656;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   color: white;
   text-align: center;
   line-height: 30px;
@@ -226,15 +228,15 @@
   /* margin: auto; */
   font-size: 16px;
   font-weight: bold;
-  position: absolute;
+  /* position: absolute; */
 }
 
 /* 수량 버튼 */
 .shopping_prod_cnt {
   display: flex;
   width: 50px;
-  border: 1px solid green;
-  position: absolute;
+  /* border: 1px solid green; */
+  /* position: absolute; */
 
 }
 
@@ -253,7 +255,7 @@
 
 
 .shopping_payment {
-  width: 460px;
+  width: 200px;
   height: 1000px;
 }
 
@@ -261,7 +263,7 @@
   width: 455px;
   height: 370px;
   background-color: white;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   border-radius: 8px;
   margin: 0 auto;
   /* display: flex; */
@@ -281,19 +283,19 @@
   background-color: white;
   border-radius: 8px;
   margin: 5px auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .shopping_payment_total ul {
   width: 450px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   list-style: none;
 }
 
 .shopping_payment_total ul li {
   width: 225px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .shopping_prod_price {
@@ -304,9 +306,16 @@
 .shopping_container{
   display:flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .shopping_test{
   display: flex;
+  flex-direction: column;
+}
+
+
+.shopping_menu_prod_list_container{
+  display:flex;
   flex-direction: column;
 }
