@@ -29,6 +29,7 @@
 }
 #header_login ul a:hover{
   color:#F6D962;
+  z-index: 99;
 }
 
 /* 헤더 1100px 중앙정렬 영역 */
@@ -82,6 +83,7 @@
   width: 1920px;
   height: 40px;
   background-color: #202020;
+  z-index: 99;
 }
 .header_nav_buy{
   margin-left: 500px;

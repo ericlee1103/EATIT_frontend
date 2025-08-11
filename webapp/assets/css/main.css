@@ -34,14 +34,7 @@
 .main_slide_img{
   width: 1920px;
   height: 400px;
-}
-.main_slide_img:first-child{
-  background-color: rgb(255, 255, 255);
-}
-.main_slide_img:nth-child(2){
-  background-color: rgb(145, 145, 145);
-}
-.main_slide_img:last-child{
+  border: 1px solid white;
   background-color: rgb(51, 51, 51);
 }
 
@@ -50,14 +43,13 @@
   top: 50%;
   transform: translateY(-50%);
   width: 30px;
-  cursor: pointer;
   z-index: 10;
 }
 .main_banner_prev {
-  left: 0;
+  left: 25%;
 }
 .main_banner_next {
-  right: 0;
+  right: 25%;
 }
 .main_banner_prev img, .main_banner_next img {
   width: 100%;
@@ -80,6 +72,7 @@
   /* border: 1px solid red; */
   margin-top: 70px;
 }
+
 /* 거리순/재료판매/레시피공유 */
 h3{
   /* border: 1px solid orange; */
@@ -92,6 +85,7 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 /*메인 음식판매 이미지 및 정보 전체 */
 .main_food_buy_article{
@@ -143,6 +137,23 @@ h3{
   float: right;
   color: #FF924E;
 }
+
+/*  컨텐츠 화살표  */
+.main_content_prev, .main_content_next{
+  display: flex;
+  /* top: 50%; */
+  transform: translateY(-50%);
+  border: 1px solid red;
+}
+.main_content_prev a,.main_content_next a{
+  display: block;
+  width: 20px;
+}
+.main_content_prev img, .main_content_next img{
+  width: 20px;
+  margin: 0 auto;
+}
+
 /* 메인 음식점판매>더보러가기 버튼 */
 .main_food_buy_btn{
   width: 180px;
@@ -163,6 +174,14 @@ h3{
 .main_food_buy_btn:hover{
   background-color: #ff7722;
 }
+
+
+
+
+
+
+
+
 /* 메인 컨텐츠 > 재료판매, 레시피공유 영역 */
 #main_content_buy_ingr{
   width: 100%;
