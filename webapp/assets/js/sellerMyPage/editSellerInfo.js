@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
 // editUserInfo.js 파일 내에 추가
 document.addEventListener("DOMContentLoaded", function () {
   const saveButtons = document.querySelectorAll(".seller_info_save_buzz");
-  
+
   saveButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
       alert("정보가 정상적으로 수정되었습니다.");
@@ -182,8 +182,6 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("인증되었습니다.");
     }
   });
-<<<<<<< HEAD
-=======
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -241,5 +239,4 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("저장되었습니다.");
     }
   });
->>>>>>> main
 });
