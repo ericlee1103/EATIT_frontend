@@ -33,7 +33,7 @@
   width: 630px;
   height: 70px;
   margin: 0 auto;
-  /* border: 1px solid green; */
+  border: 1px solid green;
   border-radius: 8px;
   background-color: white;
 }
@@ -49,7 +49,6 @@
   margin: 20px 0 0 30px;
 }
 .shopping_select_all_box label{
-  width: 100px;
   height: 70px;
   font-size: 20px;
   margin-left:15px;
@@ -57,6 +56,10 @@
   line-height: 70px;
 }
 /* 선택삭제 버튼 */
+.shopping_select_all_box a{
+  text-decoration: none;
+  color: black;
+}
 .shopping_delete_btn{
   width: 90px;
   height:35px;
@@ -68,15 +71,23 @@
   font-size: 18px;
   margin:15px 0 0 340px;
 }
-.shopping_prod{
+/* 상품 목록 전체 영역 */
+.shopping_list_all{
+  background-color: white;
+  border: 1px solid red;
   width: 630px;
   height: 600px;
-  border: 1px solid purple;
   border-radius: 8px;
-  background-color: white;
+  margin: 5px auto;
+  /* position: relative; */
+}
+.shopping_prod_select{
+  width: 630px;
+  height: 70px;
+  border: 1px solid blue;
   margin: 5px auto;
 }
-.shopping_prod hr{
+.shopping_prod_select hr{
   width: 600px;
   margin: 0 auto;
 }
@@ -90,13 +101,31 @@
   height: 25px;
   margin: 20px 0 0 30px;
 }
-.shopping_prod label{
-  width: 100px;
+.shopping_prod_select label{
+  height: 70px;
   font-size: 20px;
   line-height: 70px;
   margin-left: 15px;
   font-weight: bold;
 }
+.shopping_store_name{
+  width: 580px;
+  height: 60px;
+  border: 1px solid green;
+  margin-left: 30px;
+}
+.shopping_store_name label{
+  width: 580px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  /* margin: auto; */
+  margin-left: 15px;
+  font-weight: bold;
+  border: 1px solid red;
+}
+
+
 /* 구매 상품별 선택 체크박스 */
 .shopping_menu_prod_list{
   width: 580px;
