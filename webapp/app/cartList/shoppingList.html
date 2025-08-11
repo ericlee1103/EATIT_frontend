@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./../../assets/css/header.css">
   <link rel="stylesheet" href="./../../assets/css/footer.css">
   <link rel="stylesheet" href="./../../assets/css/cartList/shoppingList.css">
-  
+
   <!-- 파비콘 -->
   <link rel="shortcut icon" href="./../../assets/img/favicon.ico" type="image/x-icon">
   <title>밥세권</title>
 </head>
+
 <body>
   <header id="header"></header>
 
@@ -21,127 +23,120 @@
         <h2>장바구니🛒</h2>
       </div>
 
-      <div class="shopping_prod_list">
-        <div class="shopping_select_all">
-          <form action="" method="get" class="shopping_select_all_box">
-            <input type="checkbox" name="" id="shopping_checkbox">
-            <label for="">전체선택</label>
-            <a href="#">
-              <div class="shopping_delete_btn">선택삭제</div>
-            </a>
-          </form>
-        </div>
+      <div class="shopping_container">
+        <div class="shopping_prod_list">
+          <div class="shopping_select_all">
+            <form action="" method="get" class="shopping_select_all_box">
+              <input type="checkbox" name="" id="shopping_checkbox">
+              <label for="">전체선택</label>
+              <a href="#">
+                <div class="shopping_delete_btn">선택삭제</div>
+              </a>
+            </form>
+          </div>
 
-        <div class="shopping_list_all">
-          <div class="shopping_prod_select">
-            <form action="" method="get" class="shopping_prod_select_box">
-              <input type="checkbox" name="" id="shopping_choice_checkbox">
-              <label for="">선택구매</label>
-              <hr>
-            </form>
-          </div>
-          <div class="shopping_store_name">
-            <form action="" method="get">
-              <input type="checkbox" name="" id="shopping_store_checkbox">
-              <label for="">상품판매 가게명</label>
-            </form>
-          </div>
-          <!-- 음식/재료 영역 -->
-          <div class="shopping_menu">
-            <form action="" method="get">
-              <input type="checkbox" name="" id="shopping_prod_checkbox">
-            </form>
-            <div class="shopping_menu_prod_list">
-              <img src="./../../assets/img/store.jpg" alt="판매상품사진">
-              <div class="shopping_info">
-                <div class="shopping_menu_info">
-                  <h3>[best]메뉴명</h3>
-                  <p>소비기한:2025년00월00일</p>
-                  <h3>0,000원</h3>
+          <div class="shopping_list_all">
+            <div class="shopping_prod_select">
+              <form action="" method="get" class="shopping_prod_select_box">
+                <input type="checkbox" name="" id="shopping_choice_checkbox">
+                <label for="">선택구매</label>
+                <hr>
+              </form>
+            </div>
+            <div class="shopping_store_name">
+              <form action="" method="get">
+                <input type="checkbox" name="" id="shopping_choice_checkbox">
+                <label for="">상품판매 가게명</label>
+              </form>
+            </div>
+
+            <!-- 음식/재료 영역 -->
+            <div class="shopping_menu">
+              <form action="" method="get">
+                <input type="checkbox" name="" id="shopping_choice_checkbox">
+              </form>
+              <div class="shopping_menu_prod_list_container"></div>
+              <div class="shopping_menu_prod_list">
+                <img class="shop" src="./../../assets/img/store.jpg" alt="판매상품사진">
+                <div class="shopping_info">
+                  <div class="shopping_menu_info">
+                    <h3>[best]메뉴명</h3>
+                    <p>소비기한:2025년00월00일</p>
+                    <h3>0,000원</h3>
+                  </div>
                 </div>
-              </div>  
+              </div>
+              <div class="shopping_test">
+                <!-- 장바구니 상품 delete -->
+                <div class="shopping_btn">
+                  <a href="#" class="shopping_delete">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                      <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                      <path fill="#696969"
+                        d="M232.7 69.9C237.1 56.8 249.3 48 263.1 48L377 48C390.8 48 403 56.8 407.4 69.9L416 96L512 96C529.7 96 544 110.3 544 128C544 145.7 529.7 160 512 160L128 160C110.3 160 96 145.7 96 128C96 110.3 110.3 96 128 96L224 96L232.7 69.9zM128 208L512 208L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 208zM216 272C202.7 272 192 282.7 192 296L192 488C192 501.3 202.7 512 216 512C229.3 512 240 501.3 240 488L240 296C240 282.7 229.3 272 216 272zM320 272C306.7 272 296 282.7 296 296L296 488C296 501.3 306.7 512 320 512C333.3 512 344 501.3 344 488L344 296C344 282.7 333.3 272 320 272zM424 272C410.7 272 400 282.7 400 296L400 488C400 501.3 410.7 512 424 512C437.3 512 448 501.3 448 488L448 296C448 282.7 437.3 272 424 272z" />
+                    </svg>
+                  </a>
+                </div>
+                <!-- 구매가능 수량안내 박스 -->
+                <div class="buy_food_stock">N개 남음</div>
+
+                <!-- 수량조절 -->
+                <div class="shopping_prod_cnt">
+                  <div class="buy_food_stock_choice_box">
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#202020"
+                          d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM232 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296z" />
+                      </svg>
+                    </a>
+                  </div>
+                  <p>1</p>
+                  <div class="buy_food_stock_choice_box">
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#202020"
+                          d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM296 408L296 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296L296 296L296 232C296 218.7 306.7 208 320 208C333.3 208 344 218.7 344 232L344 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L344 344L344 408C344 421.3 333.3 432 320 432C306.7 432 296 421.3 296 408z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          
-
-
-
-
-
-
-
-
-
-        </div>
-        
-
-        
-          
-          
-
-              <!-- 장바구니 상품 delete -->
-              <div class="shopping_btn">
-                <a href="#" class="shopping_delete">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                    <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                    <path fill="#696969" d="M232.7 69.9C237.1 56.8 249.3 48 263.1 48L377 48C390.8 48 403 56.8 407.4 69.9L416 96L512 96C529.7 96 544 110.3 544 128C544 145.7 529.7 160 512 160L128 160C110.3 160 96 145.7 96 128C96 110.3 110.3 96 128 96L224 96L232.7 69.9zM128 208L512 208L512 512C512 547.3 483.3 576 448 576L192 576C156.7 576 128 547.3 128 512L128 208zM216 272C202.7 272 192 282.7 192 296L192 488C192 501.3 202.7 512 216 512C229.3 512 240 501.3 240 488L240 296C240 282.7 229.3 272 216 272zM320 272C306.7 272 296 282.7 296 296L296 488C296 501.3 306.7 512 320 512C333.3 512 344 501.3 344 488L344 296C344 282.7 333.3 272 320 272zM424 272C410.7 272 400 282.7 400 296L400 488C400 501.3 410.7 512 424 512C437.3 512 448 501.3 448 488L448 296C448 282.7 437.3 272 424 272z"/>
-                  </svg>
-                </a>
-                <div class="buy_food_stock">N개 남음</div>
-              </div>
-
-            <!-- 수량조절 -->
-            <div class="shopping_prod_cnt">
-              <div class="buy_food_stock_choice_box">
-                <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                    <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                    <path fill="#202020" d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM232 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296z"/>
-                  </svg>
-                </a>
-              </div>
-              <p>1</p>
-              <div class="buy_food_stock_choice_box">
-                <a href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                    <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                    <path fill="#202020" d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM296 408L296 344L232 344C218.7 344 208 333.3 208 320C208 306.7 218.7 296 232 296L296 296L296 232C296 218.7 306.7 208 320 208C333.3 208 344 218.7 344 232L344 296L408 296C421.3 296 432 306.7 432 320C432 333.3 421.3 344 408 344L344 344L344 408C344 421.3 333.3 432 320 432C306.7 432 296 421.3 296 408z"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            
-          
-        
-        
-
-        
-      </div>
-      <div class="shopping_payment">
-        <!-- 결제 api연동 영역 -->
-        <div class="shopping_payment_api">
-          <h2>결제수단</h2>
-        </div>
-
-
-        <div class="shopping_payment_total">
-          <h2>결제금액</h2>
-          <ul>
-            <li class="shopping_prod_price">상품금액</li>
-            <li class="shopping_pay_price">0,000원</li>
-          </ul>
-          <ul>
-            <li class="shopping_prod_price">결제예정금액</li>
-            <li class="shopping_pay_price">0,000원</li>
-          </ul>
         </div>
 
 
 
+
+        <div class="shopping_payment">
+          <!-- 결제 api연동 영역 -->
+          <div class="shopping_payment_api">
+            <h2>결제수단</h2>
+          </div>
+
+
+          <div class="shopping_payment_total">
+            <h2>결제금액</h2>
+            <ul>
+              <li class="shopping_prod_price">상품금액</li>
+              <li class="shopping_pay_price">0,000원</li>
+            </ul>
+            <ul>
+              <li class="shopping_prod_price">결제예정금액</li>
+              <li class="shopping_pay_price">0,000원</li>
+            </ul>
+          </div>
+
+
+
+        </div>
       </div>
     </div>
   </main>
 
   <footer id="footer"></footer>
 </body>
+
 </html>
