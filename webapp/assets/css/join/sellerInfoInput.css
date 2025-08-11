@@ -6,9 +6,8 @@
 
 
 main {
-  height: 830px;
+  height: 1000px;
   width: 1920px;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +37,7 @@ main {
 button:hover{
   background-color: #FF7722;
 }
-/* ******************** */
+/* 회원가입 단계************* */
 
 .join_step {
   width: 100%;
@@ -55,11 +54,11 @@ button:hover{
   display: inline-block;
   margin: 20px;
   background-color: #d9d9d9;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
   border-radius: 50%;
   text-align: center;
-  line-height: 140px;
 }
 
 .join_step_input_info {
@@ -67,7 +66,6 @@ button:hover{
   border-radius: 50%;
 }
 
-/* 약관동의 단계 끝******************************************************************* */
 
 /* 정보입력 제목 */
 .seller_input_title{
@@ -109,14 +107,15 @@ width: 60px;
 .seller_input_container>button:hover{ /* 입력칸들의 오른쪽 버튼 */
   background-color: #FF7722;
 }
+.empty{
+  width: 100px;
+}
 /* 경고메시지 */
 .warning_space{
   display: flex;
   font-size: 12px;
 }
-.empty{
-  width: 100px;
-}
+
 .warning_message{
   color: red;
 }
