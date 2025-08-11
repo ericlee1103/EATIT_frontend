@@ -4,20 +4,9 @@
   /* box-sizing: border-box; */
 }
 
-#header {
-  height: 100px;
-  width: 100%;
-  background-color: #ffffff;
-}
-#footer {
-  height: 100px;
-  width: 100%;
-  background-color: white;
-} 
-
 main {
-  height: 100vh;
-  width: 100%;
+  height: 800px;
+  width: 1920px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +20,8 @@ main {
   background-color: #fbe3b9;
   /* border: 1px solid #000; */
 }
+
+/* 회원가입 단계 표시 */
 
 .join_step {
   width: 100%;
@@ -47,17 +38,18 @@ main {
   display: inline-block;
   margin: 20px;
   background-color: #d9d9d9;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
   border-radius: 50%;
   text-align: center;
-  line-height: 140px;
 }
 
-.join_step_user_type{
+.join_step_user_type {
   background-color: #ff924e;
   border-radius: 50%;
 }
+
 /* ***************************************** */
 .select_user_type {
   /*border: 1px solid #000;*/
@@ -66,26 +58,32 @@ main {
   justify-content: center;
 }
 
-.select_user_type>div {
-  width: 199px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.select_user_type>a>div {
+  width: 160px;
+  height: 160px;
+  line-height: 160px;
   border: 1px solid black;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  font-size: 14px;
-  font-weight: bold;
+  justify-content: center;
+  display: flex;
+  font-size: 24px;
+  font-weight: blod;
+}
+
+.select_user_type>a {
+  font-weight: blod;
+  text-decoration: none;
+  color: black;
 }
 
 .join_type_user {
   background-color: #a69980;
 }
-.join_type_seller{
-  background-color: #fff5e4;
 
+.join_type_seller {
+  background-color: #fff5e4;
 }
 
 .user_join_sub_text {
