@@ -5,25 +5,27 @@ main{
   display: flex;
   flex-direction: row;  
 }
-.seller_withdrawalagreement{
+/* 1100px 영역 */
+.seller_withdrawalagreement{ 
   background-color: #FBE3B9;
   width: 1100px;
   margin-left: 410px;
   display: flex;
   justify-content: center;
 }
-.seller_withdraw_list{
+/* 좌측 메뉴 바 */
+.seller_withdraw_menu {
   position: fixed;
   padding: 0;
   margin: 100px 20px 0 200px;
   width: 190px;
-  height: 600px;
+  height: 585px;
   font-size: 20px;
   background-color: #a6998080;
   border-radius: 10px;
 }
-.seller_withdraw{
-  padding: 0;
+
+.seller_withdraw_menu_title {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #FF873C;
@@ -34,27 +36,36 @@ main{
   justify-content: center;
   align-items: center;
 }
-.seller_withdraw_list > li{
+.seller_withdraw_menu_list_current {
+  background-color: #FF873C;
+  /* width: 190px; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seller_withdraw_menu_list>li {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
+  padding: 15px 0;
   width: 190px;
 }
-.seller_withdraw_list > li > a{
-  width: 190px;
-  padding: 15px 0;
+
+.seller_withdraw_menu_list>li>a {
   text-decoration: none;
   color: white;
-  display: flex;
-  justify-content: center;
 }
-.seller_withdraw_list > li:hover{
-  width: 100%;
+
+
+.seller_withdraw_menu_list>li:hover {
+  width: 190px;
   background-color: #ff873c8c;
   border-radius: 10px;
-
 }
+/* 좌측 메뉴바 끝 */
+
 .seller_withdrawalagreement_agreement_page{
   background-color: white;
   width: 900px;

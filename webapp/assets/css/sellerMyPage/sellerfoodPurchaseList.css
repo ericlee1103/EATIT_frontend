@@ -1,20 +1,25 @@
-header{
-  width : 1920px;
-  height : 150px;
+header {
+  width: 1920px;
+  height: 150px;
 }
-main{
+
+main {
   background-color: #FFF5E4;
   width: 1920px;
   height: 1500px;
   display: flex;
   flex-direction: row;
 }
-.sellerfoodPurchase_page{
+
+/* 1100px 영역 */
+.sellerfoodPurchase_page {
   background-color: #FBE3B9;
   width: 1100px;
   margin-left: 410px;
 }
-.sellerfoodPurchase_my_page_list{
+
+/* 좌측 사이드메뉴 시작 */
+.sellerfoodPurchase_my_page_list {
   position: fixed;
   padding: 0;
   margin: 100px 20px 0 200px;
@@ -24,7 +29,8 @@ main{
   background-color: #a6998080;
   border-radius: 10px;
 }
-.sellerfoodPurchase_my_page{
+
+.sellerfoodPurchase_my_page {
   padding: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -36,14 +42,16 @@ main{
   justify-content: center;
   align-items: center;
 }
-.sellerfoodPurchase_side_bar > li{
+
+.sellerfoodPurchase_side_bar>li {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   width: 190px;
 }
-.sellerfoodPurchase_side_bar > li > a{
+
+.sellerfoodPurchase_side_bar>li>a {
   width: 190px;
   text-decoration: none;
   color: white;
@@ -51,24 +59,44 @@ main{
   justify-content: center;
   padding: 15px 0;
 }
-.sellerfoodPurchase_main{
-  background-color: #ff873c8c;
+
+.sellerfoodPurchase_main {
+  background-color: #FF873C;
   border-radius: 10px;
 }
-.sellerfoodPurchase_side_bar > li:hover{
+
+.sellerfoodPurchase_side_bar>li:hover {
   width: 190px;
   background-color: #ff873c8c;
   border-radius: 10px;
 }
-.seller_food_purchase_list{
+
+/* 좌측 사이드 메뉴 끝 */
+
+/* 페이지 제목 */
+.sellerfoodPurchase_list {
   margin: 100px 0 45px 70px;
   font-size: 30px;
 }
-.sellerfoodPurchase_list_top{
-  display: flex; 
-  margin-left: 40px;
+
+/* 목록 시작 */
+.sellerfoodPurchase_list_top,
+.sellerfoodPurchase_page_list {
+  margin-left: 50px;
+  background-color: white;
+  width: 1000px;
+  /* height: 50px; */
+  font-size: 16px;
+  align-items: center;
+  display: flex;
+  border: 1px solid black;
 }
-.sellerfoodPurchase_list_date{
+
+.sellerfoodPurchase_list_top {
+  height: 50px;
+}
+
+.sellerfoodPurchase_list_date {
   width: 155px;
   height: 50px;
   background-color: #A69980;
@@ -78,7 +106,8 @@ main{
   align-items: center;
   justify-content: center;
 }
-.sellerfoodPurchase_list_img{
+
+.sellerfoodPurchase_list_img {
   width: 110px;
   height: 50px;
   background-color: #A69980;
@@ -88,7 +117,8 @@ main{
   align-items: center;
   justify-content: center;
 }
-.sellerfoodPurchase_list_restaurant_name{
+
+.sellerfoodPurchase_list_restaurant_name {
   width: 225px;
   height: 50px;
   background-color: #A69980;
@@ -98,7 +128,8 @@ main{
   align-items: center;
   justify-content: center;
 }
-.seller_food_purchase_list_menu_info{
+
+.sellerfoodPurchase_list_menu_info {
   width: 225px;
   height: 50px;
   background-color: #A69980;
@@ -108,7 +139,8 @@ main{
   align-items: center;
   justify-content: center;
 }
-.seller_food_purchase_list_how_many{
+
+.sellerfoodPurchase_list_how_many {
   width: 55px;
   height: 50px;
   background-color: #A69980;
@@ -118,7 +150,8 @@ main{
   align-items: center;
   justify-content: center;
 }
-.seller_food_purchase_list_price{
+
+.sellerfoodPurchase_list_price {
   width: 155px;
   height: 50px;
   background-color: #A69980;
@@ -128,7 +161,8 @@ main{
   align-items: center;
   justify-content: center;
 }
-.seller_food_purchase_list_review{
+
+.sellerfoodPurchase_list_review {
   width: 80px;
   height: 50px;
   background-color: #A69980;
@@ -138,11 +172,10 @@ main{
   align-items: center;
   justify-content: center;
 }
-.sellerfoodpurchase_page_list{
-  display: flex;
-  margin-left: 40px;
-}
-.seller_food_purchase_date_list{
+
+/* 목록 제목 끝 */
+
+.sellerfoodPurchase_date_list {
   width: 155px;
   height: 85px;
   font-size: 14px;
@@ -152,7 +185,8 @@ main{
   justify-content: center;
   background-color: white;
 }
-.seller_food_purchase_img_list{
+
+.sellerfoodPurchase_img_list {
   width: 110px;
   height: 85px;
   font-size: 14px;
@@ -162,11 +196,13 @@ main{
   justify-content: center;
   background-color: white;
 }
-.meal_img{
+
+.meal_img {
   width: 70px;
   height: 70px;
 }
-.seller_food_purchase_restaurant_name_list{
+
+.sellerfoodPurchase_restaurant_name_list {
   width: 225px;
   height: 85px;
   font-size: 14px;
@@ -176,7 +212,8 @@ main{
   justify-content: center;
   background-color: white;
 }
-.seller_food_purchase_menu_info_list{
+
+.sellerfoodPurchase_menu_info_list {
   width: 225px;
   height: 85px;
   font-size: 14px;
@@ -186,7 +223,8 @@ main{
   justify-content: center;
   background-color: white;
 }
-.seller_food_purchase_how_many_list{
+
+.sellerfoodPurchase_how_many_list {
   width: 55px;
   height: 85px;
   font-size: 14px;
@@ -196,7 +234,8 @@ main{
   justify-content: center;
   background-color: white;
 }
-.seller_food_purchase_price_list{
+
+.sellerfoodPurchase_price_list {
   width: 155px;
   height: 85px;
   font-size: 14px;
@@ -206,7 +245,8 @@ main{
   justify-content: center;
   background-color: white;
 }
-.seller_food_purchase_review_list{
+
+.sellerfoodPurchase_review_list {
   width: 80px;
   height: 85px;
   font-size: 14px;
@@ -216,7 +256,8 @@ main{
   justify-content: center;
   background-color: white;
 }
-.seller_food_purchase_review_meal{
+
+.sellerfoodPurchase_review_meal {
   border: 1px solid black;
   border-radius: 6px;
   font-size: 14px;
@@ -229,13 +270,16 @@ main{
   text-decoration: none;
   color: black;
 }
-.sellerfoodpurchaselist_pagination{
+
+/* 페이지네이션 */
+.sellerfoodPurchase_pagination{
   display: flex;
   justify-self: center;
   position: relative;
   top: 1000px;
 }
-.sellerfoodpurchaselist_pagination > a{
+
+.sellerfoodPurchase_pagination>a {
   width: 32px;
   height: 32px;
   background-color: white;
@@ -248,6 +292,7 @@ main{
   border-radius: 6px;
   color: black;
 }
-.sellerfoodpurchaselist_pagination > a:hover{
+
+.sellerfoodPurchase_pagination>a:hover {
   background-color: #FF873C;
 }
