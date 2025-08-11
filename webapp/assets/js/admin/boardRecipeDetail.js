@@ -11,3 +11,9 @@ commentdeletebtn.addEventListener('click', ()=>{
   if(!confirm('댓글을 삭제하시겠습니까?'))
     return;
 })
+
+const logoutbtn = document.getElementById('admin_logoutbtn');
+
+logoutbtn.addEventListener('click', () => {
+  location.replace('./../../app/admin/adminLogin.html');
+});

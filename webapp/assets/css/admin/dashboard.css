@@ -130,3 +130,10 @@ h1{
   font-size: 20px;
   margin: 20px 10px;
 }
+#admin_logoutbtn{
+  background-color: #1e223f;
+  color: white;
+  width: 70px;
+  height: 30px;
+  margin: 70px 77px;
+}
