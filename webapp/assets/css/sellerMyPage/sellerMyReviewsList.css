@@ -14,7 +14,7 @@ main{
   width: 1100px;
   margin-left: 410px;
 }
-.seller_myreviews_my_page_list{
+.seller_myreviews_list{
   position: fixed;
   padding: 0;
   margin: 100px 20px 0 200px;
@@ -24,7 +24,7 @@ main{
   background-color: #a6998080;
   border-radius: 10px;
 }
-.seller_myreviews_my_page{
+.seller_myreviews{
   padding: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;

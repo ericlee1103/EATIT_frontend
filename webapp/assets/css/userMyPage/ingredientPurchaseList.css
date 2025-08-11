@@ -14,7 +14,7 @@ main{
   width: 1100px;
   margin-left: 410px;
 }
-.ingredientpurchaselist_my_page_list{
+.ingredientpurchase_my_page_list{
   position: fixed;
   padding: 0;
   margin: 100px 20px 0 200px;
@@ -24,7 +24,7 @@ main{
   background-color: #a6998080;
   border-radius: 10px;
 }
-.ingredientpurchaselist_my_page{
+.ingredientpurchase_my_page{
   padding: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -36,14 +36,14 @@ main{
   justify-content: center;
   align-items: center;
 }
-.ingredientpurchaselist_my_page_list > li{
+.ingredientpurchase_side_bar > li{
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   width: 190px;
 }
-.ingredientpurchaselist_my_page_list > li > a{
+.ingredientpurchase_side_bar > li > a{
   width: 190px;
   text-decoration: none;
   color: white;
@@ -51,11 +51,11 @@ main{
   justify-content: center;
   padding: 15px 0;
 }
-.ingredientpurchaselist_main{
+.ingredientpurchase_main{
   background-color: #ff873c8c;
   border-radius: 10px;
 }
-.ingredientpurchaselist_my_page_list > li:hover{
+.ingredientpurchase_side_bar > li:hover{
   width: 190px;
   background-color: #ff873c8c;
   border-radius: 10px;
