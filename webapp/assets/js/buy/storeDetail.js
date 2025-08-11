@@ -36,24 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function searchList() {
-    const query = searchInput.value.trim().toLowerCase();
-    filteredRows = allRows.filter(row =>
-      row.textContent.toLowerCase().includes(query)
-    );
-    currentPage = 1;
-    displayList(currentPage);
-  }
-
-  searchBtn.addEventListener("click", searchList);
-
-  searchInput.addEventListener("keypress", e => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      searchList();
-    }
-  });
-
   // 초기 페이지 표시(처음엔 첫페이지니까 1로설정)
   displayList(currentPage);
 });
