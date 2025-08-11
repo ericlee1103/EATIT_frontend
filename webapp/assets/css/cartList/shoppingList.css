@@ -68,7 +68,7 @@
   font-size: 18px;
   margin:15px 0 0 340px;
 }
-.shopping_prod{
+.shopping_prod_select{
   width: 630px;
   height: 600px;
   border: 1px solid purple;
@@ -76,7 +76,7 @@
   background-color: white;
   margin: 5px auto;
 }
-.shopping_prod hr{
+.shopping_prod_select hr{
   width: 600px;
   margin: 0 auto;
 }
@@ -90,7 +90,7 @@
   height: 25px;
   margin: 20px 0 0 30px;
 }
-.shopping_prod label{
+.shopping_prod_select label{
   width: 100px;
   font-size: 20px;
   line-height: 70px;
