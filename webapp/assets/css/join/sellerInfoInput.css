@@ -34,9 +34,10 @@ main {
   padding: 10px;
 }
 
-button:hover{
+button:hover {
   background-color: #FF7722;
 }
+
 /* 회원가입 단계************* */
 
 .join_step {
@@ -68,15 +69,17 @@ button:hover{
 
 
 /* 정보입력 제목 */
-.seller_input_title{
-      font-size: 20px;
-    font-weight: bold;
-    margin: 20px;
+.seller_input_title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px;
 
 }
+
 /* 정보입력 */
 
-.info_type { /* 정보 입력 종류 텍스트 */
+.info_type {
+  /* 정보 입력 종류 텍스트 */
   display: inline-block;
   width: 90px;
   height: 20px;
@@ -86,47 +89,56 @@ button:hover{
 }
 
 .seller_input_container>input {
-width: 220px;
-height: 20px;
-    margin: 5px 4px;
-    padding: 0px 3px; 
+  width: 220px;
+  height: 20px;
+  margin: 5px 4px;
+  padding: 0px 3px;
 }
 
 
-.seller_input_container>button{ /* 입력칸들의 오른쪽 버튼 */
-width: 60px;
-    height: 22px;
-    background-color: #ff924e;
-    border-radius: 5px;
-    border: 0.3px solid #000000;
-    color: #ffffff;
-    font-size: 12px;
-    text-align: center;
-    line-height: 20px;
+.seller_input_container>button {
+  /* 입력칸들의 오른쪽 버튼 */
+  width: 60px;
+  height: 22px;
+  background-color: #ff924e;
+  border-radius: 5px;
+  border: 0.3px solid #000000;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
 }
-.seller_input_container>button:hover{ /* 입력칸들의 오른쪽 버튼 */
+
+.seller_input_container>button:hover {
+  /* 입력칸들의 오른쪽 버튼 */
   background-color: #FF7722;
 }
-.empty{
+
+.empty {
   width: 100px;
 }
+
 /* 경고메시지 */
-.warning_space{
+.warning_space {
   display: flex;
   font-size: 12px;
 }
 
-.warning_message{
+.warning_message {
   color: red;
 }
 
 /* 가입하기 버튼 */
-.join_next{
-    width: 140px;
-    height: 36px;
-    background-color: #ff924e;
-    margin: 17px 0px;
-    border-radius: 6px;
-    color: white;
-    border: 0.3px solid black;
+.join_next {
+  width: 140px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #ff924e;
+  margin: 17px 0px;
+  border-radius: 6px;
+  color: white;
+  border: 0.3px solid black;
+  text-decoration: none;
+  text-align: center;
 }
+

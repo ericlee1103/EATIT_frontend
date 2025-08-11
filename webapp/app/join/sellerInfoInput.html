@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./../../assets/css/header.css">
   <link rel="stylesheet" href="./../../assets/css/footer.css">
   <link rel="stylesheet" href="./../../assets/css/join/sellerInfoInput.css">
-    <script defer src="./../../assets/js/join/sellerInfoInput.js"></script>
+  <script defer src="./../../assets/js/join/sellerInfoInput.js"></script>
 
   <title>밥세권</title>
 </head>
@@ -39,13 +39,13 @@
         <!-- 정보 입력 칸 -->
         <form action="" method="post">
           <div class="seller_input_container_id">
-            <div  class="seller_input_container">
+            <div class="seller_input_container">
               <label for="seller_input_id" class="info_type">아이디 : </label>
               <input type="text" id="seller_input_id" placeholder="[필수]">
               <button type="button" class="btn_seller_input_hasSameId">중복확인</button>
             </div>
             <div class="warning_space"> <!-- 경고메시지 -->
-              <span class="warning_empty">  </span>
+              <span class="warning_empty"> </span>
               <div class="warning_message" id="warning_message_chk_pw"></div>
             </div>
           </div>
@@ -58,7 +58,7 @@
             </div>
           </div>
           <div class="seller_input_container_chk_pw">
-            <div  class="seller_input_container">
+            <div class="seller_input_container">
               <label for="seller_input_chk_pw" class="info_type">비밀번호 확인 : </label>
               <input type="text" id="seller_input_chk_pw" placeholder="[필수]비밀번호를 다시 입력해주세요">
               <!-- <button type="button" class="btn_seller_input_chk_pw"></button> -->
@@ -156,8 +156,11 @@
         </form>
         <!-- //사업자 정보입력 끝 -->
         <!-- 가입하기 버튼 -->
-        <div >
-          <button type="submit" class="join_next">가입하기</button>
+        <div>
+          <!-- <button type="submit" class="join_next">가입하기</button> -->
+          <a href="./../join/successJoin.html">
+            <div class="join_next">가입하기</div>
+          </a>
         </div>
       </div> <!-- 입력란 하얀 내부  -->
     </div> <!--//.container 1100px 영역-->
