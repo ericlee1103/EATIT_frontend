@@ -36,14 +36,14 @@ main{
   justify-content: center;
   align-items: center;
 }
-.managemyreviews_my_page_list > li{
+.managemyreviews_side_bar > li{
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   width: 190px;
 }
-.managemyreviews_my_page_list > li > a{
+.managemyreviews_side_bar > li > a{
   width: 190px;
   text-decoration: none;
   color: white;
@@ -55,7 +55,7 @@ main{
   background-color: #ff873c8c;
   border-radius: 10px;
 }
-.managemyreviews_my_page_list > li:hover{
+.managemyreviews_side_bar > li:hover{
   width: 190px;
   background-color: #ff873c8c;
   border-radius: 10px;

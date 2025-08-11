@@ -34,14 +34,14 @@ main{
   justify-content: center;
   align-items: center;
 }
-.withdrawalagreement_my_page_list > li{
+.withdrawalagreement_side_bar > li{
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   width: 190px;
 }
-.withdrawalagreement_my_page_list > li > a{
+.withdrawalagreement_side_bar > li > a{
   width: 190px;
   padding: 15px 0;
   text-decoration: none;
@@ -49,7 +49,7 @@ main{
   display: flex;
   justify-content: center;
 }
-.withdrawalagreement_my_page_list > li:hover{
+.withdrawalagreement_side_bar > li:hover{
   width: 100%;
   background-color: #ff873c8c;
   border-radius: 10px;
