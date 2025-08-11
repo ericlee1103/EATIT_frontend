@@ -13,3 +13,5 @@ window.addEventListener('DOMContentLoaded', () => {
       document.getElementById('footer').innerHTML = data;
     });
 });
+
+let pwWarning = document.get
