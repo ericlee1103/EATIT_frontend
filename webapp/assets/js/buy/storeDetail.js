@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-const heartBtn = document.getElementsByClassName("active_heart");
+// const heartBtn = document.getElementsByClassName("active_heart");
 
-heartBtn.addEventListener('click', ()=>{
-  heartBtn.style.
-});
+// heartBtn.addEventListener('click', ()=>{
+//   heartBtn.style.
+// });
