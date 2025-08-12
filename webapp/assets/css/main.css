@@ -138,21 +138,6 @@ h3{
   color: #FF924E;
 }
 
-/*  컨텐츠 화살표  */
-.main_content_prev, .main_content_next{
-  display: flex;
-  /* top: 50%; */
-  transform: translateY(-50%);
-  border: 1px solid red;
-}
-.main_content_prev a,.main_content_next a{
-  display: block;
-  width: 20px;
-}
-.main_content_prev img, .main_content_next img{
-  width: 20px;
-  margin: 0 auto;
-}
 
 /* 메인 음식점판매>더보러가기 버튼 */
 .main_food_buy_btn{
