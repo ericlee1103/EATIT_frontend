@@ -14,34 +14,35 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-let warning = document.getElementById('login_warning_message');
-let id = document.getElementById('login_input_id');
-let pw = document.getElementById('login_input_pw'); 
-let login = document.getElementById('login_btn');
+const login = document.getElementById('login_form');
+const userid = document.getElementById('login_input_id');
+const userpw = document.getElementById('login_input_pw'); 
+const warning = document.getElementById('login_warning_message');
 
-
-console.log(login);
-console.log(warning);
-console.log(id, pw);
 
 const db = {
   id : 'user',
-  pw : 'useruser123',
+  pw : 'user123123',
+  
+}
+const blackdb = {
+  blackid : 'black',
+  blackpw : 'black123123',
 }
 
-login.addEventListener('click', () => {
-  // e.preventDefault();
+login.addEventListener('submit', function(e) {
+  e.preventDefault();
 
-  if(id.value === db.id && pw.value === db.pw){
-    window.location.href = 'main.html';
-  }else{
-    // warning.style.display = 'block';
-    warning.textContent = '아이디 혹은 비밀번호를 다시 확인해주세요'
-    warning.style.color='red';
+  if(userid.value === db.id && userpw.value === db.pw){
+    alert('로그인 되었습니다 메인페이지로 이동합니다.')
+    window.location.href = './../../main.html';
+  }else if(userid.value === blackdb.blackid && userpw.value === blackdb.blackpw){
+    alert('정지된 아이디 입니다');
+  } else{
     alert('아이디 혹은 비밀번호를 다시 확인해주세요');
-
-    pw.focus();
-    pw.select();
+    warning.style.display = 'block';
+    userpw.focus();
+    userpw.select();
   }
 });
 
