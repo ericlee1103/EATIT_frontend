@@ -137,8 +137,6 @@ h3{
   float: right;
   color: #FF924E;
 }
-
-
 /* 메인 음식점판매>더보러가기 버튼 */
 .main_food_buy_btn{
   width: 180px;
@@ -158,6 +156,10 @@ h3{
 /* 더보러가기 버튼 호버시 */
 .main_food_buy_btn:hover{
   background-color: #ff7722;
+}
+
+.main_content_prev, .main_content_next {
+  width: 10px;
 }
 
 

@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="./../../assets/css/footer.css">
   <link rel="stylesheet" href="./../../assets/css/join/userInfoInput.css">
   <script defer src="./../../assets/js/join/userInfoInput.js"></script>
+  <script>
+    let headerPath = '../../header.html';
+    let footerPath = '../../footer.html';
+  </script>
+  <script defer src="../../assets/js/header.js"></script>
   <title>밥세권</title>
 </head>
 
@@ -45,7 +50,7 @@
             </div>
             <div class="warning_space"> <!-- 경고메시지 -->
               <span class="empty"> </span>
-              <div class="warning_message" id="warning_message_chk_pw"></div>
+              <div class="warning_message" id="warning_message_chk_id"></div>
             </div>
           </div>
           <!-- 비밀번호 입력 -->
@@ -79,7 +84,7 @@
           <div class="user_input_container_birth">
             <div class="user_input_container">
               <label for="user_input_birth" class="info_type">생년월일 : </label>
-              <input type="text" id="user_input_birth" placeholder="[필수] 8자리 생년월일을 입력해주세요">
+              <input type="date" id="user_input_birth" placeholder="[필수] 8자리 생년월일을 입력해주세요">
               <!-- <button type="button" class="btn_user_input_"></button> -->
             </div>
           </div>
@@ -88,7 +93,11 @@
             <div class="user_input_container">
               <label for="user_input_phone" class="info_type">휴대폰번호 : </label>
               <input type="text" id="user_input_phone" placeholder="[필수]">
-              <button type="button" class="btn_user_input_phone">인증요청</button>
+              <button type="button" id="btn_user_input_phone">인증요청</button>
+            </div>
+            <div class="warning_space"> <!-- 경고메시지 -->
+              <span class="empty"></span>
+              <div class="warning_message" id="warning_message_chk_phone"></div>
             </div>
           </div>
           <!-- 전화번호 인증 -->
@@ -96,7 +105,7 @@
             <div class="user_input_container">
               <label for="user_input_chk_phone" class="info_type">인증번호 : </label>
               <input type="text" id="user_input_chk_phone" placeholder="[필수] 인증번호를 입력해주세요">
-              <button type="button" class="btn_user_input_chk_phone">본인인증</button>
+              <button type="button" id="btn_user_input_chk_phone">인증 확인</button>
             </div>
             <div class="warning_space"> <!-- 경고메시지 -->
               <span class="empty"></span>
@@ -110,7 +119,7 @@
         <div>
           <!-- <button type="submit" class="join_next">가입하기</button> -->
           <a href="./../join/successJoin.html">
-            <div class="join_next">가입하기</div>
+            <div class="join_next" onclick="goNextPage()">가입하기</div>
           </a>
         </div>
       </div> <!-- 입력란 하얀 내부  -->

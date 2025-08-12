@@ -68,4 +68,3 @@ function bindHeaderDropdown() {
     dropdown.style.display = 'none';
   });
 }
-
