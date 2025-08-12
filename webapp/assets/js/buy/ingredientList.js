@@ -150,4 +150,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 페이지가 로드되면 전체 아이템 보여주기 (검색어 빈값)
   filterItems("");
+
+    // 검색창에서 Enter 키 눌렀을 때 검색 함수 실행
+  keyword.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault(); // 폼 제출 등 기본 동작 막기
+      searchList();
+    }
+  });
 });
