@@ -161,6 +161,7 @@ button {
   margin-left: 10px;
   cursor: pointer;
   height: 45px;
+  /* display: none; */
 }
 
 button:hover {
@@ -199,21 +200,4 @@ button:hover {
 
 .food_edit_photo_container {
   flex-direction: column;
-}
-
-.food_edit_small_label {
-  display: inline-block;
-  width: 55px;
-}
-
-.food_edit_photo_container>div>label {
-  display: inline-block;
-  width: 115px;
-}
-
-/* 오류 메시지 */
-.error-message {
-  color: red;
-  margin-top: 10px;
-  /* display: none; */
 }
