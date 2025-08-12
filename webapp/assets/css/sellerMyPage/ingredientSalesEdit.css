@@ -1,16 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  /* box-sizing: border-box; */
+header{
+  width : 1920px;
+  height : 150px;
 }
-
-main {
+main{
   background-color: #FFF5E4;
   width: 1920px;
-  height: 500px;
+  height: 1950px;
   display: flex;
   flex-direction: row;
-
 }
 
 /* 1100px 영역 */
@@ -24,13 +21,12 @@ main {
   align-items: center;
 }
 
-
 /* 전체 영역 끝 */
 /* 왼쪽 사이드 바 */
-.ingredient_edit_list {
+.ingredient_edit_my_page_list {
   position: fixed;
   padding: 0;
-  margin: 100px 20px 0 200px;
+  margin: 60px 20px 0 200px;
   width: 190px;
   height: 585px;
   font-size: 20px;
@@ -38,7 +34,7 @@ main {
   border-radius: 10px;
 }
 
-.ingredient_edit {
+.ingredient_edit_my_page {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #FF873C;
@@ -50,7 +46,7 @@ main {
   align-items: center;
 }
 
-.ingredient_edit_list>li {
+.ingredient_edit_side_bar > li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,38 +55,53 @@ main {
   width: 190px;
 }
 
-.ingredient_edit_list>li>a {
+.ingredient_edit_side_bar > li > a {
   text-decoration: none;
   color: white;
 }
 
-.ingredient_edit_list>li:hover {
+.ingredient_edit_side_bar > li:hover {
   width: 190px;
-  background-color: #ff7722;
+  background-color: #ff873ca6;
+  border-radius: 10px;
+}
+.ingredient_edit_main{
+  width: 190px;
+  background-color: #ff873ca6;
   border-radius: 10px;
 }
 
 /* 컨텐츠 영역 */
-.ingredient_edit_content_container {
+.ingredient_edit_photo_container {
   width: 700px;
-  height: 600px;
-  /* background-color: #abf589; */
-  margin: 115px 0px;
+  height: 400px;
+  background-color: white;
+  margin:   80px 0px;
   display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
+  /* flex-direction: column; */
+  justify-content: end;
+}
+.ingredient_edit_submit_table{
+  width: 700px;
+  display: flex;
+}
+.ingredient_edit_box{
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .ingredient_edit_title {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 /* 내부 컨텐츠 영역 */
 /* 공통 부분 */
-.ingredient_edit_content_container>div {
+.ingredient_edit_content_container > div {
   /* background-color: #a69980; */
   display: flex;
   align-items: center;
@@ -149,16 +160,32 @@ button {
   border-radius: 4px;
   margin-left: 10px;
   cursor: pointer;
+  height: 45px;
+  /* display: none; */
 }
 
 button:hover {
   background-color: #ff7722;
 }
+
+.ingredient_edit_buzz{
+  background-color: #FF873C;
+  width: 155px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: right;
+  margin-top: 50px;
+}
+
 /* 공통부분 끝 */
 /* 사진 미리보기 */
-#ingredient_edit_image_preview {
+#image-preview {
   width: 600px;
   height: 300px;
+  max-width: 600px;
+  max-height: 300px;
   object-fit: cover;
   margin-top: 10px;
   border: 1px solid #ccc;
@@ -173,13 +200,4 @@ button:hover {
 
 .ingredient_edit_photo_container {
   flex-direction: column;
-}
-
-.ingredient_edit_small_label{
-  display: inline-block;
-  width: 55px;
-}
-.ingredient_edit_photo_container>div>label{
-  display: inline-block;
-  width: 115px;
 }

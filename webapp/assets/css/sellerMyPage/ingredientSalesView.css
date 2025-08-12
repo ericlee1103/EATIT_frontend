@@ -1,20 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  /* box-sizing: border-box; */
+header{
+  width : 1920px;
+  height : 150px;
 }
-
-main {
+main{
   background-color: #FFF5E4;
   width: 1920px;
-  height: 1500px;
+  height: 1950px;
   display: flex;
   flex-direction: row;
-
 }
 
 /* 1100px 영역 */
-.ingredient_view_container {
+.ingredientsalesview_container {
   width: 1100px;
   height: 100%;
   background-color: #fbe3b9;
@@ -24,21 +21,20 @@ main {
   align-items: center;
 }
 
-
 /* 전체 영역 끝 */
 /* 왼쪽 사이드 바 */
-.ingredient_view_list {
+.ingredientsalesview_my_page_list {
   position: fixed;
   padding: 0;
-  margin: 100px 20px 0 200px;
+  margin: 60px 20px 0 200px;
   width: 190px;
-  height: 550px;
+  height: 585px;
   font-size: 20px;
   background-color: #a6998080;
   border-radius: 10px;
 }
 
-.ingredient_view {
+.ingredientsalesview_my_page {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #FF873C;
@@ -50,7 +46,7 @@ main {
   align-items: center;
 }
 
-.ingredient_view_list>li {
+.ingredientsalesview_side_bar > li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,38 +55,53 @@ main {
   width: 190px;
 }
 
-.ingredient_view_list>li>a {
+.ingredientsalesview_side_bar > li > a {
   text-decoration: none;
   color: white;
 }
 
-.ingredient_view_list>li:hover {
+.ingredientsalesview_side_bar > li:hover {
   width: 190px;
-  background-color: #ff7722;
+  background-color: #ff873ca6;
+  border-radius: 10px;
+}
+.ingredientsalesview_main{
+  width: 190px;
+  background-color: #ff873ca6;
   border-radius: 10px;
 }
 
 /* 컨텐츠 영역 */
-.ingredient_view_content_container {
+.ingredientsalesview_photo_container {
   width: 700px;
-  height: 600px;
-  /* background-color: #abf589; */
-  margin: 115px 0px;
+  height: 400px;
+  background-color: white;
+  margin:   80px 0px;
   display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
+  /* flex-direction: column; */
+  justify-content: end;
+}
+.ingredientsalesview_submit_table{
+  width: 700px;
+  display: flex;
+}
+.ingredientsalesview_box{
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.ingredient_view_title {
-  font-size: 24px;
+.ingredientsalesview_title {
+  font-size: 30px;
   font-weight: bold;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 /* 내부 컨텐츠 영역 */
 /* 공통 부분 */
-.ingredient_view_content_container>div {
+.ingredientsalesview_content_container > div {
   /* background-color: #a69980; */
   display: flex;
   align-items: center;
@@ -149,16 +160,32 @@ button {
   border-radius: 4px;
   margin-left: 10px;
   cursor: pointer;
+  height: 45px;
+  display: none;
 }
 
 button:hover {
   background-color: #ff7722;
 }
+
+.ingredientsalesview_buzz{
+  background-color: #FF873C;
+  width: 155px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: right;
+  margin-top: 50px;
+}
+
 /* 공통부분 끝 */
 /* 사진 미리보기 */
-#ingredient_view_image_preview{
+#image-preview {
   width: 600px;
   height: 300px;
+  max-width: 600px;
+  max-height: 300px;
   object-fit: cover;
   margin-top: 10px;
   border: 1px solid #ccc;
@@ -166,20 +193,11 @@ button:hover {
   object-fit: contain;
 }
 
-.ingredient_view_quantity_price_container {
+.ingredientsalesview_quantity_price_container {
   gap: 20px;
   /* margin-bottom: 10px; */
 }
 
-.ingredient_view_photo_container {
+.ingredientsalesview_photo_container {
   flex-direction: column;
-}
-
-.ingredient_view_small_label{
-  display: inline-block;
-  width: 55px;
-}
-.ingredient_view_photo_container>div>label{
-  display: inline-block;
-  width: 115px;
 }
