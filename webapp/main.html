@@ -12,6 +12,7 @@
 
   <!-- 헤더 js -->
   <script defer src="./assets/js/header.js"></script>
+  <script defer src="./assets/js/main.js"></script>
   <title>밥세권</title>
 </head>
 
@@ -60,12 +61,22 @@
   <main id="main">
     <!-- 메인 배너 영역 -->
     <div id="main_banner">
-      <!-- <ul class="main_slide_box">
-        <li><div class="main_slide_img">1</div></li>
-        <li><div class="main_slide_img">2</div></li>
-        <li><div class="main_slide_img">3</div></li>
-      </ul> -->
+      <div class="main_banner_middle">
+        <ul class="main_slide_box">
+          <li><div class="main_slide_img">1</div></li>
+          <li><div class="main_slide_img">2</div></li>
+          <li><div class="main_slide_img">3</div></li>
+        </ul>
+        <div class="main_banner_prev">
+          <a href="#"><img src="./assets/img/main_banner_prev.png" alt=""></a>
+        </div>
+        <div class="main_banner_next">
+          <a href="#"><img src="./assets/img/main_banner_next.png" alt=""></a>
+        </div>
+      </div>
     </div>
+    
+
     <!-- 메인 컨텐츠 영역 -->
     <div id="main_wrapper">
 
@@ -74,6 +85,9 @@
         <h3>거리순👀</h3>
         <!-- 가게 이미지 및 정보 -->
         <div class="main_food_buy">
+          <div class="main_content_prev">
+            <a href="#"><img src="/assets/img/main_banner_prev.png" alt=""></a>
+          </div>
           <article class="main_food_buy_article">
             <a href="./app/buy/storeDetail.html">
               <!-- 상품이미지(임시) -->
@@ -126,10 +140,15 @@
               </div>
             </a>
           </article>
+
+          <!-- 화살표! -->
+          <div class="main_content_next">
+            <a href="#"><img src="/assets/img/main_banner_next.png" alt=""></a>
+          </div>
         </div>
         <!-- 더 보러가기 버튼 -->
         <div class="main_food_buy_btn">
-          <a href="./app/buy/storeList.html">더 보러가기</a>
+          <a href="/app/buy/storeList.html">더 보러가기</a>
         </div>
       </div>
 
