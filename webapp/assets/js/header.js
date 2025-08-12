@@ -64,8 +64,8 @@ function bindHeaderDropdown() {
       }, 100);
     });
   });
-
   dropdown.addEventListener('mouseleave', () => {
     dropdown.style.display = 'none';
   });
 }
+
