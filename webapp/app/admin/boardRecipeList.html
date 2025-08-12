@@ -24,6 +24,7 @@
         <a href="./../../app/admin/reportList.html"><li id="sidebar_list_warning"class="sidebar_list">신고관리</li></a>
         <a href="./../../app/admin/bannerList.html"><li id="sidebar_list_banner"class="sidebar_list">배너/광고</li></a>
       </ul>
+      <!-- 로그아웃 버튼 -->
       <button id="admin_logoutbtn">로그아웃</button>
     </aside>
     <!-- 메인컨텐츠 영역 -->
@@ -92,10 +93,11 @@
           </div>
           <form action="" method="get">
             <div class="admin_search">
-                  <select class="admin_notice_category">
-                    <option value="notice">제목</option>
-                    <option value="notice">아이디</option>
-                  </select>
+              <!-- 태그 선택 -->
+              <select class="admin_notice_category">
+                <option value="notice">제목</option>
+                <option value="notice">아이디</option>
+              </select>
               <input type="text" id="search_word" name="search_word">
               <button class="search_btn" type="submit">
                 <i class="fas fa-search"></i>

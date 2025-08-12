@@ -56,11 +56,7 @@ h1{
   text-align: center;
   padding-bottom: 20px;
 }
-.admin_pagetitle{
-  /* border: 1px solid black; */
-  font-weight:1000;
-  margin-left: 50px;
-}
+/* 바깥 회색 영역 */
 .admin_listwrapper{
   border: 1px solid black;
   padding: 10px;
@@ -71,6 +67,7 @@ h1{
   background-color: #929292;
   border-radius: 10px;
 }
+/* 하얀 영역 */
 .admin_whitebox{
   background-color: white;
   margin: auto;
@@ -78,11 +75,13 @@ h1{
   height: 750px;
   padding-top: 10px;
 }
+/* 태그 선택 */
 .admin_notice_category{
   background-color: white;
   width: 50px;
   margin:auto 10px auto 10px;
 }
+/* 공지 작성 제목영역 */
 .admin_notice_titlebox{
   background-color: #d9d9d9;
   display: flex;
@@ -92,24 +91,28 @@ h1{
   text-align: center;
   align-items: center;
 }
+/* 제목 */
 #title{
   height: 25px;
   width: 330px;
   margin-left: 10px;
   margin-right: 20px;
 }
+/* 작성도구 api영역 */
 .write_api{
   margin-left: 25px;
   width: 600px;
   height: 30px;
   background-color: aqua;
 }
+/* 작성 영역 */
 #admin_notice_write{
   margin-left: 25px;
   resize: none;
   width: 650px;
   min-height: 500px;
 }
+/* 아래쪽 버튼 영역 */
 .bottom_btn_area{
   /* border: 1px solid black; */
   display: flex;
@@ -117,17 +120,20 @@ h1{
   width: 650px;
   justify-content: space-between;
 }
+/* 파일첨부 */
 #admin_file{
   /* border: 1px solid black; */
   width: 70px;
   height: 30px;
 }
+/* 작성완료 버튼 */
 #admin_notice_dowrite{
   width: 60px;
   height: 30px;
   color: white;
   background-color: #505FA9;
 }
+/* 로그아웃 버튼 */
 #admin_logoutbtn{
   background-color: #1e223f;
   color: white;
