@@ -154,3 +154,8 @@
   font-weight: bold;
   cursor: default;
 }
+
+.fas fa-search{
+  width:30px;
+  height:30px;
+}
