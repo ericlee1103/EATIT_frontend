@@ -7,8 +7,15 @@
   <link rel="stylesheet" href="./../../assets/css/header.css">
   <link rel="stylesheet" href="./../../assets/css/footer.css">
   <link rel="stylesheet" href="./../../assets/css/cartList/shoppingList.css">
-  <script defer src="./../../assets/js/community/loadHeaderFooter.js"></script>
+
+  <!-- js -->
+  <script defer src="./../../assets/js/cartList/shoppingList.js"></script>
   <script defer src="./../../assets/js/header.js"></script>
+  <script>
+    let headerPath = '../../header.html';
+    let footerPath = '../../footer.html';
+  </script>
+  
   <!-- 파비콘 -->
   <link rel="shortcut icon" href="./../../assets/img/favicon.ico" type="image/x-icon">
   <title>밥세권</title>
@@ -37,13 +44,7 @@
 
           <!-- 장바구니 음식(재료)리스트 감싸는 전체 영역 -->
           <div class="shopping_cart_list">
-
-            <div class="shopping_select_buy">
-              <!-- 선택구매 체크박스 -->
-              <input type="checkbox"> 선택구매
-            </div>
-            <hr>
-
+            
             <!-- 상품 사진, 상호명, 가격 등 상세 정보 전체 영역 -->
             <div class="shopping_cart_store">
 
