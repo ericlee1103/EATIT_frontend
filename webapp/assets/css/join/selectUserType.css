@@ -13,7 +13,7 @@ main {
   background-color: #fff5e4;
 
 }
-
+/* 1100px 영역 */
 .container {
   width: 1100px;
   height: 100%;
@@ -50,7 +50,7 @@ main {
   border-radius: 50%;
 }
 
-/* ***************************************** */
+/* 회원선택 네모네모********************************* */
 .select_user_type {
   /*border: 1px solid #000;*/
   display: flex;

@@ -13,7 +13,7 @@ main {
   background-color: #fff5e4;
 
 }
-
+/* 1100px 영역 */
 .findPw_edit_container {
   width: 1100px;
   height: 100%;
@@ -22,7 +22,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
+/* 컨텐츠 영역 */
 .findPw_edit_content_container {
   width: 600px;
   height: 500px;
@@ -51,6 +51,8 @@ main {
   margin: 15px;
   font-size: 14px;
   text-align: right;
+  display: flex;
+  justify-content: center;
 }
 
 .findPw_edit_input_container>div>label {
@@ -82,11 +84,14 @@ main {
 }
 
 /* 메인으로, 로그인 버튼 */
-.findPw_edit_btns>button:hover {
+.findId_clear_btns{
+  display: flex;
+}
+.findId_clear_btns>a>div:hover {
   background-color: #FF7722;
 }
 
-.findPw_edit_btns>button {
+.findId_clear_btns>a>div {
   width: 115px;
   height: 35px;
   background-color: #ff924e;
@@ -95,6 +100,12 @@ main {
   border: 0.5px solid #000;
   font-size: 16px;
   margin: 10px;
+  text-align: center;
+  line-height: 35px;
+}
+.findId_clear_btns>a{
+  text-decoration: none;
+  color: white;
 }
 
 /* 비밀번호찾기, 비밀번호 찾기, 회원가입 */

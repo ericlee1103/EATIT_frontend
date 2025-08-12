@@ -14,7 +14,7 @@ main {
   background-color: #fff5e4;
 
 }
-
+/* 1100px 영역 */
 .container {
   width: 1100px;
   height: 100%;
@@ -95,14 +95,14 @@ form>div>div {
   color: white;
   border: 1px solid black;
 }
-
+/* 약관동의 중간제목 */
 .join_agree_top_title,
 .join_agree_bottom_title {
   font-size: 20px;
   font-weight: bold;
   margin: 10px;
 }
-
+/* 약관동의 광고성정보 수집 동의 */
 #join_agree_bottom_adv_sms,
 #join_agree_bottom_adv_call {
   margin-left: 35px;
@@ -111,7 +111,7 @@ form>div>div {
 .join_agree_bottom_adv_txt {
   text-align: right;
 }
-
+/* 다음페이지로 이동 버튼 */
 .join_agree_next_btn:hover {
   background-color: #FF7722;
 }
