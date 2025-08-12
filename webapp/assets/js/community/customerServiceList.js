@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const rowsPerPage = 5;           // 페이지당 게시글 수
+  const rowsPerPage = 10;           // 페이지당 게시글 수
   let currentPage = 1;             // 현재 페이지 번호
 
   const listBody = document.getElementById("post_list_body");

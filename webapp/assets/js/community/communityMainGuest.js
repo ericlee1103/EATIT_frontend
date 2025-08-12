@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // 한 페이지에 보여줄 게시글(행)의 개수
-  const rowsPerPage = 5;
+  const rowsPerPage = 10;
   // 현재 보고 있는 페이지 번호 (1부터 시작)
   let currentPage = 1;
 

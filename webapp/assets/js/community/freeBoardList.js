@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const rowsPerPage = 5;
+  const rowsPerPage = 10;
   let currentPage = 1;
 
   const listBody = document.getElementById("postListBody");
