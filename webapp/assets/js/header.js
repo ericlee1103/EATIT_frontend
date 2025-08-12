@@ -31,3 +31,5 @@ buy.forEach((item, index) => {
 dropdown.addEventListener('mouseleave', () => {
   dropdown.style.display = 'none';
 });
+
+
