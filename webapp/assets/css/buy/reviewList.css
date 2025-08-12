@@ -39,6 +39,7 @@
   display: flex;
   margin: 10px auto;
 }
+/* 리뷰사진 */
 .buy_review_area>img{
   width: 150px;
   height: 150px;
@@ -59,6 +60,7 @@
   display: flex;
   align-items: center;
 }
+/* 유저 프로필사진 */
 .buy_review_profile{
   width: 30px;
   height: 30px;
@@ -69,6 +71,7 @@
   height: 30px;
   border-radius: 50%;
 }
+
 .buy_review_detail_top ul{
   /* border:1px solid black; */
   width:130px;
@@ -78,13 +81,11 @@
 .buy_review_detail_top ul li{
   font-size: 10px;
 }
-.review_star{
-  /* border: 1px solid red; */
-}
+/* 별점 별 이미지 */
 .review_star>img{
   width: 15px;
 }
-/* 영역선 */
+/* 구분선 */
 .buy_reviewlist_bg hr{
   width: 500px;
   margin: auto;
