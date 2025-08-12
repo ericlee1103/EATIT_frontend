@@ -60,11 +60,7 @@ h1{
   text-align: center;
   padding-bottom: 20px;
 }
-.admin_pagetitle{
-  /* border: 1px solid black; */
-  font-weight:1000;
-  margin-left: 50px;
-}
+
 .admin_listwrapper{
   border: 1px solid black;
   padding: 10px;
@@ -169,6 +165,7 @@ img[alt="잎새"]{
   display: flex;
   justify-content: end;
 }
+/* 삭젭 버튼 */
 .admin_detail_delete button{
   width: 50px;
   height: 30px;
@@ -176,6 +173,7 @@ img[alt="잎새"]{
   border-radius: 5px;
   font-weight: bold;
 }
+/* 로그아웃 버튼 */
 #admin_logoutbtn{
   background-color: #1e223f;
   color: white;

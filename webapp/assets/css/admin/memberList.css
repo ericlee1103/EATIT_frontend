@@ -224,6 +224,7 @@ a{
   width: 24px;
   height: 24px;
 }
+/* 로그아웃 버튼 */
 #admin_logoutbtn{
   background-color: #1e223f;
   color: white;

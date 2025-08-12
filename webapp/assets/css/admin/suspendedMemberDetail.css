@@ -143,6 +143,7 @@ a{
   border-radius: 10px;
   font-weight: bold;  
 }
+/* 로그아웃 버튼 */
 #admin_logoutbtn{
   background-color: #1e223f;
   color: white;
