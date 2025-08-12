@@ -114,6 +114,28 @@ button:hover{
   font-size: 16px;
 }
 
+/* 아이디 찾기 완료 시 뜨는 버튼 */
+.findId_clear_btns>a>div:hover {
+  background-color: #FF7722;
+}
+
+.findId_clear_btns>a>div {
+  width: 115px;
+  height: 35px;
+  background-color: #ff924e;
+  color: white;
+  border-radius: 5px;
+  border: 0.5px solid #000;
+  font-size: 16px;
+  margin: 10px;
+  text-align: center;
+  line-height: 35px;
+}
+.findId_clear_btns>a{
+  text-decoration: none;
+  color: white;
+}
+
 /* 아이디 찾기 다른 곳으로 이동 */
 .findId_to_container {
   /* height: 50px; */
@@ -123,7 +145,7 @@ button:hover{
   gap: 15px;
 }
 
-.findId_to_container>div>a {
+.findId_to_container>div>a{
   font-size: 14px;
   text-decoration: none;
   color: black;

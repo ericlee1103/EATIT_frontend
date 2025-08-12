@@ -4,28 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/header.css">
-  <link rel="stylesheet" href="./assets/css/footer.css">
-  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./../../assets/css/main/header.css">
+  <link rel="stylesheet" href="./../../assets/css/main/footer.css">
+  <link rel="stylesheet" href="./../../assets/css/main/main.css">
   <!-- 파비콘 -->
   <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-
+  
   <!-- 헤더 js -->
-  <script defer src="./assets/js/footer.js"></script>
-  <script defer src="./assets/js/header.js"></script>
-  <script defer src="./assets/js/main.js"></script>
-  <!-- header / footer 경로 설정 
-  메인은 webapp기준 최상단이므로 바로 적용 -->
-  <script>
-    let headerPath = './header.html';
-    let footerPath = './footer.html';
-  </script>
+  <script defer src="./../../assets/js/header.js"></script>
+  <script defer src="./../../assets/js/main.js"></script>
+  <!-- <script defer src="./../../assets/js/.js"></script> -->
   <title>밥세권</title>
 </head>
 
 <body>
   <!-------------------- 헤더 ------------------------>
-  <header id="header"></header>
+  <header id="header">
+    <!-- <nav id="header_login">
+      <!-- 로그인 전 네비게이션-로그인/회원가입 
+      <ul>
+        <li><a href="./../../app/logIn/login.html">로그인</a></li>
+        <li><a href="./../../app/join/selectUserType.html">회원가입</a></li>
+      </ul>
+    </nav>
+    <!-- 헤더 중앙정렬 영역 
+    <div id="header_wrapper">
+      <!-- 메인 로고 이미지
+      <div id="header_logo">
+        <a href="./../../app/main/mainpage.html"><img src="./../../assets/img/header_logo.png" alt="밥세권 로고"></a>
+      </div>
+      <!-- 메인 네비게이션 
+      <nav id="header_nav">
+        <ul>
+          <li><a href="./../../app/buy/storeList.html">구매</a></li>
+          <li><a href="./../../app/community/communityMainGuest.html">커뮤니티</a></li>
+          <li><a href="./../../app/community/customerServiceList.html">고객센터</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- 메인 네비게이션 드롭다운 메뉴
+    <div id="header_nav_display">
+      <div class="header_nav_dropdown">
+        <ul class="header_nav_buy">
+          <li><a href="./../buy/storeList.html">음식점 구매</a></li>
+          <li><a href="./../buy/ingredientList.html">재료 구매</a></li>
+        </ul>
+        <ul class="header_nav_commu">
+          <li><a href="./../community/freeBoardList.html">자유게시판</a></li>
+          <li><a href="./../community/promoBoardList.html">홍보게시판</a></li>
+          <li><a href="./../community/recipeList.html">레시피공유</a></li>
+        </ul>
+      </div>
+    </div> -->
+  </header>
 
   <!-------------------- 메인 ------------------------>
   <main id="main">
@@ -33,25 +64,19 @@
     <div id="main_banner">
       <div class="main_banner_middle">
         <ul class="main_slide_box">
-          <li>
-            <div class="main_slide_img">1</div>
-          </li>
-          <li>
-            <div class="main_slide_img">2</div>
-          </li>
-          <li>
-            <div class="main_slide_img">3</div>
-          </li>
+          <li><div class="main_slide_img">1</div></li>
+          <li><div class="main_slide_img">2</div></li>
+          <li><div class="main_slide_img">3</div></li>
         </ul>
         <div class="main_banner_prev">
-          <a href="#"><img src="./assets/img/main_banner_prev.png" alt=""></a>
+          <a href="#"><img src="./../../assets/img/main_banner_prev.png" alt=""></a>
         </div>
         <div class="main_banner_next">
-          <a href="#"><img src="./assets/img/main_banner_next.png" alt=""></a>
+          <a href="#"><img src="./../../assets/img/main_banner_next.png" alt=""></a>
         </div>
       </div>
     </div>
-
+    
 
     <!-- 메인 컨텐츠 영역 -->
     <div id="main_wrapper">
@@ -61,13 +86,26 @@
         <h3>거리순👀</h3>
         <!-- 가게 이미지 및 정보 -->
         <div class="main_food_buy">
-          <!-- <div class="main_content_prev">
-            <img src="./assets/img/main_banner_prev.png" alt="">
-          </div> -->
+          <div class="main_content_prev">
+            <a href="#"><img src="./../../assets/img/main_banner_prev.png" alt=""></a>
+          </div>
           <article class="main_food_buy_article">
-            <a href="./app/buy/storeDetail.html">
+            <a href="./../buy/storeDetail.html">
               <!-- 상품이미지(임시) -->
-              <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
+              <img src="./../../assets/img/store.jpg" alt="상품이미지 설명 추가하기">
+              <!-- 가게정보 -->
+              <div class="main_store_info">
+                <p class="main_store_name">가게명</p>
+                <p class="main_menu_name">메뉴명</p>
+                <p class="main_open_time">영업시간 00:00~00:00</p>
+                <p class="main_price">1,000원</p>
+              </div>
+            </a>
+          </article>
+          <article class="main_food_buy_article">
+            <a href="./../buy/storeDetail.html">
+              <!-- 상품이미지(임시) -->
+              <img src="./../../assets/img/store.jpg" alt="상품이미지 설명 추가하기">
               <!-- 가게정보 -->
               <div class="main_store_info">
                 <p class="main_store_name">가게명</p>
@@ -80,7 +118,7 @@
           <article class="main_food_buy_article">
             <a href="./app/buy/storeDetail.html">
               <!-- 상품이미지(임시) -->
-              <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
+              <img src="./../../assets/img/store.jpg" alt="상품이미지 설명 추가하기">
               <!-- 가게정보 -->
               <div class="main_store_info">
                 <p class="main_store_name">가게명</p>
@@ -91,9 +129,9 @@
             </a>
           </article>
           <article class="main_food_buy_article">
-            <a href="./app/buy/storeDetail.html">
+            <a href="./../buy/storeDetail.html">
               <!-- 상품이미지(임시) -->
-              <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
+              <img src="./../../assets/img/store.jpg" alt="상품이미지 설명 추가하기">
               <!-- 가게정보 -->
               <div class="main_store_info">
                 <p class="main_store_name">가게명</p>
@@ -103,26 +141,15 @@
               </div>
             </a>
           </article>
-          <article class="main_food_buy_article">
-            <a href="./app/buy/storeDetail.html">
-              <!-- 상품이미지(임시) -->
-              <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
-              <!-- 가게정보 -->
-              <div class="main_store_info">
-                <p class="main_store_name">가게명</p>
-                <p class="main_menu_name">메뉴명</p>
-                <p class="main_open_time">영업시간 00:00~00:00</p>
-                <p class="main_price">1,000원</p>
-              </div>
-            </a>
-          </article>
-          <!-- <div class="main_content_next">
-            <img src="./assets/img/main_banner_next.png" alt="">
-          </div> -->
+
+          <!-- 화살표! -->
+          <div class="main_content_next">
+            <a href="#"><img src="./../../assets/img/main_banner_next.png" alt=""></a>
+          </div>
         </div>
         <!-- 더 보러가기 버튼 -->
         <div class="main_food_buy_btn">
-          <a href="./app/buy/storeList.html">더 보러가기</a>
+          <a href="./../buy/storeList.html">더 보러가기</a>
         </div>
       </div>
 
@@ -130,27 +157,27 @@
       <div id="main_content_buy_ingr">
         <div class="main_ingredient_buy">
           <h3>재료 판매🥕</h3>
-          <a href="./app/buy/ingredientList.html">더보기 ></a>
+          <a href="./../buy/ingredientList.html">더보기 ></a>
           <div class="main_ingredient_store">
             <!-- 재료사진 -->
             <article class="main_ingredient_img">
-              <a href="./app/buy/ingredientDetail.html">
-                <img src="./assets/img/carrot.jpg" alt="상품이미지 가게 정보 추가하기">
+              <a href="./../buy/ingredientDetail.html">
+                <img src="./../../assets/img/carrot.jpg" alt="상품이미지 가게 정보 추가하기">
               </a>
             </article>
             <article class="main_ingredient_img">
               <a href="./app/buy/ingredientDetail.html">
-                <img src="./assets/img/carrot.jpg" alt="상품이미지 가게 정보 추가하기">
+                <img src="./../../assets/img/carrot.jpg" alt="상품이미지 가게 정보 추가하기">
               </a>
             </article>
             <article class="main_ingredient_img">
               <a href="./app/buy/ingredientDetail.html">
-                <img src="./assets/img/carrot.jpg" alt="상품이미지 가게 정보 추가하기">
+                <img src="./../../assets/img/carrot.jpg" alt="상품이미지 가게 정보 추가하기">
               </a>
             </article>
             <article class="main_ingredient_img">
               <a href="./app/buy/ingredientDetail.html">
-                <img src="./assets/img/carrot.jpg" alt="상품이미지 가게 정보 추가하기">
+                <img src="./../../assets/img/carrot.jpg" alt="상품이미지 가게 정보 추가하기">
               </a>
             </article>
           </div>
@@ -184,9 +211,9 @@
         <p class="footer_email">비회원 문의 : abcdefg@koreait.com</p>
         <div class="footer_sns">
           <ul>
-            <li><a href="#"><img src="./assets/img/sns_insta.png" alt=""></a></li>
-            <li><a href="#"><img src="./assets/img/sns_facebook.png" alt=""></a></li>
-            <li><a href="#"><img src="./assets/img/sns_twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="./../../assets/img/sns_insta.png" alt=""></a></li>
+            <li><a href="#"><img src="./../../assets/img/sns_facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./../../assets/img/sns_twitter.png" alt=""></a></li>
           </ul>
         </div>
       </div>

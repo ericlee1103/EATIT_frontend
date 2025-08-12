@@ -33,75 +33,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+const total_btn_count = document.querySelectorAll('input:is')
+let btn_count = 0;
 
-document.addEventListener("DOMContentLoaded", () => {
-  const currentPasswordInput = document.getElementById("current_password");
-  const errorMessage = document.getElementById("current_password_error");
-  const newPasswordInput = document.getElementById("new_password");
-  const confirmPasswordInput = document.getElementById("confirm_password");
+const sellerInputId = document.getElementById('seller_input_id');
+const chkIdBtn = document.getElementById('btn_seller_input_hasSameId');
+const dbId = 'user1'
+// 아이디 중복 검사
+chkIdBtn.addEventListener('click', function () {
+  const warningSpan = document.getElementById('warning_message_chk_id');
+  const inputId = sellerInputId.value.trim();
 
-  // 예시: 올바른 비밀번호 (실제로는 서버에서 확인해야 함)
-  const correctPassword = "1234abcd";
-
-  // 초기에 새 비밀번호 입력창 비활성화
-  newPasswordInput.disabled = true;
-  confirmPasswordInput.disabled = true;
-
-  currentPasswordInput.addEventListener("blur", () => {
-    const enteredPassword = currentPasswordInput.value;
-
-    if (enteredPassword !== correctPassword) {
-      errorMessage.textContent = "*현재 비밀번호와 일치하지 않습니다.";
-      errorMessage.style.color = "red";
-
-      // 입력 비활성화
-      newPasswordInput.disabled = true;
-      confirmPasswordInput.disabled = true;
-
-      // 내용 초기화
-      newPasswordInput.value = "";
-      confirmPasswordInput.value = "";
-    } else {
-      errorMessage.textContent = "";
-      newPasswordInput.disabled = false;
-      confirmPasswordInput.disabled = false;
-    }
-  });
-});
-document.addEventListener("DOMContentLoaded", () => {
-  const newPasswordInput = document.getElementById("new_password");
-  const confirmPasswordInput = document.getElementById("confirm_password");
-  const errorMessage = document.getElementById("confirm_password_error");
-  const saveBtn = document.getElementById("password_save_btn");
-
-  saveBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    const newPassword = newPasswordInput.value.trim();
-    const confirmPassword = confirmPasswordInput.value.trim();
-
-    if (newPassword !== confirmPassword) {
-      errorMessage.textContent = "*입력하신 비밀번호와 일치하지 않습니다.";
-      errorMessage.style.color = "red";
-    } else if (confirmPassword === "") {
-      errorMessage.textContent = "*비밀번호를 다시 확인해주세요."
-      errorMessage.style.color = "red";
-    }else {
-    errorMessage.textContent = "";
-    alert("비밀번호가 변경되었습니다.");
-    }
-  });
+  if (!inputId) {
+    warningSpan.textContent = '아이디를 입력하세요';
+    warningSpan.style.display = 'block';
+  } else if (inputId === dbId) {
+    warningSpan.textContent = '중복된 아이디 입니다.';
+    warningSpan.style.display = 'block';
+  } else {
+    warningSpan.textContent = '이 아이디를 사용할 수 있습니다.';
+    warningSpan.style.display = 'block';
+    warningSpan.style.color = 'green';
+    chkIdBtn.disable = true;
+  }
 });
 
-const newPasswordInput = document.getElementById("new_password");
-const newPasswordError = document.getElementById("new_password_error");
+//비밀번호 입력값
+const newPasswordError = document.getElementById("warning_message_chk_pw");
+const newPasswordInput = document.getElementById("user_input_pw");
+const confirmPasswordInput = document.getElementById("user_input_chk_pw");
+
+const newPassword = newPasswordInput.value.trim();
+const confirmPassword = confirmPasswordInput.value.trim();
 
 // 비밀번호 유효성 검사 정규표현식
 const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,16}$/;
 
 newPasswordInput.addEventListener("input", () => {
-  const newPassword = newPasswordInput.value;
-
   if (!passwordRegex.test(newPassword)) {
     newPasswordError.textContent = "비밀번호는 8~16자의 영문 대/소문자, 숫자, 특수문자를 포함해야 합니다.";
     newPasswordError.style.color = "red";
@@ -109,9 +77,6 @@ newPasswordInput.addEventListener("input", () => {
     newPasswordError.textContent = "";
   }
 });
-
-const confirmPasswordInput = document.getElementById("confirm_password");
-const confirmPasswordError = document.getElementById("confirm_password_error");
 
 confirmPasswordInput.addEventListener("input", () => {
   const newPassword = document.getElementById("new_password").value;
@@ -126,42 +91,32 @@ confirmPasswordInput.addEventListener("input", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const input = document.getElementById("profileImage");
-  const preview = document.getElementById("preview");
+  //인증요청, 인증 확인 버튼
+  const sendCodeBtn = document.getElementById("btn_user_input_phone");
+  const checkCodeBtn = document.getElementById("btn_user_input_chk_phone");
 
-  input.addEventListener("change", function () {
-    const file = this.files[0];
+  //전화번호 입력
+  const phoneInput = document.getElementById("user_input_phone");
+  const phoneError = document.getElementById("warning_message_chk_phone");
 
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = function (e) {
-        preview.src = e.target.result;
-        preview.style.display = "block";
-      };
-      reader.readAsDataURL(file);
-    }
-  });
-});
+  //전화번호 인증 입력
+  const codeInput = document.getElementById("user_input_chk_phone");
+  const codeError = document.getElementById("warning_message_chk_phone");
 
-document.addEventListener("DOMContentLoaded", () => {
-  const sendCodeBtn = document.getElementById("send_code_btn");
-  const checkCodeBtn = document.getElementById("check_code_btn");
+  // 미리 저장한 인증번호
+  const generatedCode = "1234";
 
-  const phoneInput = document.getElementById("new_phone");
-  const phoneError = document.getElementById("phone_error");
 
-  const codeInput = document.getElementById("code_input");
-  const codeError = document.getElementById("code_error");
-
-  const generatedCode = "123456";
-
+  //전화번호 유효성 검증
   function isValidPhone(phone) {
     const phoneRegex = /^01[0-9]{8,9}$/;
     return phoneRegex.test(phone);
   }
 
+  //전화번호 확인
   sendCodeBtn.addEventListener("click", (e) => {
     e.preventDefault();
+    // 전화번호 값만 저장
     const phone = phoneInput.value.trim();
     phoneError.textContent = "";
 
@@ -172,8 +127,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  //인증번호 확인
   checkCodeBtn.addEventListener("click", (e) => {
     e.preventDefault();
+    //인증번호 값만 저장
     const inputCode = codeInput.value.trim();
     codeError.textContent = "";
 
@@ -184,3 +141,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+const essenInfos = document.contentType('input');
+function goNextPage() {
+  // const totalEssenCount = essenInfos.length;
+  let essenCount = 0;
+  // 필수동의 여부 확인
+  essenInfos.forEach((essenAgree)=>{
+    if(essenAgree.value !== ''){
+      essenCount++;
+    }
+  });
+  console.log(essenCount);
+  if(essenCount === essenInfos.length ){
+    //모든 체크박스 체크 시 다음 페이지로 이동
+    location.href = "successJoin.html";
+    return;
+  }
+  alert("필수 약관에 동의해야 다음단계로 이동할 수 있습니다.");
+  // alert() -> return 일때 return 이 작동 안함 왜?
+}

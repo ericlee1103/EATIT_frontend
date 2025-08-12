@@ -14,7 +14,7 @@ main {
   background-color: #fff5e4;
 
 }
-
+/* 1100px 영역 */
 .container {
   width: 1100px;
   height: 100%;
@@ -23,7 +23,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
+/* 컨텐츠 영역 */
 .content_container {
   width: 465px;
   height: 610px;
@@ -33,7 +33,7 @@ main {
   align-items: center;
   padding: 10px;
 }
-
+/* 모든 버튼들이 hover일때 */
 button:hover {
   background-color: #FF7722;
 }

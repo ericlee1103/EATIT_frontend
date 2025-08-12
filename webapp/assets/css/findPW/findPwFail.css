@@ -13,7 +13,7 @@ main {
   background-color: #fff5e4;
 
 }
-
+/* 1100px 영역 */
 .findPw_fail_container {
   width: 1100px;
   height: 100%;
@@ -22,7 +22,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
+/* 컨텐츠 영역 */
 .findPw_fail_content_container {
   width: 600px;
   height: 500px;

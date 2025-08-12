@@ -8,9 +8,15 @@
   <link rel="stylesheet" href="./../../assets/css/footer.css" />
   <link rel="stylesheet" href="./../../assets/css/buy/storeList.css" />
   <link rel="stylesheet" href="./../../assets/css/cartList/paymentSuccess.css" />
+
+  <script defer src="./../../assets/js/buy/ingredientList.js"></script>
+  <script defer src="./../../assets/js/header.js"></script>
+  <script>
+    let headerPath = '../../header.html';
+    let footerPath = '../../footer.html';
+  </script>
   <!-- 파비콘 -->
   <link rel="shortcut icon" href="./../../assets/img/favicon.ico" type="image/x-icon" />
-  <script defer src="./../../assets/js/buy/ingredientList.js"></script>
   <title>밥세권</title>
 </head>
 
@@ -26,6 +32,9 @@
         <h2>재료 구매🥕</h2>
         <form id="searchForm" action="#" method="get">
           <input type="text" name="buy_search" id="buy_search" placeholder="재료나 가게를 찾아보세요!" autocomplete="off" />
+          <button class="search_btn" type="button">
+            <i class="fas fa-search"></i>
+          </button>
         </form>
         <!-- 음식점 정보 영역 -->
         <div class="buy_area" id="buy_area">
