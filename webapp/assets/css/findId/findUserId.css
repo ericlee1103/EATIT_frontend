@@ -80,11 +80,12 @@ main {
   border: 0.5px solid #000;
   font-size: 16px;
 }
-
+/* 경고메시지 */
 .warning_message{
   color: red;
   font-size: 14px;
 }
+
 
 /* 아이디 찾기 다른 곳으로 이동 */
 .findId_to_container {
