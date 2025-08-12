@@ -34,25 +34,50 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//비밀번호 입력값
-const errorMessage = document.getElementById("warning_message_chk_pw");
-const newPasswordInput = document.getElementById("user_input_pw");
-const confirmPasswordInput = document.getElementById("user_input_chk_pw");
+const total_btn_count = document.querySelectorAll('input:is')
+let btn_count = 0;
+const dbId = 'user1'
 
-const newPassword = newPasswordInput.value.trim();
-const confirmPassword = confirmPasswordInput.value.trim();
+chkIdBtn.addEventListener('click', function () {
+  let sellerInputId = document.getElementById('btn_user_input_hasSameId');
+  let chkIdBtn = document.getElementById('btn_seller_input_hasSameId');
+  // 아이디 중복 검사
+  const warningSpan = document.getElementById('warning_message_chk_id');
+  let inputId = sellerInputId.value.trim();
 
-// 비밀번호 유효성 검사 정규표현식
-const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,16}$/;
+  if (!inputId) {
+    warningSpan.textContent = '아이디를 입력하세요';
+    warningSpan.style.display = 'block';
+  } else if (inputId === dbId) {
+    warningSpan.textContent = '중복된 아이디 입니다.';
+    warningSpan.style.display = 'block';
+  } else {
+    warningSpan.textContent = '이 아이디를 사용할 수 있습니다.';
+    warningSpan.style.display = 'block';
+    warningSpan.style.color = 'green';
+    chkIdBtn.disable = true;
+  }
+});
 
 newPasswordInput.addEventListener("input", () => {
-  const newPassword = newPasswordInput.value;
+  //비밀번호 입력값
+  const errorMessage = document.getElementById("warning_message_chk_pw");
+  const newPasswordInput = document.getElementById("user_input_pw");
+  const confirmPasswordInput = document.getElementById("user_input_chk_pw");
+
+  let newPassword = newPasswordInput.value.trim();
+  let confirmPassword = confirmPasswordInput.value.trim();
+
+  // 비밀번호 유효성 검사 정규표현식
+  const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,16}$/;
+
+  // let newPassword = newPasswordInput.value;
 
   if (!passwordRegex.test(newPassword)) {
-    newPasswordError.textContent = "비밀번호는 8~16자의 영문 대/소문자, 숫자, 특수문자를 포함해야 합니다.";
-    newPasswordError.style.color = "red";
+    errorMessage.textContent = "비밀번호는 8~16자의 영문 대/소문자, 숫자, 특수문자를 포함해야 합니다.";
+    errorMessage.style.color = "red";
   } else {
-    newPasswordError.textContent = "";
+    errorMessage.textContent = "";
   }
 });
 
@@ -120,3 +145,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+const essenInfos = document.contentType('input');
+function goNextPage() {
+  // const totalEssenCount = essenInfos.length;
+  let essenCount = 0;
+  // 필수동의 여부 확인
+  essenInfos.forEach((essenAgree) => {
+    if (essenAgree.value !== '') {
+      essenCount++;
+    }
+  });
+  console.log(essenCount);
+  if (essenCount === essenInfos.length) {
+    //모든 체크박스 체크 시 다음 페이지로 이동
+    location.href = "successJoin.html";
+    return;
+  }
+  alert("필수 약관에 동의해야 다음단계로 이동할 수 있습니다.");
+  // alert() -> return 일때 return 이 작동 안함 왜?
+}

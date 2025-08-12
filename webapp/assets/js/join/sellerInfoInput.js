@@ -35,12 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 const total_btn_count = document.querySelectorAll('input:is')
 let btn_count = 0;
-
-const sellerInputId = document.getElementById('seller_input_id');
-const chkIdBtn = document.getElementById('btn_seller_input_hasSameId');
 const dbId = 'user1'
-// 아이디 중복 검사
+
 chkIdBtn.addEventListener('click', function () {
+  const sellerInputId = document.getElementById('seller_input_id');
+  const chkIdBtn = document.getElementById('btn_seller_input_hasSameId');
+  // 아이디 중복 검사
   const warningSpan = document.getElementById('warning_message_chk_id');
   const inputId = sellerInputId.value.trim();
 
@@ -147,13 +147,13 @@ function goNextPage() {
   // const totalEssenCount = essenInfos.length;
   let essenCount = 0;
   // 필수동의 여부 확인
-  essenInfos.forEach((essenAgree)=>{
-    if(essenAgree.value !== ''){
+  essenInfos.forEach((essenAgree) => {
+    if (essenAgree.value !== '') {
       essenCount++;
     }
   });
   console.log(essenCount);
-  if(essenCount === essenInfos.length ){
+  if (essenCount === essenInfos.length) {
     //모든 체크박스 체크 시 다음 페이지로 이동
     location.href = "successJoin.html";
     return;
