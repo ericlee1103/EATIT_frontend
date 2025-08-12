@@ -47,75 +47,94 @@ main {
   border-color: #ffb84d;
 }
 
-.flex_row {
-  display: flex;
-  align-items: center;
-}
-
-.list_header {
+.list_header_flex_row {
+  /* list_header + flex_row 합친 것 */
   background-color: #fff1c0;
   font-weight: 800;
   border: 1px solid #eee5d3;
   border-radius: 8px;
   padding: 14px 22px;
   color: #423d1f;
+
+  display: flex;
+  align-items: center;
 }
 
-.list_row {
+.list_row_flex_row {
   border: 1px solid #eee5d3;
   border-radius: 8px;
   padding: 12px 22px;
   color: #4a452b;
   transition: background-color 0.25s;
+
+  display: flex;
+  align-items: center;
 }
 
-.list_row:hover {
+.list_row_flex_row:hover {
   background-color: #fff7d1;
 }
 
-.col {
+.col_title>a:hover {
+  color:#ffae42;
+  text-decoration:underline;
+}
+
+.col_tag {
+  flex: 0 0 90px;
+  text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.tag_col {
-  flex: 0 0 90px;
-  text-align: center;
-}
-
-.title_col {
+.col_title {
   flex: 1 1 auto;
   text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.author_col {
+.col_author {
   flex: 0 0 95px;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.date_col {
+.col_date {
   flex: 0 0 95px;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.views_col {
+.col_views {
   flex: 0 0 70px;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.likes_col {
+.col_likes {
   flex: 0 0 70px;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.title_col a {
+.col_title a {
   color: #585858;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.title_col a:hover {
+.col_title_col a:hover {
   color: #ffb347;
   text-decoration: underline;
 }
