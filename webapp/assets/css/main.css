@@ -1,3 +1,9 @@
+/* 컨텐츠 화살표 호버시 애니메이션 효과 */
+@keyframes bounce-scale {
+  0% {transform: scale(1);}
+  50% {transform: scale(0.95);}
+  100% {transform: scale(1);}
+}
 *{
   margin: 0;
   padding: 0;
@@ -34,7 +40,6 @@
 .main_slide_img{
   width: 1920px;
   height: 400px;
-  border: 1px solid white;
   background-color: rgb(51, 51, 51);
 }
 
@@ -85,7 +90,7 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-
+  transition: transform 0.4s ease-in-out;
 }
 /*메인 음식판매 이미지 및 정보 전체 */
 .main_food_buy_article{
@@ -95,6 +100,10 @@ h3{
   margin: 3px;
   background-color: white;
   border-radius: 8px;
+  display: none;
+}
+.main_food_buy_article.visible {
+  display: block;
 }
 .main_food_buy_article a{
   text-decoration: none;
@@ -104,10 +113,12 @@ h3{
 .main_food_buy_article img{
   width: 245px;
   height: 274px;
-  background-color: rgb(83, 83, 83);
   border-top-left-radius:8px;
   border-top-right-radius: 8px;
   object-fit: cover;
+}
+.main_food_buy_article:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
 }
 /* 메인 음식판매 가게정보 */
 .main_store_info{
@@ -137,6 +148,24 @@ h3{
   float: right;
   color: #FF924E;
 }
+/* 양쪽 이동 화살표 btn */
+.main_content_prev img{
+  width: 25px;
+  margin-right: 10px;
+  display: inline-block;
+  transition: none;
+}
+.main_content_next img{
+  width: 25px;
+  margin-left: 10px;
+  display: inline-block;
+  transition: none;
+}
+/* 양쪽 화살표에 호버시 애니메이션 효과 */
+.main_content_prev img:hover , .main_content_next img:hover{
+  animation: bounce-scale 0.4s forwards;
+}
+
 /* 메인 음식점판매>더보러가기 버튼 */
 .main_food_buy_btn{
   width: 180px;
@@ -157,14 +186,6 @@ h3{
 .main_food_buy_btn:hover{
   background-color: #ff7722;
 }
-
-.main_content_prev, .main_content_next {
-  width: 10px;
-}
-
-
-
-
 
 
 
