@@ -11,15 +11,15 @@ let currentIdx = 0;
 const slideCnt = slideImg.length;
 
 //처음과 마지막 슬라이드 체크 함수
-function checkEnd(){
+function checkEnd() {
   prevBtn.style.display = currentIdx <= 0 ? "none" : "block";
-  nextBtn.style.display = currentIdx >= slideCnt-1 ? "none" : "block";
+  nextBtn.style.display = currentIdx >= slideCnt - 1 ? "none" : "block";
 }
 
 //다음 슬라이드로 이동 함수
-function nextMove(){
+function nextMove() {
   currentIdx++;
-  if(currentIdx >= slideCnt){
+  if (currentIdx >= slideCnt) {
     currentIdx = 0;
   }
   slideBox.style.left = `-${currentIdx * slideWidth}px`;
@@ -28,9 +28,9 @@ function nextMove(){
 }
 
 //이전슬라이드로 이동 함수
-function prevMove(){
+function prevMove() {
   currentIdx--;
-  if(currentIdx < 0){
+  if (currentIdx < 0) {
     currentIdx = slideCnt - 1;
   }
   slideBox.style.left = `-${currentIdx * slideWidth}px`;
@@ -39,16 +39,18 @@ function prevMove(){
 }
 
 //자동 슬라이드 시작 함수
-function startSlide(){
+function startSlide() {
   slideInterval = setInterval(() => {
     nextMove();
   }, 3000);
 }
 
 //자동 슬라이드 정지 함수
-function stopSlide(){
+function stopSlide() {
   clearInterval(slideInterval);
 }
 
 startSlide();
+
+
 

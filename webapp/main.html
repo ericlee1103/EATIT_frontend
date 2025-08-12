@@ -12,6 +12,7 @@
 
   <!-- 헤더 js -->
   <script defer src="./assets/js/footer.js"></script>
+  <script defer src="./assets/js/header.js"></script>
   <script defer src="./assets/js/main.js"></script>
   <!-- header / footer 경로 설정 
   메인은 webapp기준 최상단이므로 바로 적용 -->
@@ -19,7 +20,6 @@
     let headerPath = './header.html';
     let footerPath = './footer.html';
   </script>
-  <script defer src="./assets/js/header.js"></script>
   <title>밥세권</title>
 </head>
 
@@ -33,9 +33,15 @@
     <div id="main_banner">
       <div class="main_banner_middle">
         <ul class="main_slide_box">
-          <li><div class="main_slide_img">1</div></li>
-          <li><div class="main_slide_img">2</div></li>
-          <li><div class="main_slide_img">3</div></li>
+          <li>
+            <div class="main_slide_img">1</div>
+          </li>
+          <li>
+            <div class="main_slide_img">2</div>
+          </li>
+          <li>
+            <div class="main_slide_img">3</div>
+          </li>
         </ul>
         <div class="main_banner_prev">
           <a href="#"><img src="./assets/img/main_banner_prev.png" alt=""></a>
@@ -45,7 +51,7 @@
         </div>
       </div>
     </div>
-    
+
 
     <!-- 메인 컨텐츠 영역 -->
     <div id="main_wrapper">
@@ -55,9 +61,9 @@
         <h3>거리순👀</h3>
         <!-- 가게 이미지 및 정보 -->
         <div class="main_food_buy">
-          <div class="main_content_prev">
+          <!-- <div class="main_content_prev">
             <img src="./assets/img/main_banner_prev.png" alt="">
-          </div>
+          </div> -->
           <article class="main_food_buy_article">
             <a href="./app/buy/storeDetail.html">
               <!-- 상품이미지(임시) -->
@@ -110,9 +116,9 @@
               </div>
             </a>
           </article>
-          <div class="main_content_next">
+          <!-- <div class="main_content_next">
             <img src="./assets/img/main_banner_next.png" alt="">
-          </div>
+          </div> -->
         </div>
         <!-- 더 보러가기 버튼 -->
         <div class="main_food_buy_btn">
