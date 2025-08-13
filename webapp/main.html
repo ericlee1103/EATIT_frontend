@@ -14,8 +14,6 @@
   <script defer src="./assets/js/footer.js"></script>
   <script defer src="./assets/js/header.js"></script>
   <script defer src="./assets/js/main.js"></script>
-  <!-- header / footer 경로 설정 
-  메인은 webapp기준 최상단이므로 바로 적용 -->
   <script>
     let headerPath = './header.html';
     let footerPath = './footer.html';
@@ -33,14 +31,14 @@
     <div id="main_banner">
       <div class="main_banner_middle">
         <ul class="main_slide_box">
-          <li>
-            <div class="main_slide_img">1</div>
+          <li class="main_slide_img">
+            <img src="./assets/img/banner_ex.jpg" alt="">
           </li>
-          <li>
-            <div class="main_slide_img">2</div>
+          <li class="main_slide_img">
+            <img src="./assets/img/banner_ex.jpg" alt="">
           </li>
-          <li>
-            <div class="main_slide_img">3</div>
+          <li class="main_slide_img">
+            <img src="./assets/img/banner_ex.jpg" alt="">
           </li>
         </ul>
         <div class="main_banner_prev">
@@ -61,64 +59,122 @@
         <h3>거리순👀</h3>
         <!-- 가게 이미지 및 정보 -->
         <div class="main_food_buy">
+          <!-- 화살표 이동 버튼 -->
           <div class="main_content_prev">
-            <img src="./assets/img/main_banner_prev.png" alt="">
+            <a href="#"><img src="./assets/img/main_banner_prev.png" alt=""></a>
           </div>
           
           <article class="main_food_buy_article">
             <a href="./app/buy/storeDetail.html">
               <!-- 상품이미지(임시) -->
-              <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
+              <img src="./assets/img/bibim.jpg" alt="상품이미지 설명 추가하기">
               <!-- 가게정보 -->
               <div class="main_store_info">
-                <p class="main_store_name">가게명</p>
-                <p class="main_menu_name">메뉴명</p>
-                <p class="main_open_time">영업시간 00:00~00:00</p>
-                <p class="main_price">1,000원</p>
+                <p class="main_store_name">푸드카페 김밥천국 역삼역점</p>
+                <p class="main_menu_name">비빔밥</p>
+                <p class="main_open_time">영업시간 09:00~21:00</p>
+                <p class="main_price">5,000원</p>
               </div>
             </a>
           </article>
           <article class="main_food_buy_article">
             <a href="./app/buy/storeDetail.html">
               <!-- 상품이미지(임시) -->
-              <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
+              <img src="./assets/img/budaeJjigae.png" alt="상품이미지 설명 추가하기">
               <!-- 가게정보 -->
               <div class="main_store_info">
-                <p class="main_store_name">가게명</p>
-                <p class="main_menu_name">메뉴명</p>
-                <p class="main_open_time">영업시간 00:00~00:00</p>
-                <p class="main_price">1,000원</p>
+                <p class="main_store_name">대우부대찌개</p>
+                <p class="main_menu_name">부대찌게</p>
+                <p class="main_open_time">영업시간 11:00~21:00</p>
+                <p class="main_price">7,000원</p>
               </div>
             </a>
           </article>
           <article class="main_food_buy_article">
             <a href="./app/buy/storeDetail.html">
               <!-- 상품이미지(임시) -->
-              <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
+              <img src="./assets/img/dakdoritang.png" alt="상품이미지 설명 추가하기">
               <!-- 가게정보 -->
               <div class="main_store_info">
-                <p class="main_store_name">가게명</p>
-                <p class="main_menu_name">메뉴명</p>
-                <p class="main_open_time">영업시간 00:00~00:00</p>
-                <p class="main_price">1,000원</p>
+                <p class="main_store_name">고갯마루</p>
+                <p class="main_menu_name">닭도리탕(소)</p>
+                <p class="main_open_time">영업시간 11:00~21:30</p>
+                <p class="main_price">17,000원</p>
               </div>
             </a>
           </article>
           <article class="main_food_buy_article">
             <a href="./app/buy/storeDetail.html">
               <!-- 상품이미지(임시) -->
-              <img src="./assets/img/store.jpg" alt="상품이미지 설명 추가하기">
+              <img src="./assets/img//budaeJjigae.png" alt="상품이미지 설명 추가하기">
               <!-- 가게정보 -->
               <div class="main_store_info">
-                <p class="main_store_name">가게명</p>
-                <p class="main_menu_name">메뉴명</p>
-                <p class="main_open_time">영업시간 00:00~00:00</p>
-                <p class="main_price">1,000원</p>
+                <p class="main_store_name">담뿍화로된장찌개 역삼점</p>
+                <p class="main_menu_name">화로 된장찌개</p>
+                <p class="main_open_time">영업시간 11:00~22:00</p>
+                <p class="main_price">5,000원</p>
               </div>
             </a>
           </article>
+          <article class="main_food_buy_article">
+            <a href="./app/buy/storeDetail.html">
+              <!-- 상품이미지(임시) -->
+              <img src="./assets/img//budaeJjigae.png" alt="상품이미지 설명 추가하기">
+              <!-- 가게정보 -->
+              <div class="main_store_info">
+                <p class="main_store_name">담뿍화로된장찌개 역삼점</p>
+                <p class="main_menu_name">화로 된장찌개</p>
+                <p class="main_open_time">영업시간 11:00~22:00</p>
+                <p class="main_price">5,000원</p>
+              </div>
+            </a>
+          </article>
+          <article class="main_food_buy_article">
+            <a href="./app/buy/storeDetail.html">
+              <!-- 상품이미지(임시) -->
+              <img src="./assets/img//budaeJjigae.png" alt="상품이미지 설명 추가하기">
+              <!-- 가게정보 -->
+              <div class="main_store_info">
+                <p class="main_store_name">담뿍화로된장찌개 역삼점</p>
+                <p class="main_menu_name">화로 된장찌개</p>
+                <p class="main_open_time">영업시간 11:00~22:00</p>
+                <p class="main_price">5,000원</p>
+              </div>
+            </a>
+          </article>
+          <article class="main_food_buy_article">
+            <a href="./app/buy/storeDetail.html">
+              <!-- 상품이미지(임시) -->
+              <img src="./assets/img//budaeJjigae.png" alt="상품이미지 설명 추가하기">
+              <!-- 가게정보 -->
+              <div class="main_store_info">
+                <p class="main_store_name">담뿍화로된장찌개 역삼점</p>
+                <p class="main_menu_name">화로 된장찌개</p>
+                <p class="main_open_time">영업시간 11:00~22:00</p>
+                <p class="main_price">5,000원</p>
+              </div>
+            </a>
+          </article>
+          <article class="main_food_buy_article">
+            <a href="./app/buy/storeDetail.html">
+              <!-- 상품이미지(임시) -->
+              <img src="./assets/img//budaeJjigae.png" alt="상품이미지 설명 추가하기">
+              <!-- 가게정보 -->
+              <div class="main_store_info">
+                <p class="main_store_name">담뿍화로된장찌개 역삼점</p>
+                <p class="main_menu_name">화로 된장찌개</p>
+                <p class="main_open_time">영업시간 11:00~22:00</p>
+                <p class="main_price">5,000원</p>
+              </div>
+            </a>
+          </article>
+
+
+
+
+          <!-- 화살표 이동버튼 -->
           <div class="main_content_next">
-            <img src="./assets/img/main_banner_next.png" alt="">
+            <a href="#"><img src="./assets/img/main_banner_next.png" alt=""></a>
           </div>
         </div>
         <!-- 더 보러가기 버튼 -->
