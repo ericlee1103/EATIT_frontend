@@ -61,10 +61,10 @@
               <!-- <button type="button" class="btn_seller_input_"></button> -->
             </div>
           </div>
-          <div class="seller_input_container_chk_pw">
+          <div class="seller_input_container_chk_pw"> <!-- 비밀번호 확인-->
             <div class="seller_input_container">
               <label for="seller_input_chk_pw" class="info_type">비밀번호 확인 : </label>
-              <input type="text" id="seller_input_chk_pw" placeholder="[필수]비밀번호를 다시 입력해주세요">
+              <input type="password" id="seller_input_chk_pw" placeholder="[필수]비밀번호를 다시 입력해주세요">
               <!-- <button type="button" class="btn_seller_input_chk_pw"></button> -->
             </div>
             <div class="warning_space"> <!-- 경고메시지 -->
@@ -92,8 +92,12 @@
           <div class="seller_input_container_phone">
             <div class="seller_input_container">
               <label for="seller_input_phone" class="info_type">휴대폰번호 : </label>
-              <input type="tel" id="seller_input_phone" placeholder="[필수]">
+              <input type="tel" id="seller_input_phone" placeholder="[필수]-를 제외하고 입력해주세요">
               <button type="button" class="btn_seller_input_phone">인증요청</button>
+            </div>
+            <div class="warning_space"> <!-- 경고메시지 -->
+              <span class="warning_empty"></span>
+              <div class="warning_message" id="warning_message_phone"></div>
             </div>
           </div>
           <!-- 전화번호 인증 -->
@@ -101,7 +105,7 @@
             <div class="seller_input_container">
               <label for="seller_input_chk_phone" class="info_type">인증번호 : </label>
               <input type="text" id="seller_input_chk_phone" placeholder="[필수] 인증번호를 입력해주세요">
-              <button type="button" class="btn_seller_input_chk_phone">본인인증</button>
+              <button type="button" class="btn_seller_input_phone">인증확인</button>
             </div>
             <div class="warning_space"> <!-- 경고메시지 -->
               <span class="warning_empty"></span>
@@ -153,7 +157,7 @@
           <div class="seller_input_container_stroe_call">
             <div class="seller_input_container">
               <label for="seller_input_store_call" class="info_type">가게 전화번호 : </label>
-              <input type="tel" id="seller_input_store_call" placeholder="[필수]">
+              <input type="tel" id="seller_input_store_call" placeholder="[필수]-를 제외하고 입력해주세요">
               <!-- <button type="button" class="btn_seller_input_store_call"></button> -->
             </div>
           </div>
@@ -161,10 +165,10 @@
         <!-- //사업자 정보입력 끝 -->
         <!-- 가입하기 버튼 -->
         <div>
-          <!-- <button type="submit" class="join_next">가입하기</button> -->
-          <a href="./../join/successJoin.html">
+          <button type="submit" class="join_next" onclick="goNextPage()">가입하기</button>
+          <!-- <a href="./../join/successJoin.html">
             <div class="join_next">가입하기</div>
-          </a>
+          </a> -->
         </div>
       </div> <!-- 입력란 하얀 내부  -->
     </div> <!--//.container 1100px 영역-->
