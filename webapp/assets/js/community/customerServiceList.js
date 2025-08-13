@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentPage = 1;
 
   // 게시글 목록의 tbody 요소 (게시글 행들이 들어있는 곳)
-  const listBody = document.getElementById("postListBody");
+  const listBody = document.getElementById("post_list_body");
   // 게시글 행들(.list_row 클래스가 붙은 tr 요소들)을 배열로 저장
   const rows = Array.from(listBody.querySelectorAll(".list_row"));
   // 페이지 번호가 표시될 영역
