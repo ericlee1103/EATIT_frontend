@@ -86,7 +86,7 @@ editBtn.addEventListener("click", () => {
   });
   console.log(errorCount);
   if (errorCount === 0) {
-    // location.href = "main.html";
+    location.href = "main.html";
     return;
   }
   alert("경고메시지를 확인해주세요");
