@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const rowsPerPage = 5;
+  const rowsPerPage = 10;
   let currentPage = 1;
 
   // flex 구조에서는 tbody가 없으니 게시글 목록 컨테이너를 새로 잡습니다.
