@@ -14,32 +14,12 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// editUserInfo.js 파일 내에 추가
-document.addEventListener("DOMContentLoaded", function () {
-  const saveButtons = document.querySelectorAll(".info_save_buzz");
+//미리 저장된 아이디
+const dbId = 'user'
 
-  saveButtons.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      alert("정보가 정상적으로 수정되었습니다.");
-    });
-  });
-});
-document.addEventListener("DOMContentLoaded", function () {
-  const saveButtons = document.querySelectorAll(".total_info_save_buzz");
-
-  saveButtons.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      alert("정보가 정상적으로 수정되었습니다.");
-    });
-  });
-});
-const total_btn_count = document.querySelectorAll('input:is')
-let btn_count = 0;
-const dbId = 'user1'
-
+const chkIdBtn = document.getElementById('btn_seller_input_hasSameId');
 chkIdBtn.addEventListener('click', function () {
   const sellerInputId = document.getElementById('seller_input_id');
-  const chkIdBtn = document.getElementById('btn_seller_input_hasSameId');
   // 아이디 중복 검사
   const warningSpan = document.getElementById('warning_message_chk_id');
   const inputId = sellerInputId.value.trim();
@@ -54,22 +34,20 @@ chkIdBtn.addEventListener('click', function () {
     warningSpan.textContent = '이 아이디를 사용할 수 있습니다.';
     warningSpan.style.display = 'block';
     warningSpan.style.color = 'green';
-    chkIdBtn.disable = true;
   }
 });
 
 //비밀번호 입력값
 const newPasswordError = document.getElementById("warning_message_chk_pw");
-const newPasswordInput = document.getElementById("user_input_pw");
-const confirmPasswordInput = document.getElementById("user_input_chk_pw");
-
-const newPassword = newPasswordInput.value.trim();
-const confirmPassword = confirmPasswordInput.value.trim();
+let newPasswordInput = document.getElementById("seller_input_pw");
+let confirmPasswordInput = document.getElementById("seller_input_chk_pw");
 
 // 비밀번호 유효성 검사 정규표현식
 const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,16}$/;
 
 newPasswordInput.addEventListener("input", () => {
+  let newPassword = newPasswordInput.value;
+
   if (!passwordRegex.test(newPassword)) {
     newPasswordError.textContent = "비밀번호는 8~16자의 영문 대/소문자, 숫자, 특수문자를 포함해야 합니다.";
     newPasswordError.style.color = "red";
@@ -79,32 +57,37 @@ newPasswordInput.addEventListener("input", () => {
 });
 
 confirmPasswordInput.addEventListener("input", () => {
-  const newPassword = document.getElementById("new_password").value;
-  const confirmPassword = confirmPasswordInput.value;
+  let newPassword = newPasswordInput.value;
+  let confirmPassword = confirmPasswordInput.value;
 
   if (newPassword !== confirmPassword) {
-    confirmPasswordError.textContent = "입력하신 비밀번호와 일치하지 않습니다.";
-    confirmPasswordError.style.color = "red";
+    newPasswordError.textContent = "입력하신 비밀번호와 일치하지 않습니다.";
+    newPasswordError.style.color = "red";
   } else {
-    confirmPasswordError.textContent = "";
+    newPasswordError.textContent = "";
   }
 });
-
+////// 전화번호
+//항상
 document.addEventListener("DOMContentLoaded", () => {
   //인증요청, 인증 확인 버튼
-  const sendCodeBtn = document.getElementById("btn_user_input_phone");
-  const checkCodeBtn = document.getElementById("btn_user_input_chk_phone");
+  const sendCodeBtn = document.getElementById("btn_seller_input_phone");
+  const checkCodeBtn = document.getElementById("btn_seller_input_chk_phone");
 
   //전화번호 입력
-  const phoneInput = document.getElementById("user_input_phone");
-  const phoneError = document.getElementById("warning_message_chk_phone");
+  const phoneInput = document.getElementById("seller_input_phone");
+  const phoneError = document.getElementById("warning_message_phone");
 
   //전화번호 인증 입력
-  const codeInput = document.getElementById("user_input_chk_phone");
+  const codeInput = document.getElementById("seller_input_chk_phone");
   const codeError = document.getElementById("warning_message_chk_phone");
 
   // 미리 저장한 인증번호
   const generatedCode = "1234";
+  // 인증번호 요청 전 인증번호 칸과 버튼은 비활성화
+  checkCodeBtn.disabled = true;
+  checkCodeBtn.style.color = 'grey';
+  codeInput.disabled = true;
 
 
   //전화번호 유효성 검증
@@ -123,6 +106,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isValidPhone(phone)) {
       phoneError.textContent = "전화번호를 입력해주세요.";
     } else {
+      checkCodeBtn.disabled = false;
+      checkCodeBtn.style.color = 'white';
+      codeInput.disabled = false;
       alert("인증번호가 전송되었습니다.");
     }
   });
@@ -142,13 +128,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const essenInfos = document.contentType('input');
+//가입하기 버튼을 눌렀을때
+const essenInfos = document.querySelectorAll("input");
 function goNextPage() {
   // const totalEssenCount = essenInfos.length;
   let essenCount = 0;
-  // 필수동의 여부 확인
-  essenInfos.forEach((essenAgree) => {
-    if (essenAgree.value !== '') {
+  // 필수 정보 전체 입력됐는지 여부 확인
+  essenInfos.forEach((essenInfo) => {
+    if (essenInfo.value !== '') {
       essenCount++;
     }
   });
@@ -158,6 +145,6 @@ function goNextPage() {
     location.href = "successJoin.html";
     return;
   }
-  alert("필수 약관에 동의해야 다음단계로 이동할 수 있습니다.");
+  alert("필수 정보를 모두 입력하셔야 다음단계로 이동할 수 있습니다.");
   // alert() -> return 일때 return 이 작동 안함 왜?
 }

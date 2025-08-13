@@ -14,7 +14,7 @@
     let footerPath = '../../footer.html';
   </script>
   <script defer src="../../assets/js/header.js"></script>
-  <title>밥세권</title>
+  <title>밥세권</title>dfdf
 </head>
 
 <body>
@@ -64,7 +64,7 @@
           <div class="user_input_container_chk_pw">
             <div class="user_input_container">
               <label for="user_input_chk_pw" class="info_type">비밀번호 확인 : </label>
-              <input type="text" id="user_input_chk_pw" placeholder="[필수]비밀번호를 다시 입력해주세요">
+              <input type="password" id="user_input_chk_pw" placeholder="[필수]비밀번호를 다시 입력해주세요">
               <!-- <button type="button" class="btn_user_input_chk_pw"></button> -->
             </div>
             <div class="warning_space"> <!-- 경고메시지 -->
@@ -92,7 +92,7 @@
           <div class="user_input_container_phone">
             <div class="user_input_container">
               <label for="user_input_phone" class="info_type">휴대폰번호 : </label>
-              <input type="text" id="user_input_phone" placeholder="[필수]">
+              <input type="tel" id="user_input_phone" placeholder="[필수] -를 제외하고 입력해주세요">
               <button type="button" id="btn_user_input_phone">인증요청</button>
             </div>
             <div class="warning_space"> <!-- 경고메시지 -->
@@ -117,10 +117,7 @@
         <!-- //사용자 정보입력 끝 -->
         <!-- 가입하기 버튼 -->
         <div>
-          <!-- <button type="submit" class="join_next">가입하기</button> -->
-          <a href="./../join/successJoin.html">
-            <div class="join_next" onclick="goNextPage()">가입하기</div>
-          </a>
+          <button type="submit" class="join_next" onclick="goNextPage()">가입하기</button>
         </div>
       </div> <!-- 입력란 하얀 내부  -->
     </div> <!--//.container 1100px 영역-->
