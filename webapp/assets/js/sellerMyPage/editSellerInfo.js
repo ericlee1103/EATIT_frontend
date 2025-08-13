@@ -42,6 +42,26 @@ document.addEventListener("DOMContentLoaded", () => {
   // 예시: 올바른 비밀번호 (실제로는 서버에서 확인해야 함)
   const correctPassword = "1234abcd";
 
+  // 정보 입력 전 비밀번호 확인
+  const editeInfo= document.getElementsByClassName('seller_info_area');
+  const chkPwBeforeInfo= document.getElementById('seller_before_info');
+  editeInfo[1].display = 'none';
+  chkPwBeforeInfo.display = 'flex';
+  // 
+  const beforeWarning = document.getElementById('before_warning');
+
+  chkPwBeforeInfo.addEventListener("input", () => {
+  const newPassword = chkPwBeforeInfo.value;
+
+  if (newPassword !== correctPassword) {
+    beforeWarning.textContent = "입력하신 비밀번호와 일치하지 않습니다.";
+    beforeWarning.style.color = "red";
+  } else {
+    beforeWarning.textContent = "";
+    
+  }
+});
+
   // 초기에 새 비밀번호 입력창 비활성화
   newPasswordInput.disabled = true;
   confirmPasswordInput.disabled = true;
