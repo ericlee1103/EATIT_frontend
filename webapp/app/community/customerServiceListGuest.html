@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>고객센터</title>
-  <link rel="stylesheet" href="./../../assets/css/community/customerServiceList.css" />
+  <link rel="stylesheet" href="./../../assets/css/community/customerServiceListGuest.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,7 +13,7 @@
   <script defer src="./../../assets/js/community/customerServiceList.js"></script>
   <script defer src="./../../assets/js/community/loadHeaderFooter.js"></script>
   <script>
-    let header_path = '../../header_login.html';
+    let header_path = '../../header.html';
     let footer_path = '../../footer.html';
   </script>
 </head>
@@ -28,8 +27,7 @@
     <div class="main_container">
       <nav class="community_category">
         <ul>
-          <li><a href="./../community/customer_service_list.html" id="category_customer_service" class="active">고객센터</a>
-          </li>
+          <li><a href="./../community/customer_service_list.html" id="category_customer_service" class="active">고객센터</a></li>
         </ul>
       </nav>
 
@@ -60,8 +58,7 @@
           <!-- 게시판 한 행 -->
           <div class="list_row_flex_row" role="row">
             <div class="col_tag" role="cell">공지</div>
-            <div class="col_title" role="cell"><a href="./../community/viewOtherPost.html">비밀번호를 잊어버렸어요. 어떻게 하나요?</a>
-            </div>
+            <div class="col_title" role="cell"><a href="./../community/viewOtherPost.html">비밀번호를 잊어버렸어요. 어떻게 하나요?</a></div>
             <div class="col_author" role="cell">관리자</div>
             <div class="col_date" role="cell">25-07-22</div>
             <div class="col_views" role="cell">120</div>
@@ -81,8 +78,7 @@
           <!-- 게시판 한 행 -->
           <div class="list_row_flex_row" role="row">
             <div class="col_tag" role="cell">공지</div>
-            <div class="col_title" role="cell"><a href="./../community/viewOtherPost.html">주문 취소 및 환불 절차는 어떻게 되나요?</a>
-            </div>
+            <div class="col_title" role="cell"><a href="./../community/viewOtherPost.html">주문 취소 및 환불 절차는 어떻게 되나요?</a></div>
             <div class="col_author" role="cell">관리자</div>
             <div class="col_date" role="cell">25-07-28</div>
             <div class="col_views" role="cell">85</div>
@@ -122,19 +118,8 @@
             <button class="search_btn" type="button">
               <i class="fas fa-search"></i>
             </button>
-            <!-- 글쓰기 버튼 -->
-            <div class="write_form">
-              <a href="./../community/writeRecipeBoard.html" id="writeBtn">글쓰기</a>
-            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- 검색창과 글쓰기 버튼 영역 -->
-    <div class="controls_wrapper">
-      <div class="function_container">
-
       </div>
     </div>
 
@@ -145,5 +130,4 @@
   <!-- 푸터 -->
   <footer id="footer"></footer>
 </body>
-
 </html>

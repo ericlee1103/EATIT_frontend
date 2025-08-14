@@ -76,8 +76,8 @@ main {
 }
 
 .col_title>a:hover {
-  color: #ffae42;
-  text-decoration: underline;
+  color:#ffae42;
+  text-decoration:underline;
 }
 
 .col_tag {
@@ -145,8 +145,7 @@ main {
   align-items: center;
   margin-top: 32px;
   flex-wrap: wrap;
-  gap: 20px;
-  margin : 10px;
+  gap: 12px;
 }
 
 .search_box {
@@ -213,22 +212,4 @@ main {
   color: white;
   cursor: default;
   border-color: #ff9c00;
-}
-
-
-
-/* 글쓰기 버튼 */
-.write_form a {
-  display: inline-block;
-  padding: 8px 14px;
-  background-color: #4caf50;
-  color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s;
-}
-
-.write_form a:hover {
-  background-color: #45a049;
 }

@@ -59,14 +59,3 @@ document.addEventListener("DOMContentLoaded", () => {
   displayList(currentPage);
 });
 
-// 글쓰기 버튼 클릭 시 관리자 알림
-document.addEventListener("DOMContentLoaded", () => {
-  const writeBtn = document.getElementById("writeBtn");
-  if (writeBtn) {
-    writeBtn.addEventListener("click", e => {
-      e.preventDefault();
-      alert("관리자만 작성할 수 있습니다.");
-      window.location.href = window.location.pathname;
-    });
-  }
-});
