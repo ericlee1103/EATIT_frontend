@@ -1,7 +1,7 @@
-header {
+/* header {
   width: 1920px;
   height: 150px;
-}
+} */
 
 main {
   background-color: #FFF5E4;
@@ -15,6 +15,7 @@ main {
   background-color: #FBE3B9;
   width: 1100px;
   margin-left: 410px;
+  justify-items: center;
 }
 
 /*  */
@@ -69,10 +70,53 @@ main {
   background-color: #ff873c8c;
   border-radius: 10px;
 }
+
 /* 사이드바 끝 */
-.seller_chk_pw_before_info{
-  justify-self: center;
-  line-height: 220px;
+/* 페이지 제목 */
+.seller_my_info {
+  margin: 25px 0 45px 70px;
+  font-size: 30px;
+}
+
+/* 비밀번호 입력 네모지기 */
+.seller_chk_pw {
+  width: 600px;
+  height: 500px;
+  background-color: #fff5e4;
+  margin: 115px 0px;
   display: flex;
-  
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-evenly; */
+
+}
+
+/* 비밀번호 입력 관련 */
+.seller_chk_pw_input>label {
+  justify-self: center;
+  line-height: 100px;
+  display: flex;
+}
+
+.seller_chk_pw_input>input {
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
+  border: 0.2px solid;
+  padding-left: 5px;
+}
+
+.seller_chk_pw_input>button {
+  height: 30px;
+  width: 90px;
+  background-color: #FF873C;
+  border-radius: 5px;
+  border: none;
+  margin-left: 15px;
+}
+
+/* 경고메시지 */
+#seller_chk_pw_warning{
+  color: red;
+  margin-top: 10px;
 }
