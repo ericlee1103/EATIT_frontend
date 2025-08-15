@@ -226,7 +226,6 @@ h3{
   display: inline-block;
   margin: 5px;
   overflow: hidden;
-  /* border: 1px solid blue; */
 }
 .main_ingredient_img a{
   margin: auto;
@@ -235,7 +234,6 @@ h3{
   display: block;
   border-radius: 8px;
   object-fit: cover;
-  /* border: 1px solid red; */
 }
 /* 재료판매 이미지 영역 */
 .main_ingredient_img a img{
@@ -243,8 +241,20 @@ h3{
   height: 140px;
   border-radius: 8px;
   display: block;
-  /* border: 1px solid green; */
+  object-fit: cover;
 }
+.main_ingredient_img_storeinfo{
+  width: 230px;
+  height: 140px;
+  display: none;
+  background-color: #202020;
+  opacity: 80%;
+}
+.main_ingredient_img_storeinfo{
+  display: block;
+}
+
+
 .main_ingredient_storeinfo{
   width: 230px;
   height: 140px;
