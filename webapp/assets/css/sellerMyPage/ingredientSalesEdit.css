@@ -167,9 +167,22 @@ button {
 button:hover {
   background-color: #ff7722;
 }
-
+/* 저장, 삭제 버튼 */
+.edit_delete_btns{
+  float: right;
+}
 .ingredient_edit_buzz{
   background-color: #FF873C;
+  width: 155px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: right;
+  margin-top: 50px;
+}
+.ingredient_delte_buzz{
+  background-color: #a69980;
   width: 155px;
   height: 50px;
   display: flex;

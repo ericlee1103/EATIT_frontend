@@ -40,3 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 })
+
+let withdraw = document.getElementById('seller_withdraw_buzz');
+withdraw.addEventListener('click', () => {
+  location.replace('./../sellerMyPage/sellerwithdrawalAgreement.html');
+});

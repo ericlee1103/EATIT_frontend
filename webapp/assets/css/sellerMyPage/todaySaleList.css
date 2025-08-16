@@ -75,6 +75,33 @@ main {
   margin: 100px 0 45px 70px;
   font-size: 30px;
 }
+/* 총판매내역/오늘판매내역 */
+/* 큰틀 */
+.sale_history_categaory_container{
+  margin: 10px 50px;
+  width: 400px;
+  font-size :16px;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+/* 각 요소 */
+.sale_history_total,
+.sale_history_today{
+  height: 50px;
+  width: 185px;
+  background-color: #FF873C;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 17px;
+}
+.sale_history_total>a,
+.sale_history_today>a{
+  text-decoration: none;
+  color: white;
+}
 
 /* 컨텐츠 컨테이너 */
 .today_sell_container {
@@ -89,6 +116,10 @@ main {
   font-weight: bold;
   padding: 10px;
   border-bottom: 1px solid #ccc;
+  gap: 10px;
+}
+.today_sell_summary>span{
+  margin-right: 20px;
 }
 
 /* 한 주문 묶음 */
