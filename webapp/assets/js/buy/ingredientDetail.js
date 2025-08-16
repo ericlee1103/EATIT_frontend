@@ -117,3 +117,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   displayList(currentPage);
 });
+
+// 사고보상 정책 토글
+document.addEventListener("DOMContentLoaded", () => {
+  const headers = document.querySelectorAll(".buy_policy_toggle_header");
+
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      if (!content) return;
+
+      const isVisible = window.getComputedStyle(content).display === 'block';
+      content.style.display = isVisible ? 'none' : 'block';
+    });
+  });
+});
