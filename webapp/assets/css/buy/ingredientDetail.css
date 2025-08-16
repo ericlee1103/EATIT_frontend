@@ -7,13 +7,11 @@
 /* 구매 > 가게 상세 정보 */
 #buy_store_detail {
   width: 1920px;
-  height: 1080px;
   background-color: #FFF5E4;
 }
 
 .wrap {
   width: 1100px;
-  height: 1080px;
   background-color: #FBE3B9;
   margin: 0 auto;
   display: flex;
@@ -412,4 +410,47 @@
   padding-left:140px;
 }
 
+/* 사고보상정책 전체 영역 */
+.buy_policy_toggle_section {
+  background-color: #fff4d8;
+  margin-top: 20px;
+  padding: 10px 20px;
+  width: 1100px;
+  text-align: center;
+  background-color: #FBE3B9;
+  margin: 0 auto;
+}
+.buy_policy_toggle_section>p{
+  margin-bottom: 10px;
+}
+.buy_policy_toggle_header {
+  width: 1050px;
+  margin: 0 auto;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #dddddd;
+}
+.buy_policy_toggle_header:hover{
+  background-color: #ebebeb;
+}
+.buy_policy_toggle_content {
+  width: 1050px;
+  margin: 0 auto;
+  padding: 15px;
+  display: none;
+  background-color: white;
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.6;
+}
+.buy_policy_toggle_content ul {
+  margin: 10px;
+  padding-left: 20px;
+  list-style-position: inside;
+  /* border: 1px solid red; */
+}
 
