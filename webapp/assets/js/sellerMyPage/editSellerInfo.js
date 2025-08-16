@@ -13,16 +13,20 @@ window.addEventListener('DOMContentLoaded', () => {
       document.getElementById('footer').innerHTML = data;
     });
 });
+
 // editUserInfo.js 파일 내에 추가
 document.addEventListener("DOMContentLoaded", function () {
   const saveButtons = document.querySelectorAll(".seller_info_save_buzz");
 
+  //오류메시지가 없는 저장 버튼
   saveButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
       alert("정보가 정상적으로 수정되었습니다.");
     });
   });
 });
+
+// 전체 정보 저장 버튼
 document.addEventListener("DOMContentLoaded", function () {
   const saveButtons = document.querySelectorAll(".seller_total_info_save_buzz");
 
@@ -33,41 +37,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//// 비밀번호 
 document.addEventListener("DOMContentLoaded", () => {
   const currentPasswordInput = document.getElementById("current_password");
-  const errorMessage = document.getElementById("current_password_error");
   const newPasswordInput = document.getElementById("new_password");
   const confirmPasswordInput = document.getElementById("confirm_password");
 
   // 예시: 올바른 비밀번호 (실제로는 서버에서 확인해야 함)
   const correctPassword = "1234abcd";
 
-  // 정보 입력 전 비밀번호 확인
-  const editeInfo= document.getElementsByClassName('seller_info_area');
-  const chkPwBeforeInfo= document.getElementById('seller_before_info');
-  editeInfo[1].display = 'none';
-  chkPwBeforeInfo.display = 'flex';
-  // 
-  const beforeWarning = document.getElementById('before_warning');
-
-  chkPwBeforeInfo.addEventListener("input", () => {
-  const newPassword = chkPwBeforeInfo.value;
-
-  if (newPassword !== correctPassword) {
-    beforeWarning.textContent = "입력하신 비밀번호와 일치하지 않습니다.";
-    beforeWarning.style.color = "red";
-  } else {
-    beforeWarning.textContent = "";
-    
-  }
-});
-
   // 초기에 새 비밀번호 입력창 비활성화
   newPasswordInput.disabled = true;
   confirmPasswordInput.disabled = true;
 
-  currentPasswordInput.addEventListener("blur", () => {
+  // 현재 비밀번호 입력칸에 입력할때  
+  currentPasswordInput.addEventListener("input", () => {
     const enteredPassword = currentPasswordInput.value;
+    const errorMessage = document.getElementById("current_password_error");
 
     if (enteredPassword !== correctPassword) {
       errorMessage.textContent = "*현재 비밀번호와 일치하지 않습니다.";
@@ -81,18 +67,24 @@ document.addEventListener("DOMContentLoaded", () => {
       newPasswordInput.value = "";
       confirmPasswordInput.value = "";
     } else {
+      //placeholder 교체 및 새비밀번호 입력 활성화
       errorMessage.textContent = "";
+      newPasswordInput.placeholder = "새로운 비밀번호를 입력하세요"
       newPasswordInput.disabled = false;
+      confirmPasswordInput.placeholder = "새 비밀번호를 다시 입력해주세요"
       confirmPasswordInput.disabled = false;
     }
   });
 });
+
+//// 비밀번호 확인
 document.addEventListener("DOMContentLoaded", () => {
   const newPasswordInput = document.getElementById("new_password");
   const confirmPasswordInput = document.getElementById("confirm_password");
   const errorMessage = document.getElementById("confirm_password_error");
   const saveBtn = document.getElementById("password_save_btn");
 
+  // 새 비밀번호 확인의 버튼이 클릭 될때
   saveBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
@@ -105,19 +97,21 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (confirmPassword === "") {
       errorMessage.textContent = "*비밀번호를 다시 확인해주세요."
       errorMessage.style.color = "red";
-    }else {
-    errorMessage.textContent = "";
-    alert("비밀번호가 변경되었습니다.");
+    } else {
+      errorMessage.textContent = "";
+      alert("비밀번호가 변경되었습니다.");
     }
   });
 });
 
+//// 새 비밀번호 유효성 검사
 const newPasswordInput = document.getElementById("new_password");
 const newPasswordError = document.getElementById("new_password_error");
 
 // 비밀번호 유효성 검사 정규표현식
 const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,16}$/;
 
+// 새 비밀번호 입력칸에 입력이 생길때 
 newPasswordInput.addEventListener("input", () => {
   const newPassword = newPasswordInput.value;
 
@@ -129,6 +123,7 @@ newPasswordInput.addEventListener("input", () => {
   }
 });
 
+//// 새 비밀번호 재확인
 const confirmPasswordInput = document.getElementById("confirm_password");
 const confirmPasswordError = document.getElementById("confirm_password_error");
 
@@ -144,6 +139,7 @@ confirmPasswordInput.addEventListener("input", () => {
   }
 });
 
+//// 프로필 사진
 document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("profileImage");
   const preview = document.getElementById("preview");
@@ -162,6 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+//// 전화번호 입력
 document.addEventListener("DOMContentLoaded", () => {
   const sendCodeBtn = document.getElementById("send_code_btn");
   const checkCodeBtn = document.getElementById("check_code_btn");
@@ -172,13 +169,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const codeInput = document.getElementById("code_input");
   const codeError = document.getElementById("code_error");
 
-  const generatedCode = "123456";
+  const generatedCode = "123456"; // 임시 인증번호
 
+  //전화번호 유효성 검사
   function isValidPhone(phone) {
     const phoneRegex = /^01[0-9]{9,9}$/;
     return phoneRegex.test(phone);
   }
 
+  //인증번호 전송 버튼이 눌렸을 때
   sendCodeBtn.addEventListener("click", (e) => {
     e.preventDefault();
     const phone = phoneInput.value.trim();
@@ -191,6 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  //인증번호 확인 버튼이 클릭됐을 때
   checkCodeBtn.addEventListener("click", (e) => {
     e.preventDefault();
     const inputCode = codeInput.value.trim();
@@ -204,6 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+//// 가게 이름
 document.addEventListener("DOMContentLoaded", function () {
   const storeNameInput = document.getElementById("store_name");
   const storeNameError = document.getElementById("store_name_error");
@@ -222,6 +223,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//// 가게 주소
 document.addEventListener("DOMContentLoaded", function () {
   const storeAddressInput = document.getElementById("store_address");
   const storeAddressError = document.getElementById("store_address_error");
@@ -240,16 +242,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//// 가게 전화번호 
 document.addEventListener("DOMContentLoaded", function () {
   const storePhoneInput = document.getElementById("store_phone");
   const storePhoneError = document.getElementById("store_phone_error");
   const storePhoneSaveBtn = document.getElementById("store_phone_save_btn");
 
+  // 가게 전화번호 저장 버튼이 눌렸을 때 
   storePhoneSaveBtn.addEventListener("click", function () {
     const phone = storePhoneInput.value.trim();
 
-    // 숫자만, 길이 10~11자 (보통 휴대폰번호 기준)
-    const phoneRegex = /^[0-9]{10,11}$/;
+    // 숫자만, 길이  9-11자 (보통 휴대폰번호 기준)
+    const phoneRegex = /^[0-9]{9,11}$/;
 
     if (!phoneRegex.test(phone)) {
       storePhoneError.textContent = "업체 전화번호를 정확히 입력해주세요.";
