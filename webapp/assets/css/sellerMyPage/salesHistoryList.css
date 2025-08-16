@@ -78,6 +78,35 @@ main {
   font-size: 30px;
 }
 
+/* 총판매내역/오늘판매내역 */
+/* 큰틀 */
+.sale_history_categaory_container{
+  margin: 10px 50px;
+  width: 400px;
+  font-size :16px;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+/* 각 요소 */
+.sale_history_total,
+.sale_history_today{
+  height: 50px;
+  width: 185px;
+  background-color: #FF873C;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 17px;
+}
+.sale_history_total>a,
+.sale_history_today>a{
+  text-decoration: none;
+  color: white;
+}
+
+
 /* 목록 시작 */
 .sale_history_list_top,
 .sale_history_sales_list {
@@ -91,6 +120,7 @@ main {
   border: 1px solid black;
 }
 
+/* 목록 제목 */
 .sale_history_list_top {
   height: 50px;
 }
@@ -142,7 +172,6 @@ main {
 /* 목록 제목 끝 */
 
 .sale_history_sales_list>div{
-
   height: 65px;
   font-size: 14px;
   border: 1px solid black;

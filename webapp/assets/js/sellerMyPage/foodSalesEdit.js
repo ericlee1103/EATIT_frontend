@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
     .then(data => {
       document.getElementById('footer').innerHTML = data;
     });
-    
+
 });
 
 
@@ -71,5 +71,28 @@ const charCount = document.getElementById('food_edit_char_count');
 
 description.addEventListener('input', function () {
   charCount.textContent = `${description.value.length}/100`;
+});
+
+// 삭제버튼
+document.addEventListener("DOMContentLoaded", function () {
+  const deleteButtons = document.querySelectorAll(".food_delete_buzz");
+
+  deleteButtons[0].addEventListener("click", function () {
+    if (confirm("메뉴를 정말 삭제하시겠습니까??") == true) {    //확인
+      location.replace('./../sellerMyPage/storeInfo.html');
+      document.removefrm.submit();
+    } else {   //취소
+      return false;
+    }
+  });
+});
+
+// 수정 버튼
+document.addEventListener("DOMContentLoaded", function () {
+  const saveButtons = document.querySelectorAll(".food_edit_buzz");
+
+  saveButtons[0].addEventListener("click", function () {
+    alert("정보가 정상적으로 수정되었습니다.");
+  });
 });
 
