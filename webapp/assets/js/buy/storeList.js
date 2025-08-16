@@ -150,4 +150,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 페이지가 로드되면 전체 아이템 보여주기 (검색어 빈값)
   filterItems("");
+
+  // 사고보상정책안내
+  const headers = document.querySelectorAll(".buy_policy_toggle_header");
+
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      if (window.getComputedStyle(content).display === 'block') {
+        content.style.display = 'none';
+      } else {
+        content.style.display = 'block';
+      }
+    });
+  });
+
 });
+
