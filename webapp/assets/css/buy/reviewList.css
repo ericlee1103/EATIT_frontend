@@ -95,7 +95,7 @@
 .buy_review_area{
   width: 500px;
   height: 150px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   display: flex;
   margin: 10px auto;
   background-color: white;
@@ -109,18 +109,24 @@
   object-fit: cover;
 }
 .buy_review_detail{
-  width: 320px;
+  width: 340px;
   height: 150px;
-  margin: 0 0  0 auto;
-  /* border: 1px solid blue; */
+  margin: auto;
+  /* justify-content: center; */
+  /* align-items: center; */
+  border: 1px solid blue;
+}
+.buy_review_detail>p{
+  font-size: 14px;
 }
 .buy_review_detail_top{
   width:320px;
   height: 30px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   display: flex;
   align-items: center;
 }
+
 /* 유저 프로필사진 */
 .buy_review_profile{
   width: 30px;
@@ -130,9 +136,13 @@
 .buy_review_profile>img{
   width: 30px;
   height: 30px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
-
+.buy_review_id{
+  border: 1px solid red;
+  font-size: 10px;
+  width: 30px;
+}
 .buy_review_detail_top ul{
   /* border:1px solid black; */
   width:130px;
@@ -140,9 +150,13 @@
   list-style: none;
 }
 .buy_review_detail_top ul li{
-  font-size: 10px;
+  border: 1px solid green;
+  font-size: 12px;
 }
 /* 별점 별 이미지 */
+.review_star{
+  width: 80px;
+}
 .review_star>img{
   width: 15px;
 }
