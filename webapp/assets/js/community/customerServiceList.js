@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
         let statusClass = "";
         if (statusText.includes("접수")) statusClass = "received";
         else if (statusText.includes("답변완료")) statusClass = "completed";
-        else if (statusText.includes("종결")) statusClass = "closed";
         statusCell.className = "col_status status " + statusClass;
       }
 
