@@ -82,7 +82,7 @@ input {
 /* 장바구니 음식/재료 리스트 전체 감싸는 영역 */
 .shopping_cart_list{
   width: 690px;
-  height: 480px;
+  height: 450px;
   background-color: white;
   border-radius: 6px;
   border: 1px solid #ddd;
@@ -108,6 +108,10 @@ input {
   gap: 20px;
   font-weight: bold;
 }
+hr{
+  width: 630px;
+  margin: 0 auto;
+}
 
 /* 상품 정보 영역 */
 .shopping_cart_item {
@@ -121,7 +125,7 @@ input {
   /* border: 1px solid hotpink; */
   width: 690px;
   box-sizing: border-box;
-  margin: 0 0 10px auto;
+  margin: 30px 0 10px auto;
 }
 
 /* 음식/재료 이미지 영역 */
@@ -138,15 +142,24 @@ input {
   width: 250px;
   /* border: 1px solid blue; */
 }
+.shopping_stock{
+  background-color: #FF5656;
+  width: 80px;
+  height: 25px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 
 /* 음식 수량 증감 버튼 */
 .shopping_item_cnt {
   display: flex;
   align-items: center;
   gap: 10px;
-  /* border: 1px solid green;  */
-  padding: 5px 10px;
-  border-radius: 6px;
+  /* border: 1px solid green; */
+  margin: auto;
 }
 
 /* +- 아이콘 사이즈 조절 */
@@ -156,31 +169,23 @@ input {
   cursor: pointer;
 }
 
-/* 음식 삭제 아이콘 */
-.shopping_food_delete{
-  width: 30px;
-  height: 30px;
-}
-
 /* 오른쪽 전체 감싸는 영역 */
 .shopping_payment_area {
   width: 390px;
   height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-self: flex-start;
-  flex-shrink: 0; 
 }
 /* 결제수단 선택 전체 영역 */
 .shopping_payment_method{
-  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 16px 20px;
+  background-color: #fff;
   width: 390px;
-  height: 300px;
-  border-radius: 6px;
-  /* border: 1px solid red; */
+  height: 220px;
+  box-sizing: border-box;
   margin-bottom: 5px;
-  border: 1px solid #ddd;
 }
 /* 결제수단 제목 */
 .shopping_payment_title{
@@ -188,14 +193,30 @@ input {
   font-weight: bold;
   margin: 5px 0 0 5px;
 }
+/* 결제 api 공간 */
+.shopping_payment_api {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #333333;
+  margin-top: 25px;
+  /* border: 1px solid red;s */
+}
+.shopping_payment_api label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  /* border: 1px solid blue; */
+}
 
 /* 결제금액 요약 */
 .shopping_payment_summary {
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   border-radius: 8px;
   padding: 16px 20px;
   background-color: #fff;
-  width: 100%;
+  width: 390px;
   box-sizing: border-box;
   margin-bottom: 5px;
 }
@@ -205,13 +226,12 @@ input {
   align-items: center;
   padding: 8px 0;
   font-size: 16px;
-  color: #333;
-  border-bottom: 1px solid #eee;
+  color: #333333;
+  margin-top: 20px;
 }
-.shopping_price_row:last-child {
-  border-bottom: none;
-  font-weight: 600;
-  color: #000;
+.shopping_price_row span:nth-child(2){
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* 결제하기 btn */

@@ -226,7 +226,7 @@ h3{
   display: inline-block;
   margin: 5px;
   overflow: hidden;
-  /* border: 1px solid blue; */
+  position: relative;
 }
 .main_ingredient_img a{
   margin: auto;
@@ -235,7 +235,7 @@ h3{
   display: block;
   border-radius: 8px;
   object-fit: cover;
-  /* border: 1px solid red; */
+  overflow: hidden;
 }
 /* 재료판매 이미지 영역 */
 .main_ingredient_img a img{
@@ -243,7 +243,11 @@ h3{
   height: 140px;
   border-radius: 8px;
   display: block;
-  /* border: 1px solid green; */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.main_ingredient_img:hover a img {
+  transform: scale(1.05);
 }
 .main_ingredient_storeinfo{
   width: 230px;
@@ -257,55 +261,64 @@ h3{
   /* border: 1px solid green; */
 }
 /* 레시피공유 더보기 영역 */
-.main_recipe a{
+.main_recipe>a{
   display: inline;
   float: right;
-  margin: 10px 10px 10px 50px;
+  margin-right: 30px;
   text-decoration: none;
   color: black;
 }
 /* 레시피 공유 게시판 배경영역 */
-.main_recipe_share{
+
+.main_recipe_commu{
   width: 450px;
   height: 300px;
   background-color: white;
   border-radius: 8px;
   margin: 0 auto;
-}
-/* 레시피 공유 게시판 표 상단영역 */
-.main_recipe_share ul{
   /* border: 1px solid red; */
-  height: 20px;
-  margin-top: 5px;
 }
-.main_recipe_share ul li{
-  display: inline-block;
+.main_recipe_header {
+  display: flex;
+  background-color: #fff0cc;
+  padding: 12px 16px;
+  border-radius: 8px 8px 0 0;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
+  color: #333333;
+}
+.main_recipe_header > div {
+  white-space: nowrap;
+}
+/* 칼럼별 너비 설정 */
+.main_recipe_col_tag {
+  color: #6a4e00;
+  width: 60px;
   text-align: center;
 }
-.main_recipe_list:first-child{
-  width: 70x;
-  margin-left: 10px;
-  /* border: 1px solid blue; */
+.main_recipe_col_title {
+  text-align: center;
+  flex: 1; 
 }
-.main_recipe_list:nth-child(2){
-  width: 70x;
-  margin-left: 140px;
-  /* border: 1px solid green; */
+.main_recipe_col_title a{
+  text-decoration: none;
+  color: #333333;
 }
-.main_recipe_list:nth-child(3){
-  width: 70x;
-  margin-left: 110px;
-  /* border: 1px solid skyblue; */
+.main_recipe_col_date {
+  width: 100px;
+  text-align: center;
 }
-.main_recipe_list:last-child{
-  width: 70x;
-  margin-left: 50px;
-  /* border: 1px solid red; */
+.main_recipe_col_views {
+  width: 60px;
+  text-align: center;
 }
-/* 구분선 */
-.main_hr{
-  width: 430px;
-  margin: auto;
+.main_recipe_list{
+  display: flex;
+  background-color: white;
+  padding: 14px 16px;
+  font-size: 15px;
+  color: #333333;
+  border-bottom: 1px solid #dddddd;
 }
+
+
