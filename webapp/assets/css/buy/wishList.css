@@ -9,7 +9,14 @@
   height: 1080px;
   background-color: #FFF5E4;
 }
-
+.wrap{
+  border: 1ps solid red;
+  width: 1100px;
+  height: 1080px;
+  background-color:#FBE3B9;
+  margin: 0 auto;
+  display: flex;
+}
 .buy_store_list {
   width: 100%;
   height: 1080px;
@@ -33,24 +40,6 @@
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-}
-/* 최신순 거리순 정렬 */
-.buy_array{
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 30px;
-}
-.buy_array li{
-  display: inline-block;
-  list-style: none;
-}
-.buy_array li a:hover{
-  color:#ff924e;
-}
-.buy_array li a{
-  margin-right: 10px;
-  color: black;
-  text-decoration: none;
 }
 
 #buy_search {
@@ -91,6 +80,39 @@
   vertical-align: top;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+/* 음식이미지와 하트 이미지 감싼 */
+.wish_img_wrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  width: 245px; 
+  height: 274px; 
+}
+.wish_img_wrapper img:first-child {
+  width: 245px;
+  height: 274px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+}
+.heart_icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px; 
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+.heart_icon:hover {
+  transform: scale(1.1);
 }
 
 .buy_food_article:hover {
@@ -103,15 +125,6 @@
   color: black;
   display: block;
   height: 100%;
-}
-
-/* 이미지 */
-.buy_food_article img {
-  width: 245px;
-  height: 274px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  object-fit: cover;
 }
 
 /* 가게정보 */
@@ -132,28 +145,16 @@
   text-overflow: ellipsis;
 }
 
-.buy_store_name {
-  font-size: 12px;
+.wish_store_name {
+  font-size: 16px;
   font-weight: bold;
   color: #444444;
 }
 
-.buy_menu_name {
+.wish_open_time {
   font-size: 14px;
-  color: #222222;
-}
-
-.buy_open_time {
-  font-size: 12px;
   display: inline-block;
   color: #666666;
-}
-
-.buy_price {
-  font-size: 16px;
-  font-weight: bold;
-  float: right;
-  color: #FF924E;
 }
 
 /* 페이지네이션 */
