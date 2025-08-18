@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       originListContainer.insertBefore(newList, document.getElementById('origin_list_more'));
     }
 
-    // editForm 의 저장버튼 클릭후 alert*()
+    // editForm 의 저장버튼 클릭후 alert 닫기
     alert(isEditMode ? "수정이 완료되었습니다!" : "원산지가 추가되었습니다!");
     modal.style.display = "none";
     currentEditItem = null;
