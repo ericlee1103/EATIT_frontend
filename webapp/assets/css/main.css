@@ -320,5 +320,49 @@ h3{
   color: #333333;
   border-bottom: 1px solid #dddddd;
 }
+.main_recipe_list:hover{
+  background-color: #ffe5aa;
+}
+
+/* 고정 아이콘 네비게이션 */
+.icon_fixed_nav {
+  position: fixed;
+  top: 200px;          
+  right: 400px; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+/* 아이콘 버튼 공통 */
+.icon_btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+/* 아이콘 내부 svg 스타일 */
+.icon_btn svg {
+  width: 32px;
+  height: 32px;
+  fill: #202020;
+  transition: fill 0.2s;
+}
+
+/* 호버 효과 */
+.icon_btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-3px);
+}
+.icon_btn:hover svg {
+  fill: #ff6600; /* 원하는 포인트 컬러로 조정 */
+}
 
 

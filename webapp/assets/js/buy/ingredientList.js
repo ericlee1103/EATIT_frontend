@@ -1,117 +1,121 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 검색창 input 요소 가져오기
+  // 검색 input 요소 가져오기
   const searchInput = document.getElementById("buy_search");
-  // 아이템 전체를 담고 있는 컨테이너 요소 가져오기
-  const itemsContainer = document.getElementById("buy_area");
-  // 페이지네이션 버튼을 넣을 컨테이너 요소 가져오기
+  // 아이템들이 담겨있는 컨테이너 (가게 카드 목록)
+  const itemsContainer = document.querySelector(".buy_area");
+  // 페이지네이션 버튼을 표시할 영역
   const paginationContainer = document.getElementById("pagination");
 
-  // 모든 아이템(가게 카드) 배열로 가져오기
+  // 가게 카드 전체를 배열로 가져오기
   const allItems = Array.from(itemsContainer.querySelectorAll(".buy_food_article"));
-  // 한 페이지당 보여줄 아이템 개수 설정
+  // 한 페이지에 보여줄 아이템 개수 설정
   const rowsPerPage = 8;
-  // 현재 필터링된 아이템 (검색 결과용) 초기값은 전체 아이템 복사
+  // 검색 결과로 필터링된 아이템 배열, 초기값은 전체 아이템
   let filteredItems = [...allItems];
-  // 현재 페이지 번호 초기값
+  // 현재 보고 있는 페이지 번호
   let currentPage = 1;
 
-  /**
-   * 검색어에 따라 아이템 필터링하는 함수
-   * @param {string} keyword - 사용자가 입력한 검색어
-   */
   function filterItems(keyword) {
-    if (!keyword) {
-      // 검색어가 비어있으면 전체 아이템 다시 복사
-      filteredItems = [...allItems];
-    } else {
-      const lowerKeyword = keyword.toLowerCase(); // 소문자로 변환하여 대소문자 구분 없앰
-      filteredItems = allItems.filter(item => {
-        // 각 아이템에서 가게명과 메뉴명 텍스트 소문자로 가져오기
-        const storeName = item.querySelector(".buy_store_name").textContent.toLowerCase();
-        const menuName = item.querySelector(".buy_menu_name").textContent.toLowerCase();
-        // 검색어가 가게명이나 메뉴명에 포함되어 있으면 true 반환
-        return storeName.includes(lowerKeyword) || menuName.includes(lowerKeyword);
-      });
+    const lowerKeyword = keyword.toLowerCase();
+
+    // 먼저 결과가 있는지 확인
+    const tempFiltered = allItems.filter(item => {
+      const storeName = item.querySelector(".buy_store_name").textContent.toLowerCase();
+      const menuName = item.querySelector(".buy_menu_name").textContent.toLowerCase();
+      return storeName.includes(lowerKeyword) || menuName.includes(lowerKeyword);
+    });
+
+    // 결과가 없으면 alert만 띄우고 기존 화면 유지
+    if (tempFiltered.length === 0) {
+      alert("검색 결과가 없습니다.");
+      return; // 함수 종료 → 아래 코드 실행 안 함
     }
-    // 검색 시 페이지를 1페이지로 초기화
+
+    // 결과가 있을 경우만 화면 갱신
+    filteredItems = tempFiltered;
     currentPage = 1;
-    // 필터링된 아이템을 현재 페이지에 맞게 화면에 출력
     displayPage(currentPage);
-    // 페이지네이션 버튼 다시 렌더링
     renderPagination();
   }
 
   /**
-   * 특정 페이지 번호에 해당하는 아이템만 화면에 출력하는 함수
-   * @param {number} page - 보여줄 페이지 번호
+   * 특정 페이지 번호에 해당하는 가게 카드만 화면에 표시하는 함수
+   * @param {number} page - 표시할 페이지 번호
    */
   function displayPage(page) {
-    // 기존 아이템 화면 초기화
+    // 기존에 표시된 아이템 모두 삭제
     itemsContainer.innerHTML = "";
 
-    // 해당 페이지에 보여줄 아이템의 시작, 끝 인덱스 계산
+    // 페이지 번호에 따른 아이템 배열의 시작과 끝 인덱스 계산
     const start = (page - 1) * rowsPerPage;
     const end = start + rowsPerPage;
 
-    // 해당 범위에 포함되는 아이템만 추출
+    // 해당 범위에 속하는 아이템들만 추출
     const pageItems = filteredItems.slice(start, end);
 
-    // 보여줄 아이템이 없으면 "검색 결과가 없습니다." 메시지 출력
-    if (pageItems.length === 0) {
-      itemsContainer.innerHTML = "<p>검색 결과가 없습니다.</p>";
-      return;
-    }
-
-    // 추출된 아이템들을 itemsContainer에 추가하여 화면에 표시
+    // 추출된 아이템들을 화면에 추가
     pageItems.forEach(item => itemsContainer.appendChild(item));
   }
 
   /**
-   * 페이지네이션 버튼을 동적으로 만들어 렌더링하는 함수
+   * 페이지네이션 버튼들을 동적으로 생성하고 렌더링하는 함수
    */
   function renderPagination() {
-    // 기존 페이지네이션 버튼 초기화
+    // 이전 페이지네이션 버튼 초기화
     paginationContainer.innerHTML = "";
 
-    // 전체 페이지 수 계산
+    // 전체 페이지 수 계산 (총 아이템 수 / 페이지당 아이템 수)
     const totalPages = Math.ceil(filteredItems.length / rowsPerPage);
-    // 페이지가 1개 이하이면 페이지네이션 숨김 (버튼 안 만듦)
-    if (totalPages <= 1) return;
 
-    // 버튼들을 묶을 ul 생성
+    // ul 요소 생성하여 버튼들을 묶음
     const ul = document.createElement("ul");
+
+    // 스타일 적용 (flex로 가운데 정렬, 간격 조정)
+    ul.style.display = "flex";
+    ul.style.justifyContent = "center";
+    ul.style.gap = "6px";
+    ul.style.listStyle = "none";
+    ul.style.padding = "0";
 
     // 이전 페이지 버튼 생성
     const prevLi = document.createElement("li");
     prevLi.classList.add("buy_pagenation_box");
     prevLi.innerHTML = '<a href="#">&lt;</a>';
+
+    // 첫 페이지면 비활성화(커서변경 및 불투명도 조절)
+    prevLi.style.cursor = currentPage === 1 ? "default" : "pointer";
+    prevLi.style.opacity = currentPage === 1 ? "0.5" : "1";
+
+    // 클릭 시 이전 페이지로 이동
     prevLi.addEventListener("click", e => {
       e.preventDefault();
-      // 현재 페이지가 1보다 크면 한 페이지 뒤로 이동
       if (currentPage > 1) {
         currentPage--;
-        displayPage(currentPage);    // 페이지 내용 갱신
-        renderPagination();          // 페이지네이션 갱신
-        scrollToTop();               // 스크롤 맨 위로 이동
+        displayPage(currentPage);
+        renderPagination();
+        scrollToTop();
       }
     });
     ul.appendChild(prevLi);
 
-    // 페이지 번호 버튼들 생성 (1, 2, 3, ...)
+    // 1부터 totalPages까지 페이지 번호 버튼 생성
     for (let i = 1; i <= totalPages; i++) {
       const li = document.createElement("li");
       li.classList.add("buy_pagenation_box");
+
       // 현재 페이지면 active 클래스 추가 (스타일용)
       if (i === currentPage) li.classList.add("active");
+
       li.innerHTML = `<a href="#">${i}</a>`;
+
+      // 각 버튼 클릭 시 해당 페이지로 이동
       li.addEventListener("click", e => {
         e.preventDefault();
-        // 이미 선택된 페이지 클릭 시 아무 동작 안함
-        if (currentPage === i) return;
+        if (currentPage === i) return; // 현재 페이지면 무시
         currentPage = i;
-        displayPage(currentPage);    // 페이지 내용 갱신
-        renderPagination();          // 페이지네이션 갱신
-        scrollToTop();               // 스크롤 맨 위로 이동
+        displayPage(currentPage);
+        renderPagination();
+        scrollToTop();
       });
       ul.appendChild(li);
     }
@@ -120,42 +124,52 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextLi = document.createElement("li");
     nextLi.classList.add("buy_pagenation_box");
     nextLi.innerHTML = '<a href="#">&gt;</a>';
+
+    // 마지막 페이지면 비활성화
+    nextLi.style.cursor = currentPage === totalPages ? "default" : "pointer";
+    nextLi.style.opacity = currentPage === totalPages ? "0.5" : "1";
+
+    // 클릭 시 다음 페이지로 이동
     nextLi.addEventListener("click", e => {
       e.preventDefault();
-      // 현재 페이지가 마지막 페이지보다 작으면 한 페이지 앞으로 이동
       if (currentPage < totalPages) {
         currentPage++;
-        displayPage(currentPage);    // 페이지 내용 갱신
-        renderPagination();          // 페이지네이션 갱신
-        scrollToTop();               // 스크롤 맨 위로 이동
+        displayPage(currentPage);
+        renderPagination();
+        scrollToTop();
       }
     });
     ul.appendChild(nextLi);
 
-    // 완성된 ul을 페이지네이션 컨테이너에 추가
+    // 페이지네이션 컨테이너에 완성된 ul 추가
     paginationContainer.appendChild(ul);
   }
 
-  // 검색 input에 이벤트 리스너 등록 (입력될 때마다 필터링 수행)
-  searchInput.addEventListener("input", e => {
-    filterItems(e.target.value);
+  // Enter 키를 눌렀을 때만 검색 실행
+  searchInput.addEventListener("keydown", e => {
+    if (e.key === "Enter") {
+      e.preventDefault(); // form 제출 방지
+      const keyword = e.target.value.trim();
+      filterItems(keyword); // 키워드 상관없이 필터링 실행
+    }
   });
 
-  /**
-   * 스크롤을 페이지 최상단으로 부드럽게 이동시키는 함수
-   */
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+  displayPage(currentPage);
+  renderPagination();
 
-  // 페이지가 로드되면 전체 아이템 보여주기 (검색어 빈값)
-  filterItems("");
+  // 사고보상정책 토글 기능 구현
+  const headers = document.querySelectorAll(".buy_policy_toggle_header");
 
-    // 검색창에서 Enter 키 눌렀을 때 검색 함수 실행
-  keyword.addEventListener("keypress", (e) => {
-    if (e.key === "Enter") {
-      e.preventDefault(); // 폼 제출 등 기본 동작 막기
-      searchList();
-    }
+  // 각 토글 헤더에 클릭 이벤트 등록
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling; // 헤더 다음 요소(내용)
+      // 현재 보임 상태 토글
+      if (window.getComputedStyle(content).display === 'block') {
+        content.style.display = 'none';
+      } else {
+        content.style.display = 'block';
+      }
+    });
   });
 });
