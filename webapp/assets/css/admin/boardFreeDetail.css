@@ -98,7 +98,7 @@ h1{
 .admin_post_tag{
   margin: 0 10px 0;
 }
-img[alt="나무"]{
+.admin_post_icon img{
   margin-top: 5px;
   width: 15px;
   height: 15px;

@@ -288,6 +288,24 @@
   margin-top: 20px;
 }
 
+.buy_back_store_list{
+  width: 180px;
+  height: 40px;
+  background-color: #FF924E;
+  text-align: center;
+  border-radius: 4px;
+  line-height: 40px;
+  margin-left: 360px;
+  margin-bottom: 10px;
+}
+.buy_back_store_list a{
+  text-decoration: none;
+  color: white;
+}
+.buy_back_store_list:hover{
+  background-color: #ff7722;
+}
+
 .buy_map {
   width: 530px;
   height: 800px;

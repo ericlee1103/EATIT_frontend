@@ -17,8 +17,6 @@
   display: flex;
 }
 
-
-
 /* 가게상세정보 및 상품 구매 영역 */
 .buy_left_area {
   width: 550px;
@@ -80,78 +78,155 @@
   font-size: 16px;
 }
 
-/* ==================== */
-.buy_food{
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  border-radius: 8px;
+/* 메뉴 영역 */
+.buy_food {
+  width: 530px;
+  height: 700px !important;
   background-color: white;
-
-  
+  border-radius: 10px;
+  margin: 10px auto;
+  /* border: 1px solid red; */
 }
 
-/* 리뷰 메뉴 */
-.buy_review_area{
+.buy_food ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.link_review {
+  font-size: 1px;
+}
+
+.buy_food_menu_choice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #FF5656;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  list-style: none;
+}
+
+.buy_food_menu_choice li {
+  /* display: inline-block; */
+  font-size: 30px;
+}
+
+.link_menu {
+  color: #ffb84d;
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.link_ingredient,
+.link_review {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.buy_map img {
+  align-items: center;
+  width: 530px;
+  height: 800px;
+}
+
+/* 리뷰영역 */
+.buy_review_area {
   width: 500px;
-  height: 150px;
-  /* border: 1px solid red; */
   display: flex;
   margin: 10px auto;
   background-color: white;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  gap: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
-/* 리뷰사진 */
-.buy_review_area>img{
+
+.buy_review_img {
   width: 150px;
   height: 150px;
-  background-color: black;
   border-radius: 8px;
   object-fit: cover;
+  flex-shrink: 0;
 }
-.buy_review_detail{
-  width: 320px;
-  height: 150px;
-  margin: 0 0  0 auto;
-  /* border: 1px solid blue; */
+
+.buy_review_detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-.buy_review_detail_top{
-  width:320px;
-  height: 30px;
-  /* border: 1px solid red; */
+
+.buy_review_detail_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555555;
+}
+
+.buy_review_user_info {
   display: flex;
   align-items: center;
-}
-/* 유저 프로필사진 */
-.buy_review_profile{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-.buy_review_profile>img{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-
-.buy_review_detail_top ul{
-  /* border:1px solid black; */
-  width:130px;
-  margin-left: 30px;
+  gap: 10px;
   list-style: none;
-}
-.buy_review_detail_top ul li{
-  font-size: 10px;
-}
-/* 별점 별 이미지 */
-.review_star>img{
-  width: 15px;
-}
-/* 구분선 */
-.buy_reviewlist_bg hr{
-  width: 500px;
-  margin: auto;
+  padding: 0;
+  margin: 0;
 }
 
+.buy_review_id {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333333;
+}
+.buy_review_star {
+  display: flex;
+  gap: 2px; 
+  align-items: center; 
+}
+
+.buy_review_star img {
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+}
+
+.buy_review_dates {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+  text-align: right;
+}
+
+.buy_review_dates li {
+  margin-bottom: 2px;
+}
+
+.buy_review_detail h4 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  color: #444444;
+}
+
+.buy_review_detail p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555555;
+  white-space: pre-line;
+}
 
 /* 페이지네이션 */
 .pagination_container {
@@ -190,7 +265,7 @@
   margin-top: 20px;
 }
 
-.buy_back_store_list{
+.buy_back_store_list {
   width: 180px;
   height: 40px;
   background-color: #FF924E;
@@ -200,13 +275,16 @@
   margin-left: 360px;
   margin-bottom: 10px;
 }
-.buy_back_store_list a{
+
+.buy_back_store_list a {
   text-decoration: none;
   color: white;
 }
-.buy_back_store_list:hover{
+
+.buy_back_store_list:hover {
   background-color: #ff7722;
 }
+
 .buy_map {
   width: 530px;
   height: 800px;
@@ -284,15 +362,16 @@
   transition: 0.3s ease;
 }
 
-.buy_map>img:hover{
-  border:2px solid red;
+.buy_map>img:hover {
+  border: 2px solid red;
 }
 
-.buy_add_cart_btn:hover{
+.buy_add_cart_btn:hover {
   background-color: #ffb84d;
 }
 
-.minus:hover, .plus:hover{
+.minus:hover,
+.plus:hover {
   background-color: #ffb84d;
 }
 
@@ -324,8 +403,8 @@
 
 .origin_info_inactive>ul {
   margin: auto;
-  padding:30px;
-  padding-left:140px;
+  padding: 30px;
+  padding-left: 140px;
 }
 
 /* 사고보상정책 전체 영역 */
@@ -338,9 +417,11 @@
   background-color: #FBE3B9;
   margin: 0 auto;
 }
-.buy_policy_toggle_section>p{
-  margin-bottom: 10px;
+
+.buy_policy_toggle_section>p {
+  margin:60px;
 }
+
 .buy_policy_toggle_header {
   width: 1050px;
   margin: 0 auto;
@@ -352,9 +433,11 @@
   border-radius: 6px;
   border: 1px solid #dddddd;
 }
-.buy_policy_toggle_header:hover{
+
+.buy_policy_toggle_header:hover {
   background-color: #ebebeb;
 }
+
 .buy_policy_toggle_content {
   width: 1050px;
   margin: 0 auto;
@@ -365,6 +448,7 @@
   color: #333333;
   line-height: 1.6;
 }
+
 .buy_policy_toggle_content ul {
   margin: 10px;
   padding-left: 20px;

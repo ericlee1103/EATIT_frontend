@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 /* 회색영역 */
 .admin_innerwrapper{
@@ -142,11 +143,11 @@ a{
 }
 #admin_list_title{
   /* border: 1px solid black; */
-  width: 350px;
+  width: 400px;
 }
 #admin_list_userid{
   /* border: 1px solid black; */
-  width: 130px;
+  width: 160px;
 }
 #admin_list_date{
   /* border: 1px solid black; */
@@ -155,12 +156,6 @@ a{
 #admin_list_views{
   /* border: 1px solid black; */
   width: 80px;  
-}
-#admin_list_likes{
-  /* border: 1px solid black; */
-  width: 80px;  
-  text-align: center;
-  justify-content: center;
 }
 /* 글 목록 행 */
 .admin_list_valuebox{
@@ -190,8 +185,8 @@ a{
 #admin_list_title_value{
   /* border: 1px solid black; */
   text-align: left;
-  width: 350px;
-  max-width: 350px;
+  width: 400px;
+  max-width: 400px;
   height: 40px;
   overflow: hidden;
   text-align: left;
@@ -200,17 +195,13 @@ a{
 }
 #admin_list_userid_value{
   /* border: 1px solid black; */
-  width: 130px;
+  width: 160px;
 }
 #admin_list_date_value{
   /* border: 1px solid black; */
   width: 100px;  
 }
 #admin_list_views_value{
-  /* border: 1px solid black; */
-  width: 80px;  
-}
-#admin_list_likes_value{
   /* border: 1px solid black; */
   width: 80px;  
 }
